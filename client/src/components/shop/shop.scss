@@ -1,0 +1,9 @@
+.shop-container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px;
+}
+.type-item{
+    border: 2px solid black;
+}

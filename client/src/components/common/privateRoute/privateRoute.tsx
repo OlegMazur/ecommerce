@@ -9,7 +9,7 @@ const PrivateRoute = ({ component: Component, ...rest }:IProp) => {
     const { user } = useAppSelector(state => ({
       user: state.auth.user
     }));
-   // const user=false;
+  
     const hasUser = Boolean(user);
   
     return hasUser
