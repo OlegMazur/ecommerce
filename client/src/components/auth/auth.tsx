@@ -3,6 +3,8 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { Link, useLocation } from "react-router-dom";
 import { ButtonType } from "../../common/enums/component/batton-type.enum";
 import { login, registration } from "../../services/http/auth/auth";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import { userRegistration } from "../../store/redusers/authSlice/authSlice";
 import { Path } from "../routes/enums";
 import "./auth.scss";
 interface IFormInput {
@@ -13,6 +15,9 @@ interface IFormInput {
 function Auth() {
   let location = useLocation();
   const isLogin = location.pathname === Path.LOGIN;
+  const dispatch=useAppDispatch();
+  const email = useAppSelector(state=>state.auth.user.email);
+  console.log(email)
   // const [email, setEmail]=useState(' ');
   // const [password, setPassword]=useState(' ');
   const {
@@ -28,7 +33,7 @@ function Auth() {
     if (isLogin) {
       const response = await login({ email, password });
     } else {
-      const response = await registration({ email, password });
+      const response = await dispatch(userRegistration( { email, password }) );
       console.log(response);
     }
   };

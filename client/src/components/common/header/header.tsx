@@ -4,7 +4,7 @@ import { useAppSelector } from '../../../store/hooks'
 import { Path } from '../../routes/enums';
 import './header.scss'
 function Header() {
-    const {user}=useAppSelector(state=>state.auth.user);
+    const user=useAppSelector(state=>state.auth.user);
     const hasUser=Boolean(user)
     
   return (
