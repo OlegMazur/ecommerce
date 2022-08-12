@@ -1,14 +1,18 @@
 import React from "react";
 import { useAppSelector } from "../../store/hooks";
+import CategoryItem from "../deviceCategory/category-item";
 import './shop.scss'
-function Shop() {
-  const devices = useAppSelector((state) => state.device.types);
+
+const Shop:React.FC=()=> {
+  const category = useAppSelector((state) => state.device.types);
+  const devices = useAppSelector((state)=>state.device.devices)
+  console.log(process.env.REACT_APP_API_URL)
   return (
-    <div className="shop-container">
-      {devices.map(({name}) => (
-        
-        <div className="type-item">{name}</div>
-      ))}
+    <div className="category-list">
+      {category.map(({name,img,id}) => (
+        <CategoryItem key={id} name={name} id={id} img={img} devices={devices}/>
+           
+    ))}
     </div>
   );
 }

@@ -1,9 +1,9 @@
-.shop-container{
+.category-list{
     height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 200px;
 }
-.type-item{
+.item-type{
     border: 2px solid black;
 }
