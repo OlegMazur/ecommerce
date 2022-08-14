@@ -1,5 +1,128 @@
-.navbar{
-    display: flex;
-    justify-content: space-between;
+@import "../../../styles/variables.scss";
+.navbar-container {
+  display: flex;
+  height: 60px;
 
+  justify-content: space-between;
+  align-items: center;
+  background-color: $colorDarkGrey900;
+  font-size: 1.2rem;
+  color: azure;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  .navbar {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    .navbar-items {
+      position: relative;
+      display: flex;
+      .navbar{
+        &__item .active {
+            color: $colorLightBlue800;
+          }
+      }
+    }
+    &__item {
+      position: relative;
+      height: 100%;
+      min-width: 120px;
+      color: aliceblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      padding-left: 10px;
+      padding-right: 10px;
+      .popup-menu:hover {
+        visibility: visible;
+      }
+      &.item-menu {
+        .icon-menu-container {
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      &.item-menu:hover {
+        visibility: visible;
+      }
+      .popup-menu {
+        min-width: 120px;
+        position: absolute;
+        top: 60px;
+        left: -20px;
+        background-color: $colorlightGrey100;
+        padding: 10px;
+        color: black;
+        visibility: hidden;
+      }
+      .icon-menu {
+        margin-right: 10px;
+      }
+    }
+    
+    &__item:hover {
+      color: $colorLightBlue800;
+      text-decoration: none;
+      .popup-menu {
+        visibility: visible;
+      }
+    }
+    &__item :active {
+        color: $colorLightBlue800;
+      }
+   
+  }
+  .navbar-items{
+    .navbar__item.active{
+        color: $colorLightBlue800;
+    }
+  }
+}
+.navbar-bascket-container {
+  height: 100%;
+  background-color: $colorLightBlue800;
+  .navbar-bascket {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: aliceblue;
+    text-decoration: none;
+    width: 100%;
+    position: relative;
+
+    padding: 0px;
+    &__link {
+      display: flex;
+      align-items: center;
+      color: aliceblue;
+      text-decoration: none;
+      width: 100%;
+    }
+    &:hover {
+      transition: all 0.5s ease 0s;
+      background-color: $colorDarkBlue900;
+      padding: 0px;
+    }
+    &__name {
+      font-size: 1.2rem;
+      padding-left: 10px;
+    }
+    &__icon {
+      font-size: 2rem;
+      padding: 10px;
+      position: relative;
+    }
+    &__icon:hover {
+      bottom: 4px;
+    }
+  }
 }

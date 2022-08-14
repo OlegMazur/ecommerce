@@ -1,4 +1,99 @@
-.header{
+@import "../../../styles/variables.scss";
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  color: #272727;
+  padding: 10px;
+  .header-logo {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    &__text{
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    &__img{
+        width: 40px;
+        transform: rotate(-90deg);
+    }
+    &__img:hover{
+        transition: all 1s ease 0s;
+        transform: rotate(270deg);
+    }
+  }
+}
+.header-search {
+  min-width: 30%;
+  display: flex;
+  padding: 10px;
+  &__input {
+    width: 100%;
+    padding: 10px;
+  }
+  &__button {
+    cursor: pointer;
+    background-color: $colorDarkGrey900;
+    color: $colorlightGrey100;
+    width: 40px;
+    height: 40px;
+  }
+}
+.button-in-out {
+  padding: 10px;
+  
+  .button-link {
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: $colorDarkGrey900;
+    color: $colorlightGrey100;
+  }
+  .button-link:hover{
+    color: $colorDarkBlue900;
+  }
+}
+.contacts-items {
+  display: flex;
+  min-width: 150px;
+  justify-content: space-between;
+  align-items: center;
+  .contacts-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &__text {
+      z-index: 6;
+      padding: 10px;
+      width: 150px;
+      position: absolute;
+      top: 40px;
+      background-color: $colorDarkGrey900;
+      color: $colorlightGrey100;
+      border-radius: 10px;
+      border: 1px solid $colorlightGrey100;
+      display: none;
+    }
+    &__icon {
+      font-size: 1.5rem;
+      padding-left: 15px;
+      cursor: pointer;
+    }
+    &__icon:hover {
+      color: $colorLightBlue800;
+      transition: all 0.1s ease 0s;
+      font-size: 1.8rem;
+    }
+    &:hover {
+      
+        .contacts-item__text {
+        
+        display: block;
+      }
+    }
+  }
 }

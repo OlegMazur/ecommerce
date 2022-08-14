@@ -1,0 +1,31 @@
+@import "../../styles/variables.scss";
+.category-item{
+    
+    position: relative;
+    .category-name{
+        position: absolute;
+        color: $colorlightGrey100;
+        font-size: 1.6rem;
+        top:10px;
+        left: 20px;
+        cursor: pointer;
+    }
+    &__img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0px;
+        left: 0px;
+        object-fit: cover;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top:40px;
+        left:50px;
+        position: absolute;
+        color: $colorlightGrey100;
+    }
+}

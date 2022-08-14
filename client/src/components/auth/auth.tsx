@@ -1,6 +1,6 @@
 import React, { ReactEventHandler, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ButtonType } from "../../common/enums/component/batton-type.enum";
 import { login, registration } from "../../services/http/auth/auth";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
@@ -15,6 +15,7 @@ interface IFormInput {
 function Auth() {
   let location = useLocation();
   const isLogin = location.pathname === Path.LOGIN;
+  const navigate = useNavigate();
   const dispatch=useAppDispatch();
   const email = useAppSelector(state=>state.auth.user.email);
   console.log(email)
@@ -29,14 +30,18 @@ function Auth() {
   // const onSubmit = data => console.log(data);
   const onSubmit: SubmitHandler<IFormInput> = async (data) => {
     const { email, password } = data;
-
+   
     if (isLogin) {
       const response = await login({ email, password });
     } else {
-      const response = await dispatch(userRegistration( { email, password }) );
-      console.log(response);
+      const data = await dispatch(userRegistration( { email, password }) );
+      
+      if(data){
+         navigate(Path.SHOP)
+      };
     }
   };
+
   return (
     <div className="auth-container">
       <h2>{isLogin ? "Авторизація" : "Реєстрація"}</h2>

@@ -1,0 +1,22 @@
+@import "../../../styles/variables.scss";
+// .menu-container{
+//      min-width: 200px;
+//      position: relative;
+//      top:220px;
+//     right: 115px;
+//      background-color:$colorlightGrey ;
+.menu-container{
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.menu-item {
+    margin-bottom: 10px;
+  &__link {
+    text-decoration: none;
+    color: black;
+    
+  }
+}
+
+// }

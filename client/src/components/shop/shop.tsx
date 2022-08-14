@@ -1,6 +1,7 @@
 import React from "react";
 import { useAppSelector } from "../../store/hooks";
-import CategoryItem from "../deviceCategory/category-item";
+import CategoryList from "../deviceCategory/category-list";
+import CategoryItem from "../deviceCategory/category-list";
 import './shop.scss'
 
 const Shop:React.FC=()=> {
@@ -10,7 +11,7 @@ const Shop:React.FC=()=> {
   return (
     <div className="category-list">
       {category.map(({name,img,id}) => (
-        <CategoryItem key={id} name={name} id={id} img={img} devices={devices}/>
+        <CategoryList key={id} name={name} id={id} img={img} devices={devices}/>
            
     ))}
     </div>
