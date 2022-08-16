@@ -11,7 +11,7 @@ import {
   faCalendarDays,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
-//import { Icon } from '../common';
+
 import "./header.scss";
 function Header() {
   const user = useAppSelector((state) => state.auth.user);
@@ -56,14 +56,14 @@ function Header() {
       {hasUser ? (
         <div className="button-in-out">
           <NavLink to={Path.LOGIN} className="button-link">
-            {" "}
-            Вийти{" "}
+          
+            Вийти
           </NavLink>
         </div>
       ) : (
         <div className="button-in-out">
           <NavLink to={Path.SHOP} className="button-link">
-            {" "}
+          
             Увійти
           </NavLink>
         </div>

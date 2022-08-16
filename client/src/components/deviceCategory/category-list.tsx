@@ -1,29 +1,32 @@
 import React from "react";
-import { IDevices } from "../../store/redusers/deviceSlice/deviceSlice";
-import Device from "../device/device";
+import { NavLink, useNavigate } from "react-router-dom";
+import { IDevice, IType } from "../../store/redusers/deviceSlice/deviceSlice";
+import { Path, RoutePath } from "../routes/enums";
 import CategoryItem from "./category-item/category-item";
 import "./category-list.scss";
 
 
 interface ICategoryProps {
-  key: number;
-  name: string;
-  id: number;
+  key: any;
+  categoryName: string;
+  categoryId: number;
   img: string;
-  devices: IDevices[];
+  devices: IDevice[];
+  types: IType[]
 }
-function CategoryList({ name, id, img, devices }: ICategoryProps) {
+function CategoryList({  categoryName, devices,types,categoryId }:ICategoryProps) {
+  const navigate=useNavigate();
   return (
     <div className="category-item">
       
       <img src='Photos/photo1.jpg'  alt='photos' className="category-item__img"></img>
       <div className="category-item__list">
-        {devices.map(({ id, name, img, rating, price }) => (
-          <CategoryItem key={id} name={name} />
+        {types.map(({ id, name }) => (
+          <CategoryItem key={id} name={name} id={id} devices={devices}/>
           
         ))}
       </div>
-      <div className="category-name">{name}</div> 
+      <button onClick={()=>navigate(RoutePath.CATEGORY_PAGE,{state:categoryId})}  className="category-name">{categoryName} </button > 
     </div>
   );
 }

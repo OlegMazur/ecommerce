@@ -1,10 +1,8 @@
-import React, { ReactEventHandler, useState } from "react";
+import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { ButtonType } from "../../common/enums/component/batton-type.enum";
-import { login, registration } from "../../services/http/auth/auth";
-import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import { userRegistration } from "../../store/redusers/authSlice/authSlice";
+import { useAppDispatch} from "../../store/hooks";
+import { userLogin, userRegistration } from "../../store/redusers/authSlice/authSlice";
 import { Path } from "../routes/enums";
 import "./auth.scss";
 interface IFormInput {
@@ -17,8 +15,8 @@ function Auth() {
   const isLogin = location.pathname === Path.LOGIN;
   const navigate = useNavigate();
   const dispatch=useAppDispatch();
-  const email = useAppSelector(state=>state.auth.user.email);
-  console.log(email)
+  // const email = useAppSelector(state=>state.auth.user.email);
+  // console.log(email)
   // const [email, setEmail]=useState(' ');
   // const [password, setPassword]=useState(' ');
   const {
@@ -32,7 +30,10 @@ function Auth() {
     const { email, password } = data;
    
     if (isLogin) {
-      const response = await login({ email, password });
+      const data = await dispatch(userLogin({ email, password })) ;
+      if(data){
+        navigate(Path.SHOP)
+     };
     } else {
       const data = await dispatch(userRegistration( { email, password }) );
       

@@ -11,7 +11,7 @@ function Navbar() {
       <div className="navbar">
         <div className="navbar__item item-menu">
           <div className="icon-menu-container">
-            <FontAwesomeIcon className="icon-menu" icon={faBars} size="lg" />
+            <FontAwesomeIcon className="icon-menu" icon={faBars}  />
             <span>Меню</span>
           </div>
 
@@ -47,7 +47,7 @@ function Navbar() {
         <NavLink to={Path.BASKET} className="navbar-bascket">
           <div className="navbar-bascket__name">Кошик</div>
           <FontAwesomeIcon
-            fa-flip
+            
             className="navbar-bascket__icon"
             icon={faCartShopping}
           />

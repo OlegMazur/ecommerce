@@ -1,5 +1,5 @@
-import { check, registration } from './../../../services/http/auth/auth';
-import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit"
+import { check, login, registration } from '../../../services/auth/auth';
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 
 interface IUser{
     email: string|null,
@@ -8,23 +8,19 @@ interface IUser{
    
   }
   interface IInitialState{
-    user:IUser
+    user:Idata|null
   }
   interface Idata{
     id:number,
     email:string,
     role:string
   }
-  const initialState:IInitialState= {user:{email:null, password:null,role:null}}  
+  const initialState:IInitialState= {user:null}  
   export const userRegistration= createAsyncThunk<Idata,IUser,{rejectValue:string}>(
     'user/registration',
     async function (payload,{rejectWithValue}) {
       let idata;
        await registration(payload).then(data=>idata=data)
-      
-      // if(data){
-      //   idata=data
-      // }
        
       if(!idata){
         return rejectWithValue('server Error')
@@ -36,13 +32,29 @@ interface IUser{
       
     }
   )
-  export const getCurrentUser= createAsyncThunk<Idata,undefined, { rejectValue:string, state:{user:IUser}}>(
+  export const userLogin= createAsyncThunk<Idata,IUser,{rejectValue:string}>(
+    'user/login',
+    async function (payload,{rejectWithValue}) {
+      let idata;
+       await  login(payload).then(data=>idata=data)
+       
+      if(!idata){
+        return rejectWithValue('server Error')
+      }
+      console.log("idata")
+        console.log(idata)
+        return idata
+      
+      
+    }
+  )
+  export const getCurrentUser= createAsyncThunk<Idata,undefined, { rejectValue:string, }>(
     'user/getCurrentUser',
-    async function (_,{rejectWithValue,getState}) {
-      const user=getState().user;
+    async function (_,{rejectWithValue}) {
+     //const user=getState().user;
       let idata;
      
-       await check(user).then(data=>idata=data)
+       await check().then(data=>idata=data)
       
       // if(data){
       //   idata=data
@@ -58,7 +70,7 @@ interface IUser{
       
     }
   )
-  const counterSlice = createSlice({
+  const userSlice = createSlice({
     name: 'user',
     initialState,
     reducers: {
@@ -67,11 +79,15 @@ interface IUser{
       extraReducers:(builder)=>{
         builder
         .addCase(userRegistration.fulfilled,(state,action)=>{
-          state.user.email=action.payload.email
+          state.user=action.payload
+         
+        })
+        .addCase(userLogin.fulfilled,(state,action)=>{
+          state.user=action.payload
          
         })
         .addCase(getCurrentUser.fulfilled,(state,action)=>{
-          state.user.email=action.payload.email
+          state.user=action.payload
          
         })
       }
@@ -79,4 +95,4 @@ interface IUser{
   })
   
  // export const { } = counterSlice.actions
-  export default counterSlice.reducer
+  export default userSlice.reducer

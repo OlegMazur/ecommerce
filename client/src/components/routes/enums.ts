@@ -10,5 +10,10 @@ export enum Path  {
     REGISTRATION='/registration',
     SHOP='/',
     BASKET='/basket',
-    DEVICE='/device'
+    DEVICE='/device',
+    TYPES='/type',
+    BRANDS='/brand'
+}
+export enum RoutePath{
+    CATEGORY_PAGE='/category-page'
 }
