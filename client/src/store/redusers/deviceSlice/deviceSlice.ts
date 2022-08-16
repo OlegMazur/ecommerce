@@ -9,6 +9,12 @@ export interface IType {
     createdAt: string,
      updatedAt: string,
   }
+  export interface ICategory {
+    id: number,
+    name: string,
+    createdAt: string,
+     updatedAt: string,
+  } 
   export interface IBrands {
     id: number,
     name: string
