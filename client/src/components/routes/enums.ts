@@ -1,4 +1,6 @@
 export enum Path  {
+    CATEGORY='/category',
+    SUBCATEGORY='/sub-category',
     PRODUCTS='/products',
     CONTACTS='/contacts',
     ABOUTUS='/aboutus',

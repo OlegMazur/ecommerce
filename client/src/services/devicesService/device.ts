@@ -17,3 +17,13 @@ export const getBrands = async()=>{
     
     return data
 }
+export const getCategory = async()=>{
+    const {data} = await $host.get(Path.API+Path.CATEGORY)
+    
+    return data
+}
+export const getSubCategory = async()=>{
+    const {data} = await $host.get(Path.API+Path.SUBCATEGORY)
+    
+    return data
+}

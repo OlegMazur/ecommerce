@@ -1,5 +1,6 @@
-import { getDevices, getTypes, getBrands } from './../../../services/devicesService/device';
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
+
+import { getDevices, getTypes, getBrands, getSubCategory, getCategory } from './../../../services/devicesService/device';
+import { AnyAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 import { ActionType } from './common';
 
 export interface IType {
@@ -15,11 +16,19 @@ export interface IType {
     createdAt: string,
      updatedAt: string,
   } 
+  export interface ISubCategory {
+    id: number,
+    name: string,
+    createdAt: string,
+     updatedAt: string,
+  } 
   export interface IBrands {
     id: number,
-    name: string
+    name: string,
+    createdAt: string,
+    updatedAt: string,
   } 
-  export interface IInfo {
+  export interface IDeviceInfo {
     id: number,
     title: string,
     description: string,
@@ -33,28 +42,48 @@ export interface IType {
     name: string,
     price:number,
     rating:number,
-    img:string,
+    img1:string,
+    img2:string,
+    img3:string,
+    img4:string,
     createdAt?:string,
     updatedAt?:string,
     typeId: number,
     brandId: number,
-    info: IInfo[]
+    info: IDeviceInfo[]
+   
+    subCategoryId: number,
+    searchQueries: string,
+    currency: string,
+    unit: string,
+    availability: number,
+    label: string,
+    weight: number,
+    height: number,
+    length: number,
+    location: string,
+    
   } 
   export interface IDevices{
     
       count:number,
       rows:IDevice[],
-    
+     
   }
-  export interface IDevicesInfo{
-    id:number,
-    title:string,
-    description:string
-  }
+  // export interface IDevicesInfo{
+  //   id:number,
+  //   title:string,
+  //   description:string
+  // }
   interface IState{
     types:IType[],
     brands:IBrands[],
-    devices:IDevices
+    categories:ICategory[],
+    subCategories:ISubCategory[],
+    devices:IDevices,
+    error:string|null,
+    loading:boolean
+
    
     //devicesInfo:IDevicesInfo[]
   }
@@ -98,7 +127,7 @@ export interface IType {
     devices:{
       count:0,
       rows:[
-        //     {id:1, name:'iphone',price:4232,rating:5,img:'https://ultrafiolet.guru/kupit-uv-svetodiodnye-fonariki/convoy-s2-plus-365nm.html'},
+        //  {id:1, name:'iphone',price:4232,rating:5,img:'https://ultrafiolet.guru/kupit-uv-svetodiodnye-fonariki/convoy-s2-plus-365nm.html'},
         //     {id:2, name:'iphone',price:4200,rating:5,img:'https://ultrafiolet.guru/kupit-uv-svetodiodnye-fonariki/convoy-s2-plus-365nm.html'},
         //     {id:3, name:'iphone',price:232,rating:5,img:'https://ultrafiolet.guru/kupit-uv-svetodiodnye-fonariki/convoy-s2-plus-365nm.html'},
         //     {id:4, name:'iphone',price:232,rating:5,img:'https://ultrafiolet.guru/kupit-uv-svetodiodnye-fonariki/convoy-s2-plus-365nm.html'},
@@ -106,8 +135,11 @@ export interface IType {
         //     {id:6, name:'iphone',price:232,rating:5,img:'https://ultrafiolet.guru/kupit-uv-svetodiodnye-fonariki/convoy-s2-plus-365nm.html'},
         //     {id:7, name:'iphone',price:232,rating:5,img:'https://ultrafiolet.guru/kupit-uv-svetodiodnye-fonariki/convoy-s2-plus-365nm.html'},
          ]
-    }
-    ,
+    },
+    categories:[],
+    subCategories:[],
+    loading:false,
+    error:null
     //devicesInfo:[]
 
   }
@@ -144,6 +176,28 @@ export interface IType {
         return data
     }
   )
+  export const getAllCategory= createAsyncThunk<ICategory[],undefined, { rejectValue:string, }>(
+    ActionType.GET_ALL_CATEGORY,
+    async function (_,{rejectWithValue}) {
+      const data =await getCategory()
+      if(!data){
+        return rejectWithValue('server Error')
+      }
+        
+        return data
+    }
+  )
+  export const getAllSubCategory= createAsyncThunk<ISubCategory[],undefined, { rejectValue:string, }>(
+    ActionType.GET_ALL_SUB_CATEGORY,
+    async function (_,{rejectWithValue}) {
+      const data =await getSubCategory()
+      if(!data){
+        return rejectWithValue('server Error')
+      }
+        
+        return data
+    }
+  )
   
   const deviceSlice = createSlice({
     name: 'device',
@@ -153,17 +207,37 @@ export interface IType {
     },
     extraReducers:(builder)=>{
       builder
+      .addCase(getAllDevices.pending,(state)=>{
+        state.error=null;
+        state.loading=true;
+      })
+      
       .addCase(getAllDevices.fulfilled,(state,action)=>{
-        state.devices=action.payload
+        state.devices=action.payload;
+        state.loading=false;
       })
       .addCase(getAllTypes.fulfilled,(state,action)=>{
-        state.types=action.payload
+        state.types=action.payload;
       })
       .addCase(getAllBrands.fulfilled,(state,action)=>{
-        state.brands=action.payload
+        state.brands=action.payload;
       })
+      .addCase(getAllCategory.fulfilled,(state,action)=>{
+        state.categories=action.payload;
+      })
+      .addCase(getAllSubCategory.fulfilled,(state,action)=>{
+        state.subCategories=action.payload;
+      })
+      // .addMatcher(isError (state)=>{
+      //   state.error=null;
+      //   state.loading=true;
+      // })
     }
   })
   
   //export const { } = counterSlice.actions
   export default deviceSlice.reducer
+  
+  function isError(action:AnyAction){
+    return action.type.endsWith('rejected')
+  }

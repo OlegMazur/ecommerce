@@ -26,7 +26,7 @@ interface IUser{
         return rejectWithValue('server Error')
       }
       
-        console.log(idata)
+        
         return idata
       
       
@@ -41,8 +41,7 @@ interface IUser{
       if(!idata){
         return rejectWithValue('server Error')
       }
-      console.log("idata")
-        console.log(idata)
+      
         return idata
       
       
@@ -64,7 +63,6 @@ interface IUser{
         return rejectWithValue('server Error')
       }
       
-        console.log(idata)
         return idata
       
       
