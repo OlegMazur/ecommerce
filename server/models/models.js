@@ -20,7 +20,20 @@ const Device = sequelize.define('device',{
     name:{type:DataTypes.STRING,unique:true,allowNull:false},
     price:{type:DataTypes.INTEGER,allowNull:false},
     reting:{type:DataTypes.INTEGER,defaultValue:0},
-    img:{type:DataTypes.STRING,allowNull:false},
+    img1:{type:DataTypes.STRING,allowNull:false},
+    img2:{type:DataTypes.STRING},
+    img3:{type:DataTypes.STRING},
+    img4:{type:DataTypes.STRING},
+    searchQueries:{type:DataTypes.STRING},
+    currency:{type:DataTypes.STRING},
+    unit:{type:DataTypes.STRING},
+    availability:{type:DataTypes.INTEGER},
+    label:{type:DataTypes.STRING},
+    weight:{type:DataTypes.INTEGER},
+    height:{type:DataTypes.INTEGER},
+    length:{type:DataTypes.INTEGER},
+    location:{type:DataTypes.STRING}
+
 })
 const Type =sequelize.define('type',{
     id:{type:DataTypes.INTEGER,primaryKey:true, autoIncrement:true},
