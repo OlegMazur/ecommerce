@@ -1,7 +1,6 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom';
 import { useAppSelector } from '../../store/hooks'
-import CategoryList from '../deviceCategory/category-list';
 
 function CategoryPage() {
     const deviceBrands=useAppSelector(state=>state.device.brands);
