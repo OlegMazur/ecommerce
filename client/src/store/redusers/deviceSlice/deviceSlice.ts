@@ -45,26 +45,26 @@ export interface IType {
     name: string,
     price:number,
     rating:number,
-    img1:string,
-    img2:string,
-    img3:string,
-    img4:string,
+    img1?:string,
+    img2?:string,
+    img3?:string,
+    img4?:string,
     createdAt?:string,
     updatedAt?:string,
     typeId: number,
     brandId: number,
-    info: IDeviceInfo[]
+    info?: IDeviceInfo[]
    
     subCategoryId: number,
-    searchQueries: string,
-    currency: string,
-    unit: string,
+    searchQueries?: string,
+    currency?: string,
+    unit?: string,
     availability: number,
-    label: string,
-    weight: number,
-    height: number,
-    length: number,
-    location: string,
+    label?: string,
+    weight?: number,
+    height?: number,
+    length?: number,
+    location?: string,
     
   } 
   export interface IDevices{
@@ -111,6 +111,17 @@ export interface IType {
     ActionType.GET_ALL_DEVICES,
     async function (_,{rejectWithValue}) {
       const data =await getDevices()
+      if(!data){
+        return rejectWithValue('server Error')
+      }
+       
+        return data
+    }
+  )
+  export const getAllDevicesTitle= createAsyncThunk<IDevices,string, { rejectValue:string, }>(
+    ActionType.GET_ALL_DEVICES_TITLE,
+    async function (title,{rejectWithValue}) {
+      const data =await getDevices(title)
       if(!data){
         return rejectWithValue('server Error')
       }
@@ -179,6 +190,9 @@ export interface IType {
       .addCase(getAllDevices.fulfilled,(state,action)=>{
         state.devices=action.payload;
         state.loading=false;
+      })
+      .addCase(getAllDevicesTitle.fulfilled,(state,action)=>{
+        state.devices=action.payload
       })
       .addCase(getAllTypes.fulfilled,(state,action)=>{
         state.types=action.payload;

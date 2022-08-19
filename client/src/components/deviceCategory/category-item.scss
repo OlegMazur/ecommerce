@@ -1,15 +1,12 @@
 @import "../../styles/variables.scss";
-.category-item{
-    
+.category-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     position: relative;
-    .category-name{
-        position: absolute;
-        color: $colorlightGrey100;
-        font-size: 1.6rem;
-        top:10px;
-        left: 20px;
-        cursor: pointer;
-    }
     &__img{
         position: absolute;
         width: 100%;
@@ -18,14 +15,57 @@
         left: 0px;
         object-fit: cover;
     }
-    &__list{
+   
+   
+    &__content{
+        width:60% ;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        top:40px;
-        left:50px;
+      
         position: absolute;
-        color: $colorlightGrey100;
+       
+        .category-item__name{
+            color: $colorlightGrey100;
+            background-color: $colorDarkGrey900;
+            font-size: 1.6rem;
+            cursor: pointer;
+            width: 100%;
+            &:hover{
+                background-color: $colorDarkBlue900;
+            }
+        }
+        .category-item__list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            color: $colorlightGrey100;
+            visibility: hidden;
+        }
+        &:hover{
+            visibility: visible;
+            opacity: 0.8;
+        }
     }
+   
+}
+.category-container__content:hover{
+    background-color: $colorDarkGrey900;
+    .category-item__list{
+        visibility: visible;
+    }
+}
+.sub-category-item{
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    &:hover{
+        background-color: $colorDarkBlue900;
+    }
+    
 }

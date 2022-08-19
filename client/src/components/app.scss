@@ -1,6 +1,7 @@
 .app {
   min-height: 100%;
   max-width: 1400px;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 10px 0px 0px 0px;
@@ -15,10 +16,14 @@
   .main {
     padding: 0px;
     display: flex;
+   height: 100vh;
     justify-content: center;
     align-items: center;
     position: relative;
     top: 20px;
     flex: 1 1 auto;
+  }
+  .footer{
+    height: 100px;
   }
 }

@@ -1,5 +1,6 @@
  const ActionType = {
    GET_ALL_DEVICES: 'device/get-all-devices',
+   GET_ALL_DEVICES_TITLE: 'device/get-all-devices-title',
    GET_TYPES:'device/get-types',
    GET_BRANDS:'device/get-brands',
    GET_ALL_CATEGORY:'device/get-all-category',

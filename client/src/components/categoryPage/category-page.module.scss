@@ -1,0 +1,43 @@
+@import'../../styles/variables.scss';
+.card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .navHistory{
+        justify-self:flex-start;
+        align-self: flex-start;
+        display: flex;
+       justify-content: flex-start;
+        .navHome{
+            display: flex;
+            .navLinkHome{
+                margin-right: 5px;
+                display: flex;
+                text-decoration: none;
+                color: $colorDarkGrey900;
+                &:hover{
+                    color:$colorDarkBlue900
+                }
+            }
+           
+            .categoryName{
+                margin-right: 5px;
+            }
+        }
+        .selectedCategory{
+            color:$colorDarkBlue900
+        }
+    }
+    .subCategoryList{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        gap: 10px;
+       
+        grid-template-columns: repeat(3, minmax(200px, 1fr) );
+        grid-template-rows: repeat(3, minmax(200px, 1fr) )
+       
+    }
+}

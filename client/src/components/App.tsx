@@ -42,7 +42,7 @@ const App: React.FunctionComponent = () => {
             path={Path.BASKET}
             element={<PrivateRoute component={Basket} />}
           />
-          <Route path={Path.DEVICE} element={<Device />} />
+          <Route path={RoutePath.DEVICE} element={<Device />} />
           <Route path={Path.LOGIN} element={<Auth />} />
           <Route path={Path.REGISTRATION} element={<Auth />} />
           <Route 
