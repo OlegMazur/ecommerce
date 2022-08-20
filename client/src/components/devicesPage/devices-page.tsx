@@ -49,13 +49,17 @@ function DevicesPage() {
         </div>
         <div className={styles.selectedCategory}>{selectedSubCategory?.title}</div>
       </div>
-      <div className={styles.subCategoryList}>
-        {actualDevices.map(({ id, name,img1 }) => (
+      <div className={styles.deviceList}>
+        {actualDevices.map(({ id, name,img1,subCategoryId,availability,price }) => (
           <DeviceCard
             key={id}
-            subCategoryImg={img1}
-            subCategoryTitle={name}
-            selectedSubCatId={id}
+            deviceImg1={img1}
+            deviceName={name}
+            deviceId={id}
+            subCategoryId={subCategoryId}
+            availability={availability}
+            price={price}
+            
           />
         ))}
       </div>
