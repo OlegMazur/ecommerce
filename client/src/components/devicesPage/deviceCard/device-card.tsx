@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useAppSelector } from "../../../store/hooks";
 import { RoutePath } from "../../routes/enums";
-import styles from "./sub-category.module.scss";
+import styles from "./devices-card.module.scss";
 interface ISubCardProps {
-  subCategoryImg: string;
+  subCategoryImg: string|undefined;
   subCategoryTitle: string;
   selectedSubCatId: number;
 }
 
-function SubCategoryCard({
+function DeviceCard({
   subCategoryImg,
   subCategoryTitle,
   selectedSubCatId,
@@ -20,17 +20,15 @@ function SubCategoryCard({
   const devices = useAppSelector((state) => state.device.devices);
   return (
     <div className={styles.subCategoryCard}>
-      <div className={styles.content}>
-        <Link to={RoutePath.DEVICES + selectedSubCatId} className={styles.link}>
-          <div className={styles.title}>{subCategoryTitle}</div>
-          <img className={styles.img} src={imgUrl} alt="noPhoto " />
-        </Link>
+      <Link to={RoutePath.DEVICES + selectedSubCatId}></Link>
+      <div className={styles.imgContainer}>
+        <img className={styles.img} src={imgUrl} alt="noPhoto " />
         <div className={styles.deviceNameContainer}>
           {devices.rows.map(({ id, name, subCategoryId }) => (
-            <div key={id} className={styles.device}>
+            <div key={id}>
               {selectedSubCatId === subCategoryId && (
                 <Link to={RoutePath.DEVICE + id} className={styles.link}>
-                  <div className={styles.name}>{name}</div>
+                  <div className={styles.deviceName}>{name}</div>
                 </Link>
               )}
             </div>
@@ -41,4 +39,4 @@ function SubCategoryCard({
   );
 }
 
-export default SubCategoryCard;
+export default DeviceCard;

@@ -73,7 +73,14 @@ export interface IType {
       rows:IDevice[],
      
   }
- 
+  interface IPayloadAllDevice{
+    brandId?:number, 
+    typeId?:number, 
+    limit?:number, 
+    page?:number,
+    title?:string,
+    subCategoryId?:number 
+  }
   interface IState{
     types:IType[],
     brands:IBrands[],
@@ -107,10 +114,10 @@ export interface IType {
     
 
   }
-  export const getAllDevices= createAsyncThunk<IDevices,undefined, { rejectValue:string, }>(
+  export const getAllDevices= createAsyncThunk<IDevices,IPayloadAllDevice, { rejectValue:string, }>(
     ActionType.GET_ALL_DEVICES,
-    async function (_,{rejectWithValue}) {
-      const data =await getDevices()
+    async function (payload,{rejectWithValue}) {
+      const data =await getDevices(payload)
       if(!data){
         return rejectWithValue('server Error')
       }
@@ -118,10 +125,10 @@ export interface IType {
         return data
     }
   )
-  export const getAllDevicesTitle= createAsyncThunk<IDevices,string, { rejectValue:string, }>(
+  export const getAllDevicesTitle= createAsyncThunk<IDevices,IPayloadAllDevice, { rejectValue:string, }>(
     ActionType.GET_ALL_DEVICES_TITLE,
-    async function (title,{rejectWithValue}) {
-      const data =await getDevices(title)
+    async function (payload,{rejectWithValue}) {
+      const data =await getDevices(payload)
       if(!data){
         return rejectWithValue('server Error')
       }

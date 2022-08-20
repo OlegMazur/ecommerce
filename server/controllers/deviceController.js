@@ -45,7 +45,7 @@ class DeviceController {
 
     }
     async getAll(req, res) {
-        let { brandId, typeId, limit, page,title } = req.query
+        let { brandId, typeId, limit, page,title,subCategoryId } = req.query
         page = page || 1
         limit = limit || 9
         let offset = page * limit - limit
@@ -64,6 +64,9 @@ class DeviceController {
         }
         if (title==='title') {
             devices = await Device.findAndCountAll( {attributes:['brandId', 'typeId', 'name', 'id', 'price','subCategoryId','availability']})
+        }
+        if (subCategoryId) {
+            devices = await Device.findAndCountAll( { where: { subCategoryId }, limit, offset })
         }
 
         return res.json(devices)

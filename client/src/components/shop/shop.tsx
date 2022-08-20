@@ -5,7 +5,7 @@ import {
   getAllDevicesTitle,
   getAllSubCategory,
 } from "../../store/redusers/deviceSlice/deviceSlice";
-import CategoryItem from "../deviceCategory/category-item";
+import CategoryCard from "../deviceCategory/category-card";
 import "./shop.scss";
 
 const Shop: React.FC = () => {
@@ -17,12 +17,12 @@ const Shop: React.FC = () => {
   useEffect(() => {
     dispatch(getAllCategory());
     dispatch(getAllSubCategory());
-    dispatch(getAllDevicesTitle('title'))
+    dispatch(getAllDevicesTitle({title:'title'}))
   }, []);
   return (
     <div className="category-list">
       {categories.map(({ title, img, id }) => (
-        <CategoryItem
+        <CategoryCard
           key={id}
           categoryName={title}
           activeCategoryId={id}

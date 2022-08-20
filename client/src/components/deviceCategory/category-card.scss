@@ -29,13 +29,17 @@
             color: $colorlightGrey100;
             background-color: $colorDarkGrey900;
             font-size: 1.6rem;
+            text-decoration: none;
+            text-align: center;
             cursor: pointer;
             width: 100%;
+           
             &:hover{
                 background-color: $colorDarkBlue900;
             }
         }
         .category-item__list{
+            margin-top: 10px;
             display: flex;
             flex-direction: column;
             align-items: center;

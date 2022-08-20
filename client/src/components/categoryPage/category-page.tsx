@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useParams } from "react-router-dom";
 import { useAppSelector } from "../../store/hooks";
 import { RoutePath } from "../routes/enums";
 import SubCategoryCard from "./subCategoryCard/sub-category-card";
@@ -12,14 +12,18 @@ interface IState {
   categoryName: string;
 }
 function CategoryPage() {
- 
+ const {id}=useParams();
+ console.log(id)
+ console.log('name')
   const subCategories = useAppSelector((state) => state.device.subCategories);
-  const location = useLocation();
-  const { activeCategoryId, categoryName } = location.state as IState;
+  const categories = useAppSelector((state) => state.device.categories);
+  const category=categories.find(item=>item.id===Number(id));
+  //const location = useLocation();
+  //const { activeCategoryId, categoryName } = location.state as IState;
   const actualSubCategories = subCategories.filter(
-    (item) => item.categoryId === activeCategoryId
+    (item) => item.categoryId === Number(id)
   );
-
+console.log(actualSubCategories)
   return (
     <div className={styles.card}>
       <div className={styles.navHistory}>
@@ -29,7 +33,7 @@ function CategoryPage() {
             <div>Головна /</div>
           </NavLink>
         </div>
-        <div className={styles.selectedCategory}>{categoryName}</div>
+        <div className={styles.selectedCategory}>{category?.title}</div>
       </div>
       <div className={styles.subCategoryList}>
         {actualSubCategories.map(({ id, img, title }) => (

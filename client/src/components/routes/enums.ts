@@ -17,7 +17,11 @@ export enum Path  {
     BRANDS='/brand'
 }
 export enum RoutePath{
-    CATEGORY_PAGE='/category-page',
+    CATEGORY_PAGE_ID='/category-page/:id',
+    CATEGORY_PAGE='/category-page/',
     SHOP='/',
-    DEVICE='/device',
+    DEVICE='/device/',
+    DEVICE_ID='/device/:id',
+    DEVICES='/devices/',
+    DEVICES_ID='/devices/:id',
 }

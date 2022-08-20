@@ -1,11 +1,11 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   IDevices,
   ISubCategory,
 } from "../../store/redusers/deviceSlice/deviceSlice";
 import { RoutePath } from "../routes/enums";
-import "./category-item.scss";
+import "./category-card.scss";
 
 interface ICategoryProps {
   key: any;
@@ -15,44 +15,46 @@ interface ICategoryProps {
   activeCategoryId: number;
   devices: IDevices;
 }
-interface IState {
-  activeCategoryId: number;
-  categoryName: string;
-}
-function CategoryItem({
+// interface IState {
+//   activeCategoryId: number;
+//   categoryName: string;
+// }
+function CategoryCard({
   categoryName,
   categoryImg,
   activeCategoryId,
   subCategories,
   devices,
 }: ICategoryProps) {
-  const navigate = useNavigate();
-  const navigationState: IState = {
-    activeCategoryId: activeCategoryId,
-    categoryName: categoryName,
-  };
+  // const navigate = useNavigate();
+  // const navigationState: IState = {
+  //   activeCategoryId: activeCategoryId,
+  //   selectedategoryName: categoryName,
+  // };
   return (
     <div className="category-container">
-      <img
-        src={process.env.REACT_APP_API_URL + categoryImg}
-        alt="photos"
-        className="category-container__img"
-      ></img>
+      <Link to={RoutePath.CATEGORY_PAGE + activeCategoryId}>
+        <img
+          src={process.env.REACT_APP_API_URL + categoryImg}
+          alt="photos"
+          className="category-container__img"
+        ></img>
+      </Link>
+
       <div className="category-container__content">
-        <button
-          onClick={() =>
-            navigate(RoutePath.CATEGORY_PAGE, { state: navigationState })
-          }
+        <Link
+          to={RoutePath.CATEGORY_PAGE + activeCategoryId}
           className="category-item__name"
         >
           {categoryName}
-        </button>
+        </Link>
+
         <div className="category-item__list">
           {subCategories.map(
             ({ id, title, img, categoryId }) =>
               activeCategoryId === categoryId && (
                 <div key={id} className="sub-category-item">
-                   <div className="sub-category-item__title">{title}</div>
+                  <div className="sub-category-item__title">{title}</div>
                 </div>
               )
           )}
@@ -62,4 +64,4 @@ function CategoryItem({
   );
 }
 
-export default CategoryItem;
+export default CategoryCard;

@@ -7,13 +7,14 @@ import Footer from "./common/footer/footer";
 import Header from "./common/header/header";
 import Navbar from "./common/navBar/navbar";
 import { PrivateRoute } from "./common/privateRoute/privateRoute";
-import Device from "./device/device";
+import Device from "./devicePage/device-page";
 import { Path, RoutePath } from "./routes/enums";
 import Shop from "./shop/shop";
 import './app.scss'
 import { useAppDispatch } from "../store/hooks";
 import { getCurrentUser } from "../store/redusers/authSlice/authSlice";
 import CategoryPage from "./categoryPage/category-page";
+import DevicesPage from "./devicesPage/devices-page";
 const App: React.FunctionComponent = () => {
   console.log("dispatch get currUser")
   //const user =useAppSelector(state=>state.auth.user);
@@ -42,11 +43,12 @@ const App: React.FunctionComponent = () => {
             path={Path.BASKET}
             element={<PrivateRoute component={Basket} />}
           />
-          <Route path={RoutePath.DEVICE} element={<Device />} />
+          <Route path={RoutePath.DEVICE_ID} element={<Device />} />
+          <Route path={RoutePath.DEVICES_ID} element={<DevicesPage />} />
           <Route path={Path.LOGIN} element={<Auth />} />
           <Route path={Path.REGISTRATION} element={<Auth />} />
           <Route 
-          path={RoutePath.CATEGORY_PAGE} element={<CategoryPage />} 
+          path={RoutePath.CATEGORY_PAGE_ID} element={<CategoryPage />} 
           />
           <Route 
           path={Path.SHOP} element={<Shop />} 
