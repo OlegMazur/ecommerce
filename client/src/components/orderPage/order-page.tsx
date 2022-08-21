@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Basket() {
+function OrderPage() {
   return (
     <div>B</div>
   )
 }
 
-export default Basket
+export default OrderPage

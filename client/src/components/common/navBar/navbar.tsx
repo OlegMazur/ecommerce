@@ -5,7 +5,15 @@ import { faCartShopping, faBars } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 import { Path } from "../../routes/enums";
 import Menu from "../menu/menu";
+import { useAppDispatch, useAppSelector } from "../../../store/hooks";
+import { setIsActiveBasket } from "../../../store/redusers/basketSlice/basket-slice";
+import Basket from "../basket/basket";
 function Navbar() {
+  const dispatch=useAppDispatch();
+  const isActiveBasket=useAppSelector(state=>state.basket.isActiveBasket);
+  const showBasketHandler=()=>{
+    dispatch(setIsActiveBasket(!isActiveBasket))
+  }
   return (
     <div className="navbar-container">
       <div className="navbar">
@@ -44,15 +52,18 @@ function Navbar() {
       </div>
 
       <div className="navbar-bascket-container">
-        <NavLink to={Path.BASKET} className="navbar-bascket">
+        <button  className="navbar-bascket" onClick={showBasketHandler}>
           <div className="navbar-bascket__name">Кошик</div>
           <FontAwesomeIcon
             
             className="navbar-bascket__icon"
             icon={faCartShopping}
           />
-        </NavLink>
+        </button>
       </div>
+      {isActiveBasket&&<div className="basket">
+        <Basket />
+      </div>}
     </div>
   );
 }

@@ -59,8 +59,8 @@
         position: absolute;
         top: 60px;
         left: -20px;
-        background-color: $colorlightGrey100;
-        padding: 10px;
+        background-color: $colorDarkGrey900;
+        
         color: black;
         visibility: hidden;
       }
@@ -86,43 +86,56 @@
         color: $colorLightBlue800;
     }
   }
-}
-.navbar-bascket-container {
-  height: 100%;
-  background-color: $colorLightBlue800;
-  .navbar-bascket {
-    display: flex;
-    align-items: center;
+  .navbar-bascket-container {
     height: 100%;
-    color: aliceblue;
-    text-decoration: none;
-    width: 100%;
-    position: relative;
-
-    padding: 0px;
-    &__link {
+    background-color: $colorLightBlue800;
+    .navbar-bascket {
       display: flex;
       align-items: center;
+      height: 100%;
       color: aliceblue;
       text-decoration: none;
       width: 100%;
-    }
-    &:hover {
-      transition: all 0.5s ease 0s;
-      background-color: $colorDarkBlue900;
-      padding: 0px;
-    }
-    &__name {
-      font-size: 1.2rem;
-      padding-left: 10px;
-    }
-    &__icon {
-      font-size: 2rem;
-      padding: 10px;
       position: relative;
+      background-color: $colorLightBlue800;
+  
+      padding: 0px;
+      &__link {
+        display: flex;
+        align-items: center;
+        color: aliceblue;
+        text-decoration: none;
+        width: 100%;
+      }
+      &:hover {
+        transition: all 0.5s ease 0s;
+        background-color: $colorDarkBlue900;
+        padding: 0px;
+      }
+      &__name {
+        font-size: 1.2rem;
+        padding-left: 10px;
+      }
+      &__icon {
+        font-size: 2rem;
+        padding: 10px;
+        position: relative;
+      }
+      &__icon:hover {
+        bottom: 4px;
+      }
     }
-    &__icon:hover {
-      bottom: 4px;
-    }
+    
+  }
+  .basket{
+    width: 30%;
+    min-width: 390px;
+    box-sizing: border-box;
+    min-height: 200px;
+    position: absolute;
+   top:60px;
+    right: 0px;
+    z-index: 5;
+    border-top: 1px solid $colorlightGrey100;
   }
 }

@@ -1,6 +1,6 @@
 import Admin from "../admin/admin";
 import Auth from "../auth/auth";
-import Basket from "../basket/basket";
+import Basket from "../orderPage/order-page";
 
 import Shop from "../shop/shop";
 import { Path } from "./enums";

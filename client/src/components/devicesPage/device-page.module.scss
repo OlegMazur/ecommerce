@@ -49,4 +49,12 @@
         grid-template-rows: repeat(2, minmax(300px, 1fr) )
        
     }
+    .basket{
+        box-sizing: border-box;
+        width: 260px;
+        height: 100%;
+        position: sticky;
+        top:0px;
+        right: 2px;
+    }
 }
