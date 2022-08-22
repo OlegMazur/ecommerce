@@ -1,5 +1,5 @@
 
-import { getDevices, getTypes, getBrands, getSubCategory, getCategory } from './../../../services/devicesService/device';
+import { getDevices, getTypes, getBrands, getSubCategory, getCategory, getOneDevice } from './../../../services/devicesService/device';
 import { AnyAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 import { ActionType } from './common';
 
@@ -125,6 +125,18 @@ export interface IType {
         return data
     }
   )
+  export const getDeviceById= createAsyncThunk<IDevice,number, { rejectValue:string, }>(
+    ActionType.GET_DEVICE_BY_ID,
+    async function (id,{rejectWithValue}) {
+      const data =await getOneDevice(id)
+      
+      if(!data){
+        return rejectWithValue('server Error')
+      }
+       
+        return data
+    }
+  )
   export const getAllDevicesTitle= createAsyncThunk<IDevices,IPayloadAllDevice, { rejectValue:string, }>(
     ActionType.GET_ALL_DEVICES_TITLE,
     async function (payload,{rejectWithValue}) {
@@ -212,6 +224,12 @@ export interface IType {
       })
       .addCase(getAllSubCategory.fulfilled,(state,action)=>{
         state.subCategories=action.payload;
+      })
+      .addCase(getDeviceById.fulfilled,(state,action)=>{
+        
+        state.devices.rows=state.devices.rows.map(item=>item.id===action.payload.id?
+          item=action.payload:item
+          )
       })
       // .addMatcher(isError (state)=>{
       //   state.error=null;

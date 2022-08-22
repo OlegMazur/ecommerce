@@ -24,6 +24,11 @@ export const getDevices = async (payload:IPayloadAllDevice|null) => {
 
   return data?.data;
 };
+export const getOneDevice = async (id:number) => {
+  const { data } = await $host.get(Path.API + Path.DEVICE+"/"+id);
+
+  return data;
+};
 export const getTypes = async () => {
   const { data } = await $host.get(Path.API + Path.TYPES);
 

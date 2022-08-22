@@ -13,8 +13,7 @@ interface IState {
 }
 function CategoryPage() {
  const {id}=useParams();
- console.log(id)
- console.log('name')
+
   const subCategories = useAppSelector((state) => state.device.subCategories);
   const categories = useAppSelector((state) => state.device.categories);
   const category=categories.find(item=>item.id===Number(id));
@@ -23,7 +22,7 @@ function CategoryPage() {
   const actualSubCategories = subCategories.filter(
     (item) => item.categoryId === Number(id)
   );
-console.log(actualSubCategories)
+
   return (
     <div className={styles.card}>
       <div className={styles.navHistory}>

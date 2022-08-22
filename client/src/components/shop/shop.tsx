@@ -13,7 +13,6 @@ const Shop: React.FC = () => {
   const subCategories = useAppSelector((state) => state.device.subCategories);
   const devices= useAppSelector((state) => state.device.devices);
   const dispatch = useAppDispatch();
- console.log(devices)
   useEffect(() => {
     dispatch(getAllCategory());
     dispatch(getAllSubCategory());

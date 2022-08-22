@@ -37,7 +37,7 @@
             padding-bottom: 5px;
            
             &:hover{
-                background-color: $colorDarkBlue900;
+                background-color: $rmd-grey-800;
             }
         }
         .category-item__list{
@@ -52,7 +52,7 @@
         }
         &:hover{
             visibility: visible;
-            opacity: 0.8;
+            opacity: 1;
         }
     }
    
@@ -70,8 +70,17 @@
     margin-bottom: 5px;
     padding: 5px;
     box-sizing: border-box;
+    background-color: $rmd-grey-900;
+   
+    &__title{
+        color:$rmd-grey-100;
+        font-size: 1.2rem;
+        text-decoration: none;
+        background-color: inherit;
+
+    }
     &:hover{
-        background-color: $colorDarkBlue900;
+        background-color: $rmd-grey-800;
     }
     
 }

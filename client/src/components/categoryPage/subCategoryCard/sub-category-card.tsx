@@ -21,7 +21,7 @@ function SubCategoryCard({
   return (
     <div className={styles.subCategoryCard}>
       <div className={styles.content}>
-        <Link to={RoutePath.DEVICES + selectedSubCatId} className={styles.link}>
+        <Link to={RoutePath.SUB_CATEGORY+ selectedSubCatId} className={styles.link}>
           <div className={styles.title}>{subCategoryTitle}</div>
           <img className={styles.img} src={imgUrl} alt="noPhoto " />
         </Link>

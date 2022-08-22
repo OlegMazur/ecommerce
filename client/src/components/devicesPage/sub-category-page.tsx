@@ -6,14 +6,14 @@ import { RoutePath } from "../routes/enums";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import DeviceCard from "./deviceCard/device-card";
-import styles from "./device-page.module.scss";
+import styles from "./sub-category-page.module.scss";
 import { getAllDevices, IDevice } from "../../store/redusers/deviceSlice/deviceSlice";
 import { addDeviceInBasket, setIsActiveBasket } from "../../store/redusers/basketSlice/basket-slice";
 // interface IState {
 //   activeCategoryId: number;
 //   categoryName: string;
 // }
-function DevicesPage() {
+function SubCategoryPage() {
     const dispatch=useAppDispatch();
     //const [isActiveBasket,setIsActiveBasket]=useState(false);
   const { id } = useParams();
@@ -33,7 +33,7 @@ function DevicesPage() {
     dispatch(addDeviceInBasket(device))
   }
   useEffect(()=>{
-    console.log('dispatch')
+    
     dispatch(getAllDevices({subCategoryId:selectedSubCategory?.id} ))
   },[])
   return (
@@ -75,4 +75,4 @@ function DevicesPage() {
   );
 }
 
-export default DevicesPage;
+export default SubCategoryPage;

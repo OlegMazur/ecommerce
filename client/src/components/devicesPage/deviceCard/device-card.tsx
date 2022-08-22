@@ -1,7 +1,6 @@
 
 import React from "react";
 
-import { useId } from "react-id-generator";
 import { Link } from "react-router-dom";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { RoutePath } from "../../routes/enums";

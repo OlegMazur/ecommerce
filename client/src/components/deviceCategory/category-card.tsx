@@ -54,7 +54,7 @@ function CategoryCard({
             ({ id, title, img, categoryId }) =>
               activeCategoryId === categoryId && (
                 <div key={id} className="sub-category-item">
-                  <div className="sub-category-item__title">{title}</div>
+                  <Link to={RoutePath.SUB_CATEGORY+id} className="sub-category-item__title">{title}</Link>
                 </div>
               )
           )}
