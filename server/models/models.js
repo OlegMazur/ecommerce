@@ -32,7 +32,16 @@ const Device = sequelize.define('device',{
     weight:{type:DataTypes.INTEGER},
     height:{type:DataTypes.INTEGER},
     length:{type:DataTypes.INTEGER},
-    location:{type:DataTypes.STRING}
+    location:{type:DataTypes.STRING},
+    color:{type:DataTypes.STRING},
+    power:{type:DataTypes.INTEGER},
+    capacity:{type:DataTypes.INTEGER},
+    colorTemp:{type:DataTypes.INTEGER},
+    favotite:{type:DataTypes.BOOLEAN},
+    model:{type:DataTypes.STRING},
+    subModel:{type:DataTypes.STRING},
+    madeIn:{type:DataTypes.STRING},
+    floatPrice:{type:DataTypes.FLOAT},
 
 })
 const Type =sequelize.define('type',{
@@ -43,7 +52,7 @@ const Brand =sequelize.define('brand',{
     id:{type:DataTypes.INTEGER,primaryKey:true, autoIncrement:true},
     name:{type:DataTypes.STRING,unique:true,allowNull:false},
 })
-const Rating =sequelize.define('reting',{
+const Rating =sequelize.define('rating',{
     id:{type:DataTypes.INTEGER,primaryKey:true, autoIncrement:true},
     rate:{type:DataTypes.STRING,allowNull:false},
 })
@@ -60,8 +69,9 @@ const Category =sequelize.define('category',{
 
 const DeviceInfo =sequelize.define('device_info',{
     id:{type:DataTypes.INTEGER,primaryKey:true, autoIncrement:true},
-    title:{type:DataTypes.STRING,allowNull:false},
+    title:{type:DataTypes.STRING},
     description:{type:DataTypes.STRING,allowNull:false},
+    images:{type:DataTypes.STRING},
 })
 const TypeBrand =sequelize.define('type_brand',{
     id:{type:DataTypes.INTEGER,primaryKey:true, autoIncrement:true},

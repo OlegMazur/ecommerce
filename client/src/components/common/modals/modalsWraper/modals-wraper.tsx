@@ -13,9 +13,7 @@ function ModalsWraper({
   outContentClick,
   ...rest
 }: IModalsWraper) {
-  // const closHandlerType =(type:string)=>{
-  //      closeHandler
-  // }
+ 
   return (
     <>
       {!isClose && (

@@ -7,7 +7,8 @@ class DeviceController {
         try {
             let { name, price, brandId, typeId, info,subCategoryId,
                 searchQueries,currency,unit,availability,
-                label,weight, height, length, location,  } = req.body
+                label,weight, height, length, location, color, power,capacity,
+                colorTemp,favorite,model,subModel,madeIn,floatPrice  } = req.body
             const { img1,img2,img3,img4 } = req.files
             // const { img2 } = req.files
             // const { img3 } = req.files
@@ -24,7 +25,8 @@ class DeviceController {
                 name, price, brandId, typeId, img1: fileName1,
                 img2: fileName2,img3: fileName3, img4: fileName4, subCategoryId,
                 searchQueries,currency,unit,availability,
-                label,weight, height, length, location            
+                label,weight, height, length, location, color, power,capacity,
+                colorTemp,favorite,model,subModel,madeIn,floatPrice            
             })
                    
             if (info) {
@@ -33,7 +35,8 @@ class DeviceController {
                     DeviceInfo.create({
                         title: i.title,
                         description: i.description,
-                        deviceId: device.id
+                        deviceId: device.id,
+                        images: i.images
                     })
                 });
             }
