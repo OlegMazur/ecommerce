@@ -1,44 +1,41 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react'
-import styles from './delivery-info.module.scss';
-import {faXmark } from "@fortawesome/free-solid-svg-icons";
-function DeliveryInfoModal({closeHandler}:any) {
-    const closeHandlerType=()=>{
-        closeHandler('delivery')
-    } 
-    return (
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from "./delivery-info.module.scss";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+function DeliveryInfoModal({ closeHandler }: any) {
+  return (
     <div className={styles.container}>
-        <div  className={styles.buttonBlock} >
-            <button className={styles.button} onClick={closeHandlerType}>
-             <FontAwesomeIcon icon={faXmark} className={styles.faXmark} />
+      <div className={styles.buttonBlock}>
+        <button
+          className={styles.button}
+          name="delivery"
+          onClick={(event) => closeHandler(event)}
+        >
+          <FontAwesomeIcon icon={faXmark} className={styles.faXmark} />
         </button>
-        </div>
-        <div className={styles.item}>
-            <span className={styles.itemName}>Тедефон:</span>
-            <span className={styles.itemContent}>+38 (093) 531-04-75 </span>
-        </div>
-        <div className={styles.item}>
-            <span className={styles.itemName}>Контактна особа:</span>
-            <span className={styles.itemContent}>Сергій</span>
-        </div>
-        <div className={styles.item}>
-            <span className={styles.itemName}>Адреса:</span>
-            <span className={styles.itemContent}>Львів, Україна</span>
-        </div>
-        <div className={styles.item}>
-            <span className={styles.itemName}>Email:</span>
-            <span className={styles.itemContent}>aukroman.one@gmail.com</span>
-        </div>
-        <div className={styles.item}>
-            <span className={styles.itemName}>Telegram:</span>
-            <span className={styles.itemContent}>+38 (093) 531-04-75</span>
-        </div>
-        <div className={styles.item}>
-            <span className={styles.itemName}>Viber:</span>
-            <span className={styles.itemContent}>+38 (093) 531-04-75</span>
-        </div>
+      </div>
+      <div className={styles.item}>
+        <div className={styles.itemName}>Способи доставки:</div>
+        <ul>
+          <li>Доставка "Нова Пошта"</li>
+          <li>Доставка "Укрпошта"</li>
+        </ul>
+      </div>
+      <div className={styles.item}>
+        <div className={styles.itemName}>Способи оплати:</div>
+        <ul>
+          <li>Післяплата Укрпоштою</li>
+          <li>оплата на картку МоноБанку</li>
+          <li>Післяплата "Нова Пошта"</li>
+          <li>
+            <div className={styles.title}> Оплата за реквізитами</div>
+            <div>Передзвоніть для уточнення деталей</div>
+          </li>
+        </ul>
+      </div>
+    
     </div>
-  )
+  );
 }
 
-export default DeliveryInfoModal
+export default DeliveryInfoModal;

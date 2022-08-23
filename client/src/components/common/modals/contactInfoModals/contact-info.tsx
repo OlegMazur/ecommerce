@@ -1,15 +1,13 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './contact-info.module.scss';
 import {faXmark } from "@fortawesome/free-solid-svg-icons";
 function ContactInfoModal({closeHandler}:any) {
-    const closeHandlerType=()=>{
-        closeHandler('contact')
-    }
+
   return (
     <div className={styles.container}>
         <div  className={styles.buttonBlock} >
-            <button className={styles.button} onClick={closeHandlerType}>
+            <button className={styles.button}  name="contact" onClick={(event)=>closeHandler(event)}>
              <FontAwesomeIcon icon={faXmark} className={styles.faXmark} />
         </button>
         </div>

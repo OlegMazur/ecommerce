@@ -1,30 +1,41 @@
-@import '../../../../styles/variables.scss';
-.container{
+@import "../../../../styles/variables.scss";
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 600px;
+  .buttonBlock {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    .buttonBlock{
-        display: flex;
-        justify-content: flex-end;
-      
-        .button{
-            background-color: $rmd-blue-800;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border:none;
-            .faXmark{
-                color: $rmd-grey-100;
-                font-size: 1.6rem;
-            }
-            &:hover{ 
-                background-color: $rmd-blue-900;
-            }
+    justify-content: flex-end;
+    width: 100%;
+    height: 40px;
+
+    .button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: none;
+      .faXmark {
+        color: $rmd-grey-900;
+        font-size: 1.6rem;
+      }
+      &:hover {
+        color: $rmd-grey-100;
+        background-color: $rmd-blue-900;
+        .faXmark {
+          color: inherit;
         }
-        
+      }
     }
-    .item{
-        .itemName{font-size: 1.4rem;}
-        .itemContent{ font-size: 1.2rem;}
+  }
+  .block {
+    .itemTitle {
+      font-size: 1.2rem;
+      font-weight: bolder;
+      padding: 10px;
     }
+    .itemContent {
+      font-size: 1.1rem;
+    }
+  }
 }

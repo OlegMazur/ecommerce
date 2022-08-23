@@ -1,44 +1,56 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react'
-import styles from './warranty-info.module.scss';
-import {faXmark } from "@fortawesome/free-solid-svg-icons";
-function WarrantyInfoModal({closeHandler}:any) {
-    const closeHandlerType=()=>{
-        closeHandler('warranty')
-    } 
-    return (
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import styles from "./warranty-info.module.scss";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+function WarrantyInfoModal({ closeHandler }: any) {
+  
+  return (
     <div className={styles.container}>
-        <div  className={styles.buttonBlock} >
-            <button className={styles.button} onClick={closeHandlerType}>
-             <FontAwesomeIcon icon={faXmark} className={styles.faXmark} />
+      <div className={styles.buttonBlock}>
+        <button
+          className={styles.button}
+          name="warranty"
+          onClick={(event) => closeHandler(event)}
+        >
+          <FontAwesomeIcon icon={faXmark} className={styles.faXmark} />
         </button>
+      </div>
+      <div className={styles.block}>
+        <div className={styles.itemTitle}> Умови повернення та обміну</div>
+        <div className={styles.itemContent}>
+          Компанія здійснює повернення та
         </div>
-        <div className={styles.item}>
-            <span className={styles.itemName}>Тедефон:</span>
-            <span className={styles.itemContent}>+38 (093) 531-04-75 </span>
+        <div className={styles.itemContent}>
+          обмін цього товару відповідно до вимог законодавства.
         </div>
-        <div className={styles.item}>
-            <span className={styles.itemName}>Контактна особа:</span>
-            <span className={styles.itemContent}>Сергій</span>
+      </div>
+      <div className={styles.block}>
+        <div className={styles.itemTitle}>Терміни повернення</div>
+
+        <div className={styles.itemContent}>
+          Повернення можливе протягом 14 днів після отримання (для товарів
+          належної якості).
         </div>
-        <div className={styles.item}>
-            <span className={styles.itemName}>Адреса:</span>
-            <span className={styles.itemContent}>Львів, Україна</span>
+        <div className={styles.itemContent}>
+          Зворотня доставка товарів здійснюєтьсяза домовленістю.
         </div>
-        <div className={styles.item}>
-            <span className={styles.itemName}>Email:</span>
-            <span className={styles.itemContent}>aukroman.one@gmail.com</span>
+        <div className={styles.itemContent}>
+          Згідно з чинним законодавством ви можете повернути товар належної
+          якості або обміняти його, у разі якщо:
         </div>
-        <div className={styles.item}>
-            <span className={styles.itemName}>Telegram:</span>
-            <span className={styles.itemContent}>+38 (093) 531-04-75</span>
-        </div>
-        <div className={styles.item}>
-            <span className={styles.itemName}>Viber:</span>
-            <span className={styles.itemContent}>+38 (093) 531-04-75</span>
-        </div>
+        <ul>
+          <li>
+            товар не був у вживанні і не має слідів використання споживачем:
+            подряпин, сколів, потертостей, плям і т.п.;
+          </li>
+          <li>товар повністю укомплектований і збережена фабрична упаковка;</li>
+          <li>збережені всі ярлики і заводське маркування;</li>
+          <li>товар зберігає товарний вигляд і свої споживчі властивості.</li>
+        </ul>
+      </div>
+      
     </div>
-  )
+  );
 }
 
-export default WarrantyInfoModal
+export default WarrantyInfoModal;

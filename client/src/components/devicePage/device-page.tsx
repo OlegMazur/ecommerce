@@ -58,8 +58,11 @@ function DevicePage() {
   const priceUah = actualDevice?.price
     ? Math.ceil(usdExchangeRate * actualDevice?.price)
     : 0;
-  const closeHandler = (type:string) => {
-    switch(type){
+  const closeHandler = (event:React.MouseEvent<HTMLButtonElement>) => {
+    console.log(event.currentTarget)
+    const currentTarget:HTMLButtonElement =event?.currentTarget
+    console.log(currentTarget.name)
+    switch(currentTarget.name){
       case 'contact':{
         setIsContactClose(!isContactClose);
         break;
@@ -80,6 +83,12 @@ function DevicePage() {
     }
     
   };
+  const outContentClick=()=>{
+    setIsContactClose(true)
+    setIsDeliveryClose(true)
+    setIsWorkScheduleClose(true)
+    setIsWorrantyClose(true)
+  }
   const str =
     '<p>Світлодіод: samsung LH351D<br />\nЯскравість1300lm<br />\nЖивлення від одного акумулятора 18650 (в комплект не входить)<br />\nЗаряд від USB-C,<br />\nМагніт в хвості ліхтаря<br />\n<br />\nВ комплекті:<br />\nЛіхтар<br />\nКабель для зарядки<br />\nШнурок на зап&#39;ястя<br />\nЗапасні О-рінги<br />\nКерівництво з&nbsp; використання<br />\n<br />\n<br />\nВага: 65грам<br />\nРозмір 116мм*27мм</p>\n\n<p>Дві групи режимів: 6 ступенів яскравості і плавне регулювання.<br />\n<br />\n<img alt="" src="https://images.ua.prom.st/3204366075_w640_h2048_znimok_ekrana_2021_07_06_153932.jpg?fresh=1&amp;PIMAGE_ID=3204366075" style="width: 640px; height: 329px;" /></p>\n';
   useEffect(() => {
@@ -154,14 +163,14 @@ function DevicePage() {
 
             <div className={styles.contactsBlock}>
               <div className={styles.buttonsBlock}>
-                <button onClick={()=>closeHandler('delivery')}>Умови оплати та доставки</button>
-                <button onClick={()=>closeHandler('schedule')}>Графік роботи</button>
-                <button onClick={()=>closeHandler('contact')}>Адреса та контакти</button>
+                <button name="delivery" onClick={(event)=>closeHandler(event)}>Умови оплати та доставки</button>
+                <button name="schedule" onClick={(event)=>closeHandler(event)}>Графік роботи</button>
+                <button name="contact" onClick={(event)=>closeHandler(event)}>Адреса та контакти</button>
               </div>
               <div className={styles.contactsContent}>
                 <div>Умови повернення:</div>
                 <div>Повернення товару протягом 14 днів за домовленістю </div>
-                <button onClick={()=>closeHandler('warranty')} >Детальніше</button>
+               <button name="warranty" onClick={(event)=>closeHandler(event)} >Детальніше</button>
               </div>
             </div>
           </div>
@@ -178,10 +187,10 @@ function DevicePage() {
           ></div>
         </div>
       </div>
-      <ModalsWraper component={ContactInfoModal} isClose={isContactClose} closeHandler={closeHandler}/>
-      <ModalsWraper component={DeliveryInfoModal} isClose={isDeliveryClose} closeHandler={closeHandler}/>
-      <ModalsWraper component={WorkScheduleModal} isClose={isWorkScheduleClose} closeHandler={closeHandler}/>
-      <ModalsWraper component={WarrantyInfoModal} isClose={isWorrantyClose} closeHandler={closeHandler}/>
+      <ModalsWraper component={ContactInfoModal} outContentClick={outContentClick} isClose={isContactClose} closeHandler={closeHandler}/>
+      <ModalsWraper component={DeliveryInfoModal} outContentClick={outContentClick} isClose={isDeliveryClose} closeHandler={closeHandler}/>
+      <ModalsWraper component={WorkScheduleModal} outContentClick={outContentClick} isClose={isWorkScheduleClose} closeHandler={closeHandler}/>
+      <ModalsWraper component={WarrantyInfoModal} outContentClick={outContentClick} isClose={isWorrantyClose} closeHandler={closeHandler}/>
       {/* {!isContactClose && (
         <div className={styles.contactInfoModalContainer}>
           <div className={styles.contactInfoModal}>

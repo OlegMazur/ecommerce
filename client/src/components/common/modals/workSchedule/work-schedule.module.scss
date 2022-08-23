@@ -4,27 +4,60 @@
     flex-direction: column;
     justify-content: space-around;
     .buttonBlock{
+        width: 100%;
+        height: 40px;
         display: flex;
         justify-content: flex-end;
-      
+       
         .button{
-            background-color: $rmd-blue-800;
+           
             width: 40px;
             height: 40px;
             border-radius: 50%;
             border:none;
             .faXmark{
-                color: $rmd-grey-100;
+                color: $rmd-grey-900;
                 font-size: 1.6rem;
-            }
+               
+            }   
             &:hover{ 
+                color: $rmd-grey-100;
                 background-color: $rmd-blue-900;
+                .faXmark{
+                    color: inherit;
+                   
+                }   
             }
+
         }
         
     }
-    .item{
-        .itemName{font-size: 1.4rem;}
-        .itemContent{ font-size: 1.2rem;}
+    .table{
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        .columDays{
+            padding: 5px;
+           
+            .rowsTitle{
+                font-size: 1.2rem;
+                font-weight: bold;
+                padding-bottom: 10px;
+            }
+            .rows{
+                padding-bottom: 5px;
+                font-weight: bold;
+            }
+        }
+        .columHours{
+            padding: 5px;
+            .rowsTitle{
+                font-size: 1.2rem;
+                font-weight: bold;
+                padding-bottom: 10px;
+            }
+            .rows{ padding-bottom: 5px;}
+        }
+        
     }
 }
