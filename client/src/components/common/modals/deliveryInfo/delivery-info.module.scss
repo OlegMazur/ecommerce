@@ -1,0 +1,30 @@
+@import '../../../../styles/variables.scss';
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .buttonBlock{
+        display: flex;
+        justify-content: flex-end;
+      
+        .button{
+            background-color: $rmd-blue-800;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border:none;
+            .faXmark{
+                color: $rmd-grey-100;
+                font-size: 1.6rem;
+            }
+            &:hover{ 
+                background-color: $rmd-blue-900;
+            }
+        }
+        
+    }
+    .item{
+        .itemName{font-size: 1.4rem;}
+        .itemContent{ font-size: 1.2rem;}
+    }
+}

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { RoutePath } from "../routes/enums";
@@ -17,10 +17,19 @@ import {
 } from "../../store/redusers/basketSlice/basket-slice";
 import Img from "../common/Img/img";
 import { exchangeUsd } from "../../services/helpers/exchange-helpers";
+import ContactInfoModal from "../common/modals/contactInfoModals/contact-info";
+import DeliveryInfoModal from "../common/modals/deliveryInfo/delivery-info";
+import WorkScheduleModal from "../common/modals/workSchedule/work-schedule";
+import WarrantyInfoModal from "../common/modals/warrantyInfo/warranty-info";
+import ModalsWraper from "../common/modals/modalsWraper/modals-wraper";
 
 function DevicePage() {
   const dispatch = useAppDispatch();
   const { id } = useParams();
+  const [isContactClose, setIsContactClose] = useState(true);
+  const [isDeliveryClose, setIsDeliveryClose] = useState(true);
+  const [isWorkScheduleClose, setIsWorkScheduleClose] = useState(true);
+  const [isWorrantyClose, setIsWorrantyClose] = useState(true);
   const subCategories = useAppSelector((state) => state.device.subCategories);
   const devices = useAppSelector((state) => state.device.devices.rows);
   const categorys = useAppSelector((state) => state.device.categories);
@@ -34,36 +43,48 @@ function DevicePage() {
     (item) => item.id === selectedSubCategory?.categoryId
   );
   const actualDevice = devices.find((item) => item.id === Number(id));
-  // let name:string,img1:string|undefined,price:number;
-  // if(actualDevice){
-  //   id:Number(id);
-  //   name=actualDevice.name ;
-  //   img1=actualDevice.img1;
-  //   price=actualDevice.price;
-
-  // }
+ 
   const buyDeviceHandler = () => {
     dispatch(setIsActiveBasket(true));
-    if(actualDevice){
+    if (actualDevice) {
       dispatch(addDeviceInBasket(actualDevice));
     }
-   
   };
-  console.log('actualDevice')
-  console.log(actualDevice)
-  console.log('devices')
-  console.log(devices)
+  console.log("actualDevice");
+  console.log(actualDevice);
+  console.log("devices");
+  console.log(devices);
+  
   const priceUah = actualDevice?.price
     ? Math.ceil(usdExchangeRate * actualDevice?.price)
     : 0;
-
+  const closeHandler = (type:string) => {
+    switch(type){
+      case 'contact':{
+        setIsContactClose(!isContactClose);
+        break;
+      }
+      case 'delivery':{
+        setIsDeliveryClose(!isDeliveryClose);
+        break;
+      }
+      case 'schedule':{
+        setIsWorkScheduleClose(!isWorkScheduleClose);
+        break;
+      }
+      case 'warranty':{
+        setIsWorrantyClose(!isWorrantyClose);
+        break;
+      }
+      
+    }
+    
+  };
   const str =
     '<p>Світлодіод: samsung LH351D<br />\nЯскравість1300lm<br />\nЖивлення від одного акумулятора 18650 (в комплект не входить)<br />\nЗаряд від USB-C,<br />\nМагніт в хвості ліхтаря<br />\n<br />\nВ комплекті:<br />\nЛіхтар<br />\nКабель для зарядки<br />\nШнурок на зап&#39;ястя<br />\nЗапасні О-рінги<br />\nКерівництво з&nbsp; використання<br />\n<br />\n<br />\nВага: 65грам<br />\nРозмір 116мм*27мм</p>\n\n<p>Дві групи режимів: 6 ступенів яскравості і плавне регулювання.<br />\n<br />\n<img alt="" src="https://images.ua.prom.st/3204366075_w640_h2048_znimok_ekrana_2021_07_06_153932.jpg?fresh=1&amp;PIMAGE_ID=3204366075" style="width: 640px; height: 329px;" /></p>\n';
- useEffect(()=>{
-  
-    dispatch(getDeviceById(Number(id)))
-  
- },[])
+  useEffect(() => {
+    dispatch(getDeviceById(Number(id)));
+  }, []);
   return (
     <div className={styles.card}>
       <div className={styles.navHistory}>
@@ -133,14 +154,14 @@ function DevicePage() {
 
             <div className={styles.contactsBlock}>
               <div className={styles.buttonsBlock}>
-                <button>Умови оплати та доставки</button>
-                <button>Графік роботи</button>
-                <button>Адреса та контакти</button>
+                <button onClick={()=>closeHandler('delivery')}>Умови оплати та доставки</button>
+                <button onClick={()=>closeHandler('schedule')}>Графік роботи</button>
+                <button onClick={()=>closeHandler('contact')}>Адреса та контакти</button>
               </div>
               <div className={styles.contactsContent}>
                 <div>Умови повернення:</div>
                 <div>Повернення товару протягом 14 днів за домовленістю </div>
-                <button>Детальніше</button>
+                <button onClick={()=>closeHandler('warranty')} >Детальніше</button>
               </div>
             </div>
           </div>
@@ -149,12 +170,47 @@ function DevicePage() {
           <h3 className={styles.title}>Характеристики товару</h3>
           <div
             className="Container"
-            dangerouslySetInnerHTML={{ __html: actualDevice?.info?
-              actualDevice?.info[0].description
-               :'немає інформації'         }}
+            dangerouslySetInnerHTML={{
+              __html: actualDevice?.info
+                ? actualDevice?.info[0].description
+                : "немає інформації",
+            }}
           ></div>
         </div>
       </div>
+      <ModalsWraper component={ContactInfoModal} isClose={isContactClose} closeHandler={closeHandler}/>
+      <ModalsWraper component={DeliveryInfoModal} isClose={isDeliveryClose} closeHandler={closeHandler}/>
+      <ModalsWraper component={WorkScheduleModal} isClose={isWorkScheduleClose} closeHandler={closeHandler}/>
+      <ModalsWraper component={WarrantyInfoModal} isClose={isWorrantyClose} closeHandler={closeHandler}/>
+      {/* {!isContactClose && (
+        <div className={styles.contactInfoModalContainer}>
+          <div className={styles.contactInfoModal}>
+            <ContactInfoModal closeHandler={closeHandler} />
+          </div>
+        </div>
+      )}
+      {!isDeliveryClose && (
+        <div className={styles.contactInfoModalContainer}>
+          <div className={styles.contactInfoModal}>
+            <DeliveryInfoModal closeHandler={closeHandler} />
+          </div>
+        </div>
+      )}
+      {!isWorkScheduleClose && (
+        <div className={styles.contactInfoModalContainer}>
+          <div className={styles.contactInfoModal}>
+            <WorkScheduleModal closeHandler={closeHandler} />
+          </div>
+        </div>
+      )} */}
+       {/* {!isWorrantyClose && (
+        <div className={styles.contactInfoModalContainer}>
+          <div className={styles.contactInfoModal}>
+            <WarrantyInfoModal closeHandler={closeHandler} />
+          </div>
+        </div>
+      )} */}
+     
     </div>
   );
 }
