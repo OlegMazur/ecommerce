@@ -37,8 +37,8 @@
             text-align: center;
         }
         .title:hover{
-            opacity: 0.8;
-            background-color: $colorDarkBlue900;
+            opacity: 0.9;
+            background-color: $rmd-grey-700;
            
         }
         .img{
@@ -80,7 +80,7 @@
                     padding: 5px;
                 }
                 &:hover{
-                    background-color: $colorDarkBlue900;
+                    background-color: $rmd-grey-700;
                 }
                 
             }

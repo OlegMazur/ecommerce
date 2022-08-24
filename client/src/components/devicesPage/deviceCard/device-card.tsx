@@ -6,6 +6,7 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { RoutePath } from "../../routes/enums";
 import styles from "./devices-card.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useAppSelector } from "../../../store/hooks";
 interface ISubCardProps {
   deviceImg1?: string ;
   deviceName: string;
@@ -29,16 +30,11 @@ function DeviceCard({
   const imgUrl = deviceImg1
     ? process.env.REACT_APP_API_URL + deviceImg1
     : process.env.PUBLIC_URL + "/noPhoto.jpg";
-  const usdExchangeRate=42;
-  //const [basketDeviceId]=useId();
+  const usdExchangeRate=useAppSelector(state=>state.basket.usdExchangeRate);
   const actualPrice=price* usdExchangeRate; 
- 
- 
   const buyDeviceHandler=()=>{
     onBuyDeviceHandler({id:deviceId,img1:deviceImg1,name:deviceName,price,quantity:1})
   }
-  
-  
   return (
     <div className={styles.deviceCard}>
       <div className={styles.content}>

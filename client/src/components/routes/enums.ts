@@ -28,4 +28,7 @@ export enum RoutePath{
     LOGIN='/login',
     REGISTRATION='/registration',
     BASKET='/basket',
+    ABOUTUS='/aboutus',
+    CONTACTS='/contacts',
+    PRODUCTS='/products',
 }

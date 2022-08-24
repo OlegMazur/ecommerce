@@ -51,7 +51,7 @@
     color: $colorlightGrey100;
   }
   .button-link:hover{
-    color: $colorDarkBlue900;
+    color: $rmd-blue-500;
   }
 }
 .contacts-items {
@@ -69,7 +69,7 @@
     &__text {
       z-index: 6;
       padding: 10px;
-      width: 150px;
+      width: 200px;
       position: absolute;
       top: 40px;
       background-color: $colorDarkGrey900;
@@ -77,6 +77,37 @@
       border-radius: 10px;
       border: 1px solid $colorlightGrey100;
       display: none;
+      &.table-container{
+        width: 250px;
+      }
+      .table{
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        .columDays{
+            padding: 5px;
+           
+            .rowsTitle{
+                font-size: 16px;
+                font-weight: bold;
+                padding-bottom: 10px;
+            }
+            .rows{
+                padding-bottom: 5px;
+                font-weight: bold;
+            }
+        }
+        .columHours{
+            padding: 5px;
+            .rowsTitle{
+                font-size: 16px;
+                font-weight:500;
+                padding-bottom: 10px;
+            }
+            .rows{ padding-bottom: 5px;}
+        }
+        
+    }
     }
     &__icon {
       font-size: 1.5rem;

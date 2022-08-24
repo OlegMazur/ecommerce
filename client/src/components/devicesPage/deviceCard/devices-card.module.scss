@@ -14,6 +14,7 @@
     flex-direction: column;
     box-sizing: border-box;
     border: 1px solid $colorDarkGrey900;
+   padding: 10px;
     &.noAvailability {
       background-color: $colorDarkGrey900;
       opacity: 0.5;
@@ -34,25 +35,28 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding: 10px;
-
+      width: 100%;
+      max-height: 50%;
       .name {
         font-size: 1.6rem;
         padding-left: 20px;
+        padding: 5px;
       }
       .availability {
         font-size: 1rem;
-        padding-left: 20px;
+        padding-left: 5px;
         color: green;
       }
       .noavailability {
         font-size: 1rem;
-        padding-left: 20px;
+        padding-left: 5px;
         color: red;
       }
       .price {
         font-size: 1.2rem;
         padding-left: 20px;
+        align-self: flex-end;
+        padding: 5px;
       }
       .button {
         width: 100%;
@@ -62,8 +66,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $colorDarkGrey900;
-        opacity: 0.2;
+        opacity: 0.9;
+        background-color: $rmd-blue-800;
+        
         border: none;
         .buttonIcon {
           font-size: 1.6rem;
@@ -77,7 +82,7 @@
     .deviceInfo:hover {
       .button {
         opacity: 0.9;
-        background-color: $rmd-red-800;
+        background-color: $rmd-blue-900;
       }
     }
   }

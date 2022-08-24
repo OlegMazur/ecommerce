@@ -7,7 +7,7 @@
   align-items: center;
   background-color: $colorDarkGrey900;
   font-size: 1.2rem;
-  color: azure;
+  color:$rmd-grey-100;
   box-sizing: border-box;
   flex-wrap: nowrap;
   padding-left: 20px;
@@ -33,7 +33,7 @@
       position: relative;
       height: 100%;
       min-width: 120px;
-      color: aliceblue;
+      color: $rmd-grey-100;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -70,7 +70,7 @@
     }
     
     &__item:hover {
-      color: $colorLightBlue800;
+      color: $rmd-blue-500;
       text-decoration: none;
       .popup-menu {
         visibility: visible;
@@ -93,7 +93,7 @@
       display: flex;
       align-items: center;
       height: 100%;
-      color: aliceblue;
+      color: $rmd-grey-100;
       text-decoration: none;
       width: 100%;
       position: relative;
@@ -103,7 +103,7 @@
       &__link {
         display: flex;
         align-items: center;
-        color: aliceblue;
+        color: $rmd-grey-100;
         text-decoration: none;
         width: 100%;
       }
@@ -117,12 +117,27 @@
         padding-left: 10px;
       }
       &__icon {
-        font-size: 2rem;
+        font-size: 2.2rem;
         padding: 10px;
         position: relative;
       }
+      .sum-product-in-basket{
+        width: 24px;
+        height: 24px;
+        background-color: black;
+        font-size: 16px;
+        position: absolute;
+        right:15px;
+        top:4px;
+        color:$rmd-grey-100;
+        font-weight: bolder;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       &__icon:hover {
-        bottom: 4px;
+        bottom: 2px;
       }
     }
     

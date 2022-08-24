@@ -18,6 +18,8 @@ import Basket from "./common/basket/basket";
 import DevicePage from "./devicePage/device-page";
 import SubCategoryPage from "./devicesPage/sub-category-page";
 import { getAllCategory, getAllDevicesTitle, getAllSubCategory } from "../store/redusers/deviceSlice/deviceSlice";
+import AboutUs from "./aboutUsPage/about-us";
+import ContactsPage from "./contactsPage/contacts-page";
 const App: React.FunctionComponent = () => {
  
   const {user,devices} =useAppSelector(state=>({
@@ -62,11 +64,14 @@ const App: React.FunctionComponent = () => {
             path={RoutePath.BASKET}
             element={<PrivateRoute component={Basket} />}
           />
+          <Route path={RoutePath.CONTACTS} element={<ContactsPage />} />
+          <Route path={RoutePath.ABOUTUS} element={<AboutUs />} />
           <Route path={RoutePath.DEVICE_ID} element={<DevicePage />} />
           <Route path={RoutePath.SUB_CATEGORY_ID} element={<SubCategoryPage />} />
           <Route path={RoutePath.LOGIN} element={<Auth />} />
           <Route path={RoutePath.REGISTRATION} element={<Auth />} />
           <Route path={RoutePath.CATEGORY_PAGE_ID} element={<CategoryPage />}/>
+          <Route path={RoutePath.PRODUCTS} element={<Shop />} />
           <Route path={RoutePath.SHOP} element={<Shop />} />
         </Routes>
       </main>

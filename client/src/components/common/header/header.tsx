@@ -50,20 +50,42 @@ function Header() {
             className="contacts-item__icon"
             icon={faCalendarDays}
           />
-          <div className="contacts-item__text">графік роботи </div>
+          <div className="contacts-item__text table-container">
+            <div className="table">
+              <div className="columDays">
+                <div className="rowsTitle"> День</div>
+                <div className="rows">Понеділок</div>
+                <div className="rows">Вівторок</div>
+                <div className="rows">Середа</div>
+                <div className="rows">Четвер</div>
+                <div className="rows">Пʼятниця</div>
+                <div className="rows">Субота</div>
+                <div className="rows">Неділя</div>
+              </div>
+              <div className="columHours">
+                <div className="rowsTitle"> Години роботи</div>
+                <div className="rows">10:00 - 18:00</div>
+                <div className="rows">10:00 - 18:00</div>
+                <div className="rows">10:00 - 18:00</div>
+                <div className="rows">10:00 - 18:00</div>
+                <div className="rows">10:00 - 18:00</div>
+                <div className="rows">Вихідний</div>
+                <div className="rows">Вихідний</div>
+              </div>
+            </div>
+            графік роботи{" "}
+          </div>
         </div>
       </div>
       {hasUser ? (
         <div className="button-in-out">
           <NavLink to={Path.LOGIN} className="button-link">
-          
             Вийти
           </NavLink>
         </div>
       ) : (
         <div className="button-in-out">
           <NavLink to={Path.SHOP} className="button-link">
-          
             Увійти
           </NavLink>
         </div>

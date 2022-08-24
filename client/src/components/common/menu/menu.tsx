@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Path } from "../../routes/enums";
+import { Path, RoutePath } from "../../routes/enums";
 import "./menu.scss";
 
 const Menu: React.FC = () => {
@@ -8,22 +8,22 @@ const Menu: React.FC = () => {
     <div className="menu-container">
      
       <div className="menu-item">
-        <NavLink to={Path.PRODUCTS} className="menu-item__link">
+        <NavLink to={RoutePath.PRODUCTS} className="menu-item__link">
           Каталог товарів
         </NavLink>
       </div>
-      <div className="menu-item">
+      {/* <div className="menu-item">
         <NavLink to={Path.BASKET} className="menu-item__link">
           Кошик
         </NavLink>
-      </div>
+      </div> */}
       <div className="menu-item">
-        <NavLink to={Path.ABOUTUS} className="menu-item__link">
+        <NavLink to={RoutePath.ABOUTUS} className="menu-item__link">
           Про нас
         </NavLink>
       </div>
       <div className="menu-item">
-        <NavLink to={Path.CONTACTS} className="menu-item__link">
+        <NavLink to={RoutePath.CONTACTS} className="menu-item__link">
           Наші контакти
         </NavLink>
       </div>
