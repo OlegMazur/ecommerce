@@ -35,7 +35,7 @@ function DeviceCard({
  
  
   const buyDeviceHandler=()=>{
-    onBuyDeviceHandler({id:deviceId,img1:deviceImg1,name:deviceName,price})
+    onBuyDeviceHandler({id:deviceId,img1:deviceImg1,name:deviceName,price,quantity:1})
   }
   
   

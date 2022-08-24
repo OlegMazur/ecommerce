@@ -12,7 +12,7 @@ function Basket() {
   const devices = useAppSelector((state) => state.basket.devices);
   //const isActiveBasket=useAppSelector(state=>state.basket.isActiveBasket);
   const usdExchangeRate=useAppSelector((state) => state.basket.usdExchangeRate);
-  const orderSum = devices.reduce((sum, current) => sum + current.price, 0);
+  const orderSum = devices.reduce((sum, current) => sum + current.price*current.quantity, 0);
   const uahOrderSum=Math.round(usdExchangeRate*orderSum);
   const dispatch = useAppDispatch();
   const onRemoveBasketDevice = (id: number) => {
@@ -26,8 +26,9 @@ function Basket() {
       <header className={styles.header}>
         <button onClick={closeBasketHandler} className={styles.button}>
           <FontAwesomeIcon icon={faAngleLeft} className={styles.faAngleLeft} />
+          <div className={styles.title}>Сховати кошик</div>
         </button>
-        <div className={styles.title}>Кошик</div>
+        
       </header>
       <div className={styles.bascketCardContainer}>
         {devices.map(({ id, img1, name, price }) => (

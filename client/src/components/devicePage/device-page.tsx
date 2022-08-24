@@ -42,7 +42,12 @@ function DevicePage() {
   const buyDeviceHandler = () => {
     dispatch(setIsActiveBasket(true));
     if (actualDevice) {
-      dispatch(addDeviceInBasket(actualDevice));
+      dispatch(addDeviceInBasket({
+        id:actualDevice.id,
+        name:actualDevice.name,
+        price:actualDevice.price,
+        img1:actualDevice.img1,
+        quantity:1   }));
     }
   };
   console.log("actualDevice");
@@ -85,9 +90,8 @@ function DevicePage() {
   const str =
     '<p>Світлодіод: samsung LH351D<br />\nЯскравість1300lm<br />\nЖивлення від одного акумулятора 18650 (в комплект не входить)<br />\nЗаряд від USB-C,<br />\nМагніт в хвості ліхтаря<br />\n<br />\nВ комплекті:<br />\nЛіхтар<br />\nКабель для зарядки<br />\nШнурок на зап&#39;ястя<br />\nЗапасні О-рінги<br />\nКерівництво з&nbsp; використання<br />\n<br />\n<br />\nВага: 65грам<br />\nРозмір 116мм*27мм</p>\n\n<p>Дві групи режимів: 6 ступенів яскравості і плавне регулювання.<br />\n<br />\n<img alt="" src="https://images.ua.prom.st/3204366075_w640_h2048_znimok_ekrana_2021_07_06_153932.jpg?fresh=1&amp;PIMAGE_ID=3204366075" style="width: 640px; height: 329px;" /></p>\n';
   useEffect(() => {
-    console.log("device-page dispatch");
-    //console.log(Boolean(actualDevice?.img1));
-      if(!Boolean(actualDevice?.img1)){
+    
+      if(!Boolean(actualDevice?.info)){
         dispatch(getDeviceById(Number(id)))};
   }, []);
   return (

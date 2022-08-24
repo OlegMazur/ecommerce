@@ -8,7 +8,7 @@ import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import DeviceCard from "./deviceCard/device-card";
 import styles from "./sub-category-page.module.scss";
 import { getAllDevices, IDevice } from "../../store/redusers/deviceSlice/deviceSlice";
-import { addDeviceInBasket, setIsActiveBasket } from "../../store/redusers/basketSlice/basket-slice";
+import { addDeviceInBasket, IBasketDevice, setIsActiveBasket } from "../../store/redusers/basketSlice/basket-slice";
 // interface IState {
 //   activeCategoryId: number;
 //   categoryName: string;
@@ -28,7 +28,7 @@ function SubCategoryPage() {
     (item) => item.subCategoryId === Number(id)
   );
   const hasNoImg=actualDevices.find(item=>item.img1===null||item.img1===undefined);
-  const onBuyDeviceHandler=(device:IDevice)=>{
+  const onBuyDeviceHandler=(device:IBasketDevice)=>{
     dispatch(setIsActiveBasket(true))
     dispatch(addDeviceInBasket(device))
   }
@@ -37,8 +37,7 @@ function SubCategoryPage() {
       dispatch(getAllDevices({subCategoryId:selectedSubCategory?.id} ))
     }
       
-      console.log("subcategory dispatch");
-      console.log(Boolean (hasNoImg));
+    
   },[dispatch,hasNoImg])
   return (
     <div className={styles.card}>

@@ -3,6 +3,8 @@ import { imgUrlWraper } from "../../../../services/helpers/img-helpers";
 import styles from "./basket-card.module.scss";
 import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useAppDispatch, useAppSelector } from "../../../../store/hooks";
+import { changeDeviceQuantity } from "../../../../store/redusers/basketSlice/basket-slice";
 interface IDevice {
   id: number;
   img1?: string;
@@ -12,20 +14,27 @@ interface IDevice {
 }
 function BasketCard({ id, img1, name, price ,onRemoveBasketDevice}: IDevice) {
   const img = imgUrlWraper(img1);
-  const [deviceQuantity, setDeviceQuantity] = useState(1);
+  const dispatch=useAppDispatch();
+  const deviceQuantity=useAppSelector(state=>state.basket.devices.find(item=>item.id===id)?.quantity)as number;
+  //const [deviceQuantity, setDeviceQuantity] = useState(1);
+  const usdExchangeRate=useAppSelector(state=>state.basket.usdExchangeRate);
+  const actualPrice:number=Math.ceil(usdExchangeRate*price);
   const removeDeviceHandler=()=>{
     onRemoveBasketDevice(id)
   }
   const increment = () => {
-    setDeviceQuantity(deviceQuantity + 1);
+    //setDeviceQuantity(deviceQuantity + 1);
+    dispatch(changeDeviceQuantity({id, quantity:deviceQuantity + 1}))
+    
   };
   const decrement = () => {
     if (deviceQuantity === 0) {
       return;
     }
-    setDeviceQuantity(deviceQuantity - 1);
+    dispatch(changeDeviceQuantity({id, quantity:deviceQuantity - 1}))
+    //setDeviceQuantity(deviceQuantity - 1);
   };
-  const totalPrice = deviceQuantity * price;
+  const totalPrice = deviceQuantity * actualPrice;
   return (
     <div className={styles.basketCard}>
       <div className={styles.imgBlock}>
@@ -35,7 +44,7 @@ function BasketCard({ id, img1, name, price ,onRemoveBasketDevice}: IDevice) {
         <div className={styles.deviceName}>{name}</div>
         <div className={styles.priceBlock}>
             <span>Ціна</span>
-            <div className={styles.price}>{price}</div> 
+            <div className={styles.price}>{actualPrice}</div> 
             <span>грн/шт</span>
         </div>
         <div className={styles.deviceQuantityBlock}>

@@ -5,7 +5,8 @@
   width: 100%;
   min-height: 100px;
   border: 1px solid $colorlightGrey100;
-  background-color: $rmd-grey-800;
+  background-color: $rmd-grey-900;
+  margin-bottom: 10px;
   .imgBlock {
     height: 100%;
     width: 30%;
@@ -77,7 +78,7 @@
    
   }
   &:hover{
-    background-color: $colorDarkGrey900;
+    background-color: $rmd-grey-800;
   }
 }
 
