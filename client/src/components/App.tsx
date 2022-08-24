@@ -17,15 +17,33 @@ import DevicesPage from "./devicesPage/sub-category-page";
 import Basket from "./common/basket/basket";
 import DevicePage from "./devicePage/device-page";
 import SubCategoryPage from "./devicesPage/sub-category-page";
+import { getAllCategory, getAllDevicesTitle, getAllSubCategory } from "../store/redusers/deviceSlice/deviceSlice";
 const App: React.FunctionComponent = () => {
-  console.log("dispatch get currUser");
-  //const user =useAppSelector(state=>state.auth.user);
+ 
+  const {user,devices} =useAppSelector(state=>({
+    user:state.auth.user,
+    devices:state.device.devices.rows
+  }));
   //const[loading, setLoading]= useState(true);
-  const isActiveBasket=useAppSelector(state=>state.basket.isActiveBasket)
+  // console.log('user');
+  // console.log(user);
+  const hasToken=Boolean(localStorage.getItem('token'));
+  // console.log('hasToken');
+  // console.log(hasToken);
+  const isActiveBasket=useAppSelector(state=>state.basket.isActiveBasket);
   const dispatch = useAppDispatch();
   useEffect(() => {
-    dispatch(getCurrentUser());
-  }, [dispatch]);
+     if(hasToken){dispatch(getCurrentUser());}
+  }, []);
+  
+  useEffect(() => {
+    dispatch(getAllCategory());
+    dispatch(getAllSubCategory());
+    
+      dispatch(getAllDevicesTitle({title:'title'}))
+      console.log("app dispatch");
+    
+  }, []);
   return (
     <div className="app">
       <header>
@@ -37,19 +55,19 @@ const App: React.FunctionComponent = () => {
       <main className="main">
         <Routes>
           <Route
-            path={Path.ADMIN}
+            path={RoutePath.ADMIN}
             element={<PrivateRoute component={Admin} />}
           />
           <Route
-            path={Path.BASKET}
+            path={RoutePath.BASKET}
             element={<PrivateRoute component={Basket} />}
           />
           <Route path={RoutePath.DEVICE_ID} element={<DevicePage />} />
           <Route path={RoutePath.SUB_CATEGORY_ID} element={<SubCategoryPage />} />
-          <Route path={Path.LOGIN} element={<Auth />} />
-          <Route path={Path.REGISTRATION} element={<Auth />} />
+          <Route path={RoutePath.LOGIN} element={<Auth />} />
+          <Route path={RoutePath.REGISTRATION} element={<Auth />} />
           <Route path={RoutePath.CATEGORY_PAGE_ID} element={<CategoryPage />}/>
-          <Route path={Path.SHOP} element={<Shop />} />
+          <Route path={RoutePath.SHOP} element={<Shop />} />
         </Routes>
       </main>
       <footer>

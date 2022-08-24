@@ -27,15 +27,19 @@ function SubCategoryPage() {
   const actualDevices = devices.filter(
     (item) => item.subCategoryId === Number(id)
   );
-  
+  const hasNoImg=actualDevices.find(item=>item.img1===null||item.img1===undefined);
   const onBuyDeviceHandler=(device:IDevice)=>{
     dispatch(setIsActiveBasket(true))
     dispatch(addDeviceInBasket(device))
   }
   useEffect(()=>{
-    
-    dispatch(getAllDevices({subCategoryId:selectedSubCategory?.id} ))
-  },[])
+    if(Boolean (hasNoImg)){
+      dispatch(getAllDevices({subCategoryId:selectedSubCategory?.id} ))
+    }
+      
+      console.log("subcategory dispatch");
+      console.log(Boolean (hasNoImg));
+  },[dispatch,hasNoImg])
   return (
     <div className={styles.card}>
       <div className={styles.navHistory}>

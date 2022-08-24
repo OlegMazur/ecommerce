@@ -24,4 +24,8 @@ export enum RoutePath{
     DEVICE_ID='/device/:id',
     SUB_CATEGORY='/sub-category/',
     SUB_CATEGORY_ID='/sub-category/:id',
+    ADMIN='/admin',
+    LOGIN='/login',
+    REGISTRATION='/registration',
+    BASKET='/basket',
 }

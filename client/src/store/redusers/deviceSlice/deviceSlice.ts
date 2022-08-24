@@ -211,7 +211,11 @@ export interface IType {
         state.loading=false;
       })
       .addCase(getAllDevicesTitle.fulfilled,(state,action)=>{
-        state.devices=action.payload
+        console.log('action.payload')
+        console.log(action.payload)
+       
+        action.payload.rows.forEach((item)=>!state.devices.rows.find(i=>i.id===item.id)&&state.devices.rows.push(item));
+        // state.devices.rows=state.devices.rows.map(item=>state.devices.rows.find(item=>))
       })
       .addCase(getAllTypes.fulfilled,(state,action)=>{
         state.types=action.payload;
