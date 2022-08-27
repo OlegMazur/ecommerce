@@ -20,6 +20,7 @@ const Shop: React.FC = () => {
   // }, []);
   return (
     <div className="category-list">
+      
       {categories.map(({ title, img, id }) => (
         <CategoryCard
           key={id}
