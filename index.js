@@ -1,11 +1,11 @@
 require('dotenv').config()
 const express = require('express')
-const sequelize=require('./db')
+let sequelize=require('./db')
 const models =require('./models/models')
 const cors =require('cors')
 const router =require('./routes/index')
 const errorHandler=require('./middleware/errorHandlingMiddleware')
-const port = process.env.port||80
+const port = process.env.port||5000
 const fileUpload = require('express-fileupload')
 const path = require('path')
 const app = express()
@@ -15,8 +15,12 @@ app.use(express.json())
 app.use(express.static(path.resolve(__dirname,'static')))
 app.use(express.static(path.join(__dirname,"client/build")))
 if(process.env.NODE_ENV ==="production"){
+    sequelize = new Sequelize(process.env.DATABASE_URL)
     app.use(express.static(path.join(__dirname,"client/build")))
 }
+// if (process.env.NODE_ENV === "development") {
+//     sequelize = new Sequelize(process.env.DEV_DATABASE_URL)
+//   } 
 app.use(fileUpload({}))
 app.use('/api',router)
 app.use(errorHandler)
