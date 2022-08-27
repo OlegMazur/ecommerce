@@ -5,6 +5,7 @@ class CategoryController {
     async create(req,res){
         const {title }=req.body
         const { img } = req.files
+        console.log(img)
         let fileName = uuid.v4() + ".jpg"
         img.mv(path.resolve(__dirname, '..', 'static', fileName))
         const category =await Category.create({title, img: fileName,})
