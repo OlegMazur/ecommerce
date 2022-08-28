@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { useAppSelector } from "../../../store/hooks";
-import { Path } from "../../routes/enums";
+import { Path, RoutePath } from "../../routes/enums";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../../../assets/pngwing.com.png";
 import {
@@ -79,13 +79,13 @@ function Header() {
       </div>
       {hasUser ? (
         <div className="button-in-out">
-          <NavLink to={Path.LOGIN} className="button-link">
+          <NavLink to={RoutePath.SHOP} className="button-link">
             Вийти
           </NavLink>
         </div>
       ) : (
         <div className="button-in-out">
-          <NavLink to={Path.SHOP} className="button-link">
+          <NavLink to={RoutePath.LOGIN} className="button-link">
             Увійти
           </NavLink>
         </div>
