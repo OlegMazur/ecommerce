@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Path, RoutePath } from "../../routes/enums";
+import {  RoutePath } from "../../routes/enums";
 import "./menu.scss";
 
 const Menu: React.FC = () => {

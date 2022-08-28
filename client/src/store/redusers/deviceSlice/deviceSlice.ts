@@ -245,6 +245,6 @@ export interface IType {
   //export const { } = counterSlice.actions
   export default deviceSlice.reducer
   
-  function isError(action:AnyAction){
-    return action.type.endsWith('rejected')
-  }
+  // function isError(action:AnyAction){
+  //   return action.type.endsWith('rejected')
+  // }
