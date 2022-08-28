@@ -4,7 +4,7 @@ export enum Path  {
     PRODUCTS='/products',
     CONTACTS='/contacts',
     ABOUTUS='/aboutus',
-    API='api',
+    API='/api',
     USER='/user',
     AUTH='/auth',
     ADMIN='/admin',
