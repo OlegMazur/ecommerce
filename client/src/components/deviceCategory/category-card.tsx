@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { imgUrlWraper } from "../../services/helpers/img-helpers";
 import {
   IDevices,
   ISubCategory,
@@ -31,11 +32,12 @@ function CategoryCard({
   //   activeCategoryId: activeCategoryId,
   //   selectedategoryName: categoryName,
   // };
+  const imgUrl=imgUrlWraper(categoryImg)
   return (
     <div className="category-container">
       <Link to={RoutePath.CATEGORY_PAGE + activeCategoryId}>
         <img
-          src={process.env.REACT_APP_API_URL + categoryImg}
+          src={ imgUrl}
           alt="photos"
           className="category-container__img"
         ></img>

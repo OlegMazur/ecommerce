@@ -50,18 +50,12 @@ function DevicePage() {
         quantity:1   }));
     }
   };
-  console.log("actualDevice");
-  console.log(actualDevice);
-  console.log("devices");
-  console.log(devices);
-
+ 
   const priceUah = actualDevice?.price
     ? Math.ceil(usdExchangeRate * actualDevice?.price)
     : 0;
   const closeHandler = (event: React.MouseEvent<HTMLButtonElement>) => {
-    console.log(event.currentTarget);
     const currentTarget: HTMLButtonElement = event?.currentTarget;
-    console.log(currentTarget.name);
     switch (currentTarget.name) {
       case "contact": {
         setIsContactClose(!isContactClose);

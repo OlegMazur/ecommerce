@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { imgUrlWraper } from "../../../services/helpers/img-helpers";
 import { useAppSelector } from "../../../store/hooks";
 import { RoutePath } from "../../routes/enums";
 import styles from "./sub-category.module.scss";
@@ -14,9 +15,10 @@ function SubCategoryCard({
   subCategoryTitle,
   selectedSubCatId,
 }: ISubCardProps) {
-  const imgUrl = subCategoryImg
-    ? process.env.REACT_APP_API_URL + subCategoryImg
-    :  "/noPhoto.jpg";
+  // const imgUrl = subCategoryImg
+  //   ? process.env.REACT_APP_API_URL + subCategoryImg
+  //   :  "/noPhoto.jpg";
+  const imgUrl=imgUrlWraper(subCategoryImg)
   const devices = useAppSelector((state) => state.device.devices);
   return (
     <div className={styles.subCategoryCard}>
