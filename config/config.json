@@ -1,11 +1,11 @@
 
 {
   "development": {
-    "username": "postgres",
-    "password": "postgres",
-    "database": "fake",
+    "username": "m111087_dbuser",
+    "password": "g=4K0Q(uJj!0",
+    "database":"m111087_db",
     "host": "localhost",
-    "dialect": "postgres"
+    "dialect": "mysql"
   },
   "test": {
     "username": "process.env.DB_USER",
