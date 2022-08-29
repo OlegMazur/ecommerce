@@ -3,7 +3,7 @@ export function imgUrlWraper(imgUrl:string|undefined){
        return  process.env.REACT_APP_API_URL + imgUrl
     } 
     if(imgUrl!){
-      return  process.env.PUBLIC_URL + "/noPhoto.jpg";
+      return   "/noPhoto.jpg";
     }
    
 } 

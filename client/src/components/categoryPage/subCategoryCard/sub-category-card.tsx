@@ -16,7 +16,7 @@ function SubCategoryCard({
 }: ISubCardProps) {
   const imgUrl = subCategoryImg
     ? process.env.REACT_APP_API_URL + subCategoryImg
-    : process.env.PUBLIC_URL + "/noPhoto.jpg";
+    :  "/noPhoto.jpg";
   const devices = useAppSelector((state) => state.device.devices);
   return (
     <div className={styles.subCategoryCard}>
