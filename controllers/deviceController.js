@@ -1,34 +1,64 @@
 const uuid = require('uuid')
 const path = require('path')
 const ApiError = require('../errors/apiError')
-const { Device, DeviceInfo,TypeBrand } = require('../models/models')
+const { Device, DeviceInfo, TypeBrand } = require('../models/models')
+const { uploadFile } = require('../s3')
 class DeviceController {
     async create(req, res, next) {
         try {
-            let { name, price, brandId, typeId, info,subCategoryId,
-                searchQueries,currency,unit,availability,
-                label,weight, height, length, location, color, power,capacity,
-                colorTemp,favorite,model,subModel,madeIn,floatPrice  } = req.body
-            const { img1,img2,img3,img4 } = req.files
+            let { name, price, brandId, typeId, info, subCategoryId,
+                searchQueries, currency, unit, availability,
+                label, weight, height, length, location, color, power, capacity,
+                colorTemp, favorite, model, subModel, madeIn, floatPrice, img1, img2, img3, img4 } = req.body
+            console.log(req?.files?.img1)
+            if (req?.files?.img1) {
+                const { img1, img2, img3, img4 } = req.files
+                console.log(img1)
+                const fileLocation1 = await uploadFile(img1)
+                const fileLocation2 = await uploadFile(img2)
+                const fileLocation3 = await uploadFile(img3)
+                const fileLocation4 = await uploadFile(img4)
+                const device = await Device.create({
+                    name, price, brandId, typeId, img1: fileLocation1,
+                    img2: fileLocation2, img3: fileLocation3, img4: fileLocation4, subCategoryId,
+                    searchQueries, currency, unit, availability,
+                    label, weight, height, length, location, color, power, capacity,
+                    colorTemp, favorite, model, subModel, madeIn, floatPrice
+                })
+                if (info) {
+                    info = JSON.parse(info)
+                    info.forEach(i => {
+                        DeviceInfo.create({
+                            title: i.title,
+                            description: i.description,
+                            deviceId: device.id,
+                            images: i.images
+                        })
+                    });
+                }
+                return res.json(device)
+            }
+
+            //  const { img1,img2,img3,img4 } = req.files
             // const { img2 } = req.files
             // const { img3 } = req.files
             // const { img4 } = req.files
-            let fileName1 = uuid.v4() + ".jpg"
-            let fileName2 = uuid.v4() + ".jpg"
-            let fileName3 = uuid.v4() + ".jpg"
-            let fileName4 = uuid.v4() + ".jpg"
-            img1.mv(path.resolve(__dirname, '..', 'static', fileName1))
-            img2.mv(path.resolve(__dirname, '..', 'static', fileName2))
-            img3.mv(path.resolve(__dirname, '..', 'static', fileName3))
-            img4.mv(path.resolve(__dirname, '..', 'static', fileName4))
-            const device = await Device.create({ 
-                name, price, brandId, typeId, img1: fileName1,
-                img2: fileName2,img3: fileName3, img4: fileName4, subCategoryId,
-                searchQueries,currency,unit,availability,
-                label,weight, height, length, location, color, power,capacity,
-                colorTemp,favorite,model,subModel,madeIn,floatPrice            
+            // let fileName1 = uuid.v4() + ".jpg"
+            // let fileName2 = uuid.v4() + ".jpg"
+            // let fileName3 = uuid.v4() + ".jpg"
+            // let fileName4 = uuid.v4() + ".jpg"
+            // img1.mv(path.resolve(__dirname, '..', 'static', fileName1))
+            // img2.mv(path.resolve(__dirname, '..', 'static', fileName2))
+            // img3.mv(path.resolve(__dirname, '..', 'static', fileName3))
+            // img4.mv(path.resolve(__dirname, '..', 'static', fileName4))
+            const device = await Device.create({
+                name, price, brandId, typeId, img1,
+                img2, img3, img4, subCategoryId,
+                searchQueries, currency, unit, availability,
+                label, weight, height, length, location, color, power, capacity,
+                colorTemp, favorite, model, subModel, madeIn, floatPrice
             })
-                   
+
             if (info) {
                 info = JSON.parse(info)
                 info.forEach(i => {
@@ -47,44 +77,54 @@ class DeviceController {
         }
 
     }
-    async getAll(req, res) {
-        let { brandId, typeId, limit, page,title,subCategoryId } = req.query
-        page = page || 1
-        limit = limit || 9
-        let offset = page * limit - limit
-        let devices;
-        if (!brandId && !typeId) {
-            devices = await Device.findAndCountAll({ limit, offset })
-        }
-        if (brandId && !typeId) {
-            devices = await Device.findAndCountAll({ where: { brandId }, limit, offset })
-        }
-        if (!brandId && typeId) {
-            devices = await Device.findAndCountAll({ where: { typeId }, limit, offset })
-        }
-        if (brandId && typeId) {
-            devices = await Device.findAndCountAll({ where: { typeId, brandId }, limit, offset })
-        }
-        if (title==='title') {
-            devices = await Device.findAndCountAll( {attributes:['brandId', 'typeId', 'name', 'id', 'price','subCategoryId','availability']})
-        }
-        if (subCategoryId) {
-            devices = await Device.findAndCountAll( { where: { subCategoryId }, limit, offset })
+    async getAll(req, res,next) {
+        try {
+            let { brandId, typeId, limit, page, title, subCategoryId } = req.query
+            page = page || 1
+            limit = limit || 9
+            let offset = page * limit - limit
+            let devices;
+            if (!brandId && !typeId) {
+                devices = await Device.findAndCountAll({ limit, offset })
+            }
+            if (brandId && !typeId) {
+                devices = await Device.findAndCountAll({ where: { brandId }, limit, offset })
+            }
+            if (!brandId && typeId) {
+                devices = await Device.findAndCountAll({ where: { typeId }, limit, offset })
+            }
+            if (brandId && typeId) {
+                devices = await Device.findAndCountAll({ where: { typeId, brandId }, limit, offset })
+            }
+            if (title === 'title') {
+                devices = await Device.findAndCountAll({ attributes: ['brandId', 'typeId', 'name', 'id', 'price', 'subCategoryId', 'availability'] })
+            }
+            if (subCategoryId) {
+                devices = await Device.findAndCountAll({ where: { subCategoryId }, limit, offset })
+            }
+
+            return res.json(devices)
+        } catch (e) {
+            next(ApiError.badRequest(e.message))
         }
 
-        return res.json(devices)
     }
-    
-    async getOne(req, res) {
-        const { id } = req.params
-        
-        const device = await Device.findOne({
-            where: { id },
-            include: [{ model: DeviceInfo, as: 'info' }]
-        })
-        
-        return res.json(device)
+
+    async getOne(req, res, next) {
+        try {
+            const { id } = req.params
+
+            const device = await Device.findOne({
+                where: { id },
+                include: [{ model: DeviceInfo, as: 'info' }]
+            })
+
+            return res.json(device)
+        } catch (e) {
+            next(ApiError.badRequest(e.message))
+        }
+
     }
-    
+
 }
 module.exports = new DeviceController()

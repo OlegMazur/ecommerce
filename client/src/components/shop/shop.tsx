@@ -19,8 +19,8 @@ const Shop: React.FC = () => {
   //   dispatch(getAllDevicesTitle({title:'title'}))
   // }, []);
   return (
-    <div className="category-list">
-      
+      <div className="category-list">
+        
       {categories.map(({ title, img, id }) => (
         <CategoryCard
           key={id}

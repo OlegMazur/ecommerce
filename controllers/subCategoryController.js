@@ -1,19 +1,33 @@
 const path = require('path')
 const uuid = require('uuid')
-const {SubCategory }=require('../models/models')
+const { uploadFile } = require('../s3')
+const { SubCategory } = require('../models/models')
+const ApiError = require('../errors/apiError')
 class SubCategoryController {
-    async create(req,res){
-        const {title, categoryId}=req.body
-        const { img } = req.files
-        let fileName = uuid.v4() + ".jpg"
-        img.mv(path.resolve(__dirname, '..', 'static', fileName))
-        const subCategory =await SubCategory.create({title, categoryId, img: fileName})
-        return res.json(subCategory)
+    async create(req, res, next) {
+        try {
+            const { title, categoryId, img } = req.body
+            if (req?.files?.img) {
+                const fileLocation = await uploadFile(req.files.img)
+                const subCategory = await SubCategory.create({ title, categoryId, img: fileLocation, })
+                return res.json(subCategory)
+            }
+            const subCategory = await SubCategory.create({ title, categoryId, img })
+            return res.json(subCategory)
+        } catch (e) {
+            next(ApiError.badRequest(e.message))
+        }
+
     }
-    async getAll(req, res){
-        const subCategories = await SubCategory.findAll()
-        return res.json(subCategories)
+    async getAll(req, res, next) {
+        try {
+            const subCategories = await SubCategory.findAll()
+            return res.json(subCategories)
+        } catch (e) {
+            next(ApiError.badRequest(e.message))
+        }
     }
+
 
 }
 module.exports = new SubCategoryController()

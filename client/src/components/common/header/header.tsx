@@ -16,6 +16,8 @@ import "./header.scss";
 function Header() {
   const user = useAppSelector((state) => state.auth.user);
   const hasUser = Boolean(user);
+  console.log("user")
+  console.log(hasUser)
 
   return (
     <div className="header">
