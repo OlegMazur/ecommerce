@@ -88,6 +88,8 @@ function DevicePage() {
       if(!Boolean(actualDevice?.info)){
         dispatch(getDeviceById(Number(id)))};
   }, []);
+  console.log("description")
+  console.log( Boolean(actualDevice?.info?.[0]) )
   return (
     <div className={styles.card}>
       <div className={styles.navHistory}>
@@ -190,7 +192,7 @@ function DevicePage() {
           <div
             className="Container"
             dangerouslySetInnerHTML={{
-              __html: actualDevice?.info
+              __html: actualDevice?.info?.[0]
                 ? actualDevice?.info[0].description
                 : "немає інформації",
             }}

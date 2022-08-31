@@ -7,6 +7,7 @@ import { RoutePath } from "../../routes/enums";
 import styles from "./devices-card.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAppSelector } from "../../../store/hooks";
+import { imgUrlWraper } from "../../../services/helpers/img-helpers";
 interface ISubCardProps {
   deviceImg1?: string ;
   deviceName: string;
@@ -27,9 +28,10 @@ function DeviceCard({
   price,
   onBuyDeviceHandler
 }: ISubCardProps) {
-  const imgUrl = deviceImg1
-    ? process.env.REACT_APP_API_URL + deviceImg1
-    : process.env.PUBLIC_URL + "/noPhoto.jpg";
+  const imgUrl=imgUrlWraper(deviceImg1)
+  // const imgUrl = deviceImg1
+  //   ? process.env.REACT_APP_API_URL + deviceImg1
+  //   : process.env.PUBLIC_URL + "/noPhoto.jpg";
   const usdExchangeRate=useAppSelector(state=>state.basket.usdExchangeRate);
   const actualPrice=price* usdExchangeRate; 
   const buyDeviceHandler=()=>{

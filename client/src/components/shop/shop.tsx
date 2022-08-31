@@ -12,12 +12,7 @@ const Shop: React.FC = () => {
   const categories = useAppSelector((state) => state.device.categories);
   const subCategories = useAppSelector((state) => state.device.subCategories);
   const devices= useAppSelector((state) => state.device.devices);
-  // const dispatch = useAppDispatch();
-  // useEffect(() => {
-  //   dispatch(getAllCategory());
-  //   dispatch(getAllSubCategory());
-  //   dispatch(getAllDevicesTitle({title:'title'}))
-  // }, []);
+ 
   return (
       <div className="category-list">
         

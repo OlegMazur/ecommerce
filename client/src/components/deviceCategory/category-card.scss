@@ -28,7 +28,7 @@
         .category-item__name{
             color: $colorlightGrey100;
             background-color: $colorDarkGrey900;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             text-decoration: none;
             text-align: center;
             cursor: pointer;
@@ -73,6 +73,8 @@
     background-color: $rmd-grey-900;
    
     &__title{
+        display: block;
+        width: 100%;
         color:$rmd-grey-100;
         font-size: 1.2rem;
         text-decoration: none;
