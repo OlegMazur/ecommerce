@@ -33,6 +33,8 @@ function CategoryCard({
   //   selectedategoryName: categoryName,
   // };
   const imgUrl = imgUrlWraper(categoryImg);
+  const activeSubCategory=subCategories.filter(item=>item.categoryId===activeCategoryId)
+  let numberItem=1;
   return (
     <div className="category-container">
       <Link to={RoutePath.CATEGORY_PAGE + activeCategoryId}>
@@ -52,20 +54,23 @@ function CategoryCard({
         </Link>
 
         <div className="category-item__list">
-          {subCategories.map(
+          {activeSubCategory.map(
             ({ id, title, img, categoryId }, index) =>
-              index < 5 &&
-              activeCategoryId === categoryId && (
+           
+              
+              index<5&& activeCategoryId === categoryId && (
                 <div key={id} className="sub-category-item">
-                  {index < 4 && (
+                  
+                  { index< 4 && (
                     <Link
                       to={RoutePath.SUB_CATEGORY + id}
                       className="sub-category-item__title"
                     >
                       {title}
+                      
                     </Link>
                   )}
-                  {index >= 4 && (
+                  { index >= 4 && (
                     <Link
                       to={RoutePath.CATEGORY_PAGE + activeCategoryId}
                       className="sub-category-item__title"
@@ -75,6 +80,8 @@ function CategoryCard({
                   )}
                 </div>
               )
+             
+            
             // index>4&&<Link
             // to={RoutePath.CATEGORY_PAGE + activeCategoryId} ></Link>
           )}

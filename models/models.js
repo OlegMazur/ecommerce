@@ -24,9 +24,9 @@ const Device = sequelize.define('device',{
     img2:{type:DataTypes.STRING},
     img3:{type:DataTypes.STRING},
     img4:{type:DataTypes.STRING},
-    imgArr:{type:DataTypes.STRING},
+    imgArr:{type:DataTypes.STRING(2048)},
     
-    searchQueries:{type:DataTypes.STRING},
+    searchQueries:{type:DataTypes.STRING(2048)},
     currency:{type:DataTypes.STRING},
     unit:{type:DataTypes.STRING},
     availability:{type:DataTypes.INTEGER},

@@ -12,7 +12,7 @@ const Shop: React.FC = () => {
   const categories = useAppSelector((state) => state.device.categories);
   const subCategories = useAppSelector((state) => state.device.subCategories);
   const devices= useAppSelector((state) => state.device.devices);
- 
+ //console.log(devices)
   return (
       <div className="category-list">
         
