@@ -56,30 +56,32 @@ module.exports = {
   await queryInterface.createTable('devices',{
       id:{type:DataTypes.INTEGER,primaryKey:true, autoIncrement:true},
       name:{type:DataTypes.STRING,unique:true,allowNull:false},
-      price:{type:DataTypes.INTEGER,allowNull:false},
+      price:{type:DataTypes.STRING,allowNull:false},
       reting:{type:DataTypes.INTEGER,defaultValue:0},
-      img1:{type:DataTypes.STRING,allowNull:false},
+      img1:{type:DataTypes.STRING},
       img2:{type:DataTypes.STRING},
       img3:{type:DataTypes.STRING},
       img4:{type:DataTypes.STRING},
+      imgArr:{type:DataTypes.STRING},
+      info:{type:DataTypes.STRING},
       searchQueries:{type:DataTypes.STRING},
       currency:{type:DataTypes.STRING},
       unit:{type:DataTypes.STRING},
       availability:{type:DataTypes.INTEGER},
       label:{type:DataTypes.STRING},
-      weight:{type:DataTypes.INTEGER},
-      height:{type:DataTypes.INTEGER},
-      length:{type:DataTypes.INTEGER},
+      weight:{type:DataTypes.STRING},
+      height:{type:DataTypes.STRING},
+      length:{type:DataTypes.STRING},
       location:{type:DataTypes.STRING},
       color:{type:DataTypes.STRING},
-      power:{type:DataTypes.INTEGER},
-      capacity:{type:DataTypes.INTEGER},
-      colorTemp:{type:DataTypes.INTEGER},
+      power:{type:DataTypes.STRING},
+      capacity:{type:DataTypes.STRING},
+      colorTemp:{type:DataTypes.STRING},
       favotite:{type:DataTypes.BOOLEAN},
       model:{type:DataTypes.STRING},
       subModel:{type:DataTypes.STRING},
       madeIn:{type:DataTypes.STRING},
-      floatPrice:{type:DataTypes.FLOAT},
+      optPrice:{type:DataTypes.STRING},
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
@@ -145,17 +147,18 @@ module.exports = {
       id:{type:DataTypes.INTEGER,primaryKey:true, autoIncrement:true},
       title:{type:DataTypes.STRING,unique:true,allowNull:false},
       img:{type:DataTypes.STRING,allowNull:false},
-      createdAt: {
-        allowNull: false,
-        type: Sequelize.DATE
-      },
-      updatedAt: {
-        allowNull: false,
-        type: Sequelize.DATE
-      },
       categoryId:{
         type:DataTypes.INTEGER
       },
+      createdAt: {
+        
+        type: Sequelize.DATE
+      },
+      updatedAt: {
+        
+        type: Sequelize.DATE
+      },
+     
   })
   await queryInterface.createTable('categories',{
       id:{type:DataTypes.INTEGER,primaryKey:true, autoIncrement:true},

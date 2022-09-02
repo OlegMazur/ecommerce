@@ -26,6 +26,7 @@ const Shop: React.FC = () => {
           devices={devices}
         />
       ))}
+      
     </div>
   );
 };

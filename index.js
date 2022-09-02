@@ -11,6 +11,7 @@ const fileUpload = require('express-fileupload')
 const path = require('path')
 const app = express()
 
+
 app.use(cors())
 app.use(express.json())
 app.use(express.static(path.resolve(__dirname,'static')))
@@ -31,6 +32,7 @@ const start=async()=>{
         await sequelize.sync()
         app.listen(port, () => {
             console.log(`Example app listening on port ${port}`)
+          
           })
     }catch(e){
         console.log(e)
