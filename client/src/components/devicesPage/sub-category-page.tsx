@@ -20,9 +20,9 @@ function SubCategoryPage() {
   const subCategories = useAppSelector((state) => state.device.subCategories);
   const devices = useAppSelector((state) => state.device.devices.rows);
   const categorys = useAppSelector((state) => state.device.categories);
-  const selectedSubCategory = subCategories.find((item) => item.id === Number(id));
-  const category = categorys.find(
-    (item) => item.id === selectedSubCategory?.categoryId
+  const actualSubCategory = subCategories.find((item) => item.id === Number(id));
+  const actualCategory = categorys.find(
+    (item) => item.id === actualSubCategory?.categoryId
   );
   const actualDevices = devices.filter(
     (item) => item.subCategoryId === Number(id)
@@ -34,11 +34,12 @@ function SubCategoryPage() {
   }
   useEffect(()=>{
     if(Boolean (hasNoImg)){
-      dispatch(getAllDevices({subCategoryId:selectedSubCategory?.id} ))
+      dispatch(getAllDevices({subCategoryId:actualSubCategory?.id} ))
     }
       
     
   },[dispatch,hasNoImg])
+  console.log("actualDevices",actualDevices)
   return (
     <div className={styles.card}>
       <div className={styles.navHistory}>
@@ -49,20 +50,20 @@ function SubCategoryPage() {
           </NavLink>
           /
           <NavLink
-            to={RoutePath.CATEGORY_PAGE + category?.id}
+            to={RoutePath.CATEGORY_PAGE + actualCategory?.id}
             className={styles.navLinkCategory}
           >
-            {category?.title}
+            {actualCategory?.title}
           </NavLink>
           /
         </div>
-        <div className={styles.selectedCategory}>{selectedSubCategory?.title}</div>
+        <div className={styles.selectedCategory}>{actualSubCategory?.title}</div>
       </div>
       <div className={styles.deviceList}>
-        {actualDevices.map(({ id, name,img1,subCategoryId,availability,price,createdAt }) => (
+        {actualDevices.map(({ id, name,imgArr,subCategoryId,availability,price,createdAt }) => (
           <DeviceCard
             key={id}
-            deviceImg1={img1}
+            deviceImgArr={imgArr}
             deviceName={name}
             deviceId={id}
             subCategoryId={subCategoryId}
