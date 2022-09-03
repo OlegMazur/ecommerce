@@ -3,7 +3,7 @@ import { NavLink, useParams } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { RoutePath } from "../routes/enums";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse, faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { faHouse, faCartShopping, faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import styles from "./device-page.module.scss";
 import { getDeviceById } from "../../store/redusers/deviceSlice/deviceSlice";
 import {
@@ -25,34 +25,40 @@ function DevicePage() {
   const [isDeliveryClose, setIsDeliveryClose] = useState(true);
   const [isWorkScheduleClose, setIsWorkScheduleClose] = useState(true);
   const [isWorrantyClose, setIsWorrantyClose] = useState(true);
+  const [largeImgIndex, setLargeImgIndex] = useState(0);
+  const [startIndexImg, setStartIndexImg] = useState(0);
   const subCategories = useAppSelector((state) => state.device.subCategories);
   const devices = useAppSelector((state) => state.device.devices.rows);
   const categorys = useAppSelector((state) => state.device.categories);
   const usdExchangeRate = useAppSelector(
     (state) => state.basket.usdExchangeRate
   );
-  const selectedSubCategory = subCategories.find(
-    (item) => item.id === Number(id)
+
+  const actualDevice = devices.find((item) => item.id === Number(id));
+  const actualSubCategory = subCategories.find(
+    (item) => item.id === actualDevice?.subCategoryId
   );
   const category = categorys.find(
-    (item) => item.id === selectedSubCategory?.categoryId
+    (item) => item.id === actualSubCategory?.categoryId
   );
-  const actualDevice = devices.find((item) => item.id === Number(id));
-
+  const imgArr = actualDevice?.imgArr?.split(",");
   const buyDeviceHandler = () => {
     dispatch(setIsActiveBasket(true));
     if (actualDevice) {
-      dispatch(addDeviceInBasket({
-        id:actualDevice.id,
-        name:actualDevice.name,
-        price:actualDevice.price,
-        img1:actualDevice.img1,
-        quantity:1   }));
+      dispatch(
+        addDeviceInBasket({
+          id: actualDevice.id,
+          name: actualDevice.name,
+          price: Number(actualDevice.price),
+          img1: actualDevice.img1,
+          quantity: 1,
+        })
+      );
     }
   };
- 
+
   const priceUah = actualDevice?.price
-    ? Math.ceil(usdExchangeRate * actualDevice?.price)
+    ? Math.ceil(usdExchangeRate * Number(actualDevice?.price))
     : 0;
   const closeHandler = (event: React.MouseEvent<HTMLButtonElement>) => {
     const currentTarget: HTMLButtonElement = event?.currentTarget;
@@ -84,12 +90,10 @@ function DevicePage() {
   const str =
     '<p>Світлодіод: samsung LH351D<br />\nЯскравість1300lm<br />\nЖивлення від одного акумулятора 18650 (в комплект не входить)<br />\nЗаряд від USB-C,<br />\nМагніт в хвості ліхтаря<br />\n<br />\nВ комплекті:<br />\nЛіхтар<br />\nКабель для зарядки<br />\nШнурок на зап&#39;ястя<br />\nЗапасні О-рінги<br />\nКерівництво з&nbsp; використання<br />\n<br />\n<br />\nВага: 65грам<br />\nРозмір 116мм*27мм</p>\n\n<p>Дві групи режимів: 6 ступенів яскравості і плавне регулювання.<br />\n<br />\n<img alt="" src="https://images.ua.prom.st/3204366075_w640_h2048_znimok_ekrana_2021_07_06_153932.jpg?fresh=1&amp;PIMAGE_ID=3204366075" style="width: 640px; height: 329px;" /></p>\n';
   useEffect(() => {
+    dispatch(getDeviceById(Number(id)));
     
-      if(!Boolean(actualDevice?.info)){
-        dispatch(getDeviceById(Number(id)))};
   }, []);
-  console.log("description")
-  console.log( Boolean(actualDevice?.info?.[0]) )
+ 
   return (
     <div className={styles.card}>
       <div className={styles.navHistory}>
@@ -110,7 +114,7 @@ function DevicePage() {
             to={RoutePath.SUB_CATEGORY + actualDevice?.subCategoryId}
             className={styles.navLinkCategory}
           >
-            {category?.title}
+            {actualSubCategory?.title}
           </NavLink>
           <span>/</span>
         </div>
@@ -120,11 +124,45 @@ function DevicePage() {
         <div className={styles.mainBlock}>
           <div className={styles.imgBlock}>
             <div className={styles.smallImgBlock}>
-              <Img url={actualDevice?.img2} deviceClass={styles.img} />
-              <Img url={actualDevice?.img3} deviceClass={styles.img} />
-              <Img url={actualDevice?.img4} deviceClass={styles.img} />
+              {startIndexImg >= 1 && (
+                <button
+                  onClick={() => setStartIndexImg(startIndexImg - 1)}
+                  className={styles.upButton}
+                >
+                  <FontAwesomeIcon icon={faChevronUp} className={styles.faChevronUp}/>
+                </button>
+              )}
+              <div className={styles.smallImgArrBlock}>
+                {imgArr?.map(
+                  (item, index) =>
+                    index >= startIndexImg &&
+                    index < startIndexImg + 3 && (
+                      <button
+                        key={index}
+                        onClick={(e) =>
+                          setLargeImgIndex(Number(e.currentTarget.name))
+                        }
+                        name={index.toString()}
+                        className={styles.smallImgItem}
+                      >
+                        <Img url={item} deviceClass={styles.img} />
+                     
+                      </button>
+                    )
+                )}
+              </div>
+
+              {imgArr?.length&&imgArr?.length-startIndexImg>3&&<button
+                onClick={() => setStartIndexImg(startIndexImg + 1)}
+                className={styles.downButton}
+              >
+                
+                <FontAwesomeIcon icon={ faChevronDown} className={styles.faChevronDown}/>
+              </button>}
             </div>
-            <Img url={actualDevice?.img1} deviceClass={styles.img1} />
+            <div className={styles.largeImgBlock}>
+              <Img url={imgArr?.[largeImgIndex]} deviceClass={styles.img1} />
+            </div>
           </div>
           <div className={styles.orderBlock}>
             <div className={styles.nameBlock}>

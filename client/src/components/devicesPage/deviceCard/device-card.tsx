@@ -14,7 +14,7 @@ interface ISubCardProps {
   deviceId: number;
   subCategoryId: number;
   availability: number;
-  price: number;
+  price: string;
   onBuyDeviceHandler:any
  
 }
@@ -33,7 +33,7 @@ function DeviceCard({
   //   ? process.env.REACT_APP_API_URL + deviceImg1
   //   : process.env.PUBLIC_URL + "/noPhoto.jpg";
   const usdExchangeRate=useAppSelector(state=>state.basket.usdExchangeRate);
-  const actualPrice=price* usdExchangeRate; 
+  const actualPrice=Number(price)* usdExchangeRate; 
   const buyDeviceHandler=()=>{
     onBuyDeviceHandler({id:deviceId,img1:deviceImg1,name:deviceName,price,quantity:1})
   }
