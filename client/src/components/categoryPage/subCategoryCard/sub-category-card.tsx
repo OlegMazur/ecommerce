@@ -23,7 +23,7 @@ function SubCategoryCard({
   const actualDevices = devices.filter(
     (item) => item.subCategoryId === selectedSubCatId
   );
-  console.log("devices", devices);
+  //console.log("actualDevices",actualDevices)
   return (
     <div className={styles.subCategoryCard}>
       <div className={styles.content}>

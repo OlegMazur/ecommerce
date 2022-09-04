@@ -34,6 +34,7 @@ function CategoryCard({
   // };
   const imgUrl = imgUrlWraper(categoryImg);
   const activeSubCategory=subCategories.filter(item=>item.categoryId===activeCategoryId)
+  console.log("activeSubCategory",activeSubCategory)
   let numberItem=1;
   return (
     <div className="category-container">

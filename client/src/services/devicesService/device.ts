@@ -9,7 +9,7 @@ interface IPayloadAllDevice{
     subCategoryId?:number 
   }
 
-export const getDevices = async (payload:IPayloadAllDevice|null) => {
+export const getDevices = async (payload:IPayloadAllDevice|undefined) => {
 //   let { data } = title
 
 //     ? await $host.get(Path.API + Path.DEVICE + "?title=" + title)
@@ -21,7 +21,9 @@ export const getDevices = async (payload:IPayloadAllDevice|null) => {
   if(payload?.subCategoryId){
     data=await $host.get(Path.API + Path.DEVICE + "?subCategoryId=" + payload?.subCategoryId)
   } 
-
+  // else{
+  //   data=await $host.get(Path.API + Path.DEVICE )
+  // }
   return data?.data;
 };
 export const getOneDevice = async (id:number) => {

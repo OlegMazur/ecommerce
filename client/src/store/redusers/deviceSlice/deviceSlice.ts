@@ -124,7 +124,7 @@ export interface IType {
     
 
   }
-  export const getAllDevices= createAsyncThunk<IDevices,IPayloadAllDevice, { rejectValue:string, }>(
+  export const getAllDevices= createAsyncThunk<IDevices,IPayloadAllDevice|undefined, { rejectValue:string, }>(
     ActionType.GET_ALL_DEVICES,
     async function (payload,{rejectWithValue}) {
       const data =await getDevices(payload)
@@ -147,7 +147,7 @@ export interface IType {
         return data
     }
   )
-  export const getAllDevicesTitle= createAsyncThunk<IDevices,IPayloadAllDevice, { rejectValue:string, }>(
+  export const getAllDevicesTitle= createAsyncThunk<IDevice[],IPayloadAllDevice, { rejectValue:string, }>(
     ActionType.GET_ALL_DEVICES_TITLE,
     async function (payload,{rejectWithValue}) {
       const data =await getDevices(payload)
@@ -217,15 +217,24 @@ export interface IType {
       })
       
       .addCase(getAllDevices.fulfilled,(state,action)=>{
-        state.devices=action.payload;
+        
+        //state.devices.rows=state.devices.rows.map(item=>item=action.payload.rows[item.id])
+        // action.payload.rows.forEach(item=>{
+        //   state.devices.rows.map(stateItem=>stateItem.id===item.id?item:stateItem)
+
+          
+        // })
+        state.devices=action.payload
+        // console.log("action.payload",action.payload)
+        // console.log("state.devices.rows",state.devices.rows)
         state.loading=false;
       })
       .addCase(getAllDevicesTitle.fulfilled,(state,action)=>{
-        console.log('action.payload')
-        console.log(action.payload)
+         console.log('action.payload')
+         console.log(action.payload)
        
-        action.payload.rows.forEach((item)=>!state.devices.rows.find(i=>i.id===item.id)&&state.devices.rows.push(item));
-        // state.devices.rows=state.devices.rows.map(item=>state.devices.rows.find(item=>))
+        //action.payload.rows.forEach((item)=>!state.devices.rows.find(i=>i.id===item.id)&&state.devices.rows.push(item));
+         state.devices.rows=action.payload
       })
       .addCase(getAllTypes.fulfilled,(state,action)=>{
         state.types=action.payload;

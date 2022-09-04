@@ -18,7 +18,7 @@ function CategoryPage() {
   const actualSubCategories = subCategories.filter(
     (item) => item.categoryId === Number(id)
   );
- console.log("actualSubCategories",actualSubCategories)
+  //console.log("activeSubCategory",actualSubCategories)
   return (
     <div className={styles.card}>
       <div className={styles.navHistory}>

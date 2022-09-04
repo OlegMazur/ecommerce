@@ -60,7 +60,7 @@ function DeviceCard({
         </div>
 
         <div className={styles.deviceInfoBlock}>
-          <div className={styles.name}>{deviceName}</div>
+          <div className={styles.name}><span>{deviceName.length>100?deviceName.slice(0,100)+"...":deviceName}</span></div>
           <div className={styles.deviceInfo}>
             <div>
               {availability ? (

@@ -17,7 +17,7 @@ import DevicesPage from "./devicesPage/sub-category-page";
 import Basket from "./common/basket/basket";
 import DevicePage from "./devicePage/device-page";
 import SubCategoryPage from "./devicesPage/sub-category-page";
-import { getAllCategory, getAllDevicesTitle, getAllSubCategory } from "../store/redusers/deviceSlice/deviceSlice";
+import { getAllCategory, getAllDevices, getAllDevicesTitle, getAllSubCategory } from "../store/redusers/deviceSlice/deviceSlice";
 import AboutUs from "./aboutUsPage/about-us";
 import ContactsPage from "./contactsPage/contacts-page";
 const App: React.FunctionComponent = () => {
@@ -42,10 +42,11 @@ const App: React.FunctionComponent = () => {
     dispatch(getAllCategory());
     dispatch(getAllSubCategory());
     
-      dispatch(getAllDevicesTitle({title:'title'}))
+      dispatch(getAllDevicesTitle({title:'title'}));
       console.log("app dispatch");
     
   }, []);
+  console.log("devices",devices)
   return (
     <div className="app">
       <header>
