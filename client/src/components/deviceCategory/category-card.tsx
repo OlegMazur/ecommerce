@@ -16,10 +16,7 @@ interface ICategoryProps {
   activeCategoryId: number;
   devices: IDevices;
 }
-// interface IState {
-//   activeCategoryId: number;
-//   categoryName: string;
-// }
+
 function CategoryCard({
   categoryName,
   categoryImg,
@@ -27,15 +24,10 @@ function CategoryCard({
   subCategories,
   devices,
 }: ICategoryProps) {
-  // const navigate = useNavigate();
-  // const navigationState: IState = {
-  //   activeCategoryId: activeCategoryId,
-  //   selectedategoryName: categoryName,
-  // };
   const imgUrl = imgUrlWraper(categoryImg);
-  const activeSubCategory=subCategories.filter(item=>item.categoryId===activeCategoryId)
-  console.log("activeSubCategory",activeSubCategory)
-  let numberItem=1;
+  const activeSubCategory = subCategories.filter(
+    (item) => item.categoryId === activeCategoryId
+  );
   return (
     <div className="category-container">
       <Link to={RoutePath.CATEGORY_PAGE + activeCategoryId}>
@@ -57,21 +49,18 @@ function CategoryCard({
         <div className="category-item__list">
           {activeSubCategory.map(
             ({ id, title, img, categoryId }, index) =>
-           
-              
-              index<5&& activeCategoryId === categoryId && (
+              index < 5 &&
+              activeCategoryId === categoryId && (
                 <div key={id} className="sub-category-item">
-                  
-                  { index< 4 && (
+                  {index < 4 && (
                     <Link
                       to={RoutePath.SUB_CATEGORY + id}
                       className="sub-category-item__title"
                     >
                       {title}
-                      
                     </Link>
                   )}
-                  { index >= 4 && (
+                  {index >= 4 && (
                     <Link
                       to={RoutePath.CATEGORY_PAGE + activeCategoryId}
                       className="sub-category-item__title"
@@ -81,10 +70,6 @@ function CategoryCard({
                   )}
                 </div>
               )
-             
-            
-            // index>4&&<Link
-            // to={RoutePath.CATEGORY_PAGE + activeCategoryId} ></Link>
           )}
         </div>
       </div>

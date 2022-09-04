@@ -43,7 +43,7 @@ const App: React.FunctionComponent = () => {
     dispatch(getAllSubCategory());
     
       dispatch(getAllDevicesTitle({title:'title'}));
-      console.log("app dispatch");
+      
     
   }, []);
   console.log("devices",devices)

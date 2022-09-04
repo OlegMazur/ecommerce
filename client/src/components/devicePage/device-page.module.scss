@@ -145,6 +145,7 @@
         flex-direction: column;
         justify-content: space-between;
         padding-left: 10px;
+        
         .nameBlock {
           width: 100%;
           font-size: 1.4rem;
@@ -170,6 +171,7 @@
             background-color: $rmd-blue-800;
             border: none;
             font-size: 1.4rem;
+            
             .faCartShopping {
               padding-right: 10px;
             }

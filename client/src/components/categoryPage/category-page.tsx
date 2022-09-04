@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink, useLocation, useParams } from "react-router-dom";
 import { useAppSelector } from "../../store/hooks";
 import { RoutePath } from "../routes/enums";
@@ -18,6 +18,10 @@ function CategoryPage() {
   const actualSubCategories = subCategories.filter(
     (item) => item.categoryId === Number(id)
   );
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   //console.log("activeSubCategory",actualSubCategories)
   return (
     <div className={styles.card}>

@@ -31,14 +31,12 @@ function SubCategoryPage() {
   const onBuyDeviceHandler=(device:IBasketDevice)=>{
     dispatch(setIsActiveBasket(true))
     dispatch(addDeviceInBasket(device))
-  }
-  // useEffect(()=>{
-  //   // if(Boolean (hasNoImg)){
-  //   //   dispatch(getAllDevices({subCategoryId:actualSubCategory?.id} ))
-  //   // }
-  //   dispatch(getAllDevices({subCategoryId:actualSubCategory?.id} ))
-    
-  // },[dispatch])
+  };
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   console.log("actualDevices",actualDevices)
   return (
     <div className={styles.card}>
