@@ -11,9 +11,9 @@ import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 function Basket() {
   const devices = useAppSelector((state) => state.basket.devices);
   //const isActiveBasket=useAppSelector(state=>state.basket.isActiveBasket);
-  const usdExchangeRate=useAppSelector((state) => state.basket.usdExchangeRate);
+  //const usdExchangeRate=useAppSelector((state) => state.basket.usdExchangeRate);
   const orderSum = devices.reduce((sum, current) => sum + current.price*current.quantity, 0);
-  const uahOrderSum=Math.round(usdExchangeRate*orderSum);
+  //const uahOrderSum=Math.round(usdExchangeRate*orderSum);
   const dispatch = useAppDispatch();
   const onRemoveBasketDevice = (id: number) => {
     dispatch(removeBasketDevice({ id }));
@@ -45,7 +45,7 @@ function Basket() {
       <footer className={styles.footer}>
         <div className={styles.totalPriceBlock}>
           <div className={styles.title}>До оплати без доставки</div>  
-          <div className={styles.price}>{uahOrderSum} грн</div>
+          <div className={styles.price}>{orderSum} грн</div>
           
         </div>
         <button className={styles.button}>

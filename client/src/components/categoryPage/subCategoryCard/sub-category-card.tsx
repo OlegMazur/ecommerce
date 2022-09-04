@@ -18,25 +18,47 @@ function SubCategoryCard({
   // const imgUrl = subCategoryImg
   //   ? process.env.REACT_APP_API_URL + subCategoryImg
   //   :  "/noPhoto.jpg";
-  const imgUrl=imgUrlWraper(subCategoryImg)
-  const devices = useAppSelector((state) => state.device.devices);
+  const imgUrl = imgUrlWraper(subCategoryImg);
+  const devices = useAppSelector((state) => state.device.devices.rows);
+  const actualDevices = devices.filter(
+    (item) => item.subCategoryId === selectedSubCatId
+  );
+  console.log("devices", devices);
   return (
     <div className={styles.subCategoryCard}>
       <div className={styles.content}>
-        <Link to={RoutePath.SUB_CATEGORY+ selectedSubCatId} className={styles.link}>
+        <Link
+          to={RoutePath.SUB_CATEGORY + selectedSubCatId}
+          className={styles.link}
+        >
           <div className={styles.title}>{subCategoryTitle}</div>
           <img className={styles.img} src={imgUrl} alt="noPhoto " />
         </Link>
-        <div className={styles.deviceNameContainer}>
-          {devices.rows.map(({ id, name, subCategoryId }) => (
-            <div key={id} className={styles.device}>
-              {selectedSubCatId === subCategoryId && (
-                <Link to={RoutePath.DEVICE + id} className={styles.link}>
-                  <div className={styles.name}>{name}</div>
-                </Link>
-              )}
-            </div>
-          ))}
+        <div className={styles.deviceNameList}>
+          {actualDevices.map(
+            ({ id, name, subCategoryId }, index) =>
+              index <5 && (
+                <div className={styles.device} key={index}>
+                  {index < 4 && (
+                    <div className={styles.deviceItem}>
+                      <Link to={RoutePath.DEVICE + id} className={styles.deviceLink}>
+                        <div className={styles.name}>{name}</div>
+                      </Link>
+                    </div>
+                  )}
+                  {index >= 4 && (
+                    <div className={styles.deviceItem}>
+                      <Link
+                        to={RoutePath.SUB_CATEGORY + selectedSubCatId}
+                        className={styles.deviceLinkAll}
+                      >
+                       <div className={styles.name}> показати всі</div>
+                      </Link>
+                    </div>
+                  )}
+                </div>
+              )
+          )}
         </div>
       </div>
     </div>

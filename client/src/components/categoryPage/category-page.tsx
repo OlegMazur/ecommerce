@@ -7,22 +7,18 @@ import styles from "./category-page.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 
-interface IState {
-  activeCategoryId: number;
-  categoryName: string;
-}
+
 function CategoryPage() {
  const {id}=useParams();
 
   const subCategories = useAppSelector((state) => state.device.subCategories);
   const categories = useAppSelector((state) => state.device.categories);
   const category=categories.find(item=>item.id===Number(id));
-  //const location = useLocation();
-  //const { activeCategoryId, categoryName } = location.state as IState;
+  
   const actualSubCategories = subCategories.filter(
     (item) => item.categoryId === Number(id)
   );
-
+ console.log("actualSubCategories",actualSubCategories)
   return (
     <div className={styles.card}>
       <div className={styles.navHistory}>

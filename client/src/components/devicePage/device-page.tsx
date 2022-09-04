@@ -30,7 +30,7 @@ function DevicePage() {
   const subCategories = useAppSelector((state) => state.device.subCategories);
   const devices = useAppSelector((state) => state.device.devices.rows);
   const categorys = useAppSelector((state) => state.device.categories);
-  const usdExchangeRate = useAppSelector(
+  const usdRate  = useAppSelector(
     (state) => state.basket.usdExchangeRate
   );
 
@@ -42,6 +42,8 @@ function DevicePage() {
     (item) => item.id === actualSubCategory?.categoryId
   );
   const imgArr = actualDevice?.imgArr?.split(",");
+  const price =actualDevice?.price?actualDevice?.price:"0"
+  const actualPrice = actualDevice?.currency==="UAH"?price:exchangeUsd({usdRate ,price})
   const buyDeviceHandler = () => {
     dispatch(setIsActiveBasket(true));
     if (actualDevice) {
@@ -49,17 +51,14 @@ function DevicePage() {
         addDeviceInBasket({
           id: actualDevice.id,
           name: actualDevice.name,
-          price: Number(actualDevice.price),
-          img1: actualDevice.img1,
+          price: Number(actualPrice ),
+          img1: imgArr?.[0],
           quantity: 1,
         })
       );
     }
   };
-
-  const priceUah = actualDevice?.price
-    ? Math.ceil(usdExchangeRate * Number(actualDevice?.price))
-    : 0;
+ 
   const closeHandler = (event: React.MouseEvent<HTMLButtonElement>) => {
     const currentTarget: HTMLButtonElement = event?.currentTarget;
     switch (currentTarget.name) {
@@ -180,7 +179,7 @@ function DevicePage() {
               </div>
             </div>
             <div className={styles.priceBlock}>
-              <span>{priceUah} грн</span>
+              <span>{actualPrice } грн</span>
             </div>
             <div className={styles.colorBlock}>
               <span>колір</span>

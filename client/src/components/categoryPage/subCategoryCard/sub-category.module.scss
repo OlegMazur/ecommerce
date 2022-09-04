@@ -27,7 +27,7 @@
             width: 60%;
             font-size: 1.4rem;
             background-color: $colorDarkGrey900;
-            opacity: 0.8;
+            opacity: 0.9;
             color: $colorlightGrey100;
             text-decoration: none;
            padding-top: 5px;
@@ -49,7 +49,7 @@
         }
         
     }
-    .deviceNameContainer{
+    .deviceNameList{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -58,32 +58,58 @@
         
         box-sizing: border-box;
         
-        width: 60%;
+        width: 80%;
         
         .device{
             width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            .link{
-                display: block;
+            .deviceItem{
                 width: 100%;
-                overflow: hidden;
-                background-color:$colorDarkGrey900;
-                
-                z-index: 2;
-                text-decoration: none;
-                
-                .name{
-                    color: $colorlightGrey100;
+                .deviceLink{
+                    display: block;
                     width: 100%;
-                    padding: 5px;
+                    overflow: hidden;
+                    background-color:$colorDarkGrey900;
+                    
+                    z-index: 2;
+                    text-decoration: none;
+                    
+                    .name{
+                        color: $colorlightGrey100;
+                        width: 100%;
+                        padding: 5px;
+                    }
+                    &:hover{
+                        background-color: $rmd-grey-700;
+                    }
+              
                 }
-                &:hover{
-                    background-color: $rmd-grey-700;
+                .deviceLinkAll{
+                    display: block;
+                    width: 100%;
+                    overflow: hidden;
+                    background-color:$colorDarkGrey900;
+                    
+                    z-index: 2;
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: center;
+                    
+                    .name{
+                        color: $colorlightGrey100;
+                        text-align: center;
+                        width: 50%;
+                        padding: 5px;
+                    }
+                    &:hover{
+                        background-color: $rmd-grey-700;
+                    }
+              
                 }
-                
             }
+            
            
         }
        
@@ -94,9 +120,9 @@
     
 }
 .subCategoryCard:hover{
-    .deviceNameContainer{
+    .deviceNameList{
         visibility: visible;
-        opacity: 0.8;
+        opacity: 0.9;
         background-color: $colorDarkGrey900;
     }
 }

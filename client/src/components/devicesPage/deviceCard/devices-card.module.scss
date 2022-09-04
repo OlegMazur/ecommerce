@@ -39,55 +39,65 @@
       }
     }
     
-    .deviceInfo {
+    .deviceInfoBlock {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       align-items: flex-start;
       width: 100%;
-      max-height: 50%;
+      height: 50%;
       .name {
         font-size: 1.6rem;
         padding-left: 20px;
         padding: 5px;
       }
-      .availability {
-        font-size: 1rem;
-        padding-left: 5px;
-        color: green;
-      }
-      .noavailability {
-        font-size: 1rem;
-        padding-left: 5px;
-        color: red;
-      }
-      .price {
-        font-size: 1.2rem;
-        padding-left: 20px;
-        align-self: flex-end;
-        padding: 5px;
-      }
-      .button {
+      .deviceInfo{
         width: 100%;
-        height: 40px;
-
-        color: $colorlightGrey100;
+        height: 50%;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity: 0.9;
-        background-color: $rmd-blue-800;
-        
-        border: none;
-        .buttonIcon {
-          font-size: 1.6rem;
-        }
-        .buttonName {
-          font-size: 1.6rem;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        .availability {
+          font-size: 1rem;
           padding-left: 5px;
+          color: green;
+        }
+        .noavailability {
+          font-size: 1rem;
+          padding-left: 5px;
+          color: red;
+        }
+        .price {
+          font-size: 1.2rem;
+          padding-left: 20px;
+          align-self: flex-end;
+          padding: 5px;
+        }
+        .button {
+          width: 100%;
+          height: 40px;
+  
+          color: $colorlightGrey100;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0.9;
+          background-color: $rmd-blue-800;
+          
+          border: none;
+          .buttonIcon {
+            font-size: 1.6rem;
+          }
+          .buttonName {
+            font-size: 1.6rem;
+            padding-left: 5px;
+          }
         }
       }
+     
     }
-    .deviceInfo:hover {
+    .deviceInfoBlock:hover {
       .button {
         opacity: 0.9;
         background-color: $rmd-blue-900;

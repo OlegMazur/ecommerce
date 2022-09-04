@@ -60,9 +60,10 @@ function SubCategoryPage() {
         <div className={styles.selectedCategory}>{actualSubCategory?.title}</div>
       </div>
       <div className={styles.deviceList}>
-        {actualDevices.map(({ id, name,imgArr,subCategoryId,availability,price,createdAt }) => (
+        {actualDevices.map(({ id, name,imgArr,subCategoryId,availability,price,createdAt,currency }) => (
           <DeviceCard
             key={id}
+            currency={currency}
             deviceImgArr={imgArr}
             deviceName={name}
             deviceId={id}

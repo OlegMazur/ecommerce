@@ -1,8 +1,13 @@
 interface IExchangeUsd{
     usdRate:number,
-    price:number
+    price:string
 }
 
 export const exchangeUsd=({usdRate,price}:IExchangeUsd)=>{
-    return Math.ceil(usdRate*price)
+   
+    let newPrice=price.includes(",")?price.split(',').join("."):price
+    
+     let result=Math.ceil(usdRate *Number(newPrice))
+     
+    return result
 }
