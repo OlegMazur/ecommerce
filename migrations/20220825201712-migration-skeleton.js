@@ -177,7 +177,7 @@ module.exports = {
   await queryInterface.createTable('device_infos',{
       id:{type:DataTypes.INTEGER,primaryKey:true, autoIncrement:true},
       title:{type:DataTypes.STRING},
-      description:{type:DataTypes.STRING,allowNull:false},
+      description:{type:DataTypes.TEXT},
       images:{type:DataTypes.STRING},
       createdAt: {
         allowNull: false,
