@@ -75,6 +75,8 @@ export interface IType {
       subModel:string,
       madeIn:string,
       optPrice:string,
+      typeName:string,
+      brandName:string,
     
   } 
   export interface IDevices{

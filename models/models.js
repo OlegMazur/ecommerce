@@ -44,6 +44,8 @@ const Device = sequelize.define('device',{
     subModel:{type:DataTypes.STRING},
     madeIn:{type:DataTypes.STRING},
     optPrice:{type:DataTypes.STRING},
+    typeName:{type:DataTypes.STRING},
+    brandName:{type:DataTypes.STRING}
 
 })
 const Type =sequelize.define('type',{

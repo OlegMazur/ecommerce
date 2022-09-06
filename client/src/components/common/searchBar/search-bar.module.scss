@@ -1,0 +1,79 @@
+@import "../../../styles/variables.scss";
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    .header{
+        display:flex;
+        .sortPriceTitle{
+         padding: 10px;
+         font-size: 1.1rem;
+        }
+        .sortPriceBlock{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+           
+            .sortPriceItem{
+                margin-bottom: 10px;
+                background-color: $rmd-grey-800;
+                border: none;
+                padding: 5px 10px 5px 10px;
+                border-radius: 5px;
+                color:$rmd-grey-100;
+                &:hover{
+                    background-color: $rmd-grey-900;
+                }
+            }
+            .active{
+                background-color: $rmd-blue-800;
+                &:hover{
+                    background-color: $rmd-blue-900;
+                }
+            }
+        }
+        .searchCategory{
+            display: flex;
+            flex-direction: column;
+    
+        }
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        .deviceNameBlock{
+            display: flex;
+            flex-direction: row;
+           flex-wrap: wrap;
+           justify-content: flex-start;
+            .deviceNameItem{
+                min-width: 70px;
+                margin: 10px;
+               
+                padding: 10px;
+               background-color: $rmd-grey-800;
+               color:$colorlightGrey100;
+                border:1px solid black;
+                border-radius: 5px;
+
+                &:hover{
+                    background-color: $rmd-grey-900;
+
+                }
+                & .active{
+                    background-color: $rmd-grey-800;
+                }
+            }
+            .active{
+                background-color: $rmd-blue-800;
+                &:hover{
+                    background-color: $rmd-blue-900;
+                }
+            }
+
+        }
+    }
+   
+    
+}

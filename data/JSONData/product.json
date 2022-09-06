@@ -23,8 +23,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "DC-DC перетворювачі",
     "subCategoryId": 23682261
   },
   {
@@ -51,8 +50,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "DC-DC перетворювачі",
     "subCategoryId": 23682261
   },
   {
@@ -80,8 +78,8 @@
     "subModel": "",
     "madeIn": "Южная Корея",
     "optPrice": "4,6",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion 18650",
+    "brandName": "Samsung",
     "subCategoryId": 50926987
   },
   {
@@ -108,8 +106,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "0,31",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -137,8 +134,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "30",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -165,8 +161,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "DC-DC перетворювачі",
     "subCategoryId": 23682261
   },
   {
@@ -194,8 +189,8 @@
     "subModel": "",
     "madeIn": "Южная Корея",
     "optPrice": "3,1",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion 18650",
+    "brandName": "Samsung",
     "subCategoryId": 50926987
   },
   {
@@ -225,8 +220,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "0,65",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "DC-DC перетворювачі",
     "subCategoryId": 23682261
   },
   {
@@ -256,8 +250,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей, з функцією балансування",
     "subCategoryId": 108020457
   },
   {
@@ -285,8 +278,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "18",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
+    "brandName": "Liitokala",
     "subCategoryId": 108019932
   },
   {
@@ -313,8 +306,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
     "subCategoryId": 76039760
   },
   {
@@ -341,8 +333,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Велоокуляри",
     "subCategoryId": 13743255
   },
   {
@@ -369,8 +360,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -398,8 +388,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "10",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -426,8 +415,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -454,8 +442,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "DC-DC перетворювачі",
     "subCategoryId": 23682261
   },
   {
@@ -482,8 +469,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей, з функцією балансування",
     "subCategoryId": 108020457
   },
   {
@@ -514,8 +500,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "C8",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -542,8 +528,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "3,2",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
     "subCategoryId": 108019932
   },
   {
@@ -570,8 +555,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -598,8 +582,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
     "subCategoryId": 76039760
   },
   {
@@ -626,8 +609,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
     "subCategoryId": 76039760
   },
   {
@@ -654,8 +636,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Велозамки",
     "subCategoryId": 23681225
   },
   {
@@ -682,8 +663,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Велозамки",
     "subCategoryId": 23681225
   },
   {
@@ -710,8 +690,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Велозамки",
     "subCategoryId": 23681225
   },
   {
@@ -738,8 +717,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -766,8 +744,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -794,8 +771,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Велоокуляри",
     "subCategoryId": 13743255
   },
   {
@@ -822,8 +798,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Велоокуляри",
     "subCategoryId": 13743255
   },
   {
@@ -850,8 +825,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей, з функцією балансування",
     "subCategoryId": 108020457
   },
   {
@@ -878,8 +852,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари",
     "subCategoryId": 13743238
   },
   {
@@ -906,8 +879,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "DC-DC перетворювачі",
     "subCategoryId": 23682261
   },
   {
@@ -934,8 +906,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "DC-DC перетворювачі",
     "subCategoryId": 23682261
   },
   {
@@ -962,8 +933,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "DC-DC перетворювачі",
     "subCategoryId": 23682261
   },
   {
@@ -990,8 +960,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -1018,8 +987,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "3,5",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
     "subCategoryId": 108019932
   },
   {
@@ -1046,8 +1014,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
     "subCategoryId": 76039760
   },
   {
@@ -1075,8 +1042,8 @@
     "subModel": "",
     "madeIn": "Япония",
     "optPrice": "4,4",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion 18650",
+    "brandName": "Sony",
     "subCategoryId": 50926987
   },
   {
@@ -1103,8 +1070,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей, з функцією балансування",
     "subCategoryId": 108020457
   },
   {
@@ -1131,8 +1097,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
     "subCategoryId": 76039760
   },
   {
@@ -1159,8 +1124,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Літієві елементи живлення",
     "subCategoryId": 51010495
   },
   {
@@ -1187,8 +1151,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Вольтметри, амперметри",
     "subCategoryId": 23682256
   },
   {
@@ -1215,8 +1178,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "7",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
     "subCategoryId": 108019932
   },
   {
@@ -1243,8 +1205,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -1271,8 +1232,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Інше",
     "subCategoryId": 13743239
   },
   {
@@ -1299,8 +1259,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
     "subCategoryId": 108019932
   },
   {
@@ -1328,8 +1287,8 @@
     "subModel": "",
     "madeIn": "Япония",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion 18650",
+    "brandName": "Panasonic",
     "subCategoryId": 50926987
   },
   {
@@ -1360,8 +1319,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -1389,8 +1348,8 @@
     "subModel": "",
     "madeIn": "Малайзия",
     "optPrice": "2,8",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion 18650",
+    "brandName": "Samsung",
     "subCategoryId": 50926987
   },
   {
@@ -1418,8 +1377,8 @@
     "subModel": "",
     "madeIn": "Малайзия",
     "optPrice": "3,6",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion 18650",
+    "brandName": "Samsung",
     "subCategoryId": 50926987
   },
   {
@@ -1449,8 +1408,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "6,2",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
     "subCategoryId": 108019932
   },
   {
@@ -1478,8 +1436,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "5",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -1507,8 +1464,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "6",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -1536,8 +1492,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "7",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -1565,8 +1520,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "8",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -1594,8 +1548,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "9",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -1623,8 +1576,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "11",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -1652,8 +1604,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "11",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -1681,8 +1632,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "13",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -1710,8 +1660,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "15",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -1739,8 +1688,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "17",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -1768,8 +1716,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "19",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -1797,8 +1744,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "15",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -1826,8 +1772,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "17",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -1855,8 +1800,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "75",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -1882,8 +1826,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
     "subCategoryId": 108019932
   },
   {
@@ -1913,8 +1856,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "2,2",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Convoy",
     "subCategoryId": 76039760
   },
   {
@@ -1941,8 +1884,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "2,05",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Convoy",
     "subCategoryId": 76039760
   },
   {
@@ -1969,8 +1912,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "2,5",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Convoy",
     "subCategoryId": 76039760
   },
   {
@@ -1997,8 +1940,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "2,8",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Convoy",
     "subCategoryId": 76039760
   },
   {
@@ -2028,8 +1971,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Convoy",
     "subCategoryId": 76039760
   },
   {
@@ -2056,8 +1999,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Convoy",
     "subCategoryId": 76039760
   },
   {
@@ -2084,8 +2027,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Convoy",
     "subCategoryId": 76039760
   },
   {
@@ -2115,8 +2058,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
+    "brandName": "CREE",
     "subCategoryId": 76039752
   },
   {
@@ -2143,8 +2086,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
+    "brandName": "CREE",
     "subCategoryId": 76039752
   },
   {
@@ -2171,8 +2114,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
+    "brandName": "CREE",
     "subCategoryId": 76039752
   },
   {
@@ -2199,8 +2142,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
+    "brandName": "CREE",
     "subCategoryId": 76039752
   },
   {
@@ -2227,8 +2170,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
+    "brandName": "CREE",
     "subCategoryId": 76039752
   },
   {
@@ -2255,8 +2198,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
+    "brandName": "CREE",
     "subCategoryId": 76039752
   },
   {
@@ -2283,8 +2226,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
+    "brandName": "CREE",
     "subCategoryId": 76039752
   },
   {
@@ -2311,8 +2254,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
+    "brandName": "CREE",
     "subCategoryId": 76039752
   },
   {
@@ -2339,8 +2282,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
+    "brandName": "CREE",
     "subCategoryId": 76039752
   },
   {
@@ -2367,8 +2310,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
+    "brandName": "CREE",
     "subCategoryId": 76039752
   },
   {
@@ -2396,8 +2339,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -2424,8 +2367,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M2",
     "subCategoryId": 23680528
   },
   {
@@ -2452,8 +2394,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -2480,8 +2422,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -2508,8 +2450,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -2536,8 +2478,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -2566,8 +2508,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "2,4",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion 18650",
     "subCategoryId": 50926987
   },
   {
@@ -2594,8 +2535,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "3,9",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion 18650",
+    "brandName": "LG",
     "subCategoryId": 50926987
   },
   {
@@ -2623,8 +2564,8 @@
     "subModel": "",
     "madeIn": "Южная Корея",
     "optPrice": "4,7",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion 18650",
+    "brandName": "Samsung",
     "subCategoryId": 50926987
   },
   {
@@ -2650,8 +2591,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion 18650",
     "subCategoryId": 50926987
   },
   {
@@ -2677,8 +2617,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
     "subCategoryId": 108019932
   },
   {
@@ -2705,8 +2644,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "8",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
     "subCategoryId": 108019932
   },
   {
@@ -2732,8 +2670,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Skilhunt",
     "subCategoryId": 75854284
   },
   {
@@ -2759,8 +2696,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
     "subCategoryId": 108019932
   },
   {
@@ -2786,8 +2722,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L6",
     "subCategoryId": 23680528
   },
   {
@@ -2813,8 +2748,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L6",
     "subCategoryId": 23680528
   },
   {
@@ -2840,8 +2774,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "5,3",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion інші формати",
     "subCategoryId": 51010355
   },
   {
@@ -2867,8 +2800,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рефлектори",
+    "brandName": "Convoy",
     "subCategoryId": 76040572
   },
   {
@@ -2894,8 +2827,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Велозамки",
     "subCategoryId": 23681225
   },
   {
@@ -2921,8 +2853,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Велозамки",
     "subCategoryId": 23681225
   },
   {
@@ -2948,8 +2879,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -2976,8 +2906,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -3005,8 +2935,8 @@
     "subModel": "",
     "madeIn": "Япония",
     "optPrice": "4,7",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion 18650",
+    "brandName": "Sony",
     "subCategoryId": 50926987
   },
   {
@@ -3034,8 +2964,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "70",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -3062,8 +2991,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "0,32",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
+    "brandName": "CB",
     "subCategoryId": 23682267
   },
   {
@@ -3089,8 +3018,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "0,82",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -3116,8 +3044,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "1,18",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -3143,8 +3070,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "1,4",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -3170,8 +3096,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "2,82000;2,7",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -3198,8 +3123,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей, з функцією балансування",
+    "brandName": "SkyRC",
     "subCategoryId": 108020457
   },
   {
@@ -3225,8 +3150,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "BMS",
     "subCategoryId": 46247416
   },
   {
@@ -3254,8 +3178,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "65",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -3285,8 +3208,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
     "subCategoryId": 23680528
   },
   {
@@ -3315,8 +3237,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -3342,8 +3264,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Велозамки",
     "subCategoryId": 23681225
   },
   {
@@ -3369,8 +3290,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Запчастини",
     "subCategoryId": 13743226
   },
   {
@@ -3396,8 +3316,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S9 mk",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -3423,8 +3343,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S9 mk",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -3450,8 +3370,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S9 mk",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -3479,8 +3399,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -3508,8 +3428,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -3537,8 +3457,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -3566,8 +3486,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -3595,8 +3515,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -3624,8 +3544,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -3653,8 +3573,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -3682,8 +3602,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -3711,8 +3631,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -3740,8 +3660,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -3769,8 +3689,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -3798,8 +3718,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -3827,8 +3747,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -3856,8 +3776,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -3885,8 +3805,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -3913,8 +3833,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -3942,8 +3862,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Акумулятори для ліхтарів",
+    "brandName": "Sanyo",
     "subCategoryId": 51028746
   },
   {
@@ -3971,8 +3891,8 @@
     "subModel": "",
     "madeIn": "Японія",
     "optPrice": "3,4",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Акумулятори для ліхтарів",
+    "brandName": "Panasonic",
     "subCategoryId": 51028746
   },
   {
@@ -4000,8 +3920,8 @@
     "subModel": "",
     "madeIn": "Южная Корея",
     "optPrice": "4,2",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Акумулятори для ліхтарів",
+    "brandName": "Samsung",
     "subCategoryId": 51028746
   },
   {
@@ -4030,8 +3950,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ni-Mg AA, AAA",
     "subCategoryId": 50927223
   },
   {
@@ -4059,8 +3978,8 @@
     "subModel": "",
     "madeIn": "Япония",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ni-Mg AA, AAA",
+    "brandName": "Fujitsu",
     "subCategoryId": 50927223
   },
   {
@@ -4088,8 +4007,8 @@
     "subModel": "",
     "madeIn": "Япония",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion 18650",
+    "brandName": "Sony",
     "subCategoryId": 50926987
   },
   {
@@ -4117,8 +4036,8 @@
     "subModel": "",
     "madeIn": "Япония",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Високотокові акумулятори",
+    "brandName": "Sony",
     "subCategoryId": 51028747
   },
   {
@@ -4146,8 +4065,8 @@
     "subModel": "",
     "madeIn": "Южная Корея",
     "optPrice": "5,1",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion 18650",
+    "brandName": "Samsung",
     "subCategoryId": 50926987
   },
   {
@@ -4174,8 +4093,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "4,6",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion 18650",
     "subCategoryId": 50926987
   },
   {
@@ -4203,8 +4121,8 @@
     "subModel": "",
     "madeIn": "Япония",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion інші формати",
+    "brandName": "Sony",
     "subCategoryId": 51010355
   },
   {
@@ -4231,8 +4149,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion інші формати",
+    "brandName": "Keeppower",
     "subCategoryId": 51010355
   },
   {
@@ -4260,8 +4178,8 @@
     "subModel": "",
     "madeIn": "Малайзия",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Високотокові акумулятори",
+    "brandName": "Samsung",
     "subCategoryId": 51028747
   },
   {
@@ -4288,8 +4206,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -4316,8 +4233,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -4344,8 +4260,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -4372,8 +4287,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -4400,8 +4314,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -4428,8 +4341,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -4456,8 +4368,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -4484,8 +4395,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -4513,8 +4423,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "18",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -4542,8 +4451,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "16",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -4571,8 +4479,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "14",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -4600,8 +4507,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "12",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -4629,8 +4535,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "10",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -4656,8 +4561,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Вольтметри, амперметри",
     "subCategoryId": 23682256
   },
   {
@@ -4684,8 +4588,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
     "subCategoryId": 23680528
   },
   {
@@ -4712,8 +4615,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
     "subCategoryId": 23680528
   },
   {
@@ -4740,8 +4642,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
     "subCategoryId": 23680528
   },
   {
@@ -4768,8 +4669,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
     "subCategoryId": 23680528
   },
   {
@@ -4796,8 +4696,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
     "subCategoryId": 23680528
   },
   {
@@ -4824,8 +4723,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
     "subCategoryId": 23680528
   },
   {
@@ -4852,8 +4750,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
     "subCategoryId": 23680528
   },
   {
@@ -4880,8 +4777,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
     "subCategoryId": 23680528
   },
   {
@@ -4908,8 +4804,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
     "subCategoryId": 23680528
   },
   {
@@ -4939,8 +4834,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Sram",
     "subCategoryId": 89304751
   },
   {
@@ -4970,8 +4865,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Promax",
     "subCategoryId": 89304751
   },
   {
@@ -4998,8 +4893,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -5029,8 +4923,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Promax",
     "subCategoryId": 89304751
   },
   {
@@ -5060,8 +4954,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -5091,8 +4984,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -5122,8 +5014,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Sram",
     "subCategoryId": 89304751
   },
   {
@@ -5153,8 +5045,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -5184,8 +5075,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Shimano",
     "subCategoryId": 89304751
   },
   {
@@ -5215,8 +5106,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Shimano",
     "subCategoryId": 89304751
   },
   {
@@ -5246,8 +5137,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Shimano",
     "subCategoryId": 89304751
   },
   {
@@ -5277,8 +5168,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -5308,8 +5198,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "65",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Shimano",
     "subCategoryId": 89304751
   },
   {
@@ -5336,8 +5226,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -5367,8 +5256,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Shimano",
     "subCategoryId": 89304751
   },
   {
@@ -5398,8 +5287,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -5429,8 +5317,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "65",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -5457,8 +5344,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -5485,8 +5371,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -5513,8 +5398,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "115,00000;110",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -5544,8 +5428,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -5575,8 +5458,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "65",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -5603,8 +5485,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "65",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -5634,8 +5515,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;65",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -5665,8 +5545,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "115,00000;110",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -5693,8 +5572,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -5721,8 +5599,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "115,00000;110",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -5752,8 +5629,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Comp",
     "subCategoryId": 89304751
   },
   {
@@ -5783,8 +5660,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -5814,8 +5690,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -5842,8 +5717,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "95,00000;85",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -5870,8 +5744,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Велозамки",
     "subCategoryId": 23681225
   },
   {
@@ -5899,8 +5772,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
+    "brandName": "Liitokala",
     "subCategoryId": 108019932
   },
   {
@@ -5926,8 +5799,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Запчастини",
     "subCategoryId": 13743226
   },
   {
@@ -5953,8 +5825,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -5982,8 +5853,8 @@
     "subModel": "",
     "madeIn": "Япония",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ni-Mg AA, AAA",
+    "brandName": "Fujitsu",
     "subCategoryId": 50927223
   },
   {
@@ -6009,8 +5880,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -6036,8 +5906,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -6063,8 +5932,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -6093,8 +5961,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -6120,8 +5987,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -6147,8 +6013,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -6174,8 +6039,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -6201,8 +6065,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -6228,8 +6091,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -6255,8 +6117,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -6282,8 +6143,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -6309,8 +6169,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари",
     "subCategoryId": 13743238
   },
   {
@@ -6337,8 +6196,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -6365,8 +6223,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -6393,8 +6250,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -6421,8 +6277,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -6448,8 +6303,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -6476,8 +6330,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M2",
     "subCategoryId": 23680528
   },
   {
@@ -6504,8 +6357,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M2",
     "subCategoryId": 23680528
   },
   {
@@ -6532,8 +6384,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M2",
     "subCategoryId": 23680528
   },
   {
@@ -6560,8 +6411,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M2",
     "subCategoryId": 23680528
   },
   {
@@ -6588,8 +6438,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M2",
     "subCategoryId": 23680528
   },
   {
@@ -6616,8 +6465,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M2",
     "subCategoryId": 23680528
   },
   {
@@ -6644,8 +6492,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M2",
     "subCategoryId": 23680528
   },
   {
@@ -6673,8 +6520,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -6702,8 +6549,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "16,2",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -6730,8 +6577,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -6757,8 +6603,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Boruit",
     "subCategoryId": 90786324
   },
   {
@@ -6787,8 +6632,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L2",
     "subCategoryId": 23680528
   },
   {
@@ -6817,8 +6661,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L2",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -6847,8 +6691,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L2",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -6877,8 +6721,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L2",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -6907,8 +6751,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -6937,8 +6781,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Налобні ліхтарі",
     "subCategoryId": 71091645
   },
   {
@@ -6968,8 +6811,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S11",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -6995,8 +6838,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "6,42",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion інші формати",
     "subCategoryId": 51010355
   },
   {
@@ -7025,8 +6867,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Налобні ліхтарі",
     "subCategoryId": 71091645
   },
   {
@@ -7053,8 +6894,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -7085,8 +6926,8 @@
     "subModel": "",
     "madeIn": "Южная Корея",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Акумулятори для ліхтарів",
+    "brandName": "LG",
     "subCategoryId": 51028746
   },
   {
@@ -7112,8 +6953,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
     "subCategoryId": 108019932
   },
   {
@@ -7141,8 +6981,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -7170,8 +7010,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -7199,8 +7039,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -7228,8 +7068,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -7257,8 +7097,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -7286,8 +7126,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -7315,8 +7155,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -7344,8 +7184,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -7373,8 +7213,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -7402,8 +7242,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -7431,8 +7271,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -7460,8 +7300,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -7489,8 +7329,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -7518,8 +7358,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -7547,8 +7387,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -7574,8 +7414,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -7601,8 +7441,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -7628,8 +7468,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -7655,8 +7495,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -7683,8 +7522,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -7711,8 +7550,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -7739,8 +7578,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -7767,8 +7606,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -7795,8 +7634,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -7823,8 +7662,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -7851,8 +7690,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -7879,8 +7718,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -7907,8 +7746,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -7934,8 +7773,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Надпотужні ліхтарі",
+    "brandName": "Convoy",
     "subCategoryId": 78711736
   },
   {
@@ -7961,8 +7800,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Надпотужні ліхтарі",
+    "brandName": "Convoy",
     "subCategoryId": 78711736
   },
   {
@@ -7988,8 +7827,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Надпотужні ліхтарі",
+    "brandName": "Convoy",
     "subCategoryId": 78711736
   },
   {
@@ -8015,8 +7854,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Надпотужні ліхтарі",
+    "brandName": "Convoy",
     "subCategoryId": 78711736
   },
   {
@@ -8043,8 +7882,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -8071,8 +7910,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -8102,8 +7941,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -8130,8 +7969,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -8158,8 +7997,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -8186,8 +8025,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -8214,8 +8053,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -8242,8 +8081,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -8274,8 +8113,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -8301,8 +8140,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Наключники",
     "subCategoryId": 75260694
   },
   {
@@ -8328,8 +8166,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -8355,8 +8192,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -8382,8 +8218,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -8409,8 +8244,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -8439,8 +8273,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -8466,8 +8299,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -8493,8 +8325,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -8520,8 +8351,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рефлектори",
     "subCategoryId": 76040572
   },
   {
@@ -8547,8 +8377,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рефлектори",
     "subCategoryId": 76040572
   },
   {
@@ -8578,8 +8407,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -8605,8 +8434,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "4,9",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion інші формати",
     "subCategoryId": 51010355
   },
   {
@@ -8634,8 +8462,8 @@
     "subModel": "",
     "madeIn": "Малайзия",
     "optPrice": "3,5",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion 18650",
+    "brandName": "Samsung",
     "subCategoryId": 50926987
   },
   {
@@ -8663,8 +8491,8 @@
     "subModel": "",
     "madeIn": "Южная Корея",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Акумулятори для ліхтарів",
+    "brandName": "Samsung",
     "subCategoryId": 51028746
   },
   {
@@ -8693,8 +8521,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
     "subCategoryId": 76039760
   },
   {
@@ -8723,8 +8550,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -8750,8 +8576,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -8782,8 +8607,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Convoy",
     "subCategoryId": 76039760
   },
   {
@@ -8812,8 +8637,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Convoy",
     "subCategoryId": 76039760
   },
   {
@@ -8839,8 +8664,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "DC-DC перетворювачі",
     "subCategoryId": 23682261
   },
   {
@@ -8869,8 +8693,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
     "subCategoryId": 108019932
   },
   {
@@ -8898,8 +8721,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Convoy",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -8928,8 +8751,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "H2",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -8959,8 +8782,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -8987,8 +8810,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -9015,8 +8837,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -9043,8 +8864,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -9071,8 +8891,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -9099,8 +8918,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -9127,8 +8945,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -9155,8 +8972,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -9183,8 +8999,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -9210,8 +9025,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Налобні ліхтарі",
+    "brandName": "Convoy",
     "subCategoryId": 71091645
   },
   {
@@ -9237,8 +9052,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Налобні ліхтарі",
+    "brandName": "Convoy",
     "subCategoryId": 71091645
   },
   {
@@ -9264,8 +9079,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Налобні ліхтарі",
+    "brandName": "Convoy",
     "subCategoryId": 71091645
   },
   {
@@ -9291,8 +9106,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -9318,8 +9133,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -9348,8 +9163,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Надпотужні ліхтарі",
     "subCategoryId": 78711736
   },
   {
@@ -9375,8 +9189,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Надпотужні ліхтарі",
     "subCategoryId": 78711736
   },
   {
@@ -9402,8 +9215,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
     "subCategoryId": 108019932
   },
   {
@@ -9429,8 +9241,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L21A",
     "subCategoryId": 23680528
   },
   {
@@ -9456,8 +9267,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L21A",
     "subCategoryId": 23680528
   },
   {
@@ -9483,8 +9293,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -9510,8 +9319,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Скло",
     "subCategoryId": 80083243
   },
   {
@@ -9537,8 +9345,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Скло",
     "subCategoryId": 80083243
   },
   {
@@ -9564,8 +9371,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Скло",
     "subCategoryId": 80083243
   },
   {
@@ -9591,8 +9397,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Скло",
     "subCategoryId": 80083243
   },
   {
@@ -9618,8 +9423,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Скло",
     "subCategoryId": 80083243
   },
   {
@@ -9645,8 +9449,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Скло",
     "subCategoryId": 80083243
   },
   {
@@ -9675,8 +9478,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "4",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
     "subCategoryId": 76039760
   },
   {
@@ -9702,8 +9504,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
     "subCategoryId": 76039760
   },
   {
@@ -9729,8 +9530,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Велозамки",
     "subCategoryId": 23681225
   },
   {
@@ -9756,8 +9556,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Велозамки",
     "subCategoryId": 23681225
   },
   {
@@ -9783,8 +9582,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Convoy",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -9810,8 +9609,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Велозамки",
     "subCategoryId": 23681225
   },
   {
@@ -9838,8 +9636,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Велозамки",
     "subCategoryId": 23681225
   },
   {
@@ -9865,8 +9662,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей",
     "subCategoryId": 108020507
   },
   {
@@ -9892,8 +9688,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей",
     "subCategoryId": 108020507
   },
   {
@@ -9919,8 +9714,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей",
     "subCategoryId": 108020507
   },
   {
@@ -9948,8 +9742,8 @@
     "subModel": "",
     "madeIn": "Южная Корея",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Акумулятори для ліхтарів",
+    "brandName": "Samsung",
     "subCategoryId": 51028746
   },
   {
@@ -9975,8 +9769,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рюкзаки",
     "subCategoryId": 89203928
   },
   {
@@ -10004,8 +9797,8 @@
     "subModel": "",
     "madeIn": "Япония",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ni-Mg AA, AAA",
+    "brandName": "Panasonic",
     "subCategoryId": 50927223
   },
   {
@@ -10031,8 +9824,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "1,32",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ni-Mg AA, AAA",
     "subCategoryId": 50927223
   },
   {
@@ -10059,8 +9851,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -10089,8 +9881,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -10116,8 +9907,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -10144,8 +9934,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "6",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ущільнювачі",
     "subCategoryId": 81304329
   },
   {
@@ -10172,8 +9961,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "5",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ущільнювачі",
     "subCategoryId": 81304329
   },
   {
@@ -10200,8 +9988,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "5",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ущільнювачі",
     "subCategoryId": 81304329
   },
   {
@@ -10228,8 +10015,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -10256,8 +10042,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -10284,8 +10069,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рукавиці",
     "subCategoryId": 13743254
   },
   {
@@ -10311,8 +10095,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -10338,8 +10122,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -10365,8 +10149,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -10392,8 +10176,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Надпотужні ліхтарі",
     "subCategoryId": 78711736
   },
   {
@@ -10420,8 +10203,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -10448,8 +10231,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -10477,8 +10259,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
+    "brandName": "Liitokala",
     "subCategoryId": 108019932
   },
   {
@@ -10505,8 +10287,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -10532,8 +10314,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion інші формати",
+    "brandName": "Keeppower",
     "subCategoryId": 51010355
   },
   {
@@ -10559,8 +10341,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion інші формати",
+    "brandName": "Keeppower",
     "subCategoryId": 51010355
   },
   {
@@ -10586,8 +10368,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion інші формати",
+    "brandName": "Keeppower",
     "subCategoryId": 51010355
   },
   {
@@ -10613,8 +10395,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion інші формати",
+    "brandName": "QB",
     "subCategoryId": 51010355
   },
   {
@@ -10640,8 +10422,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для акумуляторів",
     "subCategoryId": 91704197
   },
   {
@@ -10667,8 +10448,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для акумуляторів",
     "subCategoryId": 91704197
   },
   {
@@ -10694,8 +10474,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ультрафіолетові ліхтарі",
     "subCategoryId": 73544218
   },
   {
@@ -10724,8 +10503,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "C8",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -10751,8 +10530,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "C8",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -10781,8 +10560,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "T2",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -10808,8 +10587,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ущільнювачі",
     "subCategoryId": 81304329
   },
   {
@@ -10836,8 +10614,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S11",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -10867,8 +10645,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S11",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -10895,8 +10673,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S11",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -10926,8 +10704,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S11",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -10957,8 +10735,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S11",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -10988,8 +10766,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S11",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -11015,8 +10793,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -11042,8 +10819,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -11069,8 +10845,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -11101,8 +10876,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -11129,8 +10904,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M2",
     "subCategoryId": 23680528
   },
   {
@@ -11159,8 +10933,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Надпотужні ліхтарі",
     "subCategoryId": 78711736
   },
   {
@@ -11186,8 +10959,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Надпотужні ліхтарі",
     "subCategoryId": 78711736
   },
   {
@@ -11213,8 +10985,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Надпотужні ліхтарі",
     "subCategoryId": 78711736
   },
   {
@@ -11241,8 +11012,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -11271,8 +11042,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ущільнювачі",
     "subCategoryId": 81304329
   },
   {
@@ -11299,8 +11069,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
+    "brandName": "XTAR",
     "subCategoryId": 108019932
   },
   {
@@ -11327,8 +11097,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
+    "brandName": "XTAR",
     "subCategoryId": 108019932
   },
   {
@@ -11357,8 +11127,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари",
     "subCategoryId": 13743238
   },
   {
@@ -11387,8 +11156,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -11414,8 +11183,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -11443,8 +11212,8 @@
     "subModel": "",
     "madeIn": "Япония",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ni-Mg AA, AAA",
+    "brandName": "Fujitsu",
     "subCategoryId": 50927223
   },
   {
@@ -11470,8 +11239,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ni-Mg AA, AAA",
     "subCategoryId": 50927223
   },
   {
@@ -11497,8 +11265,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Надпотужні ліхтарі",
     "subCategoryId": 78711736
   },
   {
@@ -11524,8 +11291,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Надпотужні ліхтарі",
     "subCategoryId": 78711736
   },
   {
@@ -11555,8 +11321,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
     "subCategoryId": 76039760
   },
   {
@@ -11583,8 +11348,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
     "subCategoryId": 76039760
   },
   {
@@ -11611,8 +11375,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
     "subCategoryId": 76039760
   },
   {
@@ -11639,8 +11402,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
     "subCategoryId": 76039760
   },
   {
@@ -11667,8 +11429,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
     "subCategoryId": 76039760
   },
   {
@@ -11695,8 +11456,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
     "subCategoryId": 76039760
   },
   {
@@ -11723,8 +11483,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
     "subCategoryId": 76039760
   },
   {
@@ -11751,8 +11510,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
     "subCategoryId": 76039760
   },
   {
@@ -11778,8 +11536,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Запчастини",
     "subCategoryId": 13743226
   },
   {
@@ -11805,8 +11562,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Запчастини",
     "subCategoryId": 13743226
   },
   {
@@ -11835,8 +11591,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей, з функцією балансування",
     "subCategoryId": 108020457
   },
   {
@@ -11864,8 +11619,8 @@
     "subModel": "",
     "madeIn": "Малайзия",
     "optPrice": "3,5",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion 18650",
+    "brandName": "Samsung",
     "subCategoryId": 50926987
   },
   {
@@ -11892,8 +11647,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -11920,8 +11675,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -11948,8 +11703,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -11975,8 +11730,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рюкзаки",
     "subCategoryId": 89203928
   },
   {
@@ -12002,8 +11756,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рюкзаки",
+    "brandName": "Karrimor",
     "subCategoryId": 89203928
   },
   {
@@ -12032,8 +11786,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -12061,8 +11814,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "4,7",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion 18650",
+    "brandName": "Sanyo",
     "subCategoryId": 50926987
   },
   {
@@ -12092,8 +11845,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Батареї для велофари",
     "subCategoryId": 105550655
   },
   {
@@ -12120,8 +11872,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Батареї для велофари",
     "subCategoryId": 105550655
   },
   {
@@ -12148,8 +11899,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Батареї для велофари",
     "subCategoryId": 105550655
   },
   {
@@ -12176,8 +11926,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Батареї для велофари",
     "subCategoryId": 105550655
   },
   {
@@ -12204,8 +11953,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Батареї для велофари",
     "subCategoryId": 105550655
   },
   {
@@ -12232,8 +11980,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Батареї для велофари",
     "subCategoryId": 105550655
   },
   {
@@ -12264,8 +12011,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12296,8 +12043,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12328,8 +12075,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12360,8 +12107,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12387,8 +12134,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей, з функцією балансування",
     "subCategoryId": 108020457
   },
   {
@@ -12416,8 +12162,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Convoy Z1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12445,8 +12191,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Convoy Z1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12477,8 +12223,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12506,8 +12252,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12535,8 +12281,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12564,8 +12310,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12593,8 +12339,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12622,8 +12368,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12651,8 +12397,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12680,8 +12426,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12709,8 +12455,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12738,8 +12484,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12767,8 +12513,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12796,8 +12542,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12825,8 +12571,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21C-U",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12854,8 +12600,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21C-U",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12883,8 +12629,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21C-U",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12912,8 +12658,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21C-U",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -12939,8 +12685,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Boruit",
     "subCategoryId": 90786324
   },
   {
@@ -12966,8 +12711,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "55,00000;50",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -12995,8 +12739,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "7,7",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -13022,8 +12765,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -13049,8 +12791,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -13078,8 +12820,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Налобні ліхтарі",
+    "brandName": "Sofirn",
     "subCategoryId": 71091645
   },
   {
@@ -13107,8 +12849,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Налобні ліхтарі",
+    "brandName": "Sofirn",
     "subCategoryId": 71091645
   },
   {
@@ -13136,8 +12878,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Налобні ліхтарі",
+    "brandName": "Sofirn",
     "subCategoryId": 71091645
   },
   {
@@ -13163,8 +12905,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Astrolux",
     "subCategoryId": 90778772
   },
   {
@@ -13190,8 +12931,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Корпуси ліхтарів",
     "subCategoryId": 91227412
   },
   {
@@ -13218,8 +12958,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Акумулятори для ліхтарів",
+    "brandName": "VapCell",
     "subCategoryId": 51028746
   },
   {
@@ -13246,8 +12986,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Акумулятори для ліхтарів",
+    "brandName": "VapCell",
     "subCategoryId": 51028746
   },
   {
@@ -13274,8 +13014,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Акумулятори для ліхтарів",
+    "brandName": "VapCell",
     "subCategoryId": 51028746
   },
   {
@@ -13301,8 +13041,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для акумуляторів",
     "subCategoryId": 91704197
   },
   {
@@ -13328,8 +13067,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для акумуляторів",
     "subCategoryId": 91704197
   },
   {
@@ -13358,8 +13096,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для акумуляторів",
     "subCategoryId": 91704197
   },
   {
@@ -13386,8 +13123,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion інші формати",
+    "brandName": "VapCell",
     "subCategoryId": 51010355
   },
   {
@@ -13416,8 +13153,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
     "subCategoryId": 108019932
   },
   {
@@ -13444,8 +13180,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -13476,8 +13212,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -13507,8 +13243,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Налобні ліхтарі",
+    "brandName": "Sofirn",
     "subCategoryId": 71091645
   },
   {
@@ -13539,8 +13275,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -13571,8 +13307,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -13603,8 +13339,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -13635,8 +13371,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -13664,8 +13400,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -13693,8 +13429,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -13722,8 +13458,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -13753,8 +13489,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі NexTool",
     "subCategoryId": 92234898
   },
   {
@@ -13780,8 +13515,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Astrolux",
     "subCategoryId": 90778772
   },
   {
@@ -13807,8 +13541,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей, з функцією балансування",
     "subCategoryId": 108020457
   },
   {
@@ -13834,8 +13567,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей, з функцією балансування",
     "subCategoryId": 108020457
   },
   {
@@ -13864,8 +13596,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "4X18A",
     "subCategoryId": 23680528
   },
   {
@@ -13894,8 +13625,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Надпотужні ліхтарі",
     "subCategoryId": 78711736
   },
   {
@@ -13926,8 +13656,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Корпуси ліхтарів",
+    "brandName": "Convoy",
     "subCategoryId": 91227412
   },
   {
@@ -13958,8 +13688,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Корпуси ліхтарів",
+    "brandName": "Convoy",
     "subCategoryId": 91227412
   },
   {
@@ -13990,8 +13720,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Корпуси ліхтарів",
+    "brandName": "Convoy",
     "subCategoryId": 91227412
   },
   {
@@ -14022,8 +13752,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Корпуси ліхтарів",
+    "brandName": "Convoy",
     "subCategoryId": 91227412
   },
   {
@@ -14054,8 +13784,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Корпуси ліхтарів",
+    "brandName": "Convoy",
     "subCategoryId": 91227412
   },
   {
@@ -14086,8 +13816,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Корпуси ліхтарів",
+    "brandName": "Convoy",
     "subCategoryId": 91227412
   },
   {
@@ -14118,8 +13848,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Корпуси ліхтарів",
+    "brandName": "Convoy",
     "subCategoryId": 91227412
   },
   {
@@ -14150,8 +13880,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Корпуси ліхтарів",
+    "brandName": "Convoy",
     "subCategoryId": 91227412
   },
   {
@@ -14182,8 +13912,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Корпуси ліхтарів",
+    "brandName": "Convoy",
     "subCategoryId": 91227412
   },
   {
@@ -14214,8 +13944,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Корпуси ліхтарів",
+    "brandName": "Convoy",
     "subCategoryId": 91227412
   },
   {
@@ -14246,8 +13976,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Корпуси ліхтарів",
+    "brandName": "Convoy",
     "subCategoryId": 91227412
   },
   {
@@ -14278,8 +14008,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Корпуси ліхтарів",
+    "brandName": "Convoy",
     "subCategoryId": 91227412
   },
   {
@@ -14310,8 +14040,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Корпуси ліхтарів",
+    "brandName": "Convoy",
     "subCategoryId": 91227412
   },
   {
@@ -14342,8 +14072,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Корпуси ліхтарів",
+    "brandName": "Convoy",
     "subCategoryId": 91227412
   },
   {
@@ -14370,8 +14100,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Wurkkos",
+    "brandName": "Samsung",
     "subCategoryId": 93237002
   },
   {
@@ -14398,8 +14128,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
     "subCategoryId": 76039760
   },
   {
@@ -14426,8 +14155,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей, з функцією балансування",
+    "brandName": "SkyRC",
     "subCategoryId": 108020457
   },
   {
@@ -14454,8 +14183,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Astrolux",
+    "brandName": "Astrolux",
     "subCategoryId": 90778772
   },
   {
@@ -14482,8 +14211,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Astrolux",
+    "brandName": "Astrolux",
     "subCategoryId": 90778772
   },
   {
@@ -14510,8 +14239,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей, з функцією балансування",
+    "brandName": "SkyRC",
     "subCategoryId": 108020457
   },
   {
@@ -14539,8 +14268,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі з зумом",
+    "brandName": "Convoy",
     "subCategoryId": 91703568
   },
   {
@@ -14568,8 +14297,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі з зумом",
+    "brandName": "Convoy",
     "subCategoryId": 91703568
   },
   {
@@ -14595,8 +14324,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ущільнювачі",
     "subCategoryId": 81304329
   },
   {
@@ -14625,8 +14353,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Astrolux",
+    "brandName": "Astrolux",
     "subCategoryId": 90778772
   },
   {
@@ -14652,8 +14380,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Skilhunt",
     "subCategoryId": 76039760
   },
   {
@@ -14679,8 +14407,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
+    "brandName": "Osram",
     "subCategoryId": 76039752
   },
   {
@@ -14709,8 +14437,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
+    "brandName": "Osram",
     "subCategoryId": 76039752
   },
   {
@@ -14736,8 +14464,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
+    "brandName": "Osram",
     "subCategoryId": 76039752
   },
   {
@@ -14766,8 +14494,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21C",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -14793,8 +14521,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21C",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -14825,8 +14553,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "5,2",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion 18650 з платою захисту",
+    "brandName": "Sanyo",
     "subCategoryId": 50932760
   },
   {
@@ -14853,8 +14581,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
+    "brandName": "VapCell",
     "subCategoryId": 108019932
   },
   {
@@ -14881,8 +14609,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion інші формати",
+    "brandName": "VapCell",
     "subCategoryId": 51010355
   },
   {
@@ -14909,8 +14637,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Акумулятори 21700",
+    "brandName": "VapCell",
     "subCategoryId": 105522541
   },
   {
@@ -14937,8 +14665,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Акумулятори для ліхтарів",
+    "brandName": "VapCell",
     "subCategoryId": 51028746
   },
   {
@@ -14965,8 +14693,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion інші формати",
+    "brandName": "VapCell",
     "subCategoryId": 51010355
   },
   {
@@ -14995,8 +14723,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -15026,8 +14754,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -15054,8 +14782,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -15085,8 +14813,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Акумулятори 21700",
+    "brandName": "VapCell",
     "subCategoryId": 105522541
   },
   {
@@ -15113,8 +14841,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion 18650",
+    "brandName": "VapCell",
     "subCategoryId": 50926987
   },
   {
@@ -15140,8 +14868,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Надпотужні ліхтарі",
     "subCategoryId": 78711736
   },
   {
@@ -15167,8 +14894,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Надпотужні ліхтарі",
     "subCategoryId": 78711736
   },
   {
@@ -15195,8 +14921,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Високотокові акумулятори",
+    "brandName": "VapCell",
     "subCategoryId": 51028747
   },
   {
@@ -15223,8 +14949,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Акумулятори для ліхтарів",
+    "brandName": "VapCell",
     "subCategoryId": 51028746
   },
   {
@@ -15252,8 +14978,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -15281,8 +15007,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -15310,8 +15036,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -15339,8 +15065,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -15368,8 +15094,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -15397,8 +15123,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -15428,8 +15154,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -15459,8 +15185,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -15490,8 +15216,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -15521,8 +15247,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M3",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -15552,8 +15278,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "87,00000;80",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Sram",
     "subCategoryId": 89304751
   },
   {
@@ -15583,8 +15309,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "80,00000;75",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Sram",
     "subCategoryId": 89304751
   },
   {
@@ -15614,8 +15340,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "115,00000;110",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Sram",
     "subCategoryId": 89304751
   },
   {
@@ -15645,8 +15371,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "115,00000;110",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Shimano",
     "subCategoryId": 89304751
   },
   {
@@ -15676,8 +15402,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "87,00000;80",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Shimano",
     "subCategoryId": 89304751
   },
   {
@@ -15707,8 +15433,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "80,00000;75",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Shimano",
     "subCategoryId": 89304751
   },
   {
@@ -15738,8 +15464,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "180,00000;175",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Shimano",
     "subCategoryId": 89304751
   },
   {
@@ -15769,8 +15495,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "115,00000;110",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Promax",
     "subCategoryId": 89304751
   },
   {
@@ -15800,8 +15526,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "80,00000;75",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Promax",
     "subCategoryId": 89304751
   },
   {
@@ -15828,8 +15554,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "115,00000;110",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Shimano",
     "subCategoryId": 89304751
   },
   {
@@ -15856,8 +15582,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "87,00000;80",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Shimano",
     "subCategoryId": 89304751
   },
   {
@@ -15884,8 +15610,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "80,00000;75",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Shimano",
     "subCategoryId": 89304751
   },
   {
@@ -15915,8 +15641,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "115,00000;110",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Promax",
     "subCategoryId": 89304751
   },
   {
@@ -15946,8 +15672,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "80,00000;75",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Promax",
     "subCategoryId": 89304751
   },
   {
@@ -15974,8 +15700,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "115,00000;110",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -16002,8 +15727,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "115,00000;110",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -16030,8 +15754,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "87,00000;80",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -16058,8 +15781,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "80,00000;75",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -16090,8 +15812,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -16121,8 +15843,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "115,00000;110",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Shimano",
     "subCategoryId": 89304751
   },
   {
@@ -16152,8 +15874,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "87,00000;80",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Shimano",
     "subCategoryId": 89304751
   },
   {
@@ -16183,8 +15905,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "80,00000;75",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Shimano",
     "subCategoryId": 89304751
   },
   {
@@ -16211,8 +15933,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "115,00000;110",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -16239,8 +15960,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "87,00000;80",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -16267,8 +15987,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "80,00000;75",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -16298,8 +16017,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "115,00000;110",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Sram",
     "subCategoryId": 89304751
   },
   {
@@ -16329,8 +16048,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "87,00000;80",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Sram",
     "subCategoryId": 89304751
   },
   {
@@ -16360,8 +16079,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "80,00000;75",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Sram",
     "subCategoryId": 89304751
   },
   {
@@ -16390,8 +16109,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -16420,8 +16139,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -16450,8 +16169,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -16480,8 +16199,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей, з функцією балансування",
     "subCategoryId": 108020457
   },
   {
@@ -16510,8 +16228,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей, з функцією балансування",
+    "brandName": "HTRC",
     "subCategoryId": 108020457
   },
   {
@@ -16540,8 +16258,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей, з функцією балансування",
+    "brandName": "HTRC",
     "subCategoryId": 108020457
   },
   {
@@ -16567,8 +16285,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей, з функцією балансування",
+    "brandName": "SkyRC",
     "subCategoryId": 108020457
   },
   {
@@ -16597,8 +16315,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей, з функцією балансування",
+    "brandName": "HTRC",
     "subCategoryId": 108020457
   },
   {
@@ -16628,8 +16346,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей, з функцією балансування",
     "subCategoryId": 108020457
   },
   {
@@ -16658,8 +16375,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рефлектори",
+    "brandName": "Convoy",
     "subCategoryId": 76040572
   },
   {
@@ -16688,8 +16405,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рефлектори",
+    "brandName": "Convoy",
     "subCategoryId": 76040572
   },
   {
@@ -16718,8 +16435,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рефлектори",
+    "brandName": "Convoy",
     "subCategoryId": 76040572
   },
   {
@@ -16748,8 +16465,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рефлектори",
+    "brandName": "Convoy",
     "subCategoryId": 76040572
   },
   {
@@ -16775,8 +16492,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Скло",
     "subCategoryId": 80083243
   },
   {
@@ -16805,8 +16521,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Convoy",
     "subCategoryId": 76039760
   },
   {
@@ -16835,8 +16551,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Convoy",
     "subCategoryId": 76039760
   },
   {
@@ -16865,8 +16581,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Convoy",
     "subCategoryId": 76039760
   },
   {
@@ -16896,8 +16612,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion інші формати",
+    "brandName": "VapCell",
     "subCategoryId": 51010355
   },
   {
@@ -16927,8 +16643,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Акумулятори для ліхтарів",
+    "brandName": "VapCell",
     "subCategoryId": 51028746
   },
   {
@@ -16958,8 +16674,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Акумулятори для ліхтарів",
+    "brandName": "VapCell",
     "subCategoryId": 51028746
   },
   {
@@ -16989,8 +16705,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "5,45000;5,3",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion інші формати",
+    "brandName": "VapCell",
     "subCategoryId": 51010355
   },
   {
@@ -17017,8 +16733,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "115,00000;110",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -17048,8 +16763,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "115,00000;110",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -17079,8 +16793,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "87,00000;80",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Shimano",
     "subCategoryId": 89304751
   },
   {
@@ -17110,8 +16824,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "115,00000;110",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -17140,8 +16853,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Надпотужні ліхтарі",
     "subCategoryId": 78711736
   },
   {
@@ -17172,8 +16884,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі з зумом",
+    "brandName": "Convoy",
     "subCategoryId": 91703568
   },
   {
@@ -17204,8 +16916,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі з зумом",
+    "brandName": "Convoy",
     "subCategoryId": 91703568
   },
   {
@@ -17233,8 +16945,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S12",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -17261,8 +16973,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -17292,8 +17004,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
     "subCategoryId": 23680528
   },
   {
@@ -17323,8 +17034,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
     "subCategoryId": 23680528
   },
   {
@@ -17354,8 +17064,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
     "subCategoryId": 23680528
   },
   {
@@ -17385,8 +17094,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "С8+",
     "subCategoryId": 23680528
   },
   {
@@ -17415,8 +17123,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
+    "brandName": "Liitokala",
     "subCategoryId": 108019932
   },
   {
@@ -17445,8 +17153,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "ЛІхтарі BLF",
     "subCategoryId": 98430270
   },
   {
@@ -17475,8 +17182,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Wurkkos",
+    "brandName": "Sofirn",
     "subCategoryId": 93237002
   },
   {
@@ -17505,8 +17212,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -17535,8 +17242,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Wurkkos",
     "subCategoryId": 93237002
   },
   {
@@ -17565,8 +17271,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion інші формати",
     "subCategoryId": 51010355
   },
   {
@@ -17595,8 +17300,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
+    "brandName": "Liitokala",
     "subCategoryId": 108019932
   },
   {
@@ -17626,8 +17331,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "115",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -17654,8 +17358,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "115,00000;110",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -17685,8 +17388,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "115",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Shimano",
     "subCategoryId": 89304751
   },
   {
@@ -17713,8 +17416,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "115,00000;110",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -17741,8 +17443,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "115",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -17772,8 +17473,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -17803,8 +17503,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "115,00000;110",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -17834,8 +17533,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "65,00000;60",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -17862,8 +17560,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "115,00000;110",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -17890,8 +17587,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "115",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -17918,8 +17614,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "115",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Comp",
     "subCategoryId": 89304751
   },
   {
@@ -17948,8 +17644,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
+    "brandName": "Liitokala",
     "subCategoryId": 108019932
   },
   {
@@ -17979,8 +17675,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
+    "brandName": "Liitokala",
     "subCategoryId": 108019932
   },
   {
@@ -18009,8 +17705,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -18039,8 +17734,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -18069,8 +17763,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рефлектори",
+    "brandName": "Convoy",
     "subCategoryId": 76040572
   },
   {
@@ -18099,8 +17793,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рефлектори",
+    "brandName": "Convoy",
     "subCategoryId": 76040572
   },
   {
@@ -18130,8 +17824,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Акумулятори 21700",
+    "brandName": "VapCell",
     "subCategoryId": 105522541
   },
   {
@@ -18160,8 +17854,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -18190,8 +17883,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -18220,8 +17912,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -18250,8 +17941,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для акумуляторів",
     "subCategoryId": 91704197
   },
   {
@@ -18281,8 +17971,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -18312,8 +18002,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -18343,8 +18033,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Налобні ліхтарі",
+    "brandName": "Sofirn",
     "subCategoryId": 71091645
   },
   {
@@ -18370,8 +18060,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -18400,8 +18089,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
     "subCategoryId": 76039760
   },
   {
@@ -18431,8 +18119,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
     "subCategoryId": 76039760
   },
   {
@@ -18463,8 +18150,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Надпотужні ліхтарі",
+    "brandName": "Convoy",
     "subCategoryId": 78711736
   },
   {
@@ -18492,8 +18179,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Надпотужні ліхтарі",
+    "brandName": "Convoy",
     "subCategoryId": 78711736
   },
   {
@@ -18521,8 +18208,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Надпотужні ліхтарі",
+    "brandName": "Convoy",
     "subCategoryId": 78711736
   },
   {
@@ -18552,8 +18239,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "0,6",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "DC-DC перетворювачі",
     "subCategoryId": 23682261
   },
   {
@@ -18583,8 +18269,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "0,6",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "DC-DC перетворювачі",
     "subCategoryId": 23682261
   },
   {
@@ -18613,8 +18298,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L6",
     "subCategoryId": 23680528
   },
   {
@@ -18643,8 +18327,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L6",
     "subCategoryId": 23680528
   },
   {
@@ -18673,8 +18356,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L6",
     "subCategoryId": 23680528
   },
   {
@@ -18705,8 +18387,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -18737,8 +18419,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -18769,8 +18451,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -18801,8 +18483,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -18831,8 +18513,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -18861,8 +18542,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -18891,8 +18571,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Налобні ліхтарі",
+    "brandName": "Convoy",
     "subCategoryId": 71091645
   },
   {
@@ -18921,8 +18601,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Налобні ліхтарі",
+    "brandName": "Convoy",
     "subCategoryId": 71091645
   },
   {
@@ -18951,8 +18631,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Налобні ліхтарі",
+    "brandName": "Convoy",
     "subCategoryId": 71091645
   },
   {
@@ -18981,8 +18661,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Високотокові акумулятори",
     "subCategoryId": 51028747
   },
   {
@@ -19012,8 +18691,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S11",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19042,8 +18721,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Wurkkos",
     "subCategoryId": 93237002
   },
   {
@@ -19073,8 +18751,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Wurkkos",
     "subCategoryId": 93237002
   },
   {
@@ -19104,8 +18781,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Wurkkos",
     "subCategoryId": 93237002
   },
   {
@@ -19135,8 +18811,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Wurkkos",
+    "brandName": "Sofirn",
     "subCategoryId": 93237002
   },
   {
@@ -19162,8 +18838,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "4,7",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Акумулятори для ліхтарів",
     "subCategoryId": 51028746
   },
   {
@@ -19194,8 +18869,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19226,8 +18901,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19258,8 +18933,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19290,8 +18965,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19322,8 +18997,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19354,8 +19029,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19386,8 +19061,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19418,8 +19093,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19447,8 +19122,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19479,8 +19154,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19509,8 +19184,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "H1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19539,8 +19214,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "H1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19571,8 +19246,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19603,8 +19278,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19635,8 +19310,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19667,8 +19342,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19695,8 +19370,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Налобні ліхтарі",
+    "brandName": "Sofirn",
     "subCategoryId": 71091645
   },
   {
@@ -19726,8 +19401,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -19758,8 +19433,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19790,8 +19465,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19822,8 +19497,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19854,8 +19529,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19886,8 +19561,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19918,8 +19593,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19948,8 +19623,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -19980,8 +19655,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -20012,8 +19687,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -20044,8 +19719,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -20076,8 +19751,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -20106,8 +19781,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -20136,8 +19811,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -20166,8 +19841,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -20198,8 +19873,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Convoy Z1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -20229,8 +19904,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -20260,8 +19935,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -20291,8 +19966,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -20321,8 +19996,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -20351,8 +20026,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -20381,8 +20056,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -20411,8 +20086,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Boruit",
     "subCategoryId": 90786324
   },
   {
@@ -20441,8 +20115,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Wurkkos",
     "subCategoryId": 93237002
   },
   {
@@ -20473,8 +20146,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -20504,8 +20177,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "65",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -20535,8 +20207,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "115",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -20566,8 +20237,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "65",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Clarks",
     "subCategoryId": 89304751
   },
   {
@@ -20597,8 +20268,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "115",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "Clarks",
     "subCategoryId": 89304751
   },
   {
@@ -20628,8 +20299,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "70",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "BAT",
     "subCategoryId": 89304751
   },
   {
@@ -20659,8 +20330,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "115",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
+    "brandName": "BAT",
     "subCategoryId": 89304751
   },
   {
@@ -20690,8 +20361,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "75",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -20721,8 +20391,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "115",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Гальмівні колодки",
     "subCategoryId": 89304751
   },
   {
@@ -20753,8 +20422,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "C8",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -20785,8 +20454,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "C8",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -20816,8 +20485,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Sofirn",
+    "brandName": "Sofirn",
     "subCategoryId": 32774375
   },
   {
@@ -20846,8 +20515,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L7",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -20878,8 +20547,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -20910,8 +20579,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -20942,8 +20611,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -20974,8 +20643,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21005,8 +20674,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21036,8 +20705,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21066,8 +20735,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21C",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21096,8 +20765,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21C",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21126,8 +20795,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
     "subCategoryId": 108019932
   },
   {
@@ -21157,8 +20825,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S11",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21188,8 +20856,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S11",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21219,8 +20887,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S11",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21250,8 +20918,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S11",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21280,8 +20948,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "4X18A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21310,8 +20978,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "3X21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21342,8 +21010,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21A",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21372,8 +21040,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "H1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21402,8 +21070,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "H1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21432,8 +21100,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "H2",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21462,8 +21130,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "H2",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21492,8 +21160,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "H2",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21522,8 +21190,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "H2",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21552,8 +21220,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "H2",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21582,8 +21250,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "H2",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21612,8 +21280,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "T2",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21644,8 +21312,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21D",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21676,8 +21344,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21D",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21708,8 +21376,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21D",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21740,8 +21408,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21D",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21772,8 +21440,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21D",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21804,8 +21472,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21D",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21836,8 +21504,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21865,8 +21533,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "4",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -21894,8 +21561,7 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "9",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Аксесуари для зарядних пристроїв",
     "subCategoryId": 23682267
   },
   {
@@ -21925,8 +21591,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M26C",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21956,8 +21622,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M26C",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -21987,8 +21653,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M26C",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -22018,8 +21684,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M26C",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -22046,8 +21712,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "BMS",
     "subCategoryId": 46247416
   },
   {
@@ -22074,8 +21739,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "BMS",
     "subCategoryId": 46247416
   },
   {
@@ -22102,8 +21766,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "BMS",
     "subCategoryId": 46247416
   },
   {
@@ -22129,8 +21792,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "BMS",
     "subCategoryId": 46247416
   },
   {
@@ -22156,8 +21818,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "BMS",
     "subCategoryId": 46247416
   },
   {
@@ -22183,8 +21844,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "BMS",
     "subCategoryId": 46247416
   },
   {
@@ -22211,8 +21871,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Вольтметри, амперметри",
     "subCategoryId": 23682256
   },
   {
@@ -22240,8 +21899,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -22269,8 +21928,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M1",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -22301,8 +21960,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21E",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -22332,8 +21991,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей, з функцією балансування",
     "subCategoryId": 108020457
   },
   {
@@ -22362,8 +22020,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion інші формати",
     "subCategoryId": 51010355
   },
   {
@@ -22392,8 +22049,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
+    "brandName": "Samsung",
     "subCategoryId": 76039752
   },
   {
@@ -22420,8 +22077,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
+    "brandName": "Nichia",
     "subCategoryId": 76039752
   },
   {
@@ -22448,8 +22105,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
+    "brandName": "Nichia",
     "subCategoryId": 76039752
   },
   {
@@ -22479,8 +22136,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Convoy",
     "subCategoryId": 76039760
   },
   {
@@ -22510,8 +22167,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Convoy",
     "subCategoryId": 76039760
   },
   {
@@ -22541,8 +22198,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Convoy",
     "subCategoryId": 76039760
   },
   {
@@ -22573,8 +22230,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Convoy",
     "subCategoryId": 76039760
   },
   {
@@ -22602,8 +22259,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Convoy",
     "subCategoryId": 76039760
   },
   {
@@ -22632,8 +22289,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Convoy",
     "subCategoryId": 76039760
   },
   {
@@ -22659,8 +22316,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Світлодіоди",
     "subCategoryId": 76039752
   },
   {
@@ -22689,8 +22345,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Convoy",
     "subCategoryId": 76039760
   },
   {
@@ -22719,8 +22375,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Convoy",
     "subCategoryId": 76039760
   },
   {
@@ -22749,8 +22405,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Драйвери",
+    "brandName": "Convoy",
     "subCategoryId": 76039760
   },
   {
@@ -22779,8 +22435,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Рефлектори",
+    "brandName": "Convoy",
     "subCategoryId": 76040572
   },
   {
@@ -22809,8 +22465,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей",
+    "brandName": "Liitokala",
     "subCategoryId": 108020507
   },
   {
@@ -22839,8 +22495,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей",
+    "brandName": "Liitokala",
     "subCategoryId": 108020507
   },
   {
@@ -22869,8 +22525,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей",
+    "brandName": "Liitokala",
     "subCategoryId": 108020507
   },
   {
@@ -22899,8 +22555,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для батарей",
+    "brandName": "Liitokala",
     "subCategoryId": 108020507
   },
   {
@@ -22926,8 +22582,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L8",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -22953,8 +22609,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Зарядні пристрої для акумуляторів",
     "subCategoryId": 108019932
   },
   {
@@ -22980,8 +22635,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Акумулятори 21700",
     "subCategoryId": 105522541
   },
   {
@@ -23007,8 +22661,7 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "L6",
     "subCategoryId": 23680528
   },
   {
@@ -23039,8 +22692,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Wurkkos",
+    "brandName": "Sofirn",
     "subCategoryId": 93237002
   },
   {
@@ -23071,8 +22724,8 @@
     "subModel": "",
     "madeIn": "Южная Корея",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Акумулятори 21700",
+    "brandName": "LG",
     "subCategoryId": 105522541
   },
   {
@@ -23103,8 +22756,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -23132,8 +22785,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -23164,8 +22817,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -23196,8 +22849,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -23225,8 +22878,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -23257,8 +22910,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -23286,8 +22939,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -23318,8 +22971,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -23347,8 +23000,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -23379,8 +23032,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "S2+",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -23411,8 +23064,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Li-ion 18650",
+    "brandName": "Panasonic",
     "subCategoryId": 50926987
   },
   {
@@ -23442,8 +23095,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Літієві батарейки",
+    "brandName": "Duracell",
     "subCategoryId": 109882516
   },
   {
@@ -23474,8 +23127,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Акумулятори для ліхтарів",
+    "brandName": "LG",
     "subCategoryId": 51028746
   },
   {
@@ -23505,8 +23158,8 @@
     "subModel": "",
     "madeIn": "Китай",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "Ліхтарі Wurkkos",
+    "brandName": "Sofirn",
     "subCategoryId": 93237002
   },
   {
@@ -23536,8 +23189,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   },
   {
@@ -23567,8 +23220,8 @@
     "model": "",
     "subModel": "",
     "optPrice": "",
-    "typeId": 1,
-    "brandId": 1,
+    "typeName": "M21B",
+    "brandName": "Convoy",
     "subCategoryId": 23680528
   }
 ]

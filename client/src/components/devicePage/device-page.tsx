@@ -17,6 +17,7 @@ import DeliveryInfoModal from "../common/modals/deliveryInfo/delivery-info";
 import WorkScheduleModal from "../common/modals/workSchedule/work-schedule";
 import WarrantyInfoModal from "../common/modals/warrantyInfo/warranty-info";
 import ModalsWraper from "../common/modals/modalsWraper/modals-wraper";
+import SearchBar from "../common/searchBar/search-bar";
 
 function DevicePage() {
   const dispatch = useAppDispatch();
@@ -119,6 +120,7 @@ function DevicePage() {
         </div>
         <div className={styles.selectedCategory}>{actualDevice?.name}</div>
       </div>
+     
       <div className={styles.content}>
         <div className={styles.mainBlock}>
           <div className={styles.imgBlock}>

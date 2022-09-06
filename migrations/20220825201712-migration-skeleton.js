@@ -82,6 +82,8 @@ module.exports = {
       subModel:{type:DataTypes.STRING},
       madeIn:{type:DataTypes.STRING},
       optPrice:{type:DataTypes.STRING},
+      typeName:{type:DataTypes.STRING},
+      brandName:{type:DataTypes.STRING},
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
