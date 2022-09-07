@@ -86,3 +86,31 @@
     }
     
 }
+@media (max-width: 1200px) {
+    
+  }
+  @media (max-width: 992px) {
+   
+  }
+  @media (max-width: 767px) {
+    .category-container{
+        .category-container__content{
+            .category-item__name{
+               font-size: 1.1rem;
+            }
+            .category-item__list{
+            .sub-category-item{
+                .sub-category-item__title{font-size: 1.1rem;}
+            }
+            }
+            &:focus{
+                background-color: $colorDarkGrey900;
+                .category-item__list{
+                    visibility: visible;
+                }
+            }
+        }
+       
+    }
+    
+  }

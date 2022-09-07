@@ -62,3 +62,25 @@
     }
     
 }
+@media (max-width: 767px) {
+    .bascketContainer{
+        .header{
+            .button{
+                .title{
+                    font-size: 1.1rem;
+                }
+                &:focus{
+                    background-color: $rmd-grey-800;
+                }
+            }
+           
+        }
+        .footer{
+            .button{
+                span{
+                 font-size: 1.1rem;
+                }
+            }
+        }
+    }
+  }

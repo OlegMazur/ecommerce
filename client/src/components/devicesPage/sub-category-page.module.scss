@@ -60,3 +60,35 @@
         right: 2px;
     }
 }
+@media (max-width: 1200px) {
+    .card{
+        .searchBar{}
+        .deviceList{
+            
+        }
+    }
+  }
+  @media (max-width: 992px) {
+    .card{
+        .searchBar{}
+        .deviceList{
+            gap: 10px;
+       
+        grid-template-columns: repeat(3, minmax(200px, 1fr) );
+        grid-template-rows: repeat(2, minmax(400px, 1fr) );
+        grid-auto-rows: minmax(400px, 1fr) ;
+        }
+    }
+  }
+  @media (max-width: 767px) {
+    .card{
+        .searchBar{}
+        .deviceList{
+            gap: 5px;
+       
+            grid-template-columns: repeat(1, minmax(200px, 1fr) );
+            grid-template-rows: repeat(2, minmax(400px, 1fr) );
+            grid-auto-rows: minmax(400px, 1fr) ;
+        }
+    }
+  }

@@ -5,13 +5,14 @@
     margin-top: 10px;
     .header{
         display:flex;
+        align-items: baseline;
         .sortPriceTitle{
          padding: 10px;
          font-size: 1.1rem;
         }
         .sortPriceBlock{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: space-around;
             
            
@@ -22,6 +23,7 @@
                 padding: 5px 10px 5px 10px;
                 border-radius: 5px;
                 color:$rmd-grey-100;
+                margin: 5px;
                 &:hover{
                     background-color: $rmd-grey-900;
                 }
@@ -77,3 +79,58 @@
    
     
 }
+@media (max-width: 992px) {
+    .container{
+        .header{
+            display: flex;
+            flex-direction:column;
+            .sortPriceBlock{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                .sortPriceItem{
+                    margin: 5px;
+                }
+                
+            }
+        }
+        .footer{
+            display: flex;
+            flex-direction:column;
+            .deviceNameBlock{
+                .deviceNameItem{
+                    margin: 5px;
+                   
+                    padding: 5px;
+                }
+            }
+           
+        }
+    }
+  }
+  @media (max-width: 767px) {
+    .container{
+        .header{
+            display: flex;
+            flex-direction:column;
+            .sortPriceBlock{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                
+            }
+        }
+        .footer{
+            display: flex;
+            flex-direction:column;
+            .deviceNameBlock{
+                .deviceNameItem{
+                    margin: 5px;
+                   
+                    padding: 5px;
+                }
+            }
+           
+        }
+    }
+  }

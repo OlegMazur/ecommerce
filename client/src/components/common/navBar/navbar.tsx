@@ -40,12 +40,12 @@ function Navbar() {
             </NavLink>
           </div>
           <div>
-            <NavLink to={RoutePath.ABOUTUS} className="navbar__item">
+            <NavLink to={RoutePath.ABOUTUS} className="navbar__item abaut-us">
               Про нас
             </NavLink>
           </div>
           <div>
-            <NavLink to={RoutePath.CONTACTS} className="navbar__item">
+            <NavLink to={RoutePath.CONTACTS} className="navbar__item contacts">
               Наші контакти
             </NavLink>
           </div>

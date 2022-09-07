@@ -2,7 +2,8 @@
 .container{
    margin-top: 10px;
    width: 100%;
-   padding: 10px;
+   height: 100%;
+   box-sizing: border-box;
    background-color: $rmd-grey-900;
    color:$rmd-grey-100;
    display: flex;

@@ -243,3 +243,46 @@
     }
   }
 }
+@media (max-width: 992px) {
+  .category-list {
+      grid-template-columns: repeat(2, minmax(200px, 1fr) );
+      grid-template-rows: repeat(5, minmax(300px, 1fr));
+      grid-auto-rows: minmax(300px, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .card{
+    display: flex;
+    flex-direction: column;
+    .navHistory{
+      flex-wrap: wrap;
+    }
+    .content{
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      .mainBlock{
+       height: 50%;
+       display: flex;
+       flex-direction: column;
+       .imgBlock{
+        width: 100%;
+        height: 50%;
+        .smallImgBlock{
+          width: 100%;
+        }
+        .largeImgBlock{
+          display: none;
+        }
+       }
+       .orderBlock{
+        width: 100%;
+        height: 50%;
+       }
+      }
+      .infoBlock{
+        height: 50%;
+      }
+    }
+  }
+}

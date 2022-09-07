@@ -126,4 +126,20 @@
         background-color: $colorDarkGrey900;
     }
 }
-
+@media (max-width: 767px) {
+    .content{
+        .link{
+            .title{
+                font-size: 1.2rem;
+            }
+        }
+       
+    }
+    .subCategoryCard:focus{
+        .deviceNameList{
+            visibility: visible;
+            opacity: 0.9;
+            background-color: $colorDarkGrey900;
+        }
+    }
+  }
