@@ -20,12 +20,21 @@
             border-radius: 50%;
             border:none;
             z-index: 5;
+            background-color: $rmd-blue-800;
             .faXmark{
-                color: $rmd-grey-900;
+                color: $rmd-grey-100;
                 font-size: 1.6rem;
                
             }   
             &:hover{ 
+                color: $rmd-grey-100;
+                background-color: $rmd-blue-900;
+                .faXmark{
+                    color: inherit;
+                   
+                }   
+            }
+            &:focus{ 
                 color: $rmd-grey-100;
                 background-color: $rmd-blue-900;
                 .faXmark{

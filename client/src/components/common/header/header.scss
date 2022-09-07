@@ -167,14 +167,24 @@
      .contacts-items{
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       margin: 0 auto;
-      .contacts-item{
-        position: static;
+      .contacts-item {
+        position: relative;
         &__text{
+          position: absolute;
           width: 220px;
-          top:130px;
-          left: 10px;
+          top:40px;
+          left: -50px;
+          &.message{
+            left: -80px;
+          }
+          &.response{
+            left: -110px;
+          }
+          &.table-container{
+            left: -150px;
+          }
         }
        
       }

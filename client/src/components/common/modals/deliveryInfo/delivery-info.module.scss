@@ -1,5 +1,6 @@
 @import '../../../../styles/variables.scss';
 .container{
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -16,10 +17,12 @@
             height: 40px;
             border-radius: 50%;
             border:none;
+            background-color: $rmd-blue-800;
+           
             .faXmark{
                 color: $rmd-grey-900;
                 font-size: 1.6rem;
-               
+                color: $rmd-grey-100;
             }   
             &:hover{ 
                 color: $rmd-grey-100;
@@ -63,3 +66,8 @@
         .itemContent{ font-size: 1.2rem;}
     }
 }
+@media (max-width: 767px) {
+    .container{
+        align-items: center;
+    }
+  }

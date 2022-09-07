@@ -99,7 +99,7 @@ function DevicePage() {
       <div className={styles.navHistory}>
         <div className={styles.navHome}>
           <NavLink to={RoutePath.SHOP} className={styles.navLinkHome}>
-            <FontAwesomeIcon icon={faHouse} />
+            <FontAwesomeIcon icon={faHouse} className={styles.faHouse} />
             <div>Головна </div>
           </NavLink>
           <span>/</span>
@@ -229,7 +229,7 @@ function DevicePage() {
         <div className={styles.infoBlock}>
           <h3 className={styles.title}>Характеристики товару</h3>
           <div
-            className="Container"
+            className={styles.infoContainer}
             dangerouslySetInnerHTML={{
               __html: actualDevice?.info?.[0]
                 ? actualDevice?.info[0].description
@@ -243,6 +243,7 @@ function DevicePage() {
         outContentClick={outContentClick}
         isClose={isContactClose}
         closeHandler={closeHandler}
+        
       />
       <ModalsWraper
         component={DeliveryInfoModal}

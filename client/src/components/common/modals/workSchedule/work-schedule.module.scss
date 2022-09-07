@@ -15,12 +15,14 @@
             height: 40px;
             border-radius: 50%;
             border:none;
+            color: $rmd-grey-100;
+                background-color: $rmd-blue-800;
             .faXmark{
-                color: $rmd-grey-900;
+                
                 font-size: 1.6rem;
-               
+                color: $rmd-grey-100;
             }   
-            &:hover{ 
+            &:hover,&:focus{ 
                 color: $rmd-grey-100;
                 background-color: $rmd-blue-900;
                 .faXmark{

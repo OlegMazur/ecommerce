@@ -31,22 +31,22 @@ function Header() {
         </button>
       </div>
       <div className="contacts-items">
-        <div className="contacts-item">
+        <div className="contacts-item ">
           <FontAwesomeIcon className="contacts-item__icon" icon={faPhone} />
-          <div className="contacts-item__text">+38 093 531-04-75 </div>
+          <div className="contacts-item__text phone">+38 093 531-04-75 </div>
         </div>
-        <div className="contacts-item">
+        <div className="contacts-item ">
           <FontAwesomeIcon className="contacts-item__icon" icon={faAt} />
-          <div className="contacts-item__text">написати повідомлення </div>
+          <div className="contacts-item__text message">написати повідомлення </div>
         </div>
-        <div className="contacts-item">
+        <div className="contacts-item ">
           <FontAwesomeIcon
             className="contacts-item__icon"
             icon={faCommentDots}
           />
-          <div className="contacts-item__text">залишити відгук </div>
+          <div className="contacts-item__text response ">залишити відгук </div>
         </div>
-        <div className="contacts-item">
+        <div className="contacts-item schedule">
           <FontAwesomeIcon
             className="contacts-item__icon"
             icon={faCalendarDays}

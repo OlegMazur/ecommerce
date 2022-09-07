@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./modals-wraper.module.scss";
 interface IModalsWraper {
   component: any;
@@ -13,6 +13,9 @@ function ModalsWraper({
   outContentClick,
   ...rest
 }: IModalsWraper) {
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
  
   return (
     <>

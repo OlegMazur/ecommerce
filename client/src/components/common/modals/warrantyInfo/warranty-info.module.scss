@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: space-around;
   max-width: 600px;
+ 
   .buttonBlock {
     display: flex;
     justify-content: flex-end;
@@ -15,11 +16,12 @@
       height: 40px;
       border-radius: 50%;
       border: none;
+      background-color: $rmd-blue-800;
       .faXmark {
-        color: $rmd-grey-900;
+        color: $rmd-grey-100;
         font-size: 1.6rem;
       }
-      &:hover {
+      &:hover,&:focus{
         color: $rmd-grey-100;
         background-color: $rmd-blue-900;
         .faXmark {
@@ -29,6 +31,7 @@
     }
   }
   .block {
+    padding: 10px;
     .itemTitle {
       font-size: 1.2rem;
       font-weight: bolder;
