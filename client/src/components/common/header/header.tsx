@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useAppSelector } from "../../../store/hooks";
 import { Path, RoutePath } from "../../routes/enums";
@@ -13,11 +13,24 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./header.scss";
+import { IDevice } from "../../../store/redusers/deviceSlice/deviceSlice";
 function Header() {
   const user = useAppSelector((state) => state.auth.user);
+  const devices = useAppSelector((state) => state.device.devices.rows);
   const hasUser = Boolean(user);
- 
+  const [searchQuery, setSearchQuery] = useState("");
+  const [isFocus,setIsFocus]=useState(false);
+  const changeQueryHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(e.currentTarget.value);
+  };
+  const searchDevices = (arr: IDevice[]) => {
+    return arr.filter((item) =>
+      item.name.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+  };
+  const foundDevices = searchDevices(devices);
 
+  console.log( Boolean(searchQuery) );
   return (
     <div className="header">
       <div className="header-logo">
@@ -25,10 +38,31 @@ function Header() {
         <img src={logo} alt="logo" className="header-logo__img" />
       </div>
       <div className="header-search">
-        <input autoFocus={true} className="header-search__input" placeholder="Пошук"></input>
+        <input
+          autoFocus={true}
+          onChange={(e) => changeQueryHandler(e)}
+          onFocus={()=>setIsFocus(!isFocus)} 
+          
+          onBlur={()=>setIsFocus(false)}
+          //onClick={()=>setIsFocus(!isFocus)}
+          name="search"
+          className="header-search__input"
+          placeholder="Пошук"
+        ></input>
         <button className="header-search__button" type={"button"}>
           <FontAwesomeIcon icon={faMagnifyingGlass} />
         </button>
+        <div className="searchDevicesList">
+          {Boolean(searchQuery)&&isFocus&&foundDevices.map(
+            (item, index) =>
+              index < 10 && (
+                <div key={index} className="searchDeviceItem">
+                  <NavLink to={RoutePath.DEVICE+item.id}
+                  className="itemLink">{item.name}</NavLink>
+                </div>
+              )
+          )}
+        </div>
       </div>
       <div className="contacts-items">
         <div className="contacts-item ">
@@ -37,7 +71,9 @@ function Header() {
         </div>
         <div className="contacts-item ">
           <FontAwesomeIcon className="contacts-item__icon" icon={faAt} />
-          <div className="contacts-item__text message">написати повідомлення </div>
+          <div className="contacts-item__text message">
+            написати повідомлення{" "}
+          </div>
         </div>
         <div className="contacts-item ">
           <FontAwesomeIcon

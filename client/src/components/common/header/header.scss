@@ -9,18 +9,18 @@
   .header-logo {
     display: flex;
     align-items: center;
-    &__text{
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-right: 10px;
+    &__text {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-right: 10px;
     }
-    &__img{
-        width: 40px;
-        transform: rotate(-90deg);
+    &__img {
+      width: 40px;
+      transform: rotate(-90deg);
     }
-    &__img:hover{
-        transition: all 1s ease 0s;
-        transform: rotate(270deg);
+    &__img:hover {
+      transition: all 1s ease 0s;
+      transform: rotate(270deg);
     }
   }
 }
@@ -42,7 +42,7 @@
 }
 .button-in-out {
   padding: 10px;
-  
+
   .button-link {
     padding: 10px;
     border-radius: 5px;
@@ -50,7 +50,7 @@
     background-color: $colorDarkGrey900;
     color: $colorlightGrey100;
   }
-  .button-link:hover{
+  .button-link:hover {
     color: $rmd-blue-500;
   }
 }
@@ -77,37 +77,38 @@
       border-radius: 10px;
       border: 1px solid $colorlightGrey100;
       display: none;
-      &.table-container{
+      &.table-container {
         width: 250px;
       }
-      .table{
+      .table {
         display: flex;
         justify-content: center;
         padding: 5px;
-        .columDays{
-            padding: 5px;
-           
-            .rowsTitle{
-                font-size: 16px;
-                font-weight: bold;
-                padding-bottom: 10px;
-            }
-            .rows{
-                padding-bottom: 5px;
-                font-weight: bold;
-            }
+        .columDays {
+          padding: 5px;
+
+          .rowsTitle {
+            font-size: 16px;
+            font-weight: bold;
+            padding-bottom: 10px;
+          }
+          .rows {
+            padding-bottom: 5px;
+            font-weight: bold;
+          }
         }
-        .columHours{
-            padding: 5px;
-            .rowsTitle{
-                font-size: 16px;
-                font-weight:500;
-                padding-bottom: 10px;
-            }
-            .rows{ padding-bottom: 5px;}
+        .columHours {
+          padding: 5px;
+          .rowsTitle {
+            font-size: 16px;
+            font-weight: 500;
+            padding-bottom: 10px;
+          }
+          .rows {
+            padding-bottom: 5px;
+          }
         }
-        
-    }
+      }
     }
     &__icon {
       font-size: 1.5rem;
@@ -120,9 +121,7 @@
       font-size: 1.8rem;
     }
     &:hover {
-      
-        .contacts-item__text {
-        
+      .contacts-item__text {
         display: block;
       }
     }
@@ -145,62 +144,80 @@
 // }
 @media (max-width: 767px) {
   .header {
-     flex-direction: column;
-     position: relative;
-     align-items: flex-start;
-    
-     .header-logo{
-      .header-logo__text{
+    flex-direction: column;
+    position: relative;
+    align-items: flex-start;
+
+    .header-logo {
+      .header-logo__text {
         font-size: 1.2rem;
       }
-      .header-logo__img{
+      .header-logo__img {
         width: 30px;
       }
-     
-     }
-     .header-search{
+    }
+    .header-search {
       width: 100%;
       box-sizing: border-box;
       margin-top: 10px;
       padding: 0px;
-     }
-     .contacts-items{
+      position: relative;
+      .searchDevicesList {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 40px;
+        right: 0px;
+        left: 0px;
+        background-color: $rmd-grey-800;
+        z-index: 7;
+        color: $rmd-grey-100;
+        .searchDeviceItem{
+         padding: 5px;
+          .itemLink{
+            text-decoration: none;
+            color: $rmd-grey-100;
+          }
+          &:hover,&:focus{
+            background-color: $rmd-grey-900;
+          }
+        }
+      }
+    }
+    .contacts-items {
       display: flex;
       justify-content: center;
       align-items: flex-start;
       margin: 0 auto;
       .contacts-item {
         position: relative;
-        &__text{
+        &__text {
           position: absolute;
           width: 220px;
-          top:40px;
+          top: 40px;
           left: -50px;
-          &.message{
+          &.message {
             left: -80px;
           }
-          &.response{
+          &.response {
             left: -110px;
           }
-          &.table-container{
+          &.table-container {
             left: -150px;
           }
         }
-       
       }
-      
+
       &:focus {
-      
         .contacts-item__text {
-        
-        display: block;
+          display: block;
+        }
       }
     }
-     }
-     .button-in-out{
-       position: absolute;
-       top:0px;
-       right: 0px;
-     }
+    .button-in-out {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
   }
 }
