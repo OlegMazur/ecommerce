@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useAppSelector } from "../../../store/hooks";
 import { Path, RoutePath } from "../../routes/enums";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -19,7 +19,7 @@ function Header() {
   const devices = useAppSelector((state) => state.device.devices.rows);
   const hasUser = Boolean(user);
   const [searchQuery, setSearchQuery] = useState("");
-  const [isFocus,setIsFocus]=useState(false);
+  const [isFocus, setIsFocus] = useState(false);
   const changeQueryHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.currentTarget.value);
   };
@@ -30,7 +30,7 @@ function Header() {
   };
   const foundDevices = searchDevices(devices);
 
-  console.log( Boolean(searchQuery) );
+  console.log(user)
   return (
     <div className="header">
       <div className="header-logo">
@@ -38,13 +38,33 @@ function Header() {
         <img src={logo} alt="logo" className="header-logo__img" />
       </div>
       <div className="header-search">
+        <div className="searchDevicesList">
+          {Boolean(searchQuery) &&
+            isFocus &&
+            foundDevices.map(
+              (item, index) =>
+                index < 6 && (
+                  <div key={index} className="searchDeviceItem">
+                    <Link
+                      to={RoutePath.DEVICE + item.id}
+                      className="itemLink"
+                      onClick={()=>setIsFocus(!isFocus)}
+                      //onBlur={() => setIsFocus(false)}
+                    >
+                      {item.name}
+                    </Link>
+                  </div>
+                )
+            )}
+        </div>
         <input
           autoFocus={true}
           onChange={(e) => changeQueryHandler(e)}
-          onFocus={()=>setIsFocus(!isFocus)} 
-          
-          onBlur={()=>setIsFocus(false)}
           //onClick={()=>setIsFocus(!isFocus)}
+          
+          onFocus={() => setIsFocus(true)}
+          
+          
           name="search"
           className="header-search__input"
           placeholder="Пошук"
@@ -52,17 +72,6 @@ function Header() {
         <button className="header-search__button" type={"button"}>
           <FontAwesomeIcon icon={faMagnifyingGlass} />
         </button>
-        <div className="searchDevicesList">
-          {Boolean(searchQuery)&&isFocus&&foundDevices.map(
-            (item, index) =>
-              index < 10 && (
-                <div key={index} className="searchDeviceItem">
-                  <NavLink to={RoutePath.DEVICE+item.id}
-                  className="itemLink">{item.name}</NavLink>
-                </div>
-              )
-          )}
-        </div>
       </div>
       <div className="contacts-items">
         <div className="contacts-item ">
@@ -116,13 +125,13 @@ function Header() {
       </div>
       {hasUser ? (
         <div className="button-in-out">
-          <NavLink to={RoutePath.SHOP} className="button-link">
+          <NavLink to={RoutePath.LOGIN} className="button-link">
             Вийти
           </NavLink>
         </div>
       ) : (
         <div className="button-in-out">
-          <NavLink to={RoutePath.LOGIN} className="button-link">
+          <NavLink to={RoutePath.SHOP} className="button-link">
             Увійти
           </NavLink>
         </div>

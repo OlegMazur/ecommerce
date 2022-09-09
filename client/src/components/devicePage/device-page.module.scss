@@ -348,6 +348,7 @@
           }
           .largeImgBlock {
             display: none;
+            
           }
         }
         .orderBlock {
@@ -355,6 +356,8 @@
          height: 50%;
           display: flex;
           flex-direction: column;
+          box-sizing: border-box;
+          padding: 0px;
           .contactsBlock{
             min-height: 130px;
             .buttonsBlock{
@@ -376,6 +379,7 @@
         height: 50%;
         width: 100%;
        flex: 1 1 auto;
+       box-sizing: border-box;
       h3{
         margin-top: 10px;
         margin-bottom: 10px;

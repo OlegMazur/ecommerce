@@ -76,7 +76,7 @@ const App: React.FunctionComponent = () => {
           <Route path={RoutePath.SHOP} element={<Shop />} />
         </Routes>
       </main>
-      <footer>
+      <footer className="footer">
         <Footer />
       </footer>
     </div>

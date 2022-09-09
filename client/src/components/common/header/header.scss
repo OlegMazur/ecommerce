@@ -28,6 +28,9 @@
   min-width: 30%;
   display: flex;
   padding: 10px;
+  flex-grow: 2;
+  max-width: 500px;
+  position: relative;
   &__input {
     width: 100%;
     padding: 10px;
@@ -38,6 +41,28 @@
     color: $colorlightGrey100;
     width: 40px;
     height: 40px;
+  }
+  .searchDevicesList {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50px;
+    left: 10px;
+    right: 10px;
+    background-color: $rmd-grey-800;
+    z-index: 7;
+    color: $rmd-grey-100;
+    .searchDeviceItem{
+     padding: 5px;
+      .itemLink{
+        text-decoration: none;
+        color: $rmd-grey-100;
+        width: 100%;
+      }
+      &:hover,&:focus{
+        background-color: $rmd-grey-900;
+      }
+    }
   }
 }
 .button-in-out {
