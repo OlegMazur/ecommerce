@@ -22,6 +22,13 @@ export const login = async({email, password}:IUser)=>{
     localStorage.setItem('token', data.token);
     return jwtDecode(data.token)
 }
+export const logOut = async()=>{
+    
+    localStorage.removeItem('token');
+    const data={user:null};
+    return data
+}
+
 export const check = async()=>{
     const {data} = await $authHost.get(Path.API+Path.USER+Path.AUTH, )
     localStorage.setItem('token', data.token);

@@ -22,17 +22,13 @@ import AboutUs from "./aboutUsPage/about-us";
 import ContactsPage from "./contactsPage/contacts-page";
 const App: React.FunctionComponent = () => {
  
-  const {user,devices} =useAppSelector(state=>({
-    user:state.auth.user,
-    devices:state.device.devices.rows
-  }));
-  //const[loading, setLoading]= useState(true);
-  // console.log('user');
-  // console.log(user);
+  // const {user,devices} =useAppSelector(state=>({
+  //   user:state.auth.user,
+  //   devices:state.device.devices.rows
+  // }));
+ 
   const hasToken=Boolean(localStorage.getItem('token'));
-  // console.log('hasToken');
-  // console.log(hasToken);
-  const isActiveBasket=useAppSelector(state=>state.basket.isActiveBasket);
+
   const dispatch = useAppDispatch();
   useEffect(() => {
      if(hasToken){dispatch(getCurrentUser());}
@@ -46,7 +42,7 @@ const App: React.FunctionComponent = () => {
       
     
   }, []);
-  console.log("devices",devices)
+ 
   return (
     <div className="app">
       <header>

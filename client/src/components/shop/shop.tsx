@@ -1,10 +1,6 @@
-import React, { useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import {
-  getAllCategory,
-  getAllDevicesTitle,
-  getAllSubCategory,
-} from "../../store/redusers/deviceSlice/deviceSlice";
+import React from "react";
+import {  useAppSelector } from "../../store/hooks";
+
 import CategoryCard from "../deviceCategory/category-card";
 import "./shop.scss";
 

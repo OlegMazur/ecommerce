@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { useAppSelector } from "../../../store/hooks";
+import { useAppDispatch, useAppSelector } from "../../../store/hooks";
 import { Path, RoutePath } from "../../routes/enums";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../../../assets/pngwing.com.png";
@@ -14,9 +14,11 @@ import {
 
 import "./header.scss";
 import { IDevice } from "../../../store/redusers/deviceSlice/deviceSlice";
+import { userLogout } from "../../../store/redusers/authSlice/authSlice";
 function Header() {
   const user = useAppSelector((state) => state.auth.user);
   const devices = useAppSelector((state) => state.device.devices.rows);
+  const dispatch = useAppDispatch();
   const hasUser = Boolean(user);
   const [searchQuery, setSearchQuery] = useState("");
   const [isFocus, setIsFocus] = useState(false);
@@ -29,8 +31,11 @@ function Header() {
     );
   };
   const foundDevices = searchDevices(devices);
-
-  console.log(user)
+  const logoutHandler = () => {
+    
+    dispatch(userLogout() );
+  };
+  
   return (
     <div className="header">
       <div className="header-logo">
@@ -48,7 +53,7 @@ function Header() {
                     <Link
                       to={RoutePath.DEVICE + item.id}
                       className="itemLink"
-                      onClick={()=>setIsFocus(!isFocus)}
+                      onClick={() => setIsFocus(!isFocus)}
                       //onBlur={() => setIsFocus(false)}
                     >
                       {item.name}
@@ -61,10 +66,8 @@ function Header() {
           autoFocus={true}
           onChange={(e) => changeQueryHandler(e)}
           //onClick={()=>setIsFocus(!isFocus)}
-          
+
           onFocus={() => setIsFocus(true)}
-          
-          
           name="search"
           className="header-search__input"
           placeholder="Пошук"
@@ -124,17 +127,17 @@ function Header() {
         </div>
       </div>
       {hasUser ? (
-        <div className="button-in-out">
-          <NavLink to={RoutePath.LOGIN} className="button-link">
+        <button className="button-in-out" onClick={logoutHandler}>
+          <NavLink to={RoutePath.SHOP} className="button-link">
             Вийти
           </NavLink>
-        </div>
+        </button>
       ) : (
-        <div className="button-in-out">
-          <NavLink to={RoutePath.SHOP} className="button-link">
+        <button className="button-in-out">
+          <NavLink to={RoutePath.LOGIN} className="button-link">
             Увійти
           </NavLink>
-        </div>
+        </button>
       )}
     </div>
   );

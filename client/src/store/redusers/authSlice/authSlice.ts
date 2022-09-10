@@ -1,5 +1,11 @@
-import { check, login, registration } from "../../../services/auth/auth";
+import {
+  check,
+  login,
+  logOut,
+  registration,
+} from "../../../services/auth/auth";
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { ActionType } from "./common";
 
 interface IUser {
   email: string | null;
@@ -19,7 +25,7 @@ export const userRegistration = createAsyncThunk<
   Idata,
   IUser,
   { rejectValue: string }
->("user/registration", async function (payload, { rejectWithValue }) {
+>(ActionType.USER_REGISTRATION, async function (payload, { rejectWithValue }) {
   let idata;
   await registration(payload).then((data) => (idata = data));
 
@@ -33,36 +39,41 @@ export const userLogin = createAsyncThunk<
   Idata,
   IUser,
   { rejectValue: string }
->("user/login", async function (payload, { rejectWithValue }) {
+>(ActionType.USER_LOGIN, async function (payload, { rejectWithValue }) {
   let idata;
   await login(payload).then((data) => (idata = data));
-
+  console.log("idata", idata);
   if (!idata) {
     return rejectWithValue("server Error");
   }
 
   return idata;
 });
+export const userLogout = createAsyncThunk<
+  { user: null },
+  undefined,
+  { rejectValue: string }
+>(ActionType.USER_LOG_OUT, async function (_, { rejectWithValue }) {
+  const data = await logOut();
+  if (!data) {
+    return rejectWithValue("server Error");
+  }
+  return data;
+});
+
 export const getCurrentUser = createAsyncThunk<
   Idata,
   undefined,
   { rejectValue: string }
->("user/getCurrentUser", async function (_, { rejectWithValue }) {
-  //const user=getState().user;
+>(ActionType.USER_GET_CURRENT_USER, async function (_, { rejectWithValue }) {
   let idata;
-
   await check().then((data) => (idata = data));
-
-  // if(data){
-  //   idata=data
-  // }
-
   if (!idata) {
     return rejectWithValue("server Error");
   }
-
   return idata;
 });
+
 const userSlice = createSlice({
   name: "user",
   initialState,
@@ -75,11 +86,13 @@ const userSlice = createSlice({
       .addCase(userLogin.fulfilled, (state, action) => {
         state.user = action.payload;
       })
+      .addCase(userLogout.fulfilled, (state, action) => {
+        state.user = action.payload.user;
+      })
       .addCase(getCurrentUser.fulfilled, (state, action) => {
         state.user = action.payload;
       });
   },
 });
 
-// export const { } = counterSlice.actions
 export default userSlice.reducer;

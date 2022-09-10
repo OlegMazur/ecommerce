@@ -6,7 +6,7 @@ module.exports = {
   async up (queryInterface, Sequelize) {
     
      try{
-      console.log(productPlusDate)
+     
       await queryInterface.bulkInsert('devices', productPlusDate
        
       , {});
