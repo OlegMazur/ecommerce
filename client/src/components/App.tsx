@@ -46,7 +46,7 @@ const App: React.FunctionComponent = () => {
       
     
   }, []);
-  
+  console.log("devices",devices)
   return (
     <div className="app">
       <header>
