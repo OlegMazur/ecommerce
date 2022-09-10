@@ -54,7 +54,6 @@ function SubCategoryPage() {
     const SORT_PRICE_UP = "sort-price-up";
     const SORT_PRICE_DOWN = "sort-price-down";
     let newArr = arr;
-    //let {sortPrice,brandName}=searchParams;
     if (sortDevicePrice === SORT_PRICE_UP) {
       newArr.sort(
         (a, b) =>
@@ -69,7 +68,7 @@ function SubCategoryPage() {
           exchangeUsd({ usdRate, price: a.price })
       );
     }
-    if (deviceSearchNames[0]) {
+    if (deviceSearchNames) {
       newArr = arr.filter((i) =>
         deviceSearchNames.find((name) => i.name.includes(name))
       );
@@ -77,7 +76,6 @@ function SubCategoryPage() {
     return newArr;
   };
   const sortDeviceArr = sortSearchDevice(actualDevices);
-  //const hasNoImg=actualDevices.find(item=>item.imgArr==null||item.img1==undefined);
   const onBuyDeviceHandler = (device: IBasketDevice) => {
     dispatch(setIsActiveBasket(true));
     dispatch(addDeviceInBasket(device));
@@ -86,7 +84,6 @@ function SubCategoryPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  console.log("actualSubCategory", actualSubCategory);
   return (
     <div className={styles.card}>
       <div className={styles.navHistory}>

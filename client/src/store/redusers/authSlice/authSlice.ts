@@ -42,7 +42,6 @@ export const userLogin = createAsyncThunk<
 >(ActionType.USER_LOGIN, async function (payload, { rejectWithValue }) {
   let idata;
   await login(payload).then((data) => (idata = data));
-  console.log("idata", idata);
   if (!idata) {
     return rejectWithValue("server Error");
   }

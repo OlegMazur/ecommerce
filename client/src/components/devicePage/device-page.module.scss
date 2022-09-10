@@ -468,6 +468,7 @@
             position: relative;
             .upButton {
               position: absolute;
+              width: 30px;
               height: 100%;
               z-index: 1;
               opacity: 0.8;
@@ -524,6 +525,26 @@
          height: 50%;
           display: flex;
           flex-direction: column;
+         
+          .nameBlock{
+            padding-left: 10px;
+            box-sizing: border-box;
+            padding-right: 10px;
+           font-size: 1.1rem  };
+          .availabilityBlock{padding-left: 5px;
+            box-sizing: border-box;
+          };
+          .priceBlock{padding-left: 5px;
+            box-sizing: border-box;
+            align-self: flex-end;
+            padding-right: 5px;};
+          .colorBlock{padding-left: 5px;
+            box-sizing: border-box;};
+          .buttonBlock{
+            align-self: flex-end;
+           padding-right: 5px;
+           box-sizing: border-box;
+          }
           .contactsBlock{
             min-height: 130px;
             .buttonsBlock{

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../../store/hooks";
-import { Path, RoutePath } from "../../routes/enums";
+import {  RoutePath } from "../../routes/enums";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../../../assets/pngwing.com.png";
 import {

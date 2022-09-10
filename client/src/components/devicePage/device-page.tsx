@@ -17,7 +17,6 @@ import DeliveryInfoModal from "../common/modals/deliveryInfo/delivery-info";
 import WorkScheduleModal from "../common/modals/workSchedule/work-schedule";
 import WarrantyInfoModal from "../common/modals/warrantyInfo/warranty-info";
 import ModalsWraper from "../common/modals/modalsWraper/modals-wraper";
-import SearchBar from "../common/searchBar/search-bar";
 
 function DevicePage() {
   const dispatch = useAppDispatch();
@@ -93,7 +92,7 @@ function DevicePage() {
     dispatch(getDeviceById(Number(id)));
     window.scrollTo(0, 0);
   }, [dispatch,id,actualDevice?.imgArr ]);
- console.log("actualDevice",actualDevice)
+ 
   return (
     <div className={styles.card}>
       <div className={styles.navHistory}>
