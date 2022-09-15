@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../../store/hooks";
-import {  RoutePath } from "../../routes/enums";
+import { RoutePath } from "../../routes/enums";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../../../assets/pngwing.com.png";
 import {
@@ -32,10 +32,9 @@ function Header() {
   };
   const foundDevices = searchDevices(devices);
   const logoutHandler = () => {
-    
-    dispatch(userLogout() );
+    dispatch(userLogout());
   };
-  
+  console.log(user);
   return (
     <div className="header">
       <div className="header-logo">
@@ -126,6 +125,11 @@ function Header() {
           </div>
         </div>
       </div>
+      {user?.role==="ADMIN" && (
+        <button className="btn-admin">
+          <NavLink to={RoutePath.ADMIN} className="btn-admin__link">Адмін панель</NavLink>
+        </button>
+      )}
       {hasUser ? (
         <button className="button-in-out" onClick={logoutHandler}>
           <NavLink to={RoutePath.SHOP} className="button-link">

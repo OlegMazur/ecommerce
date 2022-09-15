@@ -87,8 +87,8 @@
             gap: 5px;
        
             grid-template-columns: repeat(1, minmax(200px, 1fr) );
-            grid-template-rows: repeat(2, minmax(400px, 1fr) );
-            grid-auto-rows: minmax(400px, 1fr) ;
+            grid-template-rows: repeat(2, minmax(400px, 100vw) );
+            grid-auto-rows: minmax(400px, 100vw) ;
         }
     }
   }

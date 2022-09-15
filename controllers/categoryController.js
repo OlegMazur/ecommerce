@@ -29,6 +29,22 @@ class CategoryController {
         }
 
     }
+    async updateOne(req, res, next) {
+
+        try {
+             console.log(req.body) 
+             const {id,title,img}=req.body
+            const category = await Category.upsert({
+                 id ,
+                title,
+                img
+            })
+            return res.json(category)
+        } catch (e) {
+            next(ApiError.badRequest(e.message))
+        }
+
+    }
 
 }
 module.exports = new CategoryController()

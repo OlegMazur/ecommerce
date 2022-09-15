@@ -1,5 +1,5 @@
 
-import { getDevices, getTypes, getBrands, getSubCategory, getCategory, getOneDevice } from './../../../services/devicesService/device';
+import { getDevices, getTypes, getBrands, getSubCategory, getCategory, getOneDevice, updateCategory } from './../../../services/devicesService/device';
 import { AnyAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 import { ActionType } from './common';
 
@@ -14,8 +14,8 @@ export interface IType {
     id: number,
     title: string,
     img: string,
-    createdAt: string,
-     updatedAt: string,
+    createdAt?: string,
+     updatedAt?: string,
   } 
   export interface ISubCategory {
     id: number,
@@ -193,6 +193,19 @@ export interface IType {
         return data
     }
   )
+  export const updateCategoryById= createAsyncThunk<ICategory,ICategory, { rejectValue:string, }>(
+    ActionType.UPDATE_CATEGORY,
+    async function (payload,{rejectWithValue}) {
+      
+      const data =await updateCategory(payload)
+      console.log("data",data)
+      if(!data){
+        return rejectWithValue('server Error')
+      }
+        
+        return data
+    }
+  )
   export const getAllSubCategory= createAsyncThunk<ISubCategory[],undefined, { rejectValue:string, }>(
     ActionType.GET_ALL_SUB_CATEGORY,
     async function (_,{rejectWithValue}) {
@@ -245,6 +258,14 @@ export interface IType {
       })
       .addCase(getAllCategory.fulfilled,(state,action)=>{
         state.categories=action.payload;
+      })
+      .addCase(updateCategoryById.fulfilled,(state,action)=>{
+        let category =state.categories.find(item=>item.id===action.payload.id)
+        if(category?.title){
+          category.title=action.payload.title
+          
+        }
+        
       })
       .addCase(getAllSubCategory.fulfilled,(state,action)=>{
         state.subCategories=action.payload;

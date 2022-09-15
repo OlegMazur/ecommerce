@@ -1,5 +1,6 @@
 import { $host } from "..";
 import { Path } from "../../components/routes/enums";
+import { ICategory } from "../../store/redusers/deviceSlice/deviceSlice";
 interface IPayloadAllDevice{
     brandId?:number, 
     typeId?:number, 
@@ -46,6 +47,12 @@ export const getCategory = async () => {
 
   return data;
 };
+export const updateCategory = async ({id,title,img}:ICategory) => {
+  const { data } = await $host.put(Path.API + Path.CATEGORY+'/'+id, {id,title,img});
+
+  return data;
+};
+
 export const getSubCategory = async () => {
   const { data } = await $host.get(Path.API + Path.SUBCATEGORY);
 

@@ -10,10 +10,10 @@ class DeviceController {
                 searchQueries, currency, unit, availability,
                 label, weight, height, length, location, color, power, capacity,
                 colorTemp, favorite, model, subModel, madeIn, floatPrice, img1, img2, img3, img4 } = req.body
-            console.log(req?.files?.img1)
+           
             if (req?.files?.img1) {
                 const { img1, img2, img3, img4 } = req.files
-                console.log(img1)
+                
                 const fileLocation1 = await uploadFile(img1)
                 const fileLocation2 = await uploadFile(img2)
                 const fileLocation3 = await uploadFile(img3)

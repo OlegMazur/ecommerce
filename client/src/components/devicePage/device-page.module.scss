@@ -2,7 +2,7 @@
 .card {
   margin-top: 10px;
   width: 100%;
-  
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -54,18 +54,18 @@
     height: 100%;
     .mainBlock {
       display: flex;
-      width: 100%;
-      height: 50%;
-      max-height: 500px;
+      min-height: 400px;
+     height: 30vw;
+      max-height: 60vw;
 
       .imgBlock {
-        width: 50%;
+        width: 60%;
         height: 100%;
 
         display: flex;
 
         .smallImgBlock {
-          width: 20%;
+          width: 25%;
           height: 100%;
           display: flex;
           flex-direction: column;
@@ -123,7 +123,7 @@
           }
         }
         .largeImgBlock {
-          width: 80%;
+          width: 75%;
          min-height: 100%;
           position: relative;
          
@@ -139,7 +139,7 @@
         }
       }
       .orderBlock {
-        width: 50%;
+        width: 40%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -160,8 +160,7 @@
         .priceBlock {
           font-size: 1.4rem;
         }
-        .colorBlock {
-        }
+        
         .buttonBlock {
           button {
             height: 40px;
@@ -221,7 +220,7 @@
     .infoBlock {
       height: 50%;
       padding: 10px;
-      overflow: auto;
+    
     }
   }
   .contactInfoModalContainer {
@@ -281,17 +280,18 @@
     .content {
       display: flex;
       flex-direction: column;
-      height: 100%;
+     
       width: 100%;
       .mainBlock {
-        height: 50%;
+        min-height: 100vw;
+        height: 100vw;
         width: 100%;
         display: flex;
         flex-direction: column;
-        min-height: 650px;
+       
         .imgBlock {
           width: 100%;
-          height: 50%;
+          height: 60%;
           .smallImgBlock {
             width: 100%;
             height: 100%;
@@ -353,16 +353,34 @@
         }
         .orderBlock {
           width: 100%;
-         height: 50%;
+         height: 40%;
           display: flex;
           flex-direction: column;
           box-sizing: border-box;
           padding: 0px;
+          
+          .nameBlock{
+            padding-left: 10px;
+            box-sizing: border-box;
+            padding-right: 10px;
+           font-size: 1.1rem  };
+          .availabilityBlock{padding-left: 5px;
+            box-sizing: border-box;
+          };
+          .priceBlock{padding-left: 5px;
+            box-sizing: border-box;
+            align-self: flex-end;
+            padding-right: 5px;};
+          .colorBlock{padding-left: 5px;
+            box-sizing: border-box;};
+          .buttonBlock{
+            align-self: flex-end;
+           padding-right: 5px;
+           box-sizing: border-box;
+          }
           .contactsBlock{
             min-height: 130px;
-            .buttonsBlock{
-              
-            }
+           
             .contactsContent{
              padding: 2px;
              min-height: 100px;
@@ -386,8 +404,6 @@
       }
         .infoContainer {
           max-width: 100%;
-          height: 100%;
-          overflow: auto;
       
           p {
             
@@ -449,7 +465,7 @@
     .content {
       display: flex;
       flex-direction: column;
-      height: 100%;
+     
       width: 100%;
       .mainBlock {
         height: 50%;
@@ -547,9 +563,7 @@
           }
           .contactsBlock{
             min-height: 130px;
-            .buttonsBlock{
-              
-            }
+           
             .contactsContent{
              padding: 2px;
              min-height: 100px;
@@ -565,7 +579,7 @@
         margin-top: 10px;
         height: 50%;
         width: 100%;
-       flex: 1 1 auto;
+      
       h3{
         margin-top: 10px;
         margin-bottom: 10px;
@@ -573,13 +587,11 @@
         .infoContainer {
           max-width: 100%;
           height: 100%;
-          
-      
           p {
             
            margin-top: 6px;
            margin-bottom: 6px;
-           height: auto;
+           
             img {
              min-height: 100px;
              

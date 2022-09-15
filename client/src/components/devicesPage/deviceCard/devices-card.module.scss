@@ -5,7 +5,7 @@
   align-items: center;
   width: 100%;
   min-height: 100%;
-  
+  box-sizing: border-box;
 
   .content {
     width: 100%;
@@ -45,7 +45,8 @@
       justify-content: space-between;
       align-items: flex-start;
       width: 100%;
-      min-height: 50%;
+      height: 50%;
+      
       box-sizing: border-box;
       .name {
        min-height: 50%;
@@ -108,4 +109,26 @@
       }
     }
   }
+}
+@media (max-width: 767px) {
+  
+    .deviceCard {
+      height: 100%;
+      box-sizing: border-box;
+      .content{
+        
+        .deviceImgBlock{
+        height: 100%;
+        }
+        .deviceInfoBlock{
+          min-height: 170px;
+          .name{
+            font-size: 1.1rem;
+          }
+          
+        }
+      }
+      
+    }
+  
 }

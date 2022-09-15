@@ -6,5 +6,6 @@
    GET_ALL_CATEGORY:'device/get-all-category',
    GET_ALL_SUB_CATEGORY:'device/get-all-sub-category',
    GET_DEVICE_BY_ID:'device/get-device-by-id',
+   UPDATE_CATEGORY:'device/update-category'
  }
  export { ActionType };
