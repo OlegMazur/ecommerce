@@ -32,12 +32,29 @@ class CategoryController {
     async updateOne(req, res, next) {
 
         try {
-             console.log(req.body) 
-             const {id,title,img}=req.body
-            const category = await Category.upsert({
-                 id ,
-                title,
-                img
+              
+             const {id,title}=req.body
+             const {img} =req.files
+              console.log("img",img)
+            //  console.log("id",id)
+            //  console.log("title",title)
+            
+             let category;
+             if(typeof(img)==='string'){
+                category = await Category.upsert({
+                    id ,
+                   title,
+                   img
+               })
+               return res.json(category)
+             }
+            
+             const s3data = await uploadFile(img)
+             console.log(s3data)
+             category = await Category.upsert({
+                id ,
+               title,
+               img:s3data.toString()
             })
             return res.json(category)
         } catch (e) {

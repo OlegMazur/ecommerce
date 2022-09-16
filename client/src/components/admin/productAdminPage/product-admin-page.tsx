@@ -10,8 +10,10 @@ interface IProps {
   categories: ICategory[];
   subCategories: ISubCategory[];
   products: IDevice[];
+  status?: string;
+  loading?:boolean;
 }
-function ProductAdminPage({ categories, subCategories, products }: IProps) {
+function ProductAdminPage({ categories, subCategories, products,status,loading }: IProps) {
   const [productSelector, setProductSelector] = useState("All");
   const [activeProducts, setActiveProducts] = useState(true);
   const [sortByNumberProducts, setSortByNumberProducts] = useState("");
@@ -75,8 +77,8 @@ function ProductAdminPage({ categories, subCategories, products }: IProps) {
       </header>
       <main className={styles.main}>
         <div className={styles.cardList}>
-          {categories.map((item) => (
-           <CategoryCard item={item}/>
+          {categories.map((item,index) => (
+           <CategoryCard key={index} item={item} status={status} loading={loading}/>
           ))}
         </div>
       </main>

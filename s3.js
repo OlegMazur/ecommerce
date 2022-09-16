@@ -13,6 +13,7 @@ const s3 = new S3({
     secretAccessKey
 })
 async function uploadFile(file) {
+    //console.log('file',file.name)
     const uploadParams = {
         Bucket: bucketName,
         Body: file.data,
@@ -20,6 +21,7 @@ async function uploadFile(file) {
 
     }
     const data = await s3.upload(uploadParams).promise()
+    //console.log('data',data)
     return data.Location
 }
 exports.uploadFile = uploadFile

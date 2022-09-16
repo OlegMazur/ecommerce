@@ -13,7 +13,7 @@ export interface IType {
   export interface ICategory {
     id: number,
     title: string,
-    img: string,
+    img: any,
     createdAt?: string,
      updatedAt?: string,
   } 
@@ -100,7 +100,8 @@ export interface IType {
     subCategories:ISubCategory[],
     devices:IDevices,
     error:string|null,
-    loading:boolean
+    loading:boolean,
+    status?:string
    
   }
   const initialState:IState ={
@@ -121,6 +122,7 @@ export interface IType {
     },
     categories:[],
     subCategories:[],
+    status:'',
     loading:false,
     error:null
     
@@ -196,7 +198,7 @@ export interface IType {
   export const updateCategoryById= createAsyncThunk<ICategory,ICategory, { rejectValue:string, }>(
     ActionType.UPDATE_CATEGORY,
     async function (payload,{rejectWithValue}) {
-      
+      console.log("payload",payload)
       const data =await updateCategory(payload)
       console.log("data",data)
       if(!data){
@@ -259,13 +261,17 @@ export interface IType {
       .addCase(getAllCategory.fulfilled,(state,action)=>{
         state.categories=action.payload;
       })
+      .addCase(updateCategoryById.pending,(state)=>{
+        state.loading=true;
+        state.error=null;
+      })
       .addCase(updateCategoryById.fulfilled,(state,action)=>{
         let category =state.categories.find(item=>item.id===action.payload.id)
-        if(category?.title){
+        if(category?.title||category?.img){
           category.title=action.payload.title
-          
+          category.img=action.payload.img
         }
-        
+        state.status='Зміни успішно збережені'
       })
       .addCase(getAllSubCategory.fulfilled,(state,action)=>{
         state.subCategories=action.payload;

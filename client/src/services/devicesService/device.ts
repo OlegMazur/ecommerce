@@ -48,7 +48,12 @@ export const getCategory = async () => {
   return data;
 };
 export const updateCategory = async ({id,title,img}:ICategory) => {
-  const { data } = await $host.put(Path.API + Path.CATEGORY+'/'+id, {id,title,img});
+  const formData=new FormData()
+  formData.append('id',id.toString())
+  formData.append('title',title)
+  formData.append('img',img)
+
+  const { data } = await $host.put(Path.API + Path.CATEGORY+'/'+id,formData );
 
   return data;
 };

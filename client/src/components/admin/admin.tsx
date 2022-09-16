@@ -4,11 +4,13 @@ import styles from "./admin.module.scss";
 import ProductAdminPage from "./productAdminPage/product-admin-page";
 
 function Admin() {
-  const {categories,subCategories,products}=useAppSelector(state=>({categories:state.device.categories,
+  const {categories,subCategories,products,loading, status}=useAppSelector(state=>({
+    categories:state.device.categories,
     subCategories:state.device.subCategories,
-    products:state.device.devices.rows
+    products:state.device.devices.rows,
+    loading:state.device.loading,
+    status:state.device.status
   }))
-  console.log(categories)
   return (
     <div className={styles.adminContainer}>
       <nav className={styles.navbar}>
@@ -16,7 +18,9 @@ function Admin() {
         <button className={styles.navbarBtn}>Замовлення</button>
       </nav>
       <div className={styles.mainContainer}>
-        <ProductAdminPage categories={categories} subCategories={subCategories} products={products}/>
+        <ProductAdminPage categories={categories} subCategories={subCategories} products={products} 
+        status={status}
+        loading={loading} />
       </div>
     </div>
   );
