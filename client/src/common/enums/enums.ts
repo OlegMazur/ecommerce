@@ -1,3 +1,4 @@
+
 export {
     ButtonColor,
     ButtonSize,
@@ -7,3 +8,4 @@ export {
     IconSize,
     ImageSize
   } from './component/components';
+  export { CategoryName } from './adminConstant/admin';

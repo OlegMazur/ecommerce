@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { CategoryName } from "../../../common/enums/enums";
 import {
   ICategory,
   IDevice,
   ISubCategory,
 } from "../../../store/redusers/deviceSlice/deviceSlice";
 import CategoryCard from "../components/categoryCard/category-card";
+import SubCategoryCard from "../components/subCategoryCard/sub-category-card";
 import styles from "./product-admin-page.module.scss";
 interface IProps {
   categories: ICategory[];
@@ -14,11 +16,24 @@ interface IProps {
   loading?:boolean;
 }
 function ProductAdminPage({ categories, subCategories, products,status,loading }: IProps) {
-  const [productSelector, setProductSelector] = useState("All");
+  const [productSelector, setProductSelector] = useState(CategoryName.ALL);
+  const [activeCategory, setActiveCategory]=useState<number|null>(null);
   const [activeProducts, setActiveProducts] = useState(true);
   const [sortByNumberProducts, setSortByNumberProducts] = useState("");
-
-  console.log(sortByNumberProducts);
+const filterSubCategory=()=>{
+   let result
+   if(activeCategory){
+    result=subCategories.filter(i=>i.categoryId===activeCategory)
+    return result
+   }
+   result=subCategories
+   return result
+}
+const filteredSubCategories=filterSubCategory()
+const showSubCatHandler=(categoryId:any)=>{
+    setActiveCategory(categoryId)
+    setProductSelector(CategoryName.SUB_CATEGORY)
+}
   return (
     <div className={styles.container}>
       <header className={styles.header}>
@@ -29,13 +44,13 @@ function ProductAdminPage({ categories, subCategories, products,status,loading }
               className={styles.select}
               onClick={(e) => setProductSelector(e.currentTarget.value)}
             >
-              <option value="All" className={styles.selectItems}>
+              <option value={CategoryName.ALL} className={styles.selectItems}>
                 Всі товари
               </option>
-              <option value="Category" className={styles.selectItems}>
+              <option value={CategoryName.CATEGORY} className={styles.selectItems}>
                 Категорії
               </option>
-              <option value="SubCategory" className={styles.selectItems}>
+              <option value={CategoryName.SUB_CATEGORY} className={styles.selectItems}>
                 Підкатегорії
               </option>
             </select>
@@ -77,8 +92,19 @@ function ProductAdminPage({ categories, subCategories, products,status,loading }
       </header>
       <main className={styles.main}>
         <div className={styles.cardList}>
-          {categories.map((item,index) => (
-           <CategoryCard key={index} item={item} status={status} loading={loading}/>
+          { productSelector===CategoryName.CATEGORY&&categories.map((item,index) => (
+           <CategoryCard key={index} category={item} 
+           status={status} 
+          
+           loading={loading}
+           showSubCatHandler={showSubCatHandler}
+           />
+          ))}
+           { productSelector===CategoryName.SUB_CATEGORY&&filteredSubCategories.map((item,index) => (
+           <SubCategoryCard key={index} subCategory={item} 
+           status={status} 
+           
+           loading={loading}/>
           ))}
         </div>
       </main>

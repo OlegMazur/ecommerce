@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import { CategoryName } from "../../../../common/enums/enums";
 import { useAppDispatch } from "../../../../store/hooks";
-import { ICategory,  updateCategoryById, updateSubCategoryById } from "../../../../store/redusers/deviceSlice/deviceSlice";
-import styles from "./category-card.module.scss";
+import { ICategory, ISubCategory, updateCategoryById, updateSubCategoryById } from "../../../../store/redusers/deviceSlice/deviceSlice";
+import styles from "./sub-category-card.module.scss";
 interface IProps{
-    category:ICategory
+    subCategory:ISubCategory
     status?:string,
     loading?:boolean,
     
-    showSubCatHandler:(categoryId:number|null)=>void
+   
 }
 
-function CategoryCard({category,status,loading,showSubCatHandler}:IProps) {
+function SubCategoryCard({subCategory,status,loading}:IProps) {
     
-    const {id,title,img}=category;
+    const {id,title,img}=subCategory;
     const[preview,setPreview]=useState<null|string>(null);
     const [uploadImg,setuploadImg]=useState<any>();
     const dispatch=useAppDispatch();
@@ -25,20 +25,13 @@ function CategoryCard({category,status,loading,showSubCatHandler}:IProps) {
             setuploadImg(file)
             const objectUrl = URL.createObjectURL(file)
             setPreview(objectUrl)
-           
         }
     }
-    
     const changeImgTitleHandler=()=>{
         const actualImg=uploadImg?uploadImg:img
-       
-        dispatch(updateCategoryById({id,title:cardTitle,img:actualImg}))
-        
-        
+        dispatch(updateSubCategoryById({id,title:cardTitle,img:actualImg}))
     }
-    // const changeTitleHandler=()=>{
-    //  dispatch(updateCategoryById({id,title:cardTitle,img}))
-    // }
+   
   return (
     <div className={styles.categoryCard}>
         
@@ -55,13 +48,13 @@ function CategoryCard({category,status,loading,showSubCatHandler}:IProps) {
         : <div className={styles.title} >{cardTitle}</div>}
         {changeMod?<button onClick={changeImgTitleHandler} className={styles.changeTitleBtn}>Змінити </button>
         :<button onClick={()=>setChangeMod(true)} className={styles.changeTitleBtn}>Редагувати</button>}
-        <div>
-        <button onClick={()=>showSubCatHandler(category.id)} >Показати підкатегорії</button>
-        </div>
+        {/* <div>
+        <button onClick={()=>onShowSubCatHandler(item.id)} >Показати підкатегорії</button>
+        </div> */}
         
       </div>
     </div>
   );
 }
 
-export default CategoryCard;
+export default SubCategoryCard;

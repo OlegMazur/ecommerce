@@ -58,7 +58,7 @@ module.exports = {
       name:{type:DataTypes.STRING,unique:true,allowNull:false},
       price:{type:DataTypes.STRING,allowNull:false},
       reting:{type:DataTypes.INTEGER,defaultValue:0},
-      img1:{type:DataTypes.STRING},
+      img1:{type:DataTypes.TEXT},
       img2:{type:DataTypes.STRING},
       img3:{type:DataTypes.STRING},
       img4:{type:DataTypes.STRING},
@@ -148,7 +148,7 @@ module.exports = {
   await queryInterface.createTable('sub_categories',{
       id:{type:DataTypes.INTEGER,primaryKey:true, autoIncrement:true},
       title:{type:DataTypes.STRING,unique:true,allowNull:false},
-      img:{type:DataTypes.STRING,allowNull:false},
+      img:{type:DataTypes.TEXT,allowNull:false},
       categoryId:{
         type:DataTypes.INTEGER
       },
@@ -165,7 +165,7 @@ module.exports = {
   await queryInterface.createTable('categories',{
       id:{type:DataTypes.INTEGER,primaryKey:true, autoIncrement:true},
       title:{type:DataTypes.STRING,unique:true,allowNull:false},
-      img:{type:DataTypes.STRING,allowNull:false},
+      img:{type:DataTypes.TEXT,allowNull:false},
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

@@ -15,14 +15,14 @@ function Admin() {
   }))
   //const [statusMessage,setStatusMessage]=useState<any>(status);
   const [isVisibleMessage,setIsVisiblyMessage]=useState(false)
-  console.log('status',status);
+  console.log('product',products.length);
   console.log('isVisibleMessage',isVisibleMessage)
   useEffect(() => {
     
       const timer = setTimeout(() => {
         console.log('isVisibleMessage',isVisibleMessage)
         setIsVisiblyMessage(false)
-      }, 5000);
+      }, 3000);
       setIsVisiblyMessage(true)
       return () => clearTimeout(timer);
     

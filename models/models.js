@@ -22,7 +22,7 @@ const Device = sequelize.define('device',{
     name:{type:DataTypes.STRING,unique:true,allowNull:false},
     price:{type:DataTypes.STRING,allowNull:false},
     reting:{type:DataTypes.INTEGER,defaultValue:0},
-    img1:{type:DataTypes.STRING},
+    img1:{type:DataTypes.TEXT},
     img2:{type:DataTypes.STRING},
     img3:{type:DataTypes.STRING},
     img4:{type:DataTypes.STRING},
@@ -65,12 +65,12 @@ const Rating =sequelize.define('rating',{
 const SubCategory =sequelize.define('sub_category',{
     id:{type:DataTypes.INTEGER,primaryKey:true, autoIncrement:true},
     title:{type:DataTypes.STRING,unique:true,allowNull:false},
-    img:{type:DataTypes.STRING,allowNull:false},
+    img:{type:DataTypes.TEXT,allowNull:false},
 })
 const Category =sequelize.define('category',{
     id:{type:DataTypes.INTEGER,primaryKey:true, autoIncrement:true},
     title:{type:DataTypes.STRING,unique:true,allowNull:false},
-    img:{type:DataTypes.STRING,allowNull:false},
+    img:{type:DataTypes.TEXT,allowNull:false},
 })
 
 const DeviceInfo =sequelize.define('device_info',{

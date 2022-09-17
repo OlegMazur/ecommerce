@@ -27,6 +27,36 @@ class SubCategoryController {
             next(ApiError.badRequest(e.message))
         }
     }
+    async updateOne(req, res, next) {
+
+        try {
+            let img
+            let category;
+            const { id, title } = req.body
+            if (req.body.img) {
+                img = req.body.img
+                category = await SubCategory.upsert({
+                    id,
+                    title,
+                    img
+                })
+                return res.json(category)
+            }
+
+            img = req.files.img
+
+            const s3data = await uploadFile(img)
+            category = await SubCategory.upsert({
+                id,
+                title,
+                img: s3data.toString()
+            })
+            return res.json(category)
+        } catch (e) {
+            next(ApiError.badRequest(e.message))
+        }
+
+    }
 
 
 }
