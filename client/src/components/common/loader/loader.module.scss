@@ -1,0 +1,8 @@
+.loaderContainer{
+    position: fixed;
+    left:50%;
+    top:50%;
+    .faSpinner{
+        transform: rotate(360 degre);
+    }
+}

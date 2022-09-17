@@ -11,7 +11,6 @@ interface IProps{
 function CategoryCard({item,status,loading}:IProps) {
     
     const {id,title,img}=item;
-    //const [cardImg,setCardImg]=useState(img);
     const[preview,setPreview]=useState<null|string>(null);
     const [uploadImg,setuploadImg]=useState<any>();
     const dispatch=useAppDispatch();
@@ -23,29 +22,33 @@ function CategoryCard({item,status,loading}:IProps) {
             setuploadImg(file)
             const objectUrl = URL.createObjectURL(file)
             setPreview(objectUrl)
-            //setCardImg(file.name)
+           
         }
-       
-       
     }
-    console.log(uploadImg)
-    const changeImgHandler=()=>{
-        dispatch(updateCategoryById({id,title:cardTitle,img:uploadImg}))
+    
+    const changeImgTitleHandler=()=>{
+        const actualImg=uploadImg?uploadImg:img
+        dispatch(updateCategoryById({id,title:cardTitle,img:actualImg}))
     }
-    const changeTitleHandler=()=>{
-     dispatch(updateCategoryById({id,title:cardTitle,img}))
-    }
+    // const changeTitleHandler=()=>{
+    //  dispatch(updateCategoryById({id,title:cardTitle,img}))
+    // }
   return (
     <div className={styles.categoryCard}>
+        
       <div className={styles.imgBlock}>
         <img src={preview?preview:img} alt="categoryImg" className={styles.img} />
-        <input type="file" onChange={e=>imgHandler(e) } accept="image/*"></input>
-        <button onClick={changeImgHandler}>Підтвердити зміни</button>
+        <input type="file"  onChange={imgHandler } accept="image/*"  className={styles.uploadImgBtn}></input>
+        {preview&&<button onClick={changeImgTitleHandler} className={styles.submitImgBtn}>Зберегти зміни</button> }
       </div>
       <div className={styles.titleBlock}>
-        {changeMod?<input type="text" value={cardTitle} onChange={(e)=>setCardTitle(e.currentTarget.value)}/>: <div>{cardTitle}</div>}
-        {changeMod?<button onClick={changeTitleHandler}>Змінити</button>
-        :<button onClick={()=>setChangeMod(true)}>Редагувати</button>}
+        <div>Назва категорії:</div>
+        {changeMod?<input type="text" value={cardTitle} 
+        className={styles.titleInput}
+        onChange={(e)=>setCardTitle(e.currentTarget.value)}/>
+        : <div className={styles.title} >{cardTitle}</div>}
+        {changeMod?<button onClick={changeImgTitleHandler} className={styles.changeTitleBtn}>Змінити </button>
+        :<button onClick={()=>setChangeMod(true)} className={styles.changeTitleBtn}>Редагувати</button>}
       </div>
     </div>
   );

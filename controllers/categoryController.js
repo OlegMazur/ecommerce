@@ -4,7 +4,7 @@ const { uploadFile } = require('../s3')
 const { Category } = require('../models/models')
 const ApiError = require('../errors/apiError')
 class CategoryController {
-    async create(req, res,next) {
+    async create(req, res, next) {
         try {
             const { title, img } = req.body
             if (req?.files?.img) {
@@ -32,29 +32,26 @@ class CategoryController {
     async updateOne(req, res, next) {
 
         try {
-              
-             const {id,title}=req.body
-             const {img} =req.files
-              console.log("img",img)
-            //  console.log("id",id)
-            //  console.log("title",title)
-            
-             let category;
-             if(typeof(img)==='string'){
+            let img
+            let category;
+            const { id, title } = req.body
+            if (req.body.img) {
+                img = req.body.img
                 category = await Category.upsert({
-                    id ,
-                   title,
-                   img
-               })
-               return res.json(category)
-             }
-            
-             const s3data = await uploadFile(img)
-             console.log(s3data)
-             category = await Category.upsert({
-                id ,
-               title,
-               img:s3data.toString()
+                    id,
+                    title,
+                    img
+                })
+                return res.json(category)
+            }
+
+            img = req.files.img
+
+            const s3data = await uploadFile(img)
+            category = await Category.upsert({
+                id,
+                title,
+                img: s3data.toString()
             })
             return res.json(category)
         } catch (e) {

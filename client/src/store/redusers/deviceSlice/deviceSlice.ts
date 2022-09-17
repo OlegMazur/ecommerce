@@ -262,6 +262,7 @@ export interface IType {
         state.categories=action.payload;
       })
       .addCase(updateCategoryById.pending,(state)=>{
+        state.status=''
         state.loading=true;
         state.error=null;
       })
@@ -272,6 +273,7 @@ export interface IType {
           category.img=action.payload.img
         }
         state.status='Зміни успішно збережені'
+        state.loading=false;
       })
       .addCase(getAllSubCategory.fulfilled,(state,action)=>{
         state.subCategories=action.payload;

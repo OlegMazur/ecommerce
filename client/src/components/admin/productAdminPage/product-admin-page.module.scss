@@ -40,10 +40,13 @@
         
     }
     .main{
+        padding: 10px;
         .cardList{
             display:grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: minmax(200px, 300px);
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: minmax(200px, 400px);
+            grid-auto-rows: minmax(200px, 400px);
+            gap:10px;
         }
     }
 }
