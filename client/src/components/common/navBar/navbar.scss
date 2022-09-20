@@ -1,0 +1,215 @@
+@import "../../../styles/variables.scss";
+.navbar-container {
+  display: flex;
+  height: 60px;
+ width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $colorDarkGrey900;
+  font-size: 1.2rem;
+  color:$rmd-grey-100;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  //position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  .navbar {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    .navbar-items {
+      position: relative;
+      display: flex;
+      .navbar{
+        &__item .active {
+            color: $colorLightBlue800;
+          }
+      }
+    }
+    &__item {
+      position: relative;
+      height: 100%;
+      min-width: 120px;
+      color: $rmd-grey-100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      padding-left: 10px;
+      padding-right: 10px;
+      .popup-menu:hover {
+        visibility: visible;
+      }
+      &.item-menu {
+        .icon-menu-container {
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      &.item-menu:hover {
+        visibility: visible;
+      }
+      .popup-menu {
+        min-width: 120px;
+        position: absolute;
+        top: 60px;
+        left: -20px;
+        background-color: $colorDarkGrey900;
+        
+        color: black;
+        visibility: hidden;
+      }
+      .icon-menu {
+        margin-right: 10px;
+      }
+     
+    }
+    
+    &__item:hover {
+      color: $rmd-blue-500;
+      text-decoration: none;
+      .popup-menu {
+        visibility: visible;
+      }
+    }
+    &__item :active {
+        color: $colorLightBlue800;
+      }
+   
+  }
+  .navbar-items{
+    .navbar__item.active{
+        color: $colorLightBlue800;
+    }
+  }
+  .navbar-bascket-container {
+    height: 100%;
+    background-color: $colorLightBlue800;
+    .navbar-bascket {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      color: $rmd-grey-100;
+      text-decoration: none;
+      width: 100%;
+      position: relative;
+      background-color: $colorLightBlue800;
+  
+      padding: 0px;
+      &__link {
+        display: flex;
+        align-items: center;
+        color: $rmd-grey-100;
+        text-decoration: none;
+        width: 100%;
+      }
+      &:hover {
+        transition: all 0.5s ease 0s;
+        background-color: $colorDarkBlue900;
+        padding: 0px;
+      }
+      &__name {
+        font-size: 1.2rem;
+        padding-left: 10px;
+      }
+      &__icon {
+        font-size: 2.2rem;
+        padding: 10px;
+        position: relative;
+      }
+      .sum-product-in-basket{
+        width: 24px;
+        height: 24px;
+        background-color: black;
+        font-size: 16px;
+        position: absolute;
+        right:15px;
+        top:4px;
+        color:$rmd-grey-100;
+        font-weight: bolder;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &__icon:hover {
+        bottom: 2px;
+      }
+    }
+    
+  }
+  .basket{
+    width: 30%;
+    min-width: 390px;
+    box-sizing: border-box;
+    min-height: 200px;
+    position: absolute;
+   top:60px;
+    right: 0px;
+    z-index: 5;
+    border-top: 1px solid $colorlightGrey100;
+  }
+}
+@media (max-width: 1200px) {
+  .category-list {
+      grid-template-columns: repeat(2, minmax(200px, 1fr) );
+      grid-template-rows: repeat(5, minmax(300px, 1fr));
+      grid-auto-rows: minmax(300px, 1fr);
+  }
+}
+@media (max-width: 992px) {
+  .navbar__item.abaut-us{
+        display: none;
+  }
+  .navbar__item.contacts{
+    display: none;
+}
+}
+@media (max-width: 767px) {
+  .navbar-container{
+    justify-content: space-between;
+    height: 50px;
+    padding: 0;
+    .navbar{
+      .navbar__item.item-menu{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .icon-menu-container{
+          display: flex;
+          align-items: center;
+        }
+      }
+      .popup-menu{
+        top: 50px;
+        left: -0px;
+      }
+    }
+    .navbar-items{
+      .navbar__item{
+        display: none;
+      }
+    }
+    .navbar-bascket-container{
+      .navbar-bascket{
+        .navbar-bascket__name{
+           font-size: 1.1rem;
+        }
+      }
+      
+    }
+    .basket{
+      min-width: 260px;
+      width: 100%;
+      top:50px;
+    }
+    
+  }
+  
+  
+}

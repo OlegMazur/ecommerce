@@ -1,0 +1,310 @@
+[
+  {
+    "id": 13743213,
+    "title": "Системи охолодження",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676799
+  },
+  {
+    "id": 13743220,
+    "title": "Радіокомпоненти",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676799
+  },
+  {
+    "id": 13743226,
+    "title": "Запчастини",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 13743208
+  },
+  
+  {
+    "id": 13743237,
+    "title": "Чоловічий одяг",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 13743212
+  },
+  {
+    "id": 13743238,
+    "title": "Аксесуари",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 13743208
+  },
+  {
+    "id": 13743239,
+    "title": "Інше",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 13743208
+  },
+  {
+    "id": 13743254,
+    "title": "Рукавиці",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 13743235
+  },
+  {
+    "id": 13743255,
+    "title": "Велоокуляри",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 13743235
+  },
+  {
+    "id": 16880267,
+    "title": "Велосвітло",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 13743208
+  },
+  {
+    "id": 23680528,
+    "title": "Ліхтарі Convoy",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676822
+  },
+  {
+    "id": 23681225,
+    "title": "Велозамки",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 13743208
+  },
+  {
+    "id": 23682256,
+    "title": "Вольтметри, амперметри",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676799
+  },
+  {
+    "id": 23682261,
+    "title": "DC-DC перетворювачі",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676799
+  },
+  {
+    "id": 23682267,
+    "title": "Аксесуари для зарядних пристроїв",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676841
+  },
+  {
+    "id": 32774375,
+    "title": "Ліхтарі Sofirn",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/subCategoryPhoto/%D0%9B%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96+Sofirn.jpg",
+    "categoryId": 23676822
+  },
+  {
+    "id": 46247416,
+    "title": "BMS",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676799
+  },
+  {
+    "id": 50926987,
+    "title": "Li-ion 18650",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676836
+  },
+  {
+    "id": 50927223,
+    "title": "Ni-Mg AA, AAA",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676836
+  },
+  {
+    "id": 50932760,
+    "title": "Li-ion 18650 з платою захисту",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676836
+  },
+  {
+    "id": 51010355,
+    "title": "Li-ion інші формати",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676836
+  },
+  {
+    "id": 51010495,
+    "title": "Літієві елементи живлення",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676836
+  },
+  {
+    "id": 51028746,
+    "title": "Акумулятори для ліхтарів",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676836
+  },
+  {
+    "id": 51028747,
+    "title": "Високотокові акумулятори",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676836
+  },
+  {
+    "id": 71091645,
+    "title": "Налобні ліхтарі",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/subCategoryPhoto/%D0%9D%D0%B0%D0%BB%D0%BE%D0%B1%D0%BD%D1%96+%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96.jpg",
+    "categoryId": 23676822
+  },
+  {
+    "id": 73003581,
+    "title": "Ліхтарі для дайвінгу",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/subCategoryPhoto/%D0%9B%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96+%D0%B4%D0%BB%D1%8F+%D0%B4%D0%B0%D0%B9%D0%B2%D1%96%D0%BD%D0%B3%D1%83.jpg",
+    "categoryId": 23676822
+  },
+  {
+    "id": 73544218,
+    "title": "Ультрафіолетові ліхтарі",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/subCategoryPhoto/%D0%A3%D0%BB%D1%8C%D1%82%D1%80%D0%B0%D1%84%D1%96%D0%BE%D0%BB%D0%B5%D1%82%D0%BE%D0%B2%D1%96+%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96.jpg",
+    "categoryId": 23676822
+  },
+  {
+    "id": 75260694,
+    "title": "Наключники",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/subCategoryPhoto/%D0%9D%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%BD%D0%B8%D0%BA%D0%B8.jpg",
+    "categoryId": 23676822
+  },
+  {
+    "id": 75854284,
+    "title": "Ліхтарі Skilhunt",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/subCategoryPhoto/%D0%9B%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96+Skilhunt.JPG",
+    "categoryId": 23676822
+  },
+  {
+    "id": 76039752,
+    "title": "Світлодіоди",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23678995
+  },
+  {
+    "id": 76039760,
+    "title": "Драйвери",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23678995
+  },
+  {
+    "id": 76040572,
+    "title": "Рефлектори",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23678995
+  },
+  {
+    "id": 78711736,
+    "title": "Надпотужні ліхтарі",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/subCategoryPhoto/%D0%9D%D0%B0%D0%B4%D0%BF%D0%BE%D1%82%D1%83%D0%B6%D0%BD%D1%96+%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96.jpg",
+    "categoryId": 23676822
+  },
+  {
+    "id": 80083243,
+    "title": "Скло",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23678995
+  },
+  {
+    "id": 81304329,
+    "title": "Ущільнювачі",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23678995
+  },
+  {
+    "id": 89203928,
+    "title": "Рюкзаки",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 13743210
+  },
+  {
+    "id": 89304751,
+    "title": "Гальмівні колодки",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 13743208
+  },
+  {
+    "id": 90778772,
+    "title": "Astrolux",
+    "img":"https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/subCategoryPhoto/Astrolux.png",
+    "categoryId": 23676822
+  },
+  {
+    "id": 90786324,
+    "title": "Boruit",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/subCategoryPhoto/Boruit.jpg",
+    "categoryId": 23676822
+  },
+  {
+    "id": 91227412,
+    "title": "Корпуси ліхтарів",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676822
+  },
+  {
+    "id": 91703568,
+    "title": "Ліхтарі з зумом",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676822
+  },
+  {
+    "id": 91704197,
+    "title": "Аксесуари для акумуляторів",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676836
+  },
+  {
+    "id": 92234898,
+    "title": "Ліхтарі NexTool",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676822
+  },
+  {
+    "id": 93237002,
+    "title": "Ліхтарі Wurkkos",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/subCategoryPhoto/%D0%9B%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96+Wurkkos.jpg",
+    "categoryId": 23676822
+  },
+  {
+    "id": 97668335,
+    "title": "LIFEPO4",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676836
+  },
+  {
+    "id": 98430270,
+    "title": "ЛІхтарі BLF",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676822
+  },
+  {
+    "id": 105522541,
+    "title": "Акумулятори 21700",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676836
+  },
+  {
+    "id": 105550655,
+    "title": "Батареї для велофари",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676836
+  },
+ 
+  {
+    "id": 108019932,
+    "title": "Зарядні пристрої для акумуляторів",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676841
+  },
+  {
+    "id": 108020457,
+    "title": "Зарядні пристрої для батарей, з функцією балансування",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676841
+  },
+  {
+    "id": 108020507,
+    "title": "Зарядні пристрої для батарей",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676841
+  },
+  {
+    "id": 109882516,
+    "title": "Літієві батарейки",
+    "img": "https://customlight.s3.eu-west-2.amazonaws.com/%D0%BB%D1%96%D1%85%D1%82%D0%B0%D1%80%D1%96/category1/convoy/subCatConvoy.jpg",
+    "categoryId": 23676836
+  }
+]

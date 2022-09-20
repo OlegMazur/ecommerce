@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        .headerItem{
+            width: 33%;
+
+            .customSelect{
+                width: 200px;
+                .select{
+                    width: 200px;
+                    height: 20px;
+                    // .selectItems {
+                    //     position: absolute;
+                    //     background-color: DodgerBlue;
+                    //     top: 100%;
+                    //     left: 0;
+                    //     right: 0;
+                    //     z-index: 99;
+                    //   }
+                    .selectSelected:after {
+                        position: absolute;
+                        content: "";
+                        top: 14px;
+                        right: 10px;
+                        width: 0;
+                        height: 0;
+                        border: 6px solid transparent;
+                        border-color: #fff transparent transparent transparent;
+                      }
+                }
+                
+            }
+        }
+       
+        
+    }
+    .main{
+        padding: 10px;
+        .cardList{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: minmax(200px, 400px);
+            grid-auto-rows: minmax(200px, 400px);
+            gap:10px;
+        }
+    }
+}

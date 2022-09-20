@@ -1,0 +1,39 @@
+@import "../../../../styles/variables.scss";
+.contactInfoModalContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  background-color: $rmd-grey-900;
+  justify-content: center;
+  top:0px;
+  left: 0px;
+  
+  button {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.8;
+    background-color: $rmd-grey-900;
+  }
+  .contactInfoModal {
+    position: absolute;
+    background-color: $rmd-grey-100;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    z-index: 2;
+    top:10px;
+  }
+}
+@media (max-width: 767px) {
+  .contactInfoModalContainer  {
+    height: 100%;
+    
+    .contactInfoModal{
+      height: 80%;
+      width: 100%;
+      top:50px;
+    }
+  }
+}

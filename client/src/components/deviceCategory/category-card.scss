@@ -1,0 +1,116 @@
+@import "../../styles/variables.scss";
+.category-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    &__img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0px;
+        left: 0px;
+        object-fit: cover;
+    }
+   
+   
+    &__content{
+        width:60% ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+        position: absolute;
+       
+        .category-item__name{
+            color: $colorlightGrey100;
+            background-color: $colorDarkGrey900;
+            font-size: 1.4rem;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+           
+            &:hover{
+                background-color: $rmd-grey-800;
+            }
+        }
+        .category-item__list{
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            color: $colorlightGrey100;
+            visibility: hidden;
+        }
+        &:hover{
+            visibility: visible;
+            opacity: 0.9;
+        }
+    }
+   
+}
+.category-container__content:hover{
+    background-color: $colorDarkGrey900;
+    .category-item__list{
+        visibility: visible;
+    }
+}
+.sub-category-item{
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: $rmd-grey-900;
+   
+    &__title{
+        display: block;
+        width: 100%;
+        color:$rmd-grey-100;
+        font-size: 1.1rem;
+        text-decoration: none;
+        background-color: inherit;
+
+    }
+    &:hover{
+        background-color: $rmd-grey-800;
+    }
+    
+}
+@media (max-width: 1200px) {
+    
+  }
+  @media (max-width: 992px) {
+   
+  }
+  @media (max-width: 767px) {
+    .category-container{
+        .category-container__content{
+            .category-item__name{
+               font-size: 1.1rem;
+            }
+            .category-item__list{
+            .sub-category-item{
+                .sub-category-item__title{font-size: 1.1rem;}
+            }
+            }
+            &:focus{
+                background-color: $colorDarkGrey900;
+                .category-item__list{
+                    visibility: visible;
+                }
+            }
+        }
+       
+    }
+    
+  }

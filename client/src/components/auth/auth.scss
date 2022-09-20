@@ -1,0 +1,35 @@
+.auth-container {
+  min-width: 30%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 30px;
+}
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  .input-block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    input {
+      padding: 10px;
+     
+    }
+    span{
+
+        font-size: 0.8rem;
+    }
+  }
+}
+.auth-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  button {
+    margin-top: 10px;
+    height: 30px;
+  }
+}
