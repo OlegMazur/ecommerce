@@ -11,7 +11,6 @@ import {
   faCalendarDays,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
-
 import "./header.scss";
 import { IDevice } from "../../../store/redusers/deviceSlice/deviceSlice";
 import { userLogout } from "../../../store/redusers/authSlice/authSlice";
@@ -34,7 +33,6 @@ function Header() {
   const logoutHandler = () => {
     dispatch(userLogout());
   };
-  console.log(user);
   return (
     <div className="header">
       <div className="header-logo">
@@ -125,9 +123,11 @@ function Header() {
           </div>
         </div>
       </div>
-      {user?.role==="ADMIN" && (
+      {user?.role === "ADMIN" && (
         <button className="btn-admin">
-          <NavLink to={RoutePath.ADMIN} className="btn-admin__link">Адмін панель</NavLink>
+          <NavLink to={RoutePath.ADMIN} className="btn-admin__link">
+            Адмін панель
+          </NavLink>
         </button>
       )}
       {hasUser ? (

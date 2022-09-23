@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { imgUrlWraper } from "../../../../services/helpers/img-helpers";
 import styles from "./basket-card.module.scss";
 import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
@@ -18,7 +18,7 @@ function BasketCard({ id, img1, name, price, onRemoveBasketDevice }: IDevice) {
   const deviceQuantity = useAppSelector(
     (state) => state.basket.devices.find((item) => item.id === id)?.quantity
   ) as number;
- 
+
   const removeDeviceHandler = () => {
     onRemoveBasketDevice(id);
   };

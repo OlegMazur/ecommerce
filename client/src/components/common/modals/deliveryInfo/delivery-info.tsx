@@ -33,7 +33,6 @@ function DeliveryInfoModal({ closeHandler }: any) {
           </li>
         </ul>
       </div>
-    
     </div>
   );
 }

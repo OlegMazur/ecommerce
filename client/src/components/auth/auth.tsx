@@ -1,8 +1,11 @@
 import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useAppDispatch} from "../../store/hooks";
-import { userLogin, userRegistration } from "../../store/redusers/authSlice/authSlice";
+import { useAppDispatch } from "../../store/hooks";
+import {
+  userLogin,
+  userRegistration,
+} from "../../store/redusers/authSlice/authSlice";
 import { Path } from "../routes/enums";
 import "./auth.scss";
 interface IFormInput {
@@ -14,32 +17,25 @@ function Auth() {
   let location = useLocation();
   const isLogin = location.pathname === Path.LOGIN;
   const navigate = useNavigate();
-  const dispatch=useAppDispatch();
-  // const email = useAppSelector(state=>state.auth.user.email);
-  // console.log(email)
-  // const [email, setEmail]=useState(' ');
-  // const [password, setPassword]=useState(' ');
+  const dispatch = useAppDispatch();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<IFormInput>();
-  // const onSubmit: SubmitHandler<IFormInput> = data => console.log(data);
-  // const onSubmit = data => console.log(data);
   const onSubmit: SubmitHandler<IFormInput> = async (data) => {
     const { email, password } = data;
-   
     if (isLogin) {
-      const data = await dispatch(userLogin({ email, password })) ;
-      if(data){
-        navigate(Path.SHOP)
-     };
+      const data = await dispatch(userLogin({ email, password }));
+      if (data) {
+        navigate(Path.SHOP);
+      }
     } else {
-      const data = await dispatch(userRegistration( { email, password }) );
-      
-      if(data){
-         navigate(Path.SHOP)
-      };
+      const data = await dispatch(userRegistration({ email, password }));
+
+      if (data) {
+        navigate(Path.SHOP);
+      }
     }
   };
 
@@ -51,12 +47,14 @@ function Auth() {
           <input
             {...register("email", {
               required: "Це поле обовязкове",
-              pattern: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+              pattern: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
             })}
             placeholder="email"
           />
           <span>{errors.email?.message}</span>
-          <span>{errors.email?.type==='pattern'&&'невірний формат ел. пошти'}</span>
+          <span>
+            {errors.email?.type === "pattern" && "невірний формат ел. пошти"}
+          </span>
         </div>
         <div className="input-block">
           <input
@@ -65,7 +63,7 @@ function Auth() {
               minLength: { value: 6, message: "мінімальна довжина 8 символів" },
             })}
             placeholder="введіть пароль"
-            type='password'
+            type="password"
           />
           <span>{errors.password?.message}</span>
         </div>

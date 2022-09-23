@@ -2,8 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styles from "./warranty-info.module.scss";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+
 function WarrantyInfoModal({ closeHandler }: any) {
-  
   return (
     <div className={styles.container}>
       <div className={styles.buttonBlock}>
@@ -48,7 +48,6 @@ function WarrantyInfoModal({ closeHandler }: any) {
           <li>товар зберігає товарний вигляд і свої споживчі властивості.</li>
         </ul>
       </div>
-      
     </div>
   );
 }

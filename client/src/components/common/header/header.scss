@@ -52,31 +52,32 @@
     background-color: $rmd-grey-800;
     z-index: 7;
     color: $rmd-grey-100;
-    .searchDeviceItem{
-     padding: 5px;
-      .itemLink{
+    .searchDeviceItem {
+      padding: 5px;
+      .itemLink {
         text-decoration: none;
         color: $rmd-grey-100;
         width: 100%;
       }
-      &:hover,&:focus{
+      &:hover,
+      &:focus {
         background-color: $rmd-grey-900;
       }
     }
   }
 }
-.btn-admin{
+.btn-admin {
   background-color: $rmd-grey-900;
   display: flex;
- justify-content: center;
- align-items: center;
- border-radius: 5px;
- padding: 0px;
- border: none;
- margin-right: 5px;
- margin-left: 5px;
- max-height: 35px;
-  &__link{
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0px;
+  border: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  max-height: 35px;
+  &__link {
     text-decoration: none;
     color: $rmd-grey-100;
     padding: 10px;
@@ -89,7 +90,7 @@
 }
 .button-in-out {
   padding: 0px;
- border: none;
+  border: none;
   .button-link {
     padding: 10px;
     border-radius: 5px;
@@ -219,13 +220,14 @@
         background-color: $rmd-grey-800;
         z-index: 7;
         color: $rmd-grey-100;
-        .searchDeviceItem{
-         padding: 5px;
-          .itemLink{
+        .searchDeviceItem {
+          padding: 5px;
+          .itemLink {
             text-decoration: none;
             color: $rmd-grey-100;
           }
-          &:hover,&:focus{
+          &:hover,
+          &:focus {
             background-color: $rmd-grey-900;
           }
         }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { imgUrlWraper } from "../../services/helpers/img-helpers";
 import {
   IDevices,
@@ -37,7 +37,6 @@ function CategoryCard({
           className="category-container__img"
         ></img>
       </Link>
-
       <div className="category-container__content">
         <Link
           to={RoutePath.CATEGORY_PAGE + activeCategoryId}
@@ -45,7 +44,6 @@ function CategoryCard({
         >
           {categoryName}
         </Link>
-
         <div className="category-item__list">
           {activeSubCategory.map(
             ({ id, title, img, categoryId }, index) =>

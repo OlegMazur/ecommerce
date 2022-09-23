@@ -2,8 +2,8 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./work-schedule.module.scss";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+
 function WorkScheduleModal({ closeHandler }: any) {
- 
   return (
     <div className={styles.container}>
       <div className={styles.buttonBlock}>
@@ -15,7 +15,6 @@ function WorkScheduleModal({ closeHandler }: any) {
           <FontAwesomeIcon icon={faXmark} className={styles.faXmark} />
         </button>
       </div>
-
       <div className={styles.table}>
         <div className={styles.columDays}>
           <div className={styles.rowsTitle}> День</div>

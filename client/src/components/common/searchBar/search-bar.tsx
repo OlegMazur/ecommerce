@@ -1,31 +1,9 @@
 import React from "react";
-import { exchangeUsd } from "../../../services/helpers/exchange-helpers";
-import { useAppSelector } from "../../../store/hooks";
 import {
   IDevice,
-  ISubCategory,
 } from "../../../store/redusers/deviceSlice/deviceSlice";
 import styles from "./search-bar.module.scss";
-// interface IDevice {
-//   id: number;
-//   name: string;
-//   price: string;
-//   rating?: number;
-//   typeId?: number;
-//   brandId?: number;
-//   subCategoryId: number;
-//   availability?: number;
-//   label?: string;
-//   color?: string;
-//   power?: string;
-//   capacity?: string;
-//   colorTemp?: string;
-//   favotite?: boolean;
-//   model: string;
-//   subModel: string;
-//   madeIn: string;
-//   optPrice?: string;
-// }
+
 interface IProp {
   actualDevices: IDevice[];
   sortDevicePrice: any;
@@ -75,14 +53,9 @@ function SearchBar({
     "S12",
     "L8",
   ];
-  //actualDevices.map(i=>brandNameSet.add(i.brandName));
   const newDeviceSearchNames=Array.from(deviceSearchNames);
-  const usdRate = useAppSelector((state) => state.basket.usdExchangeRate);
-  //console.log(brandNameSet.keys());
-  //actualDevices.sort((a,b)=>exchangeUsd({usdRate,price:a.price})-exchangeUsd({usdRate,price:b.price}))
   const sortPriceHandler = (e: any) => {
     setSortDevicePrice( e.currentTarget.value );
-    //sortSearchDevice()
   };
   const deviceNameHandler=(e:React.MouseEvent<HTMLButtonElement>)=>{
       const name=(e.currentTarget.name)
@@ -109,12 +82,6 @@ function SearchBar({
             від більшої до меншої
           </button>
         </div>
-
-        {/* <div className={styles.searchCategory}>виробник </div>
-
-        <div>колір</div>
-        <div>діод</div>
-        <div>колірна температура</div> */}
       </header>
       <footer className={styles.footer}>
         <h4>Оберіть модель</h4>

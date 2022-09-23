@@ -1,94 +1,92 @@
-@import'../../styles/variables.scss';
-.card{
-    margin-top: 10px;
-    width: 100%;
-    height: 100%;
+@import "../../styles/variables.scss";
+.card {
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  .navHistory {
+    justify-self: flex-start;
+    align-self: flex-start;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    .navHistory{
-        justify-self:flex-start;
-        align-self: flex-start;
+    justify-content: flex-start;
+    .navHome {
+      display: flex;
+      .navLinkHome {
+        margin-right: 5px;
         display: flex;
-       justify-content: flex-start;
-        .navHome{
-            display: flex;
-            .navLinkHome{
-                margin-right: 5px;
-                display: flex;
-                text-decoration: none;
-                color: $colorDarkGrey900;
-                &:hover{
-                    color:$colorDarkBlue900
-                }
-            }
-            .navLinkCategory{
-                margin-right: 5px;
-                display: flex;
-                text-decoration: none;
-                color: $colorDarkGrey900;
-                &:hover{
-                    color:$colorDarkBlue900
-                }
-            }
-           
-            .categoryName{
-                margin-right: 5px;
-            }
+        text-decoration: none;
+        color: $colorDarkGrey900;
+        &:hover {
+          color: $colorDarkBlue900;
         }
-        .selectedCategory{
-            color:$colorDarkBlue900
+      }
+      .navLinkCategory {
+        margin-right: 5px;
+        display: flex;
+        text-decoration: none;
+        color: $colorDarkGrey900;
+        &:hover {
+          color: $colorDarkBlue900;
         }
+      }
+
+      .categoryName {
+        margin-right: 5px;
+      }
     }
-    .deviceList{
-        height: 100%;
-        width: 100%;
-        display: grid;
-        gap: 10px;
-       
-        grid-template-columns: repeat(4, minmax(200px, 1fr) );
-        grid-template-rows: repeat(2, minmax(400px, 1fr) );
-        grid-auto-rows: minmax(400px, 1fr) ;
-       
+    .selectedCategory {
+      color: $colorDarkBlue900;
     }
-    .basket{
-        box-sizing: border-box;
-        width: 260px;
-        height: 100%;
-        position: sticky;
-        top:0px;
-        right: 2px;
-    }
+  }
+  .deviceList {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, minmax(400px, 1fr));
+    grid-auto-rows: minmax(400px, 1fr);
+  }
+  .basket {
+    box-sizing: border-box;
+    width: 260px;
+    height: 100%;
+    position: sticky;
+    top: 0px;
+    right: 2px;
+  }
 }
 @media (max-width: 1200px) {
-    .card{
-        .searchBar{}
-        .deviceList{
-            
-        }
+  .card {
+    .searchBar {
+    }
+    .deviceList {
     }
   }
-  @media (max-width: 992px) {
-    .card{
-        .searchBar{}
-        .deviceList{
-            gap: 10px;
-       
-        grid-template-columns: repeat(3, minmax(200px, 1fr) );
-        grid-template-rows: repeat(2, minmax(400px, 1fr) );
-        grid-auto-rows: minmax(400px, 1fr) ;
-        }
+}
+@media (max-width: 992px) {
+  .card {
+    .searchBar {
+    }
+    .deviceList {
+      gap: 10px;
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+      grid-template-rows: repeat(2, minmax(400px, 1fr));
+      grid-auto-rows: minmax(400px, 1fr);
     }
   }
-  @media (max-width: 767px) {
-    .card{
-        .searchBar{}
-        .deviceList{
-            gap: 5px;
-       
-            grid-template-columns: repeat(1, minmax(200px, 1fr) );
-            grid-template-rows: repeat(2, minmax(400px, 100vw) );
-            grid-auto-rows: minmax(400px, 100vw) ;
-        }
+}
+@media (max-width: 767px) {
+  .card {
+    .searchBar {
+    }
+    .deviceList {
+      gap: 5px;
+      grid-template-columns: repeat(1, minmax(200px, 1fr));
+      grid-template-rows: repeat(2, minmax(400px, 100vw));
+      grid-auto-rows: minmax(400px, 100vw);
     }
   }
+}

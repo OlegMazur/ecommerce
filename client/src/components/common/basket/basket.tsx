@@ -10,10 +10,10 @@ import BasketCard from "./basketCard/basket-card";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 function Basket() {
   const devices = useAppSelector((state) => state.basket.devices);
-  //const isActiveBasket=useAppSelector(state=>state.basket.isActiveBasket);
-  //const usdExchangeRate=useAppSelector((state) => state.basket.usdExchangeRate);
-  const orderSum = devices.reduce((sum, current) => sum + current.price*current.quantity, 0);
-  //const uahOrderSum=Math.round(usdExchangeRate*orderSum);
+  const orderSum = devices.reduce(
+    (sum, current) => sum + current.price * current.quantity,
+    0
+  );
   const dispatch = useAppDispatch();
   const onRemoveBasketDevice = (id: number) => {
     dispatch(removeBasketDevice({ id }));
@@ -28,7 +28,6 @@ function Basket() {
           <FontAwesomeIcon icon={faAngleLeft} className={styles.faAngleLeft} />
           <div className={styles.title}>Сховати кошик</div>
         </button>
-        
       </header>
       <div className={styles.bascketCardContainer}>
         {devices.map(({ id, img1, name, price }) => (
@@ -44,12 +43,11 @@ function Basket() {
       </div>
       <footer className={styles.footer}>
         <div className={styles.totalPriceBlock}>
-          <div className={styles.title}>До оплати без доставки</div>  
+          <div className={styles.title}>До оплати без доставки</div>
           <div className={styles.price}>{orderSum} грн</div>
-          
         </div>
         <button className={styles.button}>
-            <span>Оформити замовлення</span>
+          <span>Оформити замовлення</span>
         </button>
       </footer>
     </div>

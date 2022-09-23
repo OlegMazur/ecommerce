@@ -28,13 +28,12 @@ export const userRegistration = createAsyncThunk<
 >(ActionType.USER_REGISTRATION, async function (payload, { rejectWithValue }) {
   let idata;
   await registration(payload).then((data) => (idata = data));
-
   if (!idata) {
     return rejectWithValue("server Error");
   }
-
   return idata;
 });
+
 export const userLogin = createAsyncThunk<
   Idata,
   IUser,
@@ -48,6 +47,7 @@ export const userLogin = createAsyncThunk<
 
   return idata;
 });
+
 export const userLogout = createAsyncThunk<
   { user: null },
   undefined,
