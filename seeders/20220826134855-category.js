@@ -80,28 +80,10 @@ module.exports = {
       updatedAt: new Date(),
     },
 
-      //  {
-      //   title: 'Акумулятори',
-      //    img: '17a5f3df-b81f-443f-9e1d-ea067427c5af.jpg' ,
-      //   createdAt: new Date(),
-      //  updatedAt: new Date(),
-      //  }
+      
     ], {});
 
-    //  firstName: 'John',
-    //  lastName: 'Smith',
-    //  email: 'john@mail.com',
-    //  createdAt: new Date(),
-    //  updatedAt: new Date(),
-    /**
-     * Add seed commands here.
-     *
-     * Example:
-     * await queryInterface.bulkInsert('People', [{
-     *   name: 'John Doe',
-     *   isBetaMember: false
-     * }], {});
-    */
+    
   },
 
   async down(queryInterface, Sequelize) {

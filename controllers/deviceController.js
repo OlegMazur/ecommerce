@@ -107,19 +107,64 @@ class DeviceController {
         } catch (e) {
             next(ApiError.badRequest(e.message))
         }
-
     }
 
     async getOne(req, res, next) {
         try {
             const { id } = req.params
-
             const device = await Device.findOne({
                 where: { id },
                 include: [{ model: DeviceInfo, as: 'info' }]
             })
 
             return res.json(device)
+        } catch (e) {
+            next(ApiError.badRequest(e.message))
+        }
+
+    }
+
+    async updateOne(req, res, next) {
+
+        try {
+            let img
+            let device;
+            let { id, name,price,imgArr } = req.body
+            console.log(req.body)
+            if (req.body.img1) {
+                
+                device = await Device.upsert({
+                    id,
+                    name,
+                    price,
+                    img1:req.body.img1
+                })
+                return res.json(device)
+            }
+            if(req.files.img1){
+                img = req.files.img1
+                const s3data = await uploadFile(img);
+                let deviceData = await Device.findOne({
+                    where: { id },
+                    include: [{ model: DeviceInfo, as: 'info' }]
+                })
+                let newImgArr;
+                if(deviceData.dataValues.imgArr){
+                    newImgArr=deviceData.dataValues.imgArr.split(',')
+                    newImgArr[0]=s3data
+                }
+               
+                device = await Device.upsert({
+                    id,
+                    name,
+                    price,
+                    img1: s3data.toString(),
+                    imgArr:newImgArr.join(',')
+                })
+                return res.json(device)
+            }
+            
+           
         } catch (e) {
             next(ApiError.badRequest(e.message))
         }

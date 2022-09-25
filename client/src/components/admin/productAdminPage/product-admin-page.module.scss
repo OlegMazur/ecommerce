@@ -8,7 +8,8 @@
         width: 100%;
         .headerItem{
             width: 33%;
-
+              display: flex;
+              flex-direction: column;
             .customSelect{
                 width: 200px;
                 .select{

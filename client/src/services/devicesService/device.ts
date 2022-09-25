@@ -1,3 +1,4 @@
+import { IDevice } from './../../store/redusers/deviceSlice/deviceSlice';
 import { $host } from "..";
 import { Path } from "../../components/routes/enums";
 import { ICategory } from "../../store/redusers/deviceSlice/deviceSlice";
@@ -60,6 +61,27 @@ export const updateSubCategory = async ({ id, title, img }: ICategory) => {
   );
   return data;
 };
+
+export const updateDevice = async ({ id, name, imgArr,img1,price }: IDevice) => {
+  const formData = new FormData();
+  formData.append("id", id.toString());
+  formData.append("name", name);
+  formData.append("price", price);
+  if(imgArr){
+    imgArr=JSON.stringify(imgArr)
+    formData.append("imgArr", imgArr);
+  }
+  if(img1){
+    formData.append("img1", img1);
+  }
+  
+  const { data } = await $host.put(
+    Path.API + Path.DEVICE + "/" + id,
+    formData
+  );
+  return data;
+};
+
 export const getSubCategory = async () => {
   const { data } = await $host.get(Path.API + Path.SUBCATEGORY);
   return data;

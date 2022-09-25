@@ -13,15 +13,13 @@ const s3 = new S3({
     secretAccessKey
 })
 async function uploadFile(file) {
-    //console.log('file',file.name)
     const uploadParams = {
         Bucket: bucketName,
         Body: file.data,
-        Key: `fileupload/scanskill-${Date.now()}-${file.name}`, // put all image to fileupload folder with name scanskill-${Date.now()}${file.name}`
+        Key: `fileupload/scanskill-${Date.now()}-${file.name}`,
 
     }
     const data = await s3.upload(uploadParams).promise()
-    //console.log('data',data)
     return data.Location
 }
 exports.uploadFile = uploadFile

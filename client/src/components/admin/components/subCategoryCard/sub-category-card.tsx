@@ -7,11 +7,11 @@ import {
 import styles from "./sub-category-card.module.scss";
 interface IProps {
   subCategory: ISubCategory;
-  status?: string;
-  loading?: boolean;
+  
+  showProductsHandler: (subCategoryId: number | null) => void;
 }
 
-function SubCategoryCard({ subCategory, status, loading }: IProps) {
+function SubCategoryCard({ subCategory, showProductsHandler }: IProps) {
   const { id, title, img } = subCategory;
   const [preview, setPreview] = useState<null | string>(null);
   const [uploadImg, setuploadImg] = useState<any>();
@@ -55,7 +55,7 @@ function SubCategoryCard({ subCategory, status, loading }: IProps) {
         )}
       </div>
       <div className={styles.titleBlock}>
-        <div>Назва категорії:</div>
+        <div>Назва підкатегорії:</div>
         {changeMod ? (
           <input
             type="text"
@@ -81,6 +81,11 @@ function SubCategoryCard({ subCategory, status, loading }: IProps) {
             Редагувати
           </button>
         )}
+         <div>
+          <button onClick={() => showProductsHandler(id)}>
+            Показати товари
+          </button>
+        </div>
       </div>
     </div>
   );

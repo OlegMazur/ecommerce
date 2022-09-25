@@ -1,3 +1,6 @@
+export { UpdateStatus } from './adminConstant';
+
+
 
 export {
     ButtonColor,
@@ -9,3 +12,4 @@ export {
     ImageSize
   } from './component/components';
   export { CategoryName } from './adminConstant/admin';
+  

@@ -7,6 +7,7 @@ import {
   getOneDevice,
   updateCategory,
   updateSubCategory,
+  updateDevice,
 } from "./../../../services/devicesService/device";
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { ActionType } from "./common";
@@ -52,7 +53,7 @@ export interface IDevice {
   id: number;
   name: string;
   price: string;
-  rating: number;
+  rating?: number;
   img1?: string;
   img2?: string;
   img3?: string;
@@ -60,8 +61,8 @@ export interface IDevice {
   imgArr?: string;
   createdAt?: string;
   updatedAt?: string;
-  typeId: number;
-  brandId: number;
+  typeId?: number;
+  brandId?: number;
   info?: IDeviceInfo[];
   subCategoryId: number;
   searchQueries?: string;
@@ -73,17 +74,17 @@ export interface IDevice {
   height?: string;
   length?: string;
   location?: string;
-  color: string;
-  power: string;
-  capacity: string;
-  colorTemp: string;
-  favotite: boolean;
-  model: string;
-  subModel: string;
-  madeIn: string;
-  optPrice: string;
-  typeName: string;
-  brandName: string;
+  color?: string;
+  power?: string;
+  capacity?: string;
+  colorTemp?: string;
+  favotite?: boolean;
+  model?: string;
+  subModel?: string;
+  madeIn?: string;
+  optPrice?: string;
+  typeName?: string;
+  brandName?: string;
 }
 export interface IDevices {
   count: number;
@@ -223,6 +224,22 @@ export const updateSubCategoryById = createAsyncThunk<
   }
 );
 
+export const updateDeviceById = createAsyncThunk<
+  IDevice,
+  IDevice,
+  { rejectValue: string }
+>(
+  ActionType.UPDATE_DEVICE,
+  async function (payload, { rejectWithValue }) {
+    const data = await updateDevice(payload);
+    console.log(data);
+    if (!data) {
+      return rejectWithValue("server Error");
+    }
+    return data;
+  }
+);
+
 export const getAllSubCategory = createAsyncThunk<
   ISubCategory[],
   undefined,
@@ -238,7 +255,11 @@ export const getAllSubCategory = createAsyncThunk<
 const deviceSlice = createSlice({
   name: "device",
   initialState,
-  reducers: {},
+  reducers: {
+    changeUploadStatus:(state)=>{
+      state.status=""
+    }
+  },
   extraReducers: (builder) => {
     builder
       .addCase(getAllDevices.pending, (state) => {
@@ -293,6 +314,38 @@ const deviceSlice = createSlice({
         state.status = "Зміни збережені успішно";
         state.loading = false;
       })
+      // .addCase(updateSubCategoryById.pending, (state) => {
+      //   state.status = "";
+      //   state.loading = true;
+      //   state.error = null;
+      // })
+      // .addCase(updateSubCategoryById.fulfilled, (state, action) => {
+      //   let category = state.subCategories.find(
+      //     (item) => item.id === action.payload.id
+      //   );
+      //   if (category?.title || category?.img) {
+      //     category.title = action.payload.title;
+      //     category.img = action.payload.img;
+      //   }
+      //   state.status = "Зміни збережені успішно";
+      //   state.loading = false;
+      // })
+      .addCase(updateDeviceById.pending, (state) => {
+        state.status = "";
+        state.loading = true;
+        state.error = null;
+      })
+      .addCase(updateDeviceById.fulfilled, (state, action) => {
+        let device = state.devices.rows.find(
+          (item) => item.id === action.payload.id
+        );
+        if (device?.name || device?.imgArr) {
+          device.name= action.payload.name;
+          device.imgArr = action.payload.imgArr;
+        }
+        state.status = "Зміни збережені успішно";
+        state.loading = false;
+      })
       .addCase(getAllSubCategory.fulfilled, (state, action) => {
         state.subCategories = action.payload;
       })
@@ -303,7 +356,7 @@ const deviceSlice = createSlice({
       });
   },
 });
-
+export const {changeUploadStatus}=deviceSlice.actions;
 export default deviceSlice.reducer;
 
 // function isError(action:AnyAction){

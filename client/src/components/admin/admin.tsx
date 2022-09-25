@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useAppSelector } from "../../store/hooks";
+import { changeUploadStatus } from "../../store/redusers/deviceSlice/deviceSlice";
 import Loader from "../common/loader/loader";
 import MessageModal from "../common/modals/messageModal/message-modal";
 import styles from "./admin.module.scss";
@@ -20,8 +21,10 @@ function Admin() {
       setIsVisiblyMessage(false);
     }, 3000);
     setIsVisiblyMessage(true);
+    
     return () => clearTimeout(timer);
   }, [status]);
+
   return (
     <div className={styles.adminContainer}>
       <nav className={styles.navbar}>

@@ -6,6 +6,8 @@ import {
   ISubCategory,
 } from "../../../store/redusers/deviceSlice/deviceSlice";
 import CategoryCard from "../components/categoryCard/category-card";
+import ProductCard from "../components/productCard/product-card";
+import ProductPage from "../components/productPage/product-page";
 import SubCategoryCard from "../components/subCategoryCard/sub-category-card";
 import styles from "./product-admin-page.module.scss";
 interface IProps {
@@ -16,24 +18,46 @@ interface IProps {
   loading?:boolean;
 }
 function ProductAdminPage({ categories, subCategories, products,status,loading }: IProps) {
-  const [productSelector, setProductSelector] = useState(CategoryName.ALL);
-  const [activeCategory, setActiveCategory]=useState<number|null>(null);
-  const [activeProducts, setActiveProducts] = useState(true);
-  const [sortByNumberProducts, setSortByNumberProducts] = useState("");
-const filterSubCategory=()=>{
+  const [selectedCategory, setSelectedCategory] = useState(CategoryName.PRODUCT);
+  const [activeCategoryId, setActiveCategoryId]=useState<number|null>(null);
+  const [activeSubCategoryId, setActiveSubCategoryId]=useState<number|null>(null);
+  const [activeProductId, setActiveProductId] = useState<number|null>(null);
+  const [sortByActiveProducts, setSortByActiveProducts] = useState(true);
+  const [sortByQuantityProducts, setSortByQuantityProducts] = useState("");
+  const activeProduct = products.find(item=>item.id===activeProductId)
+const filterSubCategory=(arr:ISubCategory[])=>{
    let result
-   if(activeCategory){
-    result=subCategories.filter(i=>i.categoryId===activeCategory)
+   if(activeCategoryId){
+    result=arr.filter(i=>i.categoryId===activeCategoryId)
     return result
    }
-   result=subCategories
+   result=arr
    return result
 }
-const filteredSubCategories=filterSubCategory()
-const showSubCatHandler=(categoryId:any)=>{
-    setActiveCategory(categoryId)
-    setProductSelector(CategoryName.SUB_CATEGORY)
+const filterProducts=(arr:IDevice[])=>{
+  let result
+  if(activeSubCategoryId){
+   result=arr.filter(i=>i.subCategoryId===activeSubCategoryId)
+   return result
+  }
+  result=arr
+  return result
 }
+const filteredProducts=filterProducts(products)
+const filteredSubCategories=filterSubCategory(subCategories)
+const showSubCatHandler=(categoryId:any)=>{
+    setActiveCategoryId(categoryId)
+    setSelectedCategory(CategoryName.SUB_CATEGORY)
+}
+const showProductsHandler=(subCategoryId:number | null)=>{
+  setActiveSubCategoryId(subCategoryId)
+  setSelectedCategory(CategoryName.PRODUCT)
+}
+const showActiveProductHandler=(productId:number | null)=>{
+  setActiveProductId(productId)
+  setSelectedCategory(CategoryName.PRODUCT_PAGE)
+}
+
   return (
     <div className={styles.container}>
       <header className={styles.header}>
@@ -42,10 +66,11 @@ const showSubCatHandler=(categoryId:any)=>{
           <div className={styles.customSelect}>
             <select
               className={styles.select}
-              onClick={(e) => setProductSelector(e.currentTarget.value)}
+              value={selectedCategory}
+              onChange ={(e) => setSelectedCategory(e.currentTarget.value)}
             >
-              <option value={CategoryName.ALL} className={styles.selectItems}>
-                Всі товари
+              <option value={CategoryName.PRODUCT} className={styles.selectItems}>
+                Товари
               </option>
               <option value={CategoryName.CATEGORY} className={styles.selectItems}>
                 Категорії
@@ -53,20 +78,23 @@ const showSubCatHandler=(categoryId:any)=>{
               <option value={CategoryName.SUB_CATEGORY} className={styles.selectItems}>
                 Підкатегорії
               </option>
+              {activeProduct?.name&&<option value={CategoryName.PRODUCT_PAGE} className={styles.selectItems}>
+                {activeProduct?.name?activeProduct?.name:"Toвар"} 
+              </option>}
             </select>
           </div>
         </div>
         <div className={styles.headerItem}>
-          <div>статус</div>
+          
           <button
             className={styles.headerItem}
-            onClick={() => setActiveProducts(true)}
+            onClick={() => setSortByActiveProducts(true)}
           >
             Активні
           </button>
           <button
             className={styles.headerItem}
-            onClick={() => setActiveProducts(false)}
+            onClick={() => setSortByActiveProducts(false)}
           >
             Неактивні
           </button>
@@ -77,14 +105,14 @@ const showSubCatHandler=(categoryId:any)=>{
           <button
             className={styles.select}
             name="decrement"
-            onClick={(e) => setSortByNumberProducts(e.currentTarget.name)}
+            onClick={(e) => setSortByQuantityProducts(e.currentTarget.name)}
           >
             від більшого до меншого
           </button>
           <button
             className={styles.select}
             name="increment"
-            onClick={(e) => setSortByNumberProducts(e.currentTarget.name)}
+            onClick={(e) => setSortByQuantityProducts(e.currentTarget.name)}
           >
             від меншого до більшого
           </button>
@@ -92,7 +120,7 @@ const showSubCatHandler=(categoryId:any)=>{
       </header>
       <main className={styles.main}>
         <div className={styles.cardList}>
-          { productSelector===CategoryName.CATEGORY&&categories.map((item,index) => (
+          { selectedCategory===CategoryName.CATEGORY&&categories.map((item,index) => (
            <CategoryCard key={index} category={item} 
            status={status} 
           
@@ -100,12 +128,18 @@ const showSubCatHandler=(categoryId:any)=>{
            showSubCatHandler={showSubCatHandler}
            />
           ))}
-           { productSelector===CategoryName.SUB_CATEGORY&&filteredSubCategories.map((item,index) => (
+           { selectedCategory===CategoryName.SUB_CATEGORY&&filteredSubCategories.map((item,index) => (
            <SubCategoryCard key={index} subCategory={item} 
-           status={status} 
-           
-           loading={loading}/>
+           showProductsHandler={showProductsHandler}/>
           ))}
+            { selectedCategory===CategoryName.PRODUCT&&filteredProducts.map((item,index) => (
+           <ProductCard showActiveProductHandler={showActiveProductHandler} key={index} product={item}
+           status={status}
+          />
+          ))}
+            { selectedCategory===CategoryName.PRODUCT_PAGE&&
+            <ProductPage activeProduct={activeProduct}/>
+          }
         </div>
       </main>
     </div>
