@@ -62,24 +62,59 @@ export const updateSubCategory = async ({ id, title, img }: ICategory) => {
   return data;
 };
 
-export const updateDevice = async ({ id, name, imgArr,img1,price }: IDevice) => {
+export const updateDevice = async ({ id, name, imgArr,img1,price,subCategoryId,availability,
+  currency,
+  unit,
+  label,
+  color,
+  power,
+  capacity,
+  colorTemp,
+  favotite,
+  model,
+  madeIn,
+  optPrice,
+  typeName,
+  brandName }: IDevice) => {
   const formData = new FormData();
   formData.append("id", id.toString());
   formData.append("name", name);
   formData.append("price", price);
+  formData.append("subCategoryId", String(subCategoryId));
+  formData.append("availability", String(availability));
+    formData.append("currency", String(currency));
+    formData.append("unit", String(unit));
+    formData.append("label",String(label));
+  formData.append("color", String(color));
+  formData.append("power", String(power));
+  formData.append("capacity", String(capacity));
+  formData.append("colorTemp", String(colorTemp));
+  formData.append("favotite", String(favotite));
+  formData.append("model", String(model));
+  formData.append("madeIn",String( madeIn));
+  formData.append("optPrice", String(optPrice));
+  formData.append("typeName", String(typeName));
+  formData.append("brandName", String(brandName));
+
+
+   
+   
   if(imgArr){
-    imgArr=JSON.stringify(imgArr)
+    //imgArr=JSON.stringify(imgArr)
+    //console.log("imgArr",imgArr);
     formData.append("imgArr", imgArr);
   }
   if(img1){
+    //console.log("img1", img1);
     formData.append("img1", img1);
   }
-  
+  //console.log("formData",formData)
   const { data } = await $host.put(
     Path.API + Path.DEVICE + "/" + id,
     formData
   );
-  return data;
+  console.log("data[0]",data[0])
+  return data[0];
 };
 
 export const getSubCategory = async () => {

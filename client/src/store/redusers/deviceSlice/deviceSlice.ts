@@ -232,10 +232,11 @@ export const updateDeviceById = createAsyncThunk<
   ActionType.UPDATE_DEVICE,
   async function (payload, { rejectWithValue }) {
     const data = await updateDevice(payload);
-    console.log(data);
+   
     if (!data) {
       return rejectWithValue("server Error");
     }
+    
     return data;
   }
 );
@@ -336,13 +337,49 @@ const deviceSlice = createSlice({
         state.error = null;
       })
       .addCase(updateDeviceById.fulfilled, (state, action) => {
+       
         let device = state.devices.rows.find(
           (item) => item.id === action.payload.id
-        );
-        if (device?.name || device?.imgArr) {
-          device.name= action.payload.name;
-          device.imgArr = action.payload.imgArr;
+
+        )
+        //device?.brandId=action.payload.brandId
+        if(device){
+          // console.log("device",device.img1)
+          // device=action.payload
+          device.name=action.payload.name;
+          device.img1=action.payload.img1;
+          device.price=action.payload.price;
+          device.availability=action.payload.availability;
+          if(device.imgArr){
+            device.imgArr=action.payload.imgArr
+          };
+          device.currency=action.payload.currency;
+          device.unit=action.payload.unit;
+          device.label=action.payload.label;
+          device.color=action.payload.color;
+          device.power=action.payload.power;
+          device.capacity=action.payload.capacity;
+          device.colorTemp=action.payload.colorTemp;
+          device.favotite=action.payload.favotite;
+          device.model=action.payload.model;
+          device.madeIn=action.payload.madeIn;
+          device.optPrice=action.payload.optPrice;
+          device.typeName=action.payload.typeName;
+          device.brandName=action.payload.brandName
+          
         }
+        // if (device?.name || device?.imgArr) {
+        //   device.name= action.payload.name;
+        //   device.imgArr = action.payload.imgArr;
+        // }
+        // console.log("device",device)
+        // console.log("action",action.payload)
+        
+        // console.log("device",device?.imgArr)
+        // if(device){
+        //   console.log("device",device)
+        //   device=action.payload
+        // }
         state.status = "Зміни збережені успішно";
         state.loading = false;
       })

@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import { CategoryName } from "../../../common/enums/enums";
-import {
-  ICategory,
-  IDevice,
-  ISubCategory,
-} from "../../../store/redusers/deviceSlice/deviceSlice";
+import { ICategory, IDevice, ISubCategory } from "../../../store/redusers/deviceSlice/deviceSlice";
 import CategoryCard from "../components/categoryCard/category-card";
 import ProductCard from "../components/productCard/product-card";
 import ProductPage from "../components/productPage/product-page";
@@ -15,48 +11,58 @@ interface IProps {
   subCategories: ISubCategory[];
   products: IDevice[];
   status?: string;
-  loading?:boolean;
+  loading?: boolean;
 }
-function ProductAdminPage({ categories, subCategories, products,status,loading }: IProps) {
+function ProductAdminPage({ categories, subCategories, products, status, loading }: IProps) {
   const [selectedCategory, setSelectedCategory] = useState(CategoryName.PRODUCT);
-  const [activeCategoryId, setActiveCategoryId]=useState<number|null>(null);
-  const [activeSubCategoryId, setActiveSubCategoryId]=useState<number|null>(null);
-  const [activeProductId, setActiveProductId] = useState<number|null>(null);
+  const [activeCategoryId, setActiveCategoryId] = useState<number | null>(null);
+  const [activeSubCategoryId, setActiveSubCategoryId] = useState<number | null>(null);
+  const [activeProductId, setActiveProductId] = useState<number | null>(null);
   const [sortByActiveProducts, setSortByActiveProducts] = useState(true);
   const [sortByQuantityProducts, setSortByQuantityProducts] = useState("");
-  const activeProduct = products.find(item=>item.id===activeProductId)
-const filterSubCategory=(arr:ISubCategory[])=>{
-   let result
-   if(activeCategoryId){
-    result=arr.filter(i=>i.categoryId===activeCategoryId)
-    return result
-   }
-   result=arr
-   return result
-}
-const filterProducts=(arr:IDevice[])=>{
-  let result
-  if(activeSubCategoryId){
-   result=arr.filter(i=>i.subCategoryId===activeSubCategoryId)
-   return result
-  }
-  result=arr
-  return result
-}
-const filteredProducts=filterProducts(products)
-const filteredSubCategories=filterSubCategory(subCategories)
-const showSubCatHandler=(categoryId:any)=>{
-    setActiveCategoryId(categoryId)
-    setSelectedCategory(CategoryName.SUB_CATEGORY)
-}
-const showProductsHandler=(subCategoryId:number | null)=>{
-  setActiveSubCategoryId(subCategoryId)
-  setSelectedCategory(CategoryName.PRODUCT)
-}
-const showActiveProductHandler=(productId:number | null)=>{
-  setActiveProductId(productId)
-  setSelectedCategory(CategoryName.PRODUCT_PAGE)
-}
+  
+  const findActiveProduct=(activeId:number|null)=>{
+    let result
+    if(activeId){
+      result= products.find((item) => item.id === activeId);
+    }
+    
+     return result
+  } 
+  const activeProduct=findActiveProduct(activeProductId);
+  const filterSubCategory = (arr: ISubCategory[]) => {
+    let result;
+    if (activeCategoryId) {
+      result = arr.filter((i) => i.categoryId === activeCategoryId);
+      return result;
+    }
+    result = arr;
+    return result;
+  };
+  const filterProducts = (arr: IDevice[]) => {
+    let result;
+    if (activeSubCategoryId) {
+      result = arr.filter((i) => i.subCategoryId === activeSubCategoryId);
+      return result;
+    }
+    result = arr;
+    return result;
+  };
+  const filteredProducts = filterProducts(products);
+  const filteredSubCategories = filterSubCategory(subCategories);
+  const showSubCatHandler = (categoryId: any) => {
+    setActiveCategoryId(categoryId);
+    setSelectedCategory(CategoryName.SUB_CATEGORY);
+  };
+  const showProductsHandler = (subCategoryId: number | null) => {
+    setActiveSubCategoryId(subCategoryId);
+    setSelectedCategory(CategoryName.PRODUCT);
+  };
+  const showActiveProductHandler = (productId: number | null) => {
+    setActiveProductId(productId);
+    setSelectedCategory(CategoryName.PRODUCT_PAGE);
+    findActiveProduct(productId)
+  };
 
   return (
     <div className={styles.container}>
@@ -67,7 +73,7 @@ const showActiveProductHandler=(productId:number | null)=>{
             <select
               className={styles.select}
               value={selectedCategory}
-              onChange ={(e) => setSelectedCategory(e.currentTarget.value)}
+              onChange={(e) => setSelectedCategory(e.currentTarget.value)}
             >
               <option value={CategoryName.PRODUCT} className={styles.selectItems}>
                 Товари
@@ -78,24 +84,19 @@ const showActiveProductHandler=(productId:number | null)=>{
               <option value={CategoryName.SUB_CATEGORY} className={styles.selectItems}>
                 Підкатегорії
               </option>
-              {activeProduct?.name&&<option value={CategoryName.PRODUCT_PAGE} className={styles.selectItems}>
-                {activeProduct?.name?activeProduct?.name:"Toвар"} 
-              </option>}
+              {activeProduct?.name && (
+                <option value={CategoryName.PRODUCT_PAGE} className={styles.selectItems}>
+                  {activeProduct?.name ? activeProduct?.name : "Toвар"}
+                </option>
+              )}
             </select>
           </div>
         </div>
         <div className={styles.headerItem}>
-          
-          <button
-            className={styles.headerItem}
-            onClick={() => setSortByActiveProducts(true)}
-          >
+          <button className={styles.headerItem} onClick={() => setSortByActiveProducts(true)}>
             Активні
           </button>
-          <button
-            className={styles.headerItem}
-            onClick={() => setSortByActiveProducts(false)}
-          >
+          <button className={styles.headerItem} onClick={() => setSortByActiveProducts(false)}>
             Неактивні
           </button>
         </div>
@@ -119,27 +120,38 @@ const showActiveProductHandler=(productId:number | null)=>{
         </div>
       </header>
       <main className={styles.main}>
+        <div className={styles.productPage}>
+          {activeProduct && selectedCategory === CategoryName.PRODUCT_PAGE && (
+            <ProductPage activeProduct={activeProduct}
+            status={status}
+            findActiveProduct={findActiveProduct}/>
+          )}
+        </div>
         <div className={styles.cardList}>
-          { selectedCategory===CategoryName.CATEGORY&&categories.map((item,index) => (
-           <CategoryCard key={index} category={item} 
-           status={status} 
-          
-           loading={loading}
-           showSubCatHandler={showSubCatHandler}
-           />
-          ))}
-           { selectedCategory===CategoryName.SUB_CATEGORY&&filteredSubCategories.map((item,index) => (
-           <SubCategoryCard key={index} subCategory={item} 
-           showProductsHandler={showProductsHandler}/>
-          ))}
-            { selectedCategory===CategoryName.PRODUCT&&filteredProducts.map((item,index) => (
-           <ProductCard showActiveProductHandler={showActiveProductHandler} key={index} product={item}
-           status={status}
-          />
-          ))}
-            { selectedCategory===CategoryName.PRODUCT_PAGE&&
-            <ProductPage activeProduct={activeProduct}/>
-          }
+          {selectedCategory === CategoryName.CATEGORY &&
+            categories.map((item, index) => (
+              <CategoryCard
+                key={index}
+                category={item}
+                status={status}
+                loading={loading}
+                showSubCatHandler={showSubCatHandler}
+              />
+            ))}
+          {selectedCategory === CategoryName.SUB_CATEGORY &&
+            filteredSubCategories.map((item, index) => (
+              <SubCategoryCard key={index} subCategory={item} showProductsHandler={showProductsHandler} />
+            ))}
+          {selectedCategory === CategoryName.PRODUCT &&
+            filteredProducts.map((item, index) => (
+              <ProductCard
+                showActiveProductHandler={showActiveProductHandler}
+                key={index}
+                product={item}
+                status={status}
+                
+              />
+            ))}
         </div>
       </main>
     </div>

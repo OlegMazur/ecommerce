@@ -10,10 +10,10 @@ class DeviceController {
                 searchQueries, currency, unit, availability,
                 label, weight, height, length, location, color, power, capacity,
                 colorTemp, favorite, model, subModel, madeIn, floatPrice, img1, img2, img3, img4 } = req.body
-           
+
             if (req?.files?.img1) {
                 const { img1, img2, img3, img4 } = req.files
-                
+
                 const fileLocation1 = await uploadFile(img1)
                 const fileLocation2 = await uploadFile(img2)
                 const fileLocation3 = await uploadFile(img3)
@@ -77,7 +77,7 @@ class DeviceController {
         }
 
     }
-    async getAll(req, res,next) {
+    async getAll(req, res, next) {
         try {
             let { brandId, typeId, limit, page, title, subCategoryId } = req.query
             page = page || 1
@@ -97,7 +97,7 @@ class DeviceController {
                 devices = await Device.findAndCountAll({ where: { typeId, brandId }, limit, offset })
             }
             if (title === 'title') {
-                devices = await Device.findAll({ attributes: ['brandId', 'typeId', 'name', 'id', 'price', 'subCategoryId', 'availability', 'img1','brandName','typeName'] })
+                devices = await Device.findAll({ attributes: ['brandId', 'typeId', 'name', 'id', 'price', 'subCategoryId', 'availability', 'img1', 'brandName', 'typeName'] })
             }
             if (subCategoryId) {
                 devices = await Device.findAndCountAll({ where: { subCategoryId }, limit, offset })
@@ -129,42 +129,90 @@ class DeviceController {
         try {
             let img
             let device;
-            let { id, name,price,imgArr } = req.body
-            console.log(req.body)
-            if (req.body.img1) {
-                
-                device = await Device.upsert({
-                    id,
-                    name,
-                    price,
-                    img1:req.body.img1
-                })
-                return res.json(device)
-            }
-            if(req.files.img1){
-                img = req.files.img1
+            let { id, name, price, imgArr, subCategoryId, availability, currency,
+                unit,
+                label,
+                color,
+                power,
+                capacity,
+                colorTemp,
+                favotite,
+                model,
+                madeIn,
+                optPrice,
+                typeName,
+                brandName } = req.body;
+            if (req.files?.img1) {
+                console.log("req.files.img1", req.files.img1);
+                img = req.files.img1;
+
                 const s3data = await uploadFile(img);
                 let deviceData = await Device.findOne({
                     where: { id },
                     include: [{ model: DeviceInfo, as: 'info' }]
-                })
+                });
                 let newImgArr;
-                if(deviceData.dataValues.imgArr){
-                    newImgArr=deviceData.dataValues.imgArr.split(',')
-                    newImgArr[0]=s3data
+
+                if (deviceData.dataValues.imgArr) {
+                    newImgArr = deviceData.dataValues.imgArr.split(',');
+                    
+                    newImgArr.unshift(s3data);
                 }
-               
+                let joinImgArr = newImgArr.join(',');
                 device = await Device.upsert({
                     id,
                     name,
                     price,
+                    subCategoryId,
+                    availability,
                     img1: s3data.toString(),
-                    imgArr:newImgArr.join(',')
+                    imgArr: joinImgArr,
+                    currency,
+                    unit,
+                    label,
+                    color,
+                    power,
+                    capacity,
+                    colorTemp,
+                    favotite,
+                    model,
+                    madeIn,
+                    optPrice,
+                    typeName,
+                    brandName
                 })
                 return res.json(device)
+            };
+
+            if (req.body.img1) {
+
+                device = await Device.upsert({
+                    id,
+                    name,
+                    price,
+                    subCategoryId,
+                    img1: req.body.img1,
+                    availability,
+                    imgArr,
+                    currency,
+                    unit,
+                    label,
+                    color,
+                    power,
+                    capacity,
+                    colorTemp,
+                    favotite,
+                    model,
+                    madeIn,
+                    optPrice,
+                    typeName,
+                    brandName
+                })
+
+                return res.json(device)
             }
-            
-           
+
+
         } catch (e) {
             next(ApiError.badRequest(e.message))
         }

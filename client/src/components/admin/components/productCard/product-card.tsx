@@ -16,7 +16,7 @@ function ProductCard({ product, showActiveProductHandler, status }: IProps) {
   const { id, name, img1, price, subCategoryId, availability, imgArr } =
     product;
   const [preview, setPreview] = useState<null | string>(null);
-  const [uploadImg, setuploadImg] = useState<any>();
+  const [uploadImg, setUploadImg] = useState<any>();
   const [productAvailability, setProductAvailability] = useState(availability);
   const dispatch = useAppDispatch();
   const [changeMod, setChangeMod] = useState(false);
@@ -24,7 +24,7 @@ function ProductCard({ product, showActiveProductHandler, status }: IProps) {
   const imgHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.currentTarget?.files?.[0]) {
       const file = e.currentTarget.files[0];
-      setuploadImg(file);
+      setUploadImg(file);
       const objectUrl = URL.createObjectURL(file);
       setPreview(objectUrl);
       setChangeMod(true);
