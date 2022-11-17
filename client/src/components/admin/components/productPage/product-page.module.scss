@@ -1,119 +1,40 @@
-@import"../../../../styles/variables.scss";
-.container{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    .productDetails{
-        display: flex;
-        flex-direction: column;
-        .itemBlock{
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            background-color: aliceblue;
-            padding-top: 10px;
-            border-bottom: 1px solid grey;
-            .itemName{
-                padding-left: 10px;
-            }
-            .itemInput{
-                height: 30px;
-            }
-            .imgBlock{
-                display: flex;
-                flex-direction: column;
-              .imgItem{
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                .img{
-                    margin-right: 10px;
-                    width: 100%;
-                }
-                .btn{
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-                    background-color: $rmd-grey-800;
-                    color: $rmd-grey-100;
-                &:hover{
-                    background-color: $rmd-grey-900;
-                }
-                }
-
-              }
-                
-            }
-            .itemSelect{}
-        }
-        .itemNotChangeBlock{
-            display: flex;
-            justify-content: space-between;
-            width: 50%;
-            background-color: aliceblue;
-            padding-top: 10px;
-            border-bottom: 1px solid grey;
-            .itemName{
-                padding-left: 10px;
-                padding-right: 10px;
-                font-weight: bold;
-            }
-            .itemValue{
-               min-height: 30px;
-               padding-right: 10px;
-            }
-            .itemSelect{}
-            .img{
-                width: 80%;
-
-            }
-        }
-        .itemNotChangeImgBlock{
-            display: flex;
-            flex-direction: column;
-            .itemName{
-                padding-left: 10px;
-                padding-right: 10px;
-                font-weight: bold;
-            }
-            .imgBlock{
-                display: flex;
-                flex-direction: column;
-                
-                .img{
-                    margin-right: 10px;
-                    width: 50%;
-                }
-            }
-        }
-    }
-    .buttonBlock{
-        width: 50px;
+@import "../../../../styles/variables.scss";
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  .productDetails {
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .buttonBlock {
+    width: 50px;
     position: fixed;
     display: flex;
-    bottom:20%;
+    bottom: 20%;
     left: 80%;
-    background-color:$rmd-grey-800 ;
+    background-color: $rmd-grey-800;
     justify-content: center;
     align-items: center;
-    .changeModButton{
-        width: 100%;
-        min-height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: inherit;
-        border: none;
-        color:$rmd-grey-100;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 1.1rem;
-        div{
-            width: 10px;
-        }
+    .changeModButton {
+      width: 100%;
+      min-height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: inherit;
+      border: none;
+      color: $rmd-grey-100;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 1.1rem;
+      div {
+        width: 10px;
+      }
     }
-    &:hover{
-        background-color: $rmd-grey-900;
+    &:hover {
+      background-color: $rmd-grey-900;
     }
-
-    }
+  }
 }

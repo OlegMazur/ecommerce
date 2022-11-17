@@ -10,7 +10,10 @@ interface IPayloadAllDevice {
   title?: string;
   subCategoryId?: number;
 }
-
+interface IUpdateDevice{
+  id:number;
+  uploadImg:any
+}
 export const getDevices = async (payload: IPayloadAllDevice | undefined) => {
   let data;
   if (payload?.title === "title") {
@@ -75,14 +78,14 @@ export const updateDevice = async ({ id, name, imgArr,img1,price,subCategoryId,a
   madeIn,
   optPrice,
   typeName,
-  brandName }: IDevice) => {
+  brandName}: IDevice) => {
   const formData = new FormData();
   formData.append("id", id.toString());
   formData.append("name", name);
   formData.append("price", price);
   formData.append("subCategoryId", String(subCategoryId));
   formData.append("availability", String(availability));
-    formData.append("currency", String(currency));
+    formData.append("currency", currency??"");
     formData.append("unit", String(unit));
     formData.append("label",String(label));
   formData.append("color", String(color));
@@ -95,27 +98,33 @@ export const updateDevice = async ({ id, name, imgArr,img1,price,subCategoryId,a
   formData.append("optPrice", String(optPrice));
   formData.append("typeName", String(typeName));
   formData.append("brandName", String(brandName));
-
-
-   
-   
   if(imgArr){
-    //imgArr=JSON.stringify(imgArr)
-    //console.log("imgArr",imgArr);
     formData.append("imgArr", imgArr);
   }
   if(img1){
-    //console.log("img1", img1);
     formData.append("img1", img1);
   }
-  //console.log("formData",formData)
   const { data } = await $host.put(
     Path.API + Path.DEVICE + "/" + id,
     formData
   );
-  console.log("data[0]",data[0])
   return data[0];
 };
+export const addDevicePhoto = async ({id,uploadImg }:IUpdateDevice) => {
+  const formData = new FormData();
+  console.log("device.ts",uploadImg);
+  formData.append("id", String(id));
+  formData.append("uploadImg", uploadImg);
+  
+  
+  const { data } = await $host.put(
+    Path.API + Path.DEVICE + "/" + id,
+    formData
+  );
+  console.log("data.ts",data);
+  return data[0];
+};
+
 
 export const getSubCategory = async () => {
   const { data } = await $host.get(Path.API + Path.SUBCATEGORY);

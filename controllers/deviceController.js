@@ -142,45 +142,56 @@ class DeviceController {
                 optPrice,
                 typeName,
                 brandName } = req.body;
-            if (req.files?.img1) {
-                console.log("req.files.img1", req.files.img1);
-                img = req.files.img1;
+                console.log("id",id)
+                // if (req.files?.uploadImg){
+                //     console.log("req.files",req.files.uploadImg)
+                // } 
+            if (req.files?.uploadImg) {
+                console.log("req.files.uploadImg", req.files.uploadImg);
+                img = req.files.uploadImg;
 
                 const s3data = await uploadFile(img);
                 let deviceData = await Device.findOne({
                     where: { id },
                     include: [{ model: DeviceInfo, as: 'info' }]
                 });
+                
                 let newImgArr;
 
                 if (deviceData.dataValues.imgArr) {
                     newImgArr = deviceData.dataValues.imgArr.split(',');
-                    
                     newImgArr.unshift(s3data);
                 }
                 let joinImgArr = newImgArr.join(',');
                 device = await Device.upsert({
-                    id,
-                    name,
-                    price,
-                    subCategoryId,
-                    availability,
+                    ...deviceData.dataValues,
                     img1: s3data.toString(),
                     imgArr: joinImgArr,
-                    currency,
-                    unit,
-                    label,
-                    color,
-                    power,
-                    capacity,
-                    colorTemp,
-                    favotite,
-                    model,
-                    madeIn,
-                    optPrice,
-                    typeName,
-                    brandName
+                   
                 })
+                // device = await Device.upsert({
+                //     id,
+                //     name,
+                //     price,
+                //     subCategoryId,
+                //     availability,
+                //     img1: s3data.toString(),
+                //     imgArr: joinImgArr,
+                //     currency,
+                //     unit,
+                //     label,
+                //     color,
+                //     power,
+                //     capacity,
+                //     colorTemp,
+                //     favotite,
+                //     model,
+                //     madeIn,
+                //     optPrice,
+                //     typeName,
+                //     brandName
+                // })
+                console.log("device", device);
                 return res.json(device)
             };
 

@@ -9,6 +9,7 @@ interface IProp {
   findActiveProduct: any;
 }
 function ProductPage({ activeProduct, status, findActiveProduct }: IProp) {
+  
   const [changeMod, setChangeMod] = useState(false);
   const [preview, setPreview] = useState<null | string>(null);
   const [uploadImg, setUploadImg] = useState<any>();
@@ -124,7 +125,7 @@ function ProductPage({ activeProduct, status, findActiveProduct }: IProp) {
   };
   
     newImgArr=imgArrCreator(ImgArr);
-    console.log("newImgArr",newImgArr)
+   
   
  
   const imgHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -234,15 +235,11 @@ function ProductPage({ activeProduct, status, findActiveProduct }: IProp) {
   const mainImgHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
     const currentImg = e.currentTarget.name;
     let newImgArrWithoutImg = newImgArr?.filter((img) => img !== currentImg);
-    console.log("newImgArrWithoutImg",newImgArrWithoutImg);
     //console.log("newImgArr",newImgArr);
-    console.log("currentImg",currentImg);
     if ( newImgArrWithoutImg) {
       let newSortImgArr =  [currentImg,...newImgArrWithoutImg];
       //newSortImgArr.unshift(currentImg);
-      console.log("newSortImgArr",newSortImgArr);
       let newStr=newSortImgArr.join(",");
-      console.log("newStr",newStr);
       setImgArr(newStr);
       setImg1(currentImg);
       submitChangeHandler();
@@ -265,15 +262,12 @@ function ProductPage({ activeProduct, status, findActiveProduct }: IProp) {
       setPreview(null)
     }
   }, [status]);
-  // useEffect(() => {
-  //   dispatch(getDeviceById(id));
-  // }, [dispatch, id]);
+  
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  //console.log(activeProduct);
   return (
     <div className={styles.container}>
       <h1>{name}</h1>

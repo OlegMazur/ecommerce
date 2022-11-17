@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { CategoryName } from "../../../common/enums/enums";
-import { ICategory, IDevice, ISubCategory } from "../../../store/redusers/deviceSlice/deviceSlice";
+import { useAppDispatch } from "../../../store/hooks";
+import { getDeviceById, ICategory, IDevice, ISubCategory } from "../../../store/redusers/deviceSlice/deviceSlice";
 import CategoryCard from "../components/categoryCard/category-card";
 import ProductCard from "../components/productCard/product-card";
+import NewProductPage from "../components/productPage/newproduct-page";
 import ProductPage from "../components/productPage/product-page";
 import SubCategoryCard from "../components/subCategoryCard/sub-category-card";
 import styles from "./product-admin-page.module.scss";
@@ -12,24 +14,27 @@ interface IProps {
   products: IDevice[];
   status?: string;
   loading?: boolean;
+  updateAdmin:any;
 }
-function ProductAdminPage({ categories, subCategories, products, status, loading }: IProps) {
+function ProductAdminPage({ categories, subCategories, products, status, loading,updateAdmin }: IProps) {
   const [selectedCategory, setSelectedCategory] = useState(CategoryName.PRODUCT);
   const [activeCategoryId, setActiveCategoryId] = useState<number | null>(null);
   const [activeSubCategoryId, setActiveSubCategoryId] = useState<number | null>(null);
   const [activeProductId, setActiveProductId] = useState<number | null>(null);
   const [sortByActiveProducts, setSortByActiveProducts] = useState(true);
   const [sortByQuantityProducts, setSortByQuantityProducts] = useState("");
-  
+  const dispatch=useAppDispatch();
   const findActiveProduct=(activeId:number|null)=>{
     let result
+    
     if(activeId){
       result= products.find((item) => item.id === activeId);
     }
-    
+    console.log("find")
      return result
   } 
   const activeProduct=findActiveProduct(activeProductId);
+  //const activeProduct=products.find((item) => item.id === activeProductId);
   const filterSubCategory = (arr: ISubCategory[]) => {
     let result;
     if (activeCategoryId) {
@@ -61,9 +66,12 @@ function ProductAdminPage({ categories, subCategories, products, status, loading
   const showActiveProductHandler = (productId: number | null) => {
     setActiveProductId(productId);
     setSelectedCategory(CategoryName.PRODUCT_PAGE);
-    findActiveProduct(productId)
+    findActiveProduct(productId);
   };
-
+  useEffect(()=>{
+    dispatch(getDeviceById(Number(activeProductId)));
+  },[activeProductId,dispatch]);
+  console.log('activeProduct',activeProduct)
   return (
     <div className={styles.container}>
       <header className={styles.header}>
@@ -122,7 +130,9 @@ function ProductAdminPage({ categories, subCategories, products, status, loading
       <main className={styles.main}>
         <div className={styles.productPage}>
           {activeProduct && selectedCategory === CategoryName.PRODUCT_PAGE && (
-            <ProductPage activeProduct={activeProduct}
+            <NewProductPage 
+            updateAdmin={updateAdmin}
+            activeProduct={activeProduct}
             status={status}
             findActiveProduct={findActiveProduct}/>
           )}

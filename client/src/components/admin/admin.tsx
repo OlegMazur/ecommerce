@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { useAppSelector } from "../../store/hooks";
-import { changeUploadStatus } from "../../store/redusers/deviceSlice/deviceSlice";
 import Loader from "../common/loader/loader";
 import MessageModal from "../common/modals/messageModal/message-modal";
 import styles from "./admin.module.scss";
 import ProductAdminPage from "./productAdminPage/product-admin-page";
 
 function Admin() {
+  const [,setNew]=useState<Array<any>>([]);
+  const updateAdmin=()=>{
+    setNew([])
+  }
   const { categories, subCategories, products, loading, status } =
     useAppSelector((state) => ({
       categories: state.device.categories,
@@ -16,6 +19,15 @@ function Admin() {
       status: state.device.status,
     }));
   const [isVisibleMessage, setIsVisiblyMessage] = useState(false);
+  useEffect(()=>{
+    return ()=>{
+    }
+
+},[]);
+useEffect(()=>{
+ 
+
+});
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisiblyMessage(false);
@@ -24,7 +36,6 @@ function Admin() {
     
     return () => clearTimeout(timer);
   }, [status]);
-
   return (
     <div className={styles.adminContainer}>
       <nav className={styles.navbar}>
@@ -38,9 +49,10 @@ function Admin() {
           products={products}
           status={status}
           loading={loading}
+          updateAdmin={updateAdmin}
         />
       </div>
-
+      
       {loading && <Loader />}
       {status && isVisibleMessage && <MessageModal messageText={status} />}
     </div>

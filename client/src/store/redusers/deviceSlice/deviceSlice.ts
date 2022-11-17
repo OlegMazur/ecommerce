@@ -8,6 +8,7 @@ import {
   updateCategory,
   updateSubCategory,
   updateDevice,
+  addDevicePhoto,
 } from "./../../../services/devicesService/device";
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { ActionType } from "./common";
@@ -121,36 +122,33 @@ const initialState: IState = {
   loading: false,
   error: null,
 };
-
-export const getAllDevices = createAsyncThunk<
-  IDevices,
-  IPayloadAllDevice | undefined,
-  { rejectValue: string }
->(ActionType.GET_ALL_DEVICES, async function (payload, { rejectWithValue }) {
-  const data = await getDevices(payload);
-  if (!data) {
-    return rejectWithValue("server Error");
+interface IUpdateDevice {
+  id: number;
+  uploadImg: any;
+}
+export const getAllDevices = createAsyncThunk<IDevices, IPayloadAllDevice | undefined, { rejectValue: string }>(
+  ActionType.GET_ALL_DEVICES,
+  async function (payload, { rejectWithValue }) {
+    const data = await getDevices(payload);
+    if (!data) {
+      return rejectWithValue("server Error");
+    }
+    return data;
   }
-  return data;
-});
+);
 
-export const getDeviceById = createAsyncThunk<
-  IDevice,
-  number,
-  { rejectValue: string }
->(ActionType.GET_DEVICE_BY_ID, async function (id, { rejectWithValue }) {
-  const data = await getOneDevice(id);
-  if (!data) {
-    return rejectWithValue("server Error");
+export const getDeviceById = createAsyncThunk<IDevice, number, { rejectValue: string }>(
+  ActionType.GET_DEVICE_BY_ID,
+  async function (id, { rejectWithValue }) {
+    const data = await getOneDevice(id);
+    if (!data) {
+      return rejectWithValue("server Error");
+    }
+    return data;
   }
-  return data;
-});
+);
 
-export const getAllDevicesTitle = createAsyncThunk<
-  IDevice[],
-  IPayloadAllDevice,
-  { rejectValue: string }
->(
+export const getAllDevicesTitle = createAsyncThunk<IDevice[], IPayloadAllDevice, { rejectValue: string }>(
   ActionType.GET_ALL_DEVICES_TITLE,
   async function (payload, { rejectWithValue }) {
     const data = await getDevices(payload);
@@ -161,59 +159,51 @@ export const getAllDevicesTitle = createAsyncThunk<
   }
 );
 
-export const getAllTypes = createAsyncThunk<
-  IType[],
-  undefined,
-  { rejectValue: string }
->(ActionType.GET_TYPES, async function (_, { rejectWithValue }) {
-  const data = await getTypes();
-  if (!data) {
-    return rejectWithValue("server Error");
+export const getAllTypes = createAsyncThunk<IType[], undefined, { rejectValue: string }>(
+  ActionType.GET_TYPES,
+  async function (_, { rejectWithValue }) {
+    const data = await getTypes();
+    if (!data) {
+      return rejectWithValue("server Error");
+    }
+    return data;
   }
-  return data;
-});
+);
 
-export const getAllBrands = createAsyncThunk<
-  IBrands[],
-  undefined,
-  { rejectValue: string }
->(ActionType.GET_BRANDS, async function (_, { rejectWithValue }) {
-  const data = await getBrands();
-  if (!data) {
-    return rejectWithValue("server Error");
+export const getAllBrands = createAsyncThunk<IBrands[], undefined, { rejectValue: string }>(
+  ActionType.GET_BRANDS,
+  async function (_, { rejectWithValue }) {
+    const data = await getBrands();
+    if (!data) {
+      return rejectWithValue("server Error");
+    }
+    return data;
   }
-  return data;
-});
+);
 
-export const getAllCategory = createAsyncThunk<
-  ICategory[],
-  undefined,
-  { rejectValue: string }
->(ActionType.GET_ALL_CATEGORY, async function (_, { rejectWithValue }) {
-  const data = await getCategory();
-  if (!data) {
-    return rejectWithValue("server Error");
+export const getAllCategory = createAsyncThunk<ICategory[], undefined, { rejectValue: string }>(
+  ActionType.GET_ALL_CATEGORY,
+  async function (_, { rejectWithValue }) {
+    const data = await getCategory();
+    if (!data) {
+      return rejectWithValue("server Error");
+    }
+    return data;
   }
-  return data;
-});
+);
 
-export const updateCategoryById = createAsyncThunk<
-  ICategory,
-  ICategory,
-  { rejectValue: string }
->(ActionType.UPDATE_CATEGORY, async function (payload, { rejectWithValue }) {
-  const data = await updateCategory(payload);
-  if (!data) {
-    return rejectWithValue("server Error");
+export const updateCategoryById = createAsyncThunk<ICategory, ICategory, { rejectValue: string }>(
+  ActionType.UPDATE_CATEGORY,
+  async function (payload, { rejectWithValue }) {
+    const data = await updateCategory(payload);
+    if (!data) {
+      return rejectWithValue("server Error");
+    }
+    return data;
   }
-  return data;
-});
+);
 
-export const updateSubCategoryById = createAsyncThunk<
-  ICategory,
-  ICategory,
-  { rejectValue: string }
->(
+export const updateSubCategoryById = createAsyncThunk<ICategory, ICategory, { rejectValue: string }>(
   ActionType.UPDATE_SUB_CATEGORY,
   async function (payload, { rejectWithValue }) {
     const data = await updateSubCategory(payload);
@@ -224,42 +214,47 @@ export const updateSubCategoryById = createAsyncThunk<
   }
 );
 
-export const updateDeviceById = createAsyncThunk<
-  IDevice,
-  IDevice,
-  { rejectValue: string }
->(
+export const updateDeviceById = createAsyncThunk<IDevice, IDevice, { rejectValue: string }>(
   ActionType.UPDATE_DEVICE,
   async function (payload, { rejectWithValue }) {
     const data = await updateDevice(payload);
-   
+
     if (!data) {
       return rejectWithValue("server Error");
     }
-    
+
+    return data;
+  }
+);
+export const addImgById = createAsyncThunk<IDevice, IUpdateDevice, { rejectValue: string }>(
+  ActionType.ADD_PHOTO,
+  async function (payload, { rejectWithValue }) {
+    const data = await addDevicePhoto(payload);
+    if (!data) {
+      return rejectWithValue("server Error");
+    }
     return data;
   }
 );
 
-export const getAllSubCategory = createAsyncThunk<
-  ISubCategory[],
-  undefined,
-  { rejectValue: string }
->(ActionType.GET_ALL_SUB_CATEGORY, async function (_, { rejectWithValue }) {
-  const data = await getSubCategory();
-  if (!data) {
-    return rejectWithValue("server Error");
+export const getAllSubCategory = createAsyncThunk<ISubCategory[], undefined, { rejectValue: string }>(
+  ActionType.GET_ALL_SUB_CATEGORY,
+  async function (_, { rejectWithValue }) {
+    const data = await getSubCategory();
+    if (!data) {
+      return rejectWithValue("server Error");
+    }
+    return data;
   }
-  return data;
-});
+);
 
 const deviceSlice = createSlice({
   name: "device",
   initialState,
   reducers: {
-    changeUploadStatus:(state)=>{
-      state.status=""
-    }
+    changeUploadStatus: (state) => {
+      state.status = "";
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -289,9 +284,7 @@ const deviceSlice = createSlice({
         state.error = null;
       })
       .addCase(updateCategoryById.fulfilled, (state, action) => {
-        let category = state.categories.find(
-          (item) => item.id === action.payload.id
-        );
+        let category = state.categories.find((item) => item.id === action.payload.id);
         if (category?.title || category?.img) {
           category.title = action.payload.title;
           category.img = action.payload.img;
@@ -305,9 +298,7 @@ const deviceSlice = createSlice({
         state.error = null;
       })
       .addCase(updateSubCategoryById.fulfilled, (state, action) => {
-        let category = state.subCategories.find(
-          (item) => item.id === action.payload.id
-        );
+        let category = state.subCategories.find((item) => item.id === action.payload.id);
         if (category?.title || category?.img) {
           category.title = action.payload.title;
           category.img = action.payload.img;
@@ -337,49 +328,46 @@ const deviceSlice = createSlice({
         state.error = null;
       })
       .addCase(updateDeviceById.fulfilled, (state, action) => {
-       
-        let device = state.devices.rows.find(
-          (item) => item.id === action.payload.id
-
-        )
+        let device = state.devices.rows.find((item) => item.id === action.payload.id);
         //device?.brandId=action.payload.brandId
-        if(device){
+        if (device) {
           // console.log("device",device.img1)
           // device=action.payload
-          device.name=action.payload.name;
-          device.img1=action.payload.img1;
-          device.price=action.payload.price;
-          device.availability=action.payload.availability;
-          if(device.imgArr){
-            device.imgArr=action.payload.imgArr
-          };
-          device.currency=action.payload.currency;
-          device.unit=action.payload.unit;
-          device.label=action.payload.label;
-          device.color=action.payload.color;
-          device.power=action.payload.power;
-          device.capacity=action.payload.capacity;
-          device.colorTemp=action.payload.colorTemp;
-          device.favotite=action.payload.favotite;
-          device.model=action.payload.model;
-          device.madeIn=action.payload.madeIn;
-          device.optPrice=action.payload.optPrice;
-          device.typeName=action.payload.typeName;
-          device.brandName=action.payload.brandName
-          
+          device.name = action.payload.name;
+          device.img1 = action.payload.img1;
+          device.price = action.payload.price;
+          device.availability = action.payload.availability;
+          if (device.imgArr) {
+            device.imgArr = action.payload.imgArr;
+          }
+          device.currency = action.payload.currency;
+          device.unit = action.payload.unit;
+          device.label = action.payload.label;
+          device.color = action.payload.color;
+          device.power = action.payload.power;
+          device.capacity = action.payload.capacity;
+          device.colorTemp = action.payload.colorTemp;
+          device.favotite = action.payload.favotite;
+          device.model = action.payload.model;
+          device.madeIn = action.payload.madeIn;
+          device.optPrice = action.payload.optPrice;
+          device.typeName = action.payload.typeName;
+          device.brandName = action.payload.brandName;
         }
-        // if (device?.name || device?.imgArr) {
-        //   device.name= action.payload.name;
-        //   device.imgArr = action.payload.imgArr;
-        // }
-        // console.log("device",device)
-        // console.log("action",action.payload)
-        
-        // console.log("device",device?.imgArr)
-        // if(device){
-        //   console.log("device",device)
-        //   device=action.payload
-        // }
+
+        state.status = "Зміни збережені успішно";
+        state.loading = false;
+      })
+      .addCase(addImgById.pending, (state) => {
+        state.status = "";
+        state.loading = true;
+        state.error = null;
+      })
+      .addCase(addImgById.fulfilled, (state, action) => {
+        let device = state.devices.rows.find((item) => item.id === action.payload.id);
+        if (device) {
+          device = action.payload;
+        }
         state.status = "Зміни збережені успішно";
         state.loading = false;
       })
@@ -393,7 +381,7 @@ const deviceSlice = createSlice({
       });
   },
 });
-export const {changeUploadStatus}=deviceSlice.actions;
+export const { changeUploadStatus } = deviceSlice.actions;
 export default deviceSlice.reducer;
 
 // function isError(action:AnyAction){

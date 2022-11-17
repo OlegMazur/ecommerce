@@ -9,5 +9,6 @@ const ActionType = {
   UPDATE_CATEGORY: "device/update-category",
   UPDATE_SUB_CATEGORY: "device/update-sub-category",
   UPDATE_DEVICE: "device/update-device",
+  ADD_PHOTO:"device/add-photo"
 };
 export { ActionType };
