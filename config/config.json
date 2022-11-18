@@ -14,13 +14,15 @@
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
-  
   "production": {
-    "username": "postgres",
-    "password": "0LtS1uDc2QUr7TXprwgH",
-    "database": "railway",
-    "host": "containers-us-west-129.railway.app",
-    "dialect": "postgres"
-  }
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres",
+    "dialectOptions": {
+       "ssl": {
+         "require": true,
+         "rejectUnauthorized": false
+       }
+     }
+   }
   
 }
