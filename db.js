@@ -29,13 +29,29 @@ require('dotenv').config()
 //   },
 
 // })
- module.exports=new Sequelize({
+//  module.exports=new Sequelize({
     
-    database: "railway",
-  username: "postgres",
-  password: "0LtS1uDc2QUr7TXprwgH",
-  host: "containers-us-west-129.railway.app",
-  port: 6052,
+//     database: "railway",
+//   username: "postgres",
+//   password: "0LtS1uDc2QUr7TXprwgH",
+//   host: "containers-us-west-129.railway.app",
+//   port: 6052,
+//   dialect: "postgres",
+//   dialectOptions: {
+//     ssl: {
+//       require: true, // This will help you. But you will see nwe error
+//       rejectUnauthorized: false // This line will fix new error
+//     }
+//   },
+
+// })
+module.exports=new Sequelize({
+    
+    database: process.env.PGDATABASE,
+  username: process.env.PGUSER,
+  password: process.env.PGPASSWORD,
+  host: process.env.PGHOST,
+  port: process.env.PGPORT,
   dialect: "postgres",
   dialectOptions: {
     ssl: {
@@ -45,4 +61,3 @@ require('dotenv').config()
   },
 
 })
-//postgresql://postgres:0LtS1uDc2QUr7TXprwgH@containers-us-west-129.railway.app:6052/railway

@@ -1,11 +1,12 @@
 
 {
   "development": {
-    "username": "postgres",
-    "password": "postgres",
-    "database": "fake",
-    "host": "localhost",
-    "dialect": "postgres"
+    "username": "process.env.PGUSER",
+    "password": "process.env.PGPASSWORD",
+    "database": "process.env.PGDATABASE",
+    "host": "process.env.PGHOST",
+    "dialect": "postgres",
+    "port": "process.env.PGPORT"
   },
   "test": {
     "username": "process.env.DB_USER",
