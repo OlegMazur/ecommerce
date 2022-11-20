@@ -70,7 +70,7 @@ function NewProductPage({ activeProduct, status, updateAdmin }: IProp) {
       setPreview(null);
       updateAdmin()
     }
-  }, [status]);
+  }, [status,updateAdmin]);
  
 
   useEffect(() => {
