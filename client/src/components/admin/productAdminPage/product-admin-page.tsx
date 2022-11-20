@@ -30,7 +30,6 @@ function ProductAdminPage({ categories, subCategories, products, status, loading
     if(activeId){
       result= products.find((item) => item.id === activeId);
     }
-    console.log("find")
      return result
   } 
   const activeProduct=findActiveProduct(activeProductId);
@@ -71,7 +70,6 @@ function ProductAdminPage({ categories, subCategories, products, status, loading
   useEffect(()=>{
     dispatch(getDeviceById(Number(activeProductId)));
   },[activeProductId,dispatch]);
-  console.log('activeProduct',activeProduct)
   return (
     <div className={styles.container}>
       <header className={styles.header}>

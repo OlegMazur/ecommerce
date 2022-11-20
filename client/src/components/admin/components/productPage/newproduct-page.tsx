@@ -68,9 +68,9 @@ function NewProductPage({ activeProduct, status, updateAdmin }: IProp) {
       setChangeMod(false);
       setUploadImg(null);
       setPreview(null);
-      updateAdmin()
+      
     }
-  }, [status,updateAdmin]);
+  }, [status]);
  
 
   useEffect(() => {
