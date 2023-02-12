@@ -6,43 +6,55 @@ import styles from "./admin.module.scss";
 import ProductAdminPage from "./productAdminPage/product-admin-page";
 
 function Admin() {
-  const {categories,subCategories,products,loading, status}=useAppSelector(state=>({
-    categories:state.device.categories,
-    subCategories:state.device.subCategories,
-    products:state.device.devices.rows,
-    loading:state.device.loading,
-    status:state.device.status
-  }))
-  //const [statusMessage,setStatusMessage]=useState<any>(status);
-  const [isVisibleMessage,setIsVisiblyMessage]=useState(false)
-  console.log('product',products.length);
-  console.log('isVisibleMessage',isVisibleMessage)
+  const [,setNew]=useState<Array<any>>([]);
+  const updateAdmin=()=>{
+    setNew([])
+  }
+  const { categories, subCategories, products, loading, status } =
+    useAppSelector((state) => ({
+      categories: state.device.categories,
+      subCategories: state.device.subCategories,
+      products: state.device.devices.rows,
+      loading: state.device.loading,
+      status: state.device.status,
+    }));
+  const [isVisibleMessage, setIsVisiblyMessage] = useState(false);
+  useEffect(()=>{
+    return ()=>{
+    }
+
+},[]);
+useEffect(()=>{
+ 
+
+});
   useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisiblyMessage(false);
+    }, 3000);
+    setIsVisiblyMessage(true);
     
-      const timer = setTimeout(() => {
-        console.log('isVisibleMessage',isVisibleMessage)
-        setIsVisiblyMessage(false)
-      }, 3000);
-      setIsVisiblyMessage(true)
-      return () => clearTimeout(timer);
-    
-    
+    return () => clearTimeout(timer);
   }, [status]);
   return (
     <div className={styles.adminContainer}>
       <nav className={styles.navbar}>
         <button className={styles.navbarBtn}>Товари</button>
         <button className={styles.navbarBtn}>Замовлення</button>
-        <button onClick={()=>console.log(status)}>статус</button>
       </nav>
       <div className={styles.mainContainer}>
-        <ProductAdminPage categories={categories} subCategories={subCategories} products={products} 
-        status={status}
-        loading={loading} />
+        <ProductAdminPage
+          categories={categories}
+          subCategories={subCategories}
+          products={products}
+          status={status}
+          loading={loading}
+          updateAdmin={updateAdmin}
+        />
       </div>
       
-      {loading&&<Loader/>}
-      {status&&isVisibleMessage&&<MessageModal messageText={status}/> }
+      {loading && <Loader />}
+      {status && isVisibleMessage && <MessageModal messageText={status} />}
     </div>
   );
 }

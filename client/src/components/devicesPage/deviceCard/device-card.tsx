@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { RoutePath } from "../../routes/enums";
@@ -17,8 +16,7 @@ interface ISubCardProps {
   availability: number;
   price: string;
   onBuyDeviceHandler: any;
-  currency?:String
-
+  currency?: String;
 }
 
 function DeviceCard({
@@ -29,27 +27,24 @@ function DeviceCard({
   availability,
   price,
   onBuyDeviceHandler,
-  currency
+  currency,
 }: ISubCardProps) {
   const actualDeviceImgArr = deviceImgArr?.split(",");
   const actualDeviceImg = actualDeviceImgArr?.[0];
   const imgUrl = imgUrlWraper(actualDeviceImg);
-
-  const usdRate = useAppSelector(
-    (state) => state.basket.usdExchangeRate
-  );
-  const actualPrice = currency==="UAH"?price:exchangeUsd({usdRate ,price})
-  
+  const usdRate = useAppSelector((state) => state.basket.usdExchangeRate);
+  const actualPrice =
+    currency === "UAH" ? price : exchangeUsd({ usdRate, price });
   const buyDeviceHandler = () => {
     onBuyDeviceHandler({
       id: deviceId,
       img1: actualDeviceImg,
       name: deviceName,
-      price:actualPrice,
+      price: actualPrice,
       quantity: 1,
     });
   };
-  
+
   return (
     <div className={styles.deviceCard}>
       <div className={styles.content}>
@@ -58,9 +53,14 @@ function DeviceCard({
             <img className={styles.img} src={imgUrl} alt="noPhoto " />
           </Link>
         </div>
-
         <div className={styles.deviceInfoBlock}>
-          <div className={styles.name}><span>{deviceName.length>100?deviceName.slice(0,100)+"...":deviceName}</span></div>
+          <div className={styles.name}>
+            <span>
+              {deviceName.length > 100
+                ? deviceName.slice(0, 100) + "..."
+                : deviceName}
+            </span>
+          </div>
           <div className={styles.deviceInfo}>
             <div>
               {availability ? (

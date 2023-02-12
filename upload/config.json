@@ -1,0 +1,29 @@
+
+{
+  "development": {
+    "username": "postgres",
+    "password": "0LtS1uDc2QUr7TXprwgH",
+    "database": "railway",
+    "host": "containers-us-west-129.railway.app",
+    "dialect": "postgres",
+    "port": "6052"
+  },
+  "test": {
+    "username": "process.env.DB_USER",
+    "password": "process.env.DB_PASSWORD",
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres",
+    "dialectOptions": {
+       "ssl": {
+         "require": true,
+         "rejectUnauthorized": false
+       }
+     }
+   }
+  
+}

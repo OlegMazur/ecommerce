@@ -1,24 +1,19 @@
 .app {
   min-height: 100vh;
   width: 1400px;
-  
   display: flex;
   flex-direction: column;
-  
   justify-content: space-between;
- box-sizing: border-box;
-  
+  box-sizing: border-box;
   margin: 0 auto;
   position: relative;
-
   .nav {
     position: sticky;
     top: 0px;
     z-index: 5;
   }
-  //
   .main {
-     width: 100%;
+    width: 100%;
     padding: 0px;
     display: flex;
     height: auto;
@@ -26,7 +21,6 @@
     align-items: center;
     position: relative;
     flex: 1 1 auto;
-    
   }
   .footer {
     margin-top: 20px;
@@ -51,9 +45,8 @@
     max-width: none;
     padding: 0px;
     .main {
-     
     }
-    .footer{
+    .footer {
       margin-top: 10px;
     }
   }

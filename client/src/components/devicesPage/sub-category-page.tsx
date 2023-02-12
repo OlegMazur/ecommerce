@@ -2,13 +2,11 @@ import React, { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { RoutePath } from "../routes/enums";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import DeviceCard from "./deviceCard/device-card";
 import styles from "./sub-category-page.module.scss";
 import {
-  getAllDevices,
   IDevice,
 } from "../../store/redusers/deviceSlice/deviceSlice";
 import {
@@ -18,24 +16,11 @@ import {
 } from "../../store/redusers/basketSlice/basket-slice";
 import SearchBar from "../common/searchBar/search-bar";
 import { exchangeUsd } from "../../services/helpers/exchange-helpers";
-// interface IState {
-//   activeCategoryId: number;
-//   categoryName: string;
-// }
-interface ISearchParams {
-  sortPrice?: string | null;
-  deviceName?: any;
-}
-// interface ISortSearchDevice{
-//   searchParams:ISearchParams,
 
-// }
 function SubCategoryPage() {
   const dispatch = useAppDispatch();
-  //const [isActiveBasket,setIsActiveBasket]=useState(false);
   const [sortDevicePrice, setSortDevicePrice] = useState<string | null>(null);
   const [deviceSearchNames, setDeviceSearchNames] = useState<string[]>([]);
-
   const { id } = useParams();
   const subCategories = useAppSelector((state) => state.device.subCategories);
   const devices = useAppSelector((state) => state.device.devices.rows);
@@ -68,11 +53,12 @@ function SubCategoryPage() {
           exchangeUsd({ usdRate, price: a.price })
       );
     }
-    if (deviceSearchNames) {
+    if (deviceSearchNames?.[0]) {
       newArr = arr.filter((i) =>
         deviceSearchNames.find((name) => i.name.includes(name))
       );
     }
+    
     return newArr;
   };
   const sortDeviceArr = sortSearchDevice(actualDevices);
@@ -84,6 +70,7 @@ function SubCategoryPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  
   return (
     <div className={styles.card}>
       <div className={styles.navHistory}>
@@ -105,7 +92,7 @@ function SubCategoryPage() {
           {actualSubCategory?.title}
         </div>
       </div>
-      {actualSubCategory?.id === 23680528 && (
+      {actualSubCategory?.id === 23680528 &&  (
         <div className={styles.searchBar}>
           <SearchBar
             actualDevices={devices}

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { NavLink, useLocation, useParams } from "react-router-dom";
+import { NavLink,  useParams } from "react-router-dom";
 import { useAppSelector } from "../../store/hooks";
 import { RoutePath } from "../routes/enums";
 import SubCategoryCard from "./subCategoryCard/sub-category-card";
@@ -7,14 +7,11 @@ import styles from "./category-page.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 
-
 function CategoryPage() {
- const {id}=useParams();
-
+  const { id } = useParams();
   const subCategories = useAppSelector((state) => state.device.subCategories);
   const categories = useAppSelector((state) => state.device.categories);
-  const category=categories.find(item=>item.id===Number(id));
-  
+  const category = categories.find((item) => item.id === Number(id));
   const actualSubCategories = subCategories.filter(
     (item) => item.categoryId === Number(id)
   );
@@ -22,7 +19,6 @@ function CategoryPage() {
     window.scrollTo(0, 0);
   }, []);
 
-  //console.log("activeSubCategory",actualSubCategories)
   return (
     <div className={styles.card}>
       <div className={styles.navHistory}>

@@ -15,15 +15,11 @@ function SubCategoryCard({
   subCategoryTitle,
   selectedSubCatId,
 }: ISubCardProps) {
-  // const imgUrl = subCategoryImg
-  //   ? process.env.REACT_APP_API_URL + subCategoryImg
-  //   :  "/noPhoto.jpg";
   const imgUrl = imgUrlWraper(subCategoryImg);
   const devices = useAppSelector((state) => state.device.devices.rows);
   const actualDevices = devices.filter(
     (item) => item.subCategoryId === selectedSubCatId
   );
-  //console.log("actualDevices",actualDevices)
   return (
     <div className={styles.subCategoryCard}>
       <div className={styles.content}>
@@ -37,11 +33,14 @@ function SubCategoryCard({
         <div className={styles.deviceNameList}>
           {actualDevices.map(
             ({ id, name, subCategoryId }, index) =>
-              index <5 && (
+              index < 5 && (
                 <div className={styles.device} key={index}>
                   {index < 4 && (
                     <div className={styles.deviceItem}>
-                      <Link to={RoutePath.DEVICE + id} className={styles.deviceLink}>
+                      <Link
+                        to={RoutePath.DEVICE + id}
+                        className={styles.deviceLink}
+                      >
                         <div className={styles.name}>{name}</div>
                       </Link>
                     </div>
@@ -52,7 +51,7 @@ function SubCategoryCard({
                         to={RoutePath.SUB_CATEGORY + selectedSubCatId}
                         className={styles.deviceLinkAll}
                       >
-                       <div className={styles.name}> показати всі</div>
+                        <div className={styles.name}> показати всі</div>
                       </Link>
                     </div>
                   )}

@@ -1,36 +1,24 @@
 @import "../../../styles/variables.scss";
-// .menu-container{
-//      min-width: 200px;
-//      position: relative;
-//      top:220px;
-//     right: 115px;
-//      background-color:$colorlightGrey ;
-.menu-container{
-    min-width: 200px;
-    display: flex;
-    flex-direction: column;
-    background-color: $colorDarkGrey900;
-    border-top: 1px solid $colorlightGrey100;
+
+.menu-container {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: $colorDarkGrey900;
+  border-top: 1px solid $colorlightGrey100;
 }
 .menu-item {
-    margin-bottom: 6px;
-    margin-top: 6px;
-    padding-left: 10px;
-    
-
-    
+  margin-bottom: 6px;
+  margin-top: 6px;
+  padding-left: 10px;
   &__link {
     text-decoration: none;
-    color:$colorlightGrey100;
+    color: $colorlightGrey100;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
-    &:hover{
-      color:$rmd-blue-500;
-     
+    &:hover {
+      color: $rmd-blue-500;
     }
   }
- 
 }
-
-// }

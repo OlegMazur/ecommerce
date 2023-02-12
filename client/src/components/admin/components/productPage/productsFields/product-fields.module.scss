@@ -1,0 +1,39 @@
+.itemBlock{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    background-color: aliceblue;
+    padding-top: 10px;
+    border-bottom: 1px solid grey;
+    .itemName{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: bold;
+    }
+    .itemValue{
+       min-height: 30px;
+       padding-right: 10px;
+    }
+    .img{
+        width: 80%;
+
+    }
+}
+.itemImgBlock{
+    display: flex;
+    flex-direction: column;
+    .itemName{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: bold;
+    }
+    .imgBlock{
+        display: flex;
+        flex-direction: column;
+        
+        .img{
+            margin-right: 10px;
+            width: 50%;
+        }
+    }
+}

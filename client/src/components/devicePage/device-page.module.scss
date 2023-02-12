@@ -55,15 +55,12 @@
     .mainBlock {
       display: flex;
       min-height: 400px;
-     height: 30vw;
+      height: 30vw;
       max-height: 60vw;
-
       .imgBlock {
         width: 60%;
         height: 100%;
-
         display: flex;
-
         .smallImgBlock {
           width: 25%;
           height: 100%;
@@ -124,9 +121,8 @@
         }
         .largeImgBlock {
           width: 75%;
-         min-height: 100%;
+          min-height: 100%;
           position: relative;
-         
           margin-left: 5px;
           .img1 {
             width: 100%;
@@ -144,7 +140,6 @@
         flex-direction: column;
         justify-content: space-between;
         padding-left: 10px;
-
         .nameBlock {
           width: 100%;
           font-size: 1.4rem;
@@ -160,7 +155,6 @@
         .priceBlock {
           font-size: 1.4rem;
         }
-        
         .buttonBlock {
           button {
             height: 40px;
@@ -169,7 +163,6 @@
             background-color: $rmd-blue-800;
             border: none;
             font-size: 1.4rem;
-
             .faCartShopping {
               padding-right: 10px;
             }
@@ -185,7 +178,6 @@
           width: 100%;
           height: 30%;
           border: 1px solid $rmd-grey-800;
-
           .buttonsBlock {
             width: 100%;
             display: flex;
@@ -216,24 +208,19 @@
         }
       }
     }
-
     .infoBlock {
       height: 50%;
       padding: 10px;
-    
     }
   }
   .contactInfoModalContainer {
     width: 100%;
     height: 100%;
-
     position: absolute;
     display: flex;
-
     background-color: $rmd-grey-800;
     justify-content: center;
     align-items: center;
-
     .contactInfoModal {
       background-color: $rmd-grey-100;
       min-width: 300px;
@@ -250,37 +237,33 @@
     height: 100%;
     justify-content: space-between;
     .navHistory {
-     
-      display:block;
-      
-      .navHome{
-       
-        
+      display: block;
+      .navHome {
         display: inline;
-        .navLinkHome{
-        
+        .navLinkHome {
           display: inline;
-          .faHouse{
+          .faHouse {
             display: inline;
           }
-          div{ display: inline;}
+          div {
+            display: inline;
+          }
         }
-        .navLinkCategory{
+        .navLinkCategory {
           display: inline;
           flex-direction: row;
-          flex-wrap:nowrap;
+          flex-wrap: nowrap;
           margin: 0px;
         }
       }
-      .selectedCategory{
-       
+      .selectedCategory {
         display: inline;
       }
     }
     .content {
       display: flex;
       flex-direction: column;
-     
+
       width: 100%;
       .mainBlock {
         min-height: 100vw;
@@ -288,7 +271,6 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-       
         .imgBlock {
           width: 100%;
           height: 60%;
@@ -323,13 +305,13 @@
               .smallImgItem {
                 padding-top: 0px;
                 padding-bottom: 0px;
-                border: 1px solid $rmd-grey-800 ;
+                border: 1px solid $rmd-grey-800;
               }
             }
             .downButton {
               position: absolute;
               height: 100%;
-              
+
               opacity: 0.8;
               top: 0px;
               right: 0px;
@@ -348,47 +330,49 @@
           }
           .largeImgBlock {
             display: none;
-            
           }
         }
         .orderBlock {
           width: 100%;
-         height: 40%;
+          height: 40%;
           display: flex;
           flex-direction: column;
           box-sizing: border-box;
           padding: 0px;
-          
-          .nameBlock{
+          .nameBlock {
             padding-left: 10px;
             box-sizing: border-box;
             padding-right: 10px;
-           font-size: 1.1rem  };
-          .availabilityBlock{padding-left: 5px;
-            box-sizing: border-box;
-          };
-          .priceBlock{padding-left: 5px;
-            box-sizing: border-box;
-            align-self: flex-end;
-            padding-right: 5px;};
-          .colorBlock{padding-left: 5px;
-            box-sizing: border-box;};
-          .buttonBlock{
-            align-self: flex-end;
-           padding-right: 5px;
-           box-sizing: border-box;
+            font-size: 1.1rem;
           }
-          .contactsBlock{
+          .availabilityBlock {
+            padding-left: 5px;
+            box-sizing: border-box;
+          }
+          .priceBlock {
+            padding-left: 5px;
+            box-sizing: border-box;
+            align-self: flex-end;
+            padding-right: 5px;
+          }
+          .colorBlock {
+            padding-left: 5px;
+            box-sizing: border-box;
+          }
+          .buttonBlock {
+            align-self: flex-end;
+            padding-right: 5px;
+            box-sizing: border-box;
+          }
+          .contactsBlock {
             min-height: 130px;
-           
-            .contactsContent{
-             padding: 2px;
-             min-height: 100px;
-             button{
-              padding: 5px;
-             }
+            .contactsContent {
+              padding: 2px;
+              min-height: 100px;
+              button {
+                padding: 5px;
+              }
             }
-
           }
         }
       }
@@ -396,27 +380,23 @@
         margin-top: 10px;
         height: 50%;
         width: 100%;
-       flex: 1 1 auto;
-       box-sizing: border-box;
-      h3{
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
+        flex: 1 1 auto;
+        box-sizing: border-box;
+        h3 {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
         .infoContainer {
           max-width: 100%;
-      
           p {
-            
-           margin-top: 6px;
-           margin-bottom: 6px;
-           height: auto;
+            margin-top: 6px;
+            margin-bottom: 6px;
+            height: auto;
             img {
-             min-height: 100px;
-             
-              top:0px;
+              min-height: 100px;
+              top: 0px;
               left: 0px;
               width: 100%;
-              
               object-fit: cover;
               padding-bottom: 50px;
             }
@@ -435,37 +415,32 @@
     height: 100%;
     justify-content: space-between;
     .navHistory {
-     
-      display:block;
-      
-      .navHome{
-       
-        
+      display: block;
+      .navHome {
         display: inline;
-        .navLinkHome{
-        
+        .navLinkHome {
           display: inline;
-          .faHouse{
+          .faHouse {
             display: inline;
           }
-          div{ display: inline;}
+          div {
+            display: inline;
+          }
         }
-        .navLinkCategory{
+        .navLinkCategory {
           display: inline;
           flex-direction: row;
-          flex-wrap:nowrap;
+          flex-wrap: nowrap;
           margin: 0px;
         }
       }
-      .selectedCategory{
-       
+      .selectedCategory {
         display: inline;
       }
     }
     .content {
       display: flex;
       flex-direction: column;
-     
       width: 100%;
       .mainBlock {
         height: 50%;
@@ -473,7 +448,6 @@
         display: flex;
         flex-direction: column;
         min-height: 650px;
-        
         .imgBlock {
           width: 100%;
           height: 50%;
@@ -509,13 +483,13 @@
               .smallImgItem {
                 padding-top: 0px;
                 padding-bottom: 0px;
-                border: 1px solid $rmd-grey-800 ;
+                border: 1px solid $rmd-grey-800;
               }
             }
             .downButton {
               position: absolute;
               height: 100%;
-              
+
               opacity: 0.8;
               top: 0px;
               right: 0px;
@@ -538,40 +512,43 @@
         }
         .orderBlock {
           width: 100%;
-         height: 50%;
+          height: 50%;
           display: flex;
           flex-direction: column;
-         
-          .nameBlock{
+          .nameBlock {
             padding-left: 10px;
             box-sizing: border-box;
             padding-right: 10px;
-           font-size: 1.1rem  };
-          .availabilityBlock{padding-left: 5px;
-            box-sizing: border-box;
-          };
-          .priceBlock{padding-left: 5px;
-            box-sizing: border-box;
-            align-self: flex-end;
-            padding-right: 5px;};
-          .colorBlock{padding-left: 5px;
-            box-sizing: border-box;};
-          .buttonBlock{
-            align-self: flex-end;
-           padding-right: 5px;
-           box-sizing: border-box;
+            font-size: 1.1rem;
           }
-          .contactsBlock{
+          .availabilityBlock {
+            padding-left: 5px;
+            box-sizing: border-box;
+          }
+          .priceBlock {
+            padding-left: 5px;
+            box-sizing: border-box;
+            align-self: flex-end;
+            padding-right: 5px;
+          }
+          .colorBlock {
+            padding-left: 5px;
+            box-sizing: border-box;
+          }
+          .buttonBlock {
+            align-self: flex-end;
+            padding-right: 5px;
+            box-sizing: border-box;
+          }
+          .contactsBlock {
             min-height: 130px;
-           
-            .contactsContent{
-             padding: 2px;
-             min-height: 100px;
-             button{
-              padding: 5px;
-             }
+            .contactsContent {
+              padding: 2px;
+              min-height: 100px;
+              button {
+                padding: 5px;
+              }
             }
-
           }
         }
       }
@@ -579,26 +556,21 @@
         margin-top: 10px;
         height: 50%;
         width: 100%;
-      
-      h3{
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
+        h3 {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
         .infoContainer {
           max-width: 100%;
           height: 100%;
           p {
-            
-           margin-top: 6px;
-           margin-bottom: 6px;
-           
+            margin-top: 6px;
+            margin-bottom: 6px;
             img {
-             min-height: 100px;
-             
-              top:0px;
+              min-height: 100px;
+              top: 0px;
               left: 0px;
               width: 100%;
-              
               object-fit: cover;
               padding-bottom: 50px;
             }

@@ -2,17 +2,16 @@
 .navbar-container {
   display: flex;
   height: 60px;
- width: 100%;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   background-color: $colorDarkGrey900;
   font-size: 1.2rem;
-  color:$rmd-grey-100;
+  color: $rmd-grey-100;
   box-sizing: border-box;
   flex-wrap: nowrap;
   padding-left: 20px;
   padding-right: 20px;
-  //position: -webkit-sticky;
   position: sticky;
   top: 0px;
   .navbar {
@@ -23,10 +22,10 @@
     .navbar-items {
       position: relative;
       display: flex;
-      .navbar{
+      .navbar {
         &__item .active {
-            color: $colorLightBlue800;
-          }
+          color: $colorLightBlue800;
+        }
       }
     }
     &__item {
@@ -60,16 +59,15 @@
         top: 60px;
         left: -20px;
         background-color: $colorDarkGrey900;
-        
+
         color: black;
         visibility: hidden;
       }
       .icon-menu {
         margin-right: 10px;
       }
-     
     }
-    
+
     &__item:hover {
       color: $rmd-blue-500;
       text-decoration: none;
@@ -78,13 +76,12 @@
       }
     }
     &__item :active {
-        color: $colorLightBlue800;
-      }
-   
+      color: $colorLightBlue800;
+    }
   }
-  .navbar-items{
-    .navbar__item.active{
-        color: $colorLightBlue800;
+  .navbar-items {
+    .navbar__item.active {
+      color: $colorLightBlue800;
     }
   }
   .navbar-bascket-container {
@@ -99,7 +96,7 @@
       width: 100%;
       position: relative;
       background-color: $colorLightBlue800;
-  
+
       padding: 0px;
       &__link {
         display: flex;
@@ -122,15 +119,15 @@
         padding: 10px;
         position: relative;
       }
-      .sum-product-in-basket{
+      .sum-product-in-basket {
         width: 24px;
         height: 24px;
         background-color: black;
         font-size: 16px;
         position: absolute;
-        right:15px;
-        top:4px;
-        color:$rmd-grey-100;
+        right: 15px;
+        top: 4px;
+        color: $rmd-grey-100;
         font-weight: bolder;
         border-radius: 50%;
         display: flex;
@@ -141,15 +138,14 @@
         bottom: 2px;
       }
     }
-    
   }
-  .basket{
+  .basket {
     width: 30%;
     min-width: 390px;
     box-sizing: border-box;
     min-height: 200px;
     position: absolute;
-   top:60px;
+    top: 60px;
     right: 0px;
     z-index: 5;
     border-top: 1px solid $colorlightGrey100;
@@ -157,59 +153,55 @@
 }
 @media (max-width: 1200px) {
   .category-list {
-      grid-template-columns: repeat(2, minmax(200px, 1fr) );
-      grid-template-rows: repeat(5, minmax(300px, 1fr));
-      grid-auto-rows: minmax(300px, 1fr);
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-rows: repeat(5, minmax(300px, 1fr));
+    grid-auto-rows: minmax(300px, 1fr);
   }
 }
 @media (max-width: 992px) {
-  .navbar__item.abaut-us{
-        display: none;
-  }
-  .navbar__item.contacts{
+  .navbar__item.abaut-us {
     display: none;
-}
+  }
+  .navbar__item.contacts {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
-  .navbar-container{
+  .navbar-container {
     justify-content: space-between;
     height: 50px;
     padding: 0;
-    .navbar{
-      .navbar__item.item-menu{
+    .navbar {
+      .navbar__item.item-menu {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        .icon-menu-container{
+        .icon-menu-container {
           display: flex;
           align-items: center;
         }
       }
-      .popup-menu{
+      .popup-menu {
         top: 50px;
         left: -0px;
       }
     }
-    .navbar-items{
-      .navbar__item{
+    .navbar-items {
+      .navbar__item {
         display: none;
       }
     }
-    .navbar-bascket-container{
-      .navbar-bascket{
-        .navbar-bascket__name{
-           font-size: 1.1rem;
+    .navbar-bascket-container {
+      .navbar-bascket {
+        .navbar-bascket__name {
+          font-size: 1.1rem;
         }
       }
-      
     }
-    .basket{
+    .basket {
       min-width: 260px;
       width: 100%;
-      top:50px;
+      top: 50px;
     }
-    
   }
-  
-  
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import ContactInfoModal from "../common/modals/contactInfoModals/contact-info";
 import styles from "./contacts-page.module.scss";
 function ContactsPage() {
   return (

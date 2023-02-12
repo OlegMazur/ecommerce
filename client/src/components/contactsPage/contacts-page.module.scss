@@ -1,4 +1,4 @@
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -6,20 +6,20 @@
   z-index: 3;
   min-height: 600px;
   margin-top: 100px;
-  
-  .item{
-      padding-bottom: 10px;
-      .itemName{
-          font-size: 1.2rem;
-          font-weight:bold ;
-          padding-right: 5px;
-      }
-      .itemContent{ font-size: 1.2rem;}
-
+  .item {
+    padding-bottom: 10px;
+    .itemName {
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding-right: 5px;
+    }
+    .itemContent {
+      font-size: 1.2rem;
+    }
   }
 }
 @media (max-width: 767px) {
   .container {
-      width: 80%;
+    width: 80%;
   }
 }

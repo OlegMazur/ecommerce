@@ -1,130 +1,105 @@
-@import'../../styles/variables.scss';
-.card{
-    margin-top: 10px;
-    width: 100%;
-    height: 100%;
+@import "../../styles/variables.scss";
+.card {
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  .navHistory {
+    justify-self: flex-start;
+    align-self: flex-start;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    .navHistory{
-        justify-self:flex-start;
-        align-self: flex-start;
+    justify-content: flex-start;
+    .navHome {
+      display: flex;
+      .navLinkHome {
+        margin-right: 5px;
         display: flex;
-       justify-content: flex-start;
-        .navHome{
-            display: flex;
-            .navLinkHome{
-                margin-right: 5px;
-                display: flex;
-                text-decoration: none;
-                color: $colorDarkGrey900;
-                &:hover{
-                    color:$colorDarkBlue900
-                }
-            }
-           
-            .categoryName{
-                margin-right: 5px;
-            }
+        text-decoration: none;
+        color: $colorDarkGrey900;
+        &:hover {
+          color: $colorDarkBlue900;
         }
-        .selectedCategory{
-            color:$colorDarkBlue900
-        }
+      }
+      .categoryName {
+        margin-right: 5px;
+      }
     }
-    .subCategoryList{
-        height: 100%;
-        width: 100%;
-        display: grid;
-        gap: 10px;
-       
-        grid-template-columns: repeat(3, minmax(200px, 1fr) );
-        grid-template-rows: repeat(5, minmax(300px, 1fr) );
-        grid-auto-rows: minmax(300px, 1fr);
-       
+    .selectedCategory {
+      color: $colorDarkBlue900;
     }
+  }
+  .subCategoryList {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: repeat(5, minmax(300px, 1fr));
+    grid-auto-rows: minmax(300px, 1fr);
+  }
 }
 @media (max-width: 1200px) {
-    .card{
-        
-        .navHistory{
-           
-            .navHome{
-                
-                .navLinkHome{
-                   
-                }
-               
-                .categoryName{
-                    
-                }
-            }
-            .selectedCategory{
-                
-            }
+  .card {
+    .navHistory {
+      .navHome {
+        .navLinkHome {
         }
-        .subCategoryList{
-            
-           
+
+        .categoryName {
         }
+      }
+      .selectedCategory {
+      }
+    }
+    .subCategoryList {
     }
   }
-  
-  @media (max-width: 992px) {
-    .card{
-        
-        .navHistory{
-           
-            .navHome{
-                
-                .navLinkHome{
-                   
-                }
-               
-                .categoryName{
-                    
-                }
-            }
-            .selectedCategory{
-                
-            }
+}
+
+@media (max-width: 992px) {
+  .card {
+    .navHistory {
+      .navHome {
+        .navLinkHome {
         }
-        .subCategoryList{
-            gap: 10px;
-       
-        grid-template-columns: repeat(2, minmax(200px, 1fr) );
-        grid-template-rows: repeat(5, minmax(300px, 1fr) );
-        grid-auto-rows: minmax(300px, 1fr);
-           
+
+        .categoryName {
         }
+      }
+      .selectedCategory {
+      }
+    }
+    .subCategoryList {
+      gap: 10px;
+
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+      grid-template-rows: repeat(5, minmax(300px, 1fr));
+      grid-auto-rows: minmax(300px, 1fr);
     }
   }
-  
-  @media (max-width: 767px) {
-    .card{
-        
-        .navHistory{
-           
-            .navHome{
-                
-                .navLinkHome{
-                   
-                }
-               
-                .categoryName{
-                    
-                }
-            }
-            .selectedCategory{
-                
-            }
+}
+
+@media (max-width: 767px) {
+  .card {
+    .navHistory {
+      .navHome {
+        .navLinkHome {
         }
-        .subCategoryList{
-            gap: 5px;
-       
-            grid-template-columns:  minmax(200px, 1fr) ;
-            grid-template-rows: repeat(5, minmax(300px, 1fr) );
-            grid-auto-rows: minmax(300px, 1fr);
-           
+
+        .categoryName {
         }
+      }
+      .selectedCategory {
+      }
+    }
+    .subCategoryList {
+      gap: 5px;
+
+      grid-template-columns: minmax(200px, 1fr);
+      grid-template-rows: repeat(5, minmax(300px, 1fr));
+      grid-auto-rows: minmax(300px, 1fr);
     }
   }
+}

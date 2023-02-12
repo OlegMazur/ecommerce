@@ -27,6 +27,7 @@ class SubCategoryController {
             next(ApiError.badRequest(e.message))
         }
     }
+    
     async updateOne(req, res, next) {
 
         try {

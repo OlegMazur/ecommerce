@@ -1,17 +1,17 @@
 
 const {Sequelize}=require('sequelize')
 require('dotenv').config()
-module.exports=new Sequelize({
-    database:process.env.DB_NAME,
-    username: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
+// module.exports=new Sequelize({
+//     database:process.env.DB_NAME,
+//     username: process.env.DB_USER,
+//     password: process.env.DB_PASSWORD,
      
       
-        dialect:'postgres',
-     host:process.env.DB_HOST,
-      port:process.env.DB_PORT
+//         dialect:'postgres',
+//      host:process.env.DB_HOST,
+//       port:process.env.DB_PORT
       
-})
+// })
 
 // module.exports=new Sequelize({
     
@@ -29,4 +29,35 @@ module.exports=new Sequelize({
 //   },
 
 // })
+//  module.exports=new Sequelize({
+    
+//     database: "railway",
+//   username: "postgres",
+//   password: "0LtS1uDc2QUr7TXprwgH",
+//   host: "containers-us-west-129.railway.app",
+//   port: 6052,
+//   dialect: "postgres",
+//   dialectOptions: {
+//     ssl: {
+//       require: true, // This will help you. But you will see nwe error
+//       rejectUnauthorized: false // This line will fix new error
+//     }
+//   },
 
+// })
+module.exports=new Sequelize({
+    
+    database: process.env.PGDATABASE,
+  username: process.env.PGUSER,
+  password: process.env.PGPASSWORD,
+  host: process.env.PGHOST,
+  port: process.env.PGPORT,
+  dialect: "postgres",
+  dialectOptions: {
+    ssl: {
+      require: true, // This will help you. But you will see nwe error
+      rejectUnauthorized: false // This line will fix new error
+    }
+  },
+
+})

@@ -1,73 +1,66 @@
-@import '../../../../styles/variables.scss';
-.container{
-    height: 400px;
+@import "../../../../styles/variables.scss";
+.container {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  .buttonBlock {
+    height: 40px;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    .buttonBlock{
-        height: 40px;
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-       
-        .button{
-           
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border:none;
-            background-color: $rmd-blue-800;
-           
-            .faXmark{
-                color: $rmd-grey-900;
-                font-size: 1.6rem;
-                color: $rmd-grey-100;
-            }   
-            &:hover{ 
-                color: $rmd-grey-100;
-                background-color: $rmd-blue-900;
-                .faXmark{
-                    color: inherit;
-                   
-                }   
-            }
-
+    justify-content: flex-end;
+    .button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: none;
+      background-color: $rmd-blue-800;
+      .faXmark {
+        color: $rmd-grey-900;
+        font-size: 1.6rem;
+        color: $rmd-grey-100;
+      }
+      &:hover {
+        color: $rmd-grey-100;
+        background-color: $rmd-blue-900;
+        .faXmark {
+          color: inherit;
         }
-        
-    }
-    .item{
-        .itemName{
-            font-size: 1.2rem;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-          
-        }
-        ul{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            li{
-                font-size: 1.2rem;
-                font-weight: 600;
-                text-align: start;
-                padding-bottom: 10px;
-                div{
-                    font-size: 0.8rem;
-                }
-                .title{
-                    font-size: 1.2rem;
-                }
-               
-            }
-           
-           }
-        .itemContent{ font-size: 1.2rem;}
-    }
-}
-@media (max-width: 767px) {
-    .container{
-        align-items: center;
+      }
     }
   }
+  .item {
+    .itemName {
+      font-size: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      li {
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: start;
+        padding-bottom: 10px;
+        div {
+          font-size: 0.8rem;
+        }
+        .title {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .itemContent {
+      font-size: 1.2rem;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    align-items: center;
+  }
+}

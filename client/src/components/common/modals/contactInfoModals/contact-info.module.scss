@@ -1,61 +1,54 @@
-@import '../../../../styles/variables.scss';
-.container{
+@import "../../../../styles/variables.scss";
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  z-index: 3;
+  .buttonBlock {
+    width: 100%;
+    height: 40px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
+    justify-content: flex-end;
     z-index: 3;
-    .buttonBlock{
-        width: 100%;
-       
-        height: 40px;
-        display: flex;
-        justify-content: flex-end;
-       ;
-        z-index: 3;
-        .button{
-           
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border:none;
-            z-index: 5;
-            background-color: $rmd-blue-800;
-            .faXmark{
-                color: $rmd-grey-100;
-                font-size: 1.6rem;
-               
-            }   
-            &:hover{ 
-                color: $rmd-grey-100;
-                background-color: $rmd-blue-900;
-                .faXmark{
-                    color: inherit;
-                   
-                }   
-            }
-            &:focus{ 
-                color: $rmd-grey-100;
-                background-color: $rmd-blue-900;
-                .faXmark{
-                    color: inherit;
-                   
-                }   
-            }
-
+    .button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: none;
+      z-index: 5;
+      background-color: $rmd-blue-800;
+      .faXmark {
+        color: $rmd-grey-100;
+        font-size: 1.6rem;
+      }
+      &:hover {
+        color: $rmd-grey-100;
+        background-color: $rmd-blue-900;
+        .faXmark {
+          color: inherit;
         }
-        
-    }
-    .item{
-        padding-bottom: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-        .itemName{
-            font-size: 1.2rem;
-            font-weight:bold ;
-            padding-right: 5px;
+      }
+      &:focus {
+        color: $rmd-grey-100;
+        background-color: $rmd-blue-900;
+        .faXmark {
+          color: inherit;
         }
-        .itemContent{ font-size: 1.2rem;}
-
+      }
     }
+  }
+  .item {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    .itemName {
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding-right: 5px;
+    }
+    .itemContent {
+      font-size: 1.2rem;
+    }
+  }
 }

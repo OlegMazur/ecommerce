@@ -3,7 +3,12 @@ import { NavLink, useParams } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { RoutePath } from "../routes/enums";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse, faCartShopping, faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHouse,
+  faCartShopping,
+  faChevronUp,
+  faChevronDown,
+} from "@fortawesome/free-solid-svg-icons";
 import styles from "./device-page.module.scss";
 import { getDeviceById } from "../../store/redusers/deviceSlice/deviceSlice";
 import {
@@ -30,10 +35,7 @@ function DevicePage() {
   const subCategories = useAppSelector((state) => state.device.subCategories);
   const devices = useAppSelector((state) => state.device.devices.rows);
   const categorys = useAppSelector((state) => state.device.categories);
-  const usdRate  = useAppSelector(
-    (state) => state.basket.usdExchangeRate
-  );
-
+  const usdRate = useAppSelector((state) => state.basket.usdExchangeRate);
   const actualDevice = devices.find((item) => item.id === Number(id));
   const actualSubCategory = subCategories.find(
     (item) => item.id === actualDevice?.subCategoryId
@@ -42,8 +44,9 @@ function DevicePage() {
     (item) => item.id === actualSubCategory?.categoryId
   );
   const imgArr = actualDevice?.imgArr?.split(",");
-  const price =actualDevice?.price?actualDevice?.price:"0"
-  const actualPrice = actualDevice?.currency==="UAH"?price:exchangeUsd({usdRate ,price})
+  const price = actualDevice?.price ? actualDevice?.price : "0";
+  const actualPrice =
+    actualDevice?.currency === "UAH" ? price : exchangeUsd({ usdRate, price });
   const buyDeviceHandler = () => {
     dispatch(setIsActiveBasket(true));
     if (actualDevice) {
@@ -51,14 +54,14 @@ function DevicePage() {
         addDeviceInBasket({
           id: actualDevice.id,
           name: actualDevice.name,
-          price: Number(actualPrice ),
+          price: Number(actualPrice),
           img1: imgArr?.[0],
           quantity: 1,
         })
       );
     }
   };
- 
+
   const closeHandler = (event: React.MouseEvent<HTMLButtonElement>) => {
     const currentTarget: HTMLButtonElement = event?.currentTarget;
     switch (currentTarget.name) {
@@ -86,13 +89,11 @@ function DevicePage() {
     setIsWorkScheduleClose(true);
     setIsWorrantyClose(true);
   };
-  const str =
-    '<p>Світлодіод: samsung LH351D<br />\nЯскравість1300lm<br />\nЖивлення від одного акумулятора 18650 (в комплект не входить)<br />\nЗаряд від USB-C,<br />\nМагніт в хвості ліхтаря<br />\n<br />\nВ комплекті:<br />\nЛіхтар<br />\nКабель для зарядки<br />\nШнурок на зап&#39;ястя<br />\nЗапасні О-рінги<br />\nКерівництво з&nbsp; використання<br />\n<br />\n<br />\nВага: 65грам<br />\nРозмір 116мм*27мм</p>\n\n<p>Дві групи режимів: 6 ступенів яскравості і плавне регулювання.<br />\n<br />\n<img alt="" src="https://images.ua.prom.st/3204366075_w640_h2048_znimok_ekrana_2021_07_06_153932.jpg?fresh=1&amp;PIMAGE_ID=3204366075" style="width: 640px; height: 329px;" /></p>\n';
   useEffect(() => {
     dispatch(getDeviceById(Number(id)));
     window.scrollTo(0, 0);
-  }, [dispatch,id,actualDevice?.imgArr ]);
- 
+  }, [dispatch, id, actualDevice?.imgArr]);
+
   return (
     <div className={styles.card}>
       <div className={styles.navHistory}>
@@ -119,7 +120,6 @@ function DevicePage() {
         </div>
         <div className={styles.selectedCategory}>{actualDevice?.name}</div>
       </div>
-     
       <div className={styles.content}>
         <div className={styles.mainBlock}>
           <div className={styles.imgBlock}>
@@ -129,7 +129,10 @@ function DevicePage() {
                   onClick={() => setStartIndexImg(startIndexImg - 1)}
                   className={styles.upButton}
                 >
-                  <FontAwesomeIcon icon={faChevronUp} className={styles.faChevronUp}/>
+                  <FontAwesomeIcon
+                    icon={faChevronUp}
+                    className={styles.faChevronUp}
+                  />
                 </button>
               )}
               <div className={styles.smallImgArrBlock}>
@@ -146,19 +149,21 @@ function DevicePage() {
                         className={styles.smallImgItem}
                       >
                         <Img url={item} deviceClass={styles.img} />
-                     
                       </button>
                     )
                 )}
               </div>
-
-              {imgArr?.length&&imgArr?.length-startIndexImg>3&&<button
-                onClick={() => setStartIndexImg(startIndexImg + 1)}
-                className={styles.downButton}
-              >
-                
-                <FontAwesomeIcon icon={ faChevronDown} className={styles.faChevronDown}/>
-              </button>}
+              {imgArr?.length && imgArr?.length - startIndexImg > 3 && (
+                <button
+                  onClick={() => setStartIndexImg(startIndexImg + 1)}
+                  className={styles.downButton}
+                >
+                  <FontAwesomeIcon
+                    icon={faChevronDown}
+                    className={styles.faChevronDown}
+                  />
+                </button>
+              )}
             </div>
             <div className={styles.largeImgBlock}>
               <Img url={imgArr?.[largeImgIndex]} deviceClass={styles.img1} />
@@ -180,7 +185,7 @@ function DevicePage() {
               </div>
             </div>
             <div className={styles.priceBlock}>
-              <span>{actualPrice } грн</span>
+              <span>{actualPrice} грн</span>
             </div>
             <div className={styles.colorBlock}>
               <span>колір</span>
@@ -242,7 +247,6 @@ function DevicePage() {
         outContentClick={outContentClick}
         isClose={isContactClose}
         closeHandler={closeHandler}
-        
       />
       <ModalsWraper
         component={DeliveryInfoModal}
