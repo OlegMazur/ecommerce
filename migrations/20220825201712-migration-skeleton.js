@@ -63,7 +63,7 @@ module.exports = {
       img3: { type: DataTypes.STRING },
       img4: { type: DataTypes.STRING },
       imgArr: { type: DataTypes.TEXT },
-      info: { type: DataTypes.STRING },
+      info: { type: DataTypes.TEXT },
       searchQueries: { type: DataTypes.TEXT },
       currency: { type: DataTypes.STRING },
       unit: { type: DataTypes.STRING },

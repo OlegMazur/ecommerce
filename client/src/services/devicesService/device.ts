@@ -18,6 +18,7 @@ export const getDevices = async (payload: IPayloadAllDevice | undefined) => {
   let data;
   if (payload?.title === "title") {
     data = await $host.get(Path.API + Path.DEVICE + "?title=" + payload.title);
+    console.log(data)
   }
   if (payload?.subCategoryId) {
     data = await $host.get(

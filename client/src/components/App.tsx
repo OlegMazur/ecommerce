@@ -24,7 +24,9 @@ import AboutUs from "./aboutUsPage/about-us";
 import ContactsPage from "./contactsPage/contacts-page";
 
 const App: React.FunctionComponent = () => {
-  const hasToken = Boolean(localStorage.getItem("token"));
+  const token=localStorage.getItem("token");
+  const hasToken = Boolean(token);
+  
   const dispatch = useAppDispatch();
   useEffect(() => {
     if (hasToken) {

@@ -9,7 +9,7 @@ module.exports = {
          await queryInterface.bulkInsert('devices', productPlusDate
             , {});
       } catch (e) {
-         comsole.log(e)
+         console.log(e)
       }
    },
 

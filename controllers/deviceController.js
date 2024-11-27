@@ -98,6 +98,7 @@ class DeviceController {
             }
             if (title === 'title') {
                 devices = await Device.findAll({ attributes: ['brandId', 'typeId', 'name', 'id', 'price', 'subCategoryId', 'availability', 'img1', 'brandName', 'typeName'] })
+                console.log(devices)
             }
             if (subCategoryId) {
                 devices = await Device.findAndCountAll({ where: { subCategoryId }, limit, offset })
