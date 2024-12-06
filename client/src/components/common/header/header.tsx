@@ -36,8 +36,8 @@ function Header() {
   return (
     <div className="header">
       <div className="header-logo">
-        <div className="header-logo__text">Customlight</div>
-        <img src={logo} alt="logo" className="header-logo__img" />
+        <div className="header-logo__text">Bike shop</div>
+        
       </div>
       <div className="header-search">
         <div className="searchDevicesList">

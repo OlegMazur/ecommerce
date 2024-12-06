@@ -8,8 +8,9 @@ const PrivateRoute = ({ component: Component, ...rest }: IProp) => {
   const { user } = useAppSelector((state) => ({
     user: state.auth.user,
   }));
-  const hasUser = Boolean(user);
-  return hasUser ? (
+  //const hasUser = Boolean(user);
+  let admin=user?.email==="mazur@gmail.com"
+  return admin ? (
     <Component {...rest} />
   ) : (
     <Navigate to={{ pathname: Path.SHOP }} />
